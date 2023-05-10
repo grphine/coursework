@@ -1,0 +1,247 @@
+
+
+\section{Assessment}
+The project success will be assessed against specified the aims\footnote{
+    \Cref{sec:aim}.
+} and objectives\footnote{
+    \Cref{sec:objectives}.
+}.
+
+\subsection{Assessment of objectives}
+The objectives outline the steps of the project that needed to be followed for success.
+Analysis of met objectives is available in \cref{table:objeval}, where success of a give point is
+determined by whether the objective was met \fcolorbox{black}{tableg}{\rule{0pt}{5pt}\rule{5pt}{0pt}}\,, 
+unmet \fcolorbox{black}{tabler}{\rule{0pt}{5pt}\rule{5pt}{0pt}}\,, 
+or somewhat met \fcolorbox{black}{tablea}{\rule{0pt}{5pt}\rule{5pt}{0pt}}\,. 
+
+{\small
+\begin{xltabular}{\linewidth}{|>{\raggedright\arraybackslash}p{6cm}|>{\color{white}}Z|}
+    \hline
+    \rowcolor{tableh2}
+    Objective & \textcolor{black}{Met?} \\
+    \hline
+    \endhead
+    \endfoot
+
+    \hline
+    Research cat characteristics & \cellcolor{tableg} \\ \hline
+    Research \gls{lora} radio requirements & \cellcolor{tableg} \\ \hline
+    Design the system and specification & \cellcolor{tableg} \\ \hline
+    Develop the tracker according to specification & \cellcolor{tablea}Further details can be found in \cref{table:speceval}. \\ \hline
+    Perform verification tests & \cellcolor{tablea}Tests were performed, but were limited in completeness. More were required. \\ \hline
+    Develop \acrshort{pcb}, fit to harness, and live-test & \cellcolor{tabler} \\ \hline
+    Certification & \cellcolor{tabler} \\ \hline
+    
+    \caption{Objectives evaluation}\label{table:objeval}
+\end{xltabular}
+\vspace{-11pt}
+}
+
+Colour progression indicates that,
+while the project started off well, completion began to suffer as time passed. 
+
+\subsection{Assessment of aims and specification}
+
+{\small
+\begin{xltabular}{\linewidth}{|>{\raggedright\arraybackslash}p{4.5cm}|>{\color{white}}Z|}
+    \hline
+    \rowcolor{tableh2}
+    Aim & \textcolor{black}{Met?} \\
+    \hline
+    \endhead
+    \endfoot
+
+    \rowcolor{tableh1}
+    \multicolumn{2}{|c|}{Fundamentals} \\
+    \hline
+    Obtain \acrshort{gps} location & \cellcolor{tableg} \\ \hline
+    Transmit via \gls{lora} & \cellcolor{tableg} \\ \hline
+    Transmit remotely for a significant period of time & \cellcolor{tableg}Up to fifteen hours \\ \hline
+    Transmit at a regular interval & \cellcolor{tableg}Every five seconds \\ \hline
+    
+
+    \rowcolor{tableh1}
+    \multicolumn{2}{|c|}{Improvements} \\
+    \hline
+    Ergonomics & \cellcolor{tabler}The product is not designed for use with a pet \\ \hline
+    Stability & \cellcolor{tablea}Only the receiver handles errors\\ \hline
+    Installable & \cellcolor{tablea}No specific tools required for installation, however 
+        it does not have appropriate casing to be mounted \\ \hline
+    Location information easily viewable & \cellcolor{tablea}Information is viewable, but requires familiarity 
+        with Bash \\ \hline
+    
+
+    \rowcolor{tableh1}
+    \multicolumn{2}{|c|}{Production} \\
+    \hline
+    General safety and suitability & \cellcolor{tabler}No safety measures in place \\ \hline
+    Resistance to damage and weather & \cellcolor{tablea}Some resistance to damage \\ \hline
+    Certification requirements and law compliance & \cellcolor{tabler} \\ \hline
+    Scale considerations & \cellcolor{tabler} \\ \hline
+    
+    \caption{Aims evaluation}\label{table:aimseval}
+\end{xltabular}
+\vspace{-11pt}
+}
+
+\Cref{table:aimseval} shows that the Fundamental aims have been met, and shows a 
+similar colour progression to \cref{table:objeval} in that primary points were met, but 
+later ones were not.
+By meeting the Fundamental aims, the viability of the product has been demonstrated, 
+and much from thereon is to improve and refine the design for consumer suitability.
+
+\subsubsection{Assessment of specification}
+This will provide a more granular overview of which elements of the specification
+in \cref{sec:spec} were met. 
+
+{\small
+\begin{xltabular}{\linewidth}{|>{\raggedright\arraybackslash}p{4.5cm}|>{\color{white}}Z|}
+    \hline
+    \rowcolor{tableh2}
+    Specification & \textcolor{black}{Met?} \\
+    \hline
+    \endhead
+    \endfoot
+
+    \rowcolor{tableh1}
+    \multicolumn{2}{|c|}{Reporting} \\
+    \hline
+    Timing & \cellcolor{tablea}Performs better than \qty{30}{\s}, but no way 
+        of minimising transmission gaps to under \qty{300}{\s} \\ \hline
+    Distance & \cellcolor{tablea}Subject to more thorough testing to find the reliable limit. 
+        Current data shows transmission is possible from over \qty{400}{\m}, however this is not consistent \\ \hline    
+
+    \rowcolor{tableh1}
+    \multicolumn{2}{|c|}{Portability} \\
+    \hline
+    Small form-factor & \cellcolor{tablea}Dimensions measure \qtyproduct{52 x 68 x 17}{\mm}\footnote{\Cref{fig:case2dwg}.} \\ \hline
+    Lightweight & \cellcolor{tableg}Weight is \qty{55}{\g}, a \qty{63}{\percent} improvement\\ \hline
+    Battery powered & \cellcolor{tableg}Battery life is \qty{15}{\hour}, a \qty{67}{\percent} improvement \\ \hline
+    Attachable & \cellcolor{tabler} \\ \hline    
+
+    \rowcolor{tableh1}
+    \multicolumn{2}{|c|}{Suitability} \\
+    \hline
+    Installable & \cellcolor{tabler} \\ \hline
+    Compliance & \cellcolor{tabler}  \\ \hline
+
+    \rowcolor{tableh1}
+    \multicolumn{2}{|c|}{Reliability} \\
+    \hline
+    Stable & \cellcolor{tablea}Fault handling in receiver code \\ \hline
+    Fault resistant & \cellcolor{tablea}Some shock resistance in the casing \\ \hline
+    Repairable & \cellcolor{tableg}No proprietary parts or complex tools are used,
+         however technical knowledge is required \\ \hline
+    Safety & \cellcolor{tabler} \\ \hline
+    Deduplication & \cellcolor{tabler} \\ \hline
+    
+    \caption{Specification evaluation}\label{table:speceval}
+\end{xltabular}
+\vspace{-11pt}
+}
+
+The greater detailed view in \cref{table:speceval} indicates some points met in the aim may 
+not quite meet the specification, with many such reasons overlapping.
+
+\section{Improvements}
+Using this project's findings as a basis, there are many points of 
+specific improvements that can be explored in future projects. 
+These will be broken down into two types: improvements that resolve an
+issue that was faced during the project, and improvements that
+will increase the quality of the product.
+
+\subsection{Issue resolvers}
+\paragraph{Battery connection}
+There was no way to control the power to the transmitter. As soon as the
+battery was connected, it would begin to transmit, and more crucially, drain
+the battery. Repeated disconnections of the power port led to the
+cables exposing and almost shorting at one point.
+This was resolved using insulting tape\footnote{
+    The taping can be seen in \cref{fig:case1img}.
+}, however such a
+method is only a temporary measure.
+
+A better way of managing this
+would be to use a switch across one of the battery lines,
+allowing power to be killed gracefully. This has a drawback
+itself in that it would require the user to power on the device
+in order to recharge the battery.
+A smarter, user-friendly approach would require discrete charging
+circuitry to handle charging and power, which is moving towards
+bespoke circuit design and out of the scope of this project. However,
+this would be vital towards making this a viable consumer product.
+
+\paragraph{Transmission errors}
+Transmission errors only appeared to occur while the system was
+used on a close-range basis. However, it is entirely possible for
+such errors to occur on a general basis. To minimise this,
+a \acrshort{crc} may be used. Another method of transmission error handling
+would be to utilise \acrshort{fec} (for example, parity checks),
+however this may greatly increase
+the complexity of the project, and likely is not necessary given the
+frequency rate of errors, packet size, and hardware capabilities.
+The Radiohead library supports client-server acknowledgement
+with the \lstinline{RHReliableDatagram} class, which allows
+checking that a packet has been received correctly, and if not, retransmit.
+This can be additionally used to notify when the tracker is no longer
+able to transmit to the server (as it would fail to acknowledge the
+server's checks). 
+
+The \lstinline{RHDatagram} superclass additionally allows for addressing, meaning 
+nodes (receivers) are numbered with an address 0 to 255 and only packets 
+addressed to that specific node are accepted, thereby filtering out packets from 
+`other' transmitters. This meets the deduplication specification point\footnote{
+    \Cref{sec:dedupe}.
+}, however suffers the obvious drawback of being limited by address pool. 
+An alternative method would be to encode addresses into the packet information manually
+rather than relying on a provided class, thereby allowing the address pool criteria 
+to be virtually any size. Whatever method is chosen, the transmitters will 
+also be able to encode a unique address, allowing an owner to track multiple pets. 
+
+\paragraph{Charging time}
+While the transmitter may boast an impressive battery life, the charging
+time leaves much to be desired. Protocols like Qualcomm's Quick Charge
+may mitigate this, however it is limited to Qualcomm \acrshortpl{soc}.
+This works by negotiating a higher current over the \acrshort{usb} connection,
+as the default is limited to \qty{500}{\mAh} \cite{axelson:usb}.
+
+\subsection{Quality improvements}
+\paragraph{Display}
+The Pi \gls{lora} bonnet comes with an \acrshort{oled} display that
+was completely unutilised. This could be used to display warnings to the user
+to indicate when \acrshort{gps} is lost or the battery levels are low.
+
+\paragraph{Advanced power management}
+The Feather M0 supports underclocking, meaning that battery life
+could be greatly improved. The \gls{lora} modem also supports commands
+to sleep, as otherwise it stays in a passive `listening' mode that draws
+some power (around \qty{2}{\mA} \cite{adafruit:loram0}).
+Since it is only required to transmit, the radio can be
+turned off to save power in the meantime.
+
+\section{Additional remarks}
+Some aspects have not been discussed in any great detail. 
+Here, such aspects will be focused upon.
+
+\paragraph{Environmental impact}
+The project does not have an explicit environmental impact.
+Manufacture of electronics in general is an environmental burden, 
+as is safe disposal, and this project certainly falls within the purview
+of such elements. Such considerations will be vital should this 
+project be taken to manufacture, as safe disposal of electronics
+and batteries in particular will be necessary. 
+
+\paragraph{Cost} 
+The overall cost of the project is not entirely straightforward 
+due to the scattered and chaotic nature of the ordering.
+All parts used in the project ordered through 
+approved vendors totals to £198.11\footnote{
+    Before \acrshort{vat}.
+}. This cost does not include some components used (i.e. 
+the overall cost of the project is greater), the most 
+significant of which is the Pi 3. While this retails for 
+£40\footnote{
+    Available at 
+    \href{https://thepihut.com/products/raspberry-pi-3-model-b?src=raspberrypi}{The PiHut \faExternalLink}
+}, it was often seen listed on Amazon or eBay 
+with a markup over \qty{120}{\%}.

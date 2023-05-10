@@ -1,0 +1,2656 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global}
+    \entry{catsprotection:catsreport}{article}{}
+      \name{author}{1}{}{%
+        {{hash=6b7dadd3e1cd28c1514c7cbebde5d42d}{%
+           family={{Cats Protection}},
+           familyi={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{6b7dadd3e1cd28c1514c7cbebde5d42d}
+      \strng{fullhash}{6b7dadd3e1cd28c1514c7cbebde5d42d}
+      \strng{bibnamehash}{6b7dadd3e1cd28c1514c7cbebde5d42d}
+      \strng{authorbibnamehash}{6b7dadd3e1cd28c1514c7cbebde5d42d}
+      \strng{authornamehash}{6b7dadd3e1cd28c1514c7cbebde5d42d}
+      \strng{authorfullhash}{6b7dadd3e1cd28c1514c7cbebde5d42d}
+      \field{extraname}{1}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Online; accessed 20 October 2022}
+      \field{title}{Cats Report 2022}
+      \field{year}{2022}
+      \verb{urlraw}
+      \verb https://www.cats.org.uk/media/11908/cats-report-2022-uk.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.cats.org.uk/media/11908/cats-report-2022-uk.pdf
+      \endverb
+    \endentry
+    \entry{bbc:missingcat}{article}{}
+      \name{author}{1}{}{%
+        {{hash=ec69bf41f218710dc3c090d7f72de20a}{%
+           family={Davis},
+           familyi={D\bibinitperiod},
+           given={Claire},
+           giveni={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{ec69bf41f218710dc3c090d7f72de20a}
+      \strng{fullhash}{ec69bf41f218710dc3c090d7f72de20a}
+      \strng{bibnamehash}{ec69bf41f218710dc3c090d7f72de20a}
+      \strng{authorbibnamehash}{ec69bf41f218710dc3c090d7f72de20a}
+      \strng{authornamehash}{ec69bf41f218710dc3c090d7f72de20a}
+      \strng{authorfullhash}{ec69bf41f218710dc3c090d7f72de20a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{6}
+      \field{journaltitle}{BBC News}
+      \field{month}{3}
+      \field{note}{Online; accessed 20 October 2022}
+      \field{title}{Missing cat reunited with owner after 11 years on the street}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://www.bbc.co.uk/news/uk-england-birmingham-51738246
+      \endverb
+      \verb{url}
+      \verb https://www.bbc.co.uk/news/uk-england-birmingham-51738246
+      \endverb
+    \endentry
+    \entry{researchandmarkets:wearablemarket}{article}{}
+      \name{author}{1}{}{%
+        {{hash=d70943a520c91b906de5b60c33871021}{%
+           family={{Research and Markets}},
+           familyi={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{d70943a520c91b906de5b60c33871021}
+      \strng{fullhash}{d70943a520c91b906de5b60c33871021}
+      \strng{bibnamehash}{d70943a520c91b906de5b60c33871021}
+      \strng{authorbibnamehash}{d70943a520c91b906de5b60c33871021}
+      \strng{authornamehash}{d70943a520c91b906de5b60c33871021}
+      \strng{authorfullhash}{d70943a520c91b906de5b60c33871021}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{5}
+      \field{title}{Global Pet Wearable Market Size, Share \& Industry Trends Analysis Report By Application, By Technology, By Regional Outlook and Forecast, 2022 - 2028}
+      \field{year}{2022}
+      \verb{urlraw}
+      \verb https://www.researchandmarkets.com/reports/5615579
+      \endverb
+      \verb{url}
+      \verb https://www.researchandmarkets.com/reports/5615579
+      \endverb
+    \endentry
+    \entry{bardyn2016}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=b7931b48ed274d86767df8e3bf670857}{%
+           family={Bardyn},
+           familyi={B\bibinitperiod},
+           given={Jean-Paul},
+           giveni={J\bibinithyphendelim P\bibinitperiod}}}%
+        {{hash=6ac3aaae6fba4d9bca99d58a3f556c18}{%
+           family={Melly},
+           familyi={M\bibinitperiod},
+           given={Thierry},
+           giveni={T\bibinitperiod}}}%
+        {{hash=0d0116d7654b6e361c53e6deb25796ea}{%
+           family={Seller},
+           familyi={S\bibinitperiod},
+           given={Olivier},
+           giveni={O\bibinitperiod}}}%
+        {{hash=6c464d20914615bb9b0dcceeea239b47}{%
+           family={Sornin},
+           familyi={S\bibinitperiod},
+           given={Nicolas},
+           giveni={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{c0ec962d7f0071f800e1fccee46ada74}
+      \strng{fullhash}{51e2b5cc02530de6d04070c3e493ec8b}
+      \strng{bibnamehash}{c0ec962d7f0071f800e1fccee46ada74}
+      \strng{authorbibnamehash}{c0ec962d7f0071f800e1fccee46ada74}
+      \strng{authornamehash}{c0ec962d7f0071f800e1fccee46ada74}
+      \strng{authorfullhash}{51e2b5cc02530de6d04070c3e493ec8b}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{ESSCIRC Conference 2016: 42nd European Solid-State Circuits Conference}
+      \field{title}{IoT: The era of LPWAN is starting now}
+      \field{year}{2016}
+      \field{pages}{25\bibrangedash 30}
+      \range{pages}{6}
+    \endentry
+    \entry{eldefrawy2019}{article}{}
+      \name{author}{4}{}{%
+        {{hash=043cec4832028429549e9b809a0a7d74}{%
+           family={Eldefrawy},
+           familyi={E\bibinitperiod},
+           given={Mohamed},
+           giveni={M\bibinitperiod}}}%
+        {{hash=7e727a17418eed0fd396637c348651f8}{%
+           family={Butun},
+           familyi={B\bibinitperiod},
+           given={Ismail},
+           giveni={I\bibinitperiod}}}%
+        {{hash=0ae7becefd6bac803524bbd4907d6047}{%
+           family={Pereira},
+           familyi={P\bibinitperiod},
+           given={Nuno},
+           giveni={N\bibinitperiod}}}%
+        {{hash=189312801b63b68a25bfa7079a4f5a61}{%
+           family={Gidlund},
+           familyi={G\bibinitperiod},
+           given={Mikael},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{2bf426ccd4e31e2d2de9d159c8955865}
+      \strng{fullhash}{f0a34322d08db3395d047043d6fa9efa}
+      \strng{bibnamehash}{2bf426ccd4e31e2d2de9d159c8955865}
+      \strng{authorbibnamehash}{2bf426ccd4e31e2d2de9d159c8955865}
+      \strng{authornamehash}{2bf426ccd4e31e2d2de9d159c8955865}
+      \strng{authorfullhash}{f0a34322d08db3395d047043d6fa9efa}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Recent Low Power Wide Area Networks (LPWAN) protocols are receiving increased attention from industry and academia to offer accessibility for Internet of Things (IoT) connected remote sensors and actuators. In this work, we present a formal study of LoRaWAN security, an increasingly popular technology, which defines the structure and operation of LPWAN networks based on the LoRa physical layer. There are previously known security vulnerabilities in LoRaWAN that lead to the proposal of several improvements, some already incorporated into the latest protocol specification. Our analysis of LoRaWAN security uses Scyther, a formal security analysis tool and focuses on the key exchange portion of versions 1.0 (released in 2015) and 1.1 (the latest, released in 2017). For version 1.0, which is still the most widely deployed version of LoRaWAN, we show that our formal model allowed to uncover weaknesses that can be related to previously reported vulnerabilities. Our model did not find weaknesses in the latest version of the protocol (v1.1), and we discuss what this means in practice for the security of LoRaWAN as well as important aspects of our model and tools employed that should be considered. The Scyther model developed provides realistic models for LoRaWAN v1.0 and v1.1 that can be used and extended to formally analyze, inspect, and explore the security features of the protocols. This, in turn, can clarify the methodology for achieving secrecy, integrity, and authentication for designers and developers interested in these LPWAN standards. We believe that our model and discussion of the protocols security properties are beneficial for both researchers and practitioners. To the best of our knowledge, this is the first work that presents a formal security analysis of LoRaWAN.}
+      \field{journaltitle}{Computer Networks}
+      \field{title}{Formal security analysis of LoRaWAN}
+      \field{volume}{148}
+      \field{year}{2019}
+      \field{pages}{328\bibrangedash 339}
+      \range{pages}{12}
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S1389128618306145
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S1389128618306145
+      \endverb
+      \keyw{LoRaWAN,IoT,Scyther verification}
+    \endentry
+    \entry{hanmer:urbanisaton}{article}{}
+      \name{author}{3}{}{%
+        {{hash=134193bf5547e8f9c5107d4ebd0ff834}{%
+           family={Hanmer},
+           familyi={H\bibinitperiod},
+           given={Hugh\bibnamedelima J},
+           giveni={H\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=0fadb68c120c5feb41306494d8682daf}{%
+           family={Thomas},
+           familyi={T\bibinitperiod},
+           given={Rebecca\bibnamedelima L},
+           giveni={R\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=d7b1e9abb5f60fda46296145b0817dd7}{%
+           family={Fellowes},
+           familyi={F\bibinitperiod},
+           given={Mark\bibnamedelimb D.\bibnamedelimi E.},
+           giveni={M\bibinitperiod\bibinitdelim D\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \strng{namehash}{d57595a1d31c57dd1bf176437beed549}
+      \strng{fullhash}{d0ce24e3b50d817f0975fb725ee0a40e}
+      \strng{bibnamehash}{d57595a1d31c57dd1bf176437beed549}
+      \strng{authorbibnamehash}{d57595a1d31c57dd1bf176437beed549}
+      \strng{authornamehash}{d57595a1d31c57dd1bf176437beed549}
+      \strng{authorfullhash}{d0ce24e3b50d817f0975fb725ee0a40e}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{{Domestic cats (Felis catus) are the most abundant predator in many urban ecosystems, and their ranging behaviour will influence predation rates. To investigate how degree of urbanisation affects cat ranging behaviour, we used Global Positioning System trackers to follow 38 cats in 3 (urban, suburban and peri-urban) residential areas in the large town of Reading, UK. Median home range (95\% KE) was 1.28 ha, but varied from 0.9 ha in the urban habitat, to 1.56 ha in the suburban habitat and 1.60 ha in the peri-urban region, with a maximum range size of 6.61 ha. The median maximum distance reached from home was 99 m, and again varied with level of urbanisation (urban: 79 m; suburban: 141 m; peri-urban: 148 m; maximum 278 m). For home and core (50\% KE) ranges, there were no significant differences with respect to study areas, cat sexes, cats living in the same household or day/night range. A decreased proportion of constructed surfaces (a proxy for urbanisation) was associated with an increase in cat range size. As urban areas grow, many areas containing species of conservation importance are encroached upon by residential zones on urban fringes. To protect these species we suggest that boundary habitats should be managed to reduce rates of cat access to these areas, or that buffer zones of 300–400 m should be formed between housing and areas containing vulnerable species. These management options may help mitigate the ecological consequences of cat predation.}}
+      \field{journaltitle}{Journal of Urban Ecology}
+      \field{month}{12}
+      \field{number}{1}
+      \field{title}{Urbanisation influences range size of the domestic cat (Felis catus): consequences for conservation}
+      \field{volume}{3}
+      \field{year}{2017}
+      \verb{urlraw}
+      \verb https://doi.org/10.1093/jue/jux014
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1093/jue/jux014
+      \endverb
+    \endentry
+    \entry{barratt:home}{article}{}
+      \name{author}{1}{}{%
+        {{hash=0d3ff45e36b6e67fe119484f52c1f5ca}{%
+           family={Barratt},
+           familyi={B\bibinitperiod},
+           given={David\bibnamedelima G.},
+           giveni={D\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+      }
+      \strng{namehash}{0d3ff45e36b6e67fe119484f52c1f5ca}
+      \strng{fullhash}{0d3ff45e36b6e67fe119484f52c1f5ca}
+      \strng{bibnamehash}{0d3ff45e36b6e67fe119484f52c1f5ca}
+      \strng{authorbibnamehash}{0d3ff45e36b6e67fe119484f52c1f5ca}
+      \strng{authornamehash}{0d3ff45e36b6e67fe119484f52c1f5ca}
+      \strng{authorfullhash}{0d3ff45e36b6e67fe119484f52c1f5ca}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The movements of 10 house cats (4 desexed females, 5 desexed males and 1 intact male) living on the edge of a suburb adjoining grassland and forest/woodland habitat, and a neighbouring colony of seven farm cats, were examined using radio-telemetry over nine months Nocturnal home range areas of the suburban cats varied between 0 02 and 27 93 ha (mean 7 89 ha), and were larger than diurnal home range areas (range 0 02 to 17 19 ha – mean 2 73 ha) Nocturnal home range areas of cats from the farm cat colony varied between 1 38 and 4 46 ha (mean 2 54 ha), and were also larger than diurnal home range areas (range 0 77 to 3 70 ha – mean 1 70 ha) Home ranges of cats in the farm cat colony overlapped extensively, as did those of cats living at the same suburban residence There was no overlap of home ranges of female cats from different residences, and little overlap between males and females from different residences Four of the suburban house cats moved between 390 m and 900 m into habitat adjoining the suburb Polygons describing the home ranges of these animals were strongly spatially biased away from the suburban environment, though the cats spent the majority of their time within the bounds of the suburb Movements further than 100–200 m beyond the suburb edge were always made at night There is evidence that home range sizes and spatial movement patterns of house cats are largely determined by a) the density and spatial distribution of cats utilising separate food resources, b) the personality and social dominance of individual cats, c) the location of favoured hunting and resting/sunning sites, and, d) barriers such as busy roads}
+      \field{journaltitle}{Ecography}
+      \field{number}{3}
+      \field{title}{Home range size, habitat utilisation and movement patterns of suburban and farm cats Felis catus}
+      \field{volume}{20}
+      \field{year}{1997}
+      \field{pages}{271\bibrangedash 280}
+      \range{pages}{10}
+      \verb{urlraw}
+      \verb https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1600-0587.1997.tb00371.x
+      \endverb
+      \verb{url}
+      \verb https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1600-0587.1997.tb00371.x
+      \endverb
+    \endentry
+    \entry{meek:home}{article}{}
+      \name{author}{1}{}{%
+        {{hash=407f42d942b1b796e74ea763e931bcb2}{%
+           family={Meek},
+           familyi={M\bibinitperiod},
+           given={P\bibnamedelima D},
+           giveni={P\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+      }
+      \strng{namehash}{407f42d942b1b796e74ea763e931bcb2}
+      \strng{fullhash}{407f42d942b1b796e74ea763e931bcb2}
+      \strng{bibnamehash}{407f42d942b1b796e74ea763e931bcb2}
+      \strng{authorbibnamehash}{407f42d942b1b796e74ea763e931bcb2}
+      \strng{authornamehash}{407f42d942b1b796e74ea763e931bcb2}
+      \strng{authorfullhash}{407f42d942b1b796e74ea763e931bcb2}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issue}{1}
+      \field{journaltitle}{Australian Mammalogy}
+      \field{title}{Home range of house cats Felis catus living within a National Park}
+      \field{volume}{25}
+      \field{year}{2003}
+      \field{pages}{51\bibrangedash 60}
+      \range{pages}{10}
+    \endentry
+    \entry{bengsen:feral}{article}{}
+      \name{author}{11}{}{%
+        {{hash=5d90f0397cca7b5e8bbe2463a7701b06}{%
+           family={Bengsen},
+           familyi={B\bibinitperiod},
+           given={A.\bibnamedelimi J.},
+           giveni={A\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=9ce62b3543fa1e138aba1158187c9296}{%
+           family={Algar},
+           familyi={A\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod}}}%
+        {{hash=88fc2343abc98a03245365a672ccfa74}{%
+           family={Ballard},
+           familyi={B\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod}}}%
+        {{hash=3d89b807648fb167888bb5caa5cfea99}{%
+           family={Buckmaster},
+           familyi={B\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod}}}%
+        {{hash=a90932bfc45615e6d73d2062388e6fb8}{%
+           family={Comer},
+           familyi={C\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+        {{hash=0d9fdbb99612f118058ed82fbd73aca2}{%
+           family={Fleming},
+           familyi={F\bibinitperiod},
+           given={P.\bibnamedelimi J.\bibnamedelimi S.},
+           giveni={P\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=7d4f5edcebc486a8700d3a10a0a478b0}{%
+           family={Friend},
+           familyi={F\bibinitperiod},
+           given={J.\bibnamedelimi A.},
+           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=5156f4a74d002f65857f2853c49b39a4}{%
+           family={Johnston},
+           familyi={J\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=97cda97b80777f37d360049784b1cfbe}{%
+           family={McGregor},
+           familyi={M\bibinitperiod},
+           given={H.},
+           giveni={H\bibinitperiod}}}%
+        {{hash=3b34d6d30bf982f1beab0a7397c98260}{%
+           family={Moseby},
+           familyi={M\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod}}}%
+        {{hash=7263dd0d747d5c72bd3f5cd76d6fdda4}{%
+           family={Zewe},
+           familyi={Z\bibinitperiod},
+           given={F.},
+           giveni={F\bibinitperiod}}}%
+      }
+      \strng{namehash}{d5399479d57c74aa673ac093bc16d93f}
+      \strng{fullhash}{6f84e76f55fd61c9ecf9e9af0ac7c08a}
+      \strng{bibnamehash}{d5399479d57c74aa673ac093bc16d93f}
+      \strng{authorbibnamehash}{d5399479d57c74aa673ac093bc16d93f}
+      \strng{authornamehash}{d5399479d57c74aa673ac093bc16d93f}
+      \strng{authorfullhash}{6f84e76f55fd61c9ecf9e9af0ac7c08a}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Abstract An understanding of the factors that drive inter-population variability in home-range size is essential for managing the impacts of invasive species with broad global distributions, such as the feral domestic cat (Felis catus). The assumption that home-range sizes scale negatively with landscape productivity is fundamental to many spatial behaviour models, and inter-site variation in landscape productivity has often been invoked to explain the vast differences in feral cat home-range sizes among different regions. However, the validity of this explanation has not been tested or described. We used regression models to examine the ability of remotely sensed landscape productivity data, average body weight and population density to explain differences in the size of feral cat home ranges estimated across a diverse collection of sites across the globe. As expected for a solitary polygynous carnivore, female cats occupied smaller home ranges in highly productive sites, and range sizes of male cats scaled positively with those of females. However, the relationship between range size and productivity broke down at highly seasonal sites. Home-range size also scaled negatively with population density, but there was no clear relationship with average body weight. The relationships we describe should be useful for predicting home-range sizes and for designing effective feral cat control and monitoring programmes in many situations. More generally, these results confirm the importance of landscape productivity in shaping the spatial distribution of solitary carnivores, but the nature of the relationship is more complicated than is often appreciated.}
+      \field{journaltitle}{Journal of Zoology}
+      \field{number}{2}
+      \field{title}{Feral cat home-range size varies predictably with landscape productivity and population density}
+      \field{volume}{298}
+      \field{year}{2016}
+      \field{pages}{112\bibrangedash 120}
+      \range{pages}{9}
+      \verb{urlraw}
+      \verb https://zslpublications.onlinelibrary.wiley.com/doi/abs/10.1111/jzo.12290
+      \endverb
+      \verb{url}
+      \verb https://zslpublications.onlinelibrary.wiley.com/doi/abs/10.1111/jzo.12290
+      \endverb
+      \keyw{environmental productivity,feral cats,fPAR,home-range size,landscape productivity,predator control,polygyny,solitary carnivore}
+    \endentry
+    \entry{horn:range}{article}{}
+      \name{author}{4}{}{%
+        {{hash=faa01e4a6991887e3d51a06917dbadf2}{%
+           family={Horn},
+           familyi={H\bibinitperiod},
+           given={Jeff\bibnamedelima A.},
+           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=a8d8fa81a517a9a67d57224b85bf1bbb}{%
+           family={Mateus-Pinilla},
+           familyi={M\bibinithyphendelim P\bibinitperiod},
+           given={Nohra},
+           giveni={N\bibinitperiod}}}%
+        {{hash=085ecba02807d0f3968774f935ec9c65}{%
+           family={Warner},
+           familyi={W\bibinitperiod},
+           given={Richard\bibnamedelima E.},
+           giveni={R\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=04309d05e40e3e927485b70c1e596b80}{%
+           family={Heske},
+           familyi={H\bibinitperiod},
+           given={Edward\bibnamedelima J.},
+           giveni={E\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \strng{namehash}{65377a50c1189efca00131c6ea6aeb29}
+      \strng{fullhash}{62d45162766f4f43f38c46422029d288}
+      \strng{bibnamehash}{65377a50c1189efca00131c6ea6aeb29}
+      \strng{authorbibnamehash}{65377a50c1189efca00131c6ea6aeb29}
+      \strng{authornamehash}{65377a50c1189efca00131c6ea6aeb29}
+      \strng{authorfullhash}{62d45162766f4f43f38c46422029d288}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Abstract We used radio-telemetry and collar-mounted activity sensors to compare home range size, habitat use, and activity patterns of owned and unowned free-roaming cats on the outskirts of Champaign-Urbana, Illinois, USA. Owned cats (3 M, 8 F) had smaller home ranges than unowned cats (6 M, 10 F), but we failed to detect consistent differences in home range size between the sexes or among seasons. Home ranges of unowned cats included more grassland and urban area than predicted based on availability in all seasons, and farmsteads were selected in fall and winter. Within home ranges, unowned cats shifted their use of habitats among seasons in ways that likely reflected prey availability, predation risk, and environmental stress, whereas habitat use within home ranges by owned cats did not differ from random. Unowned cats were more nocturnal and showed higher overall levels of activity than owned cats. Space use and behavioral differences between owned and unowned cats supported the hypothesis that the care a cat owner provides influences the impact a cat has on its environment, information that is important for making decisions on controlling cat populations. © 2011 The Wildlife Society.}
+      \field{journaltitle}{The Journal of Wildlife Management}
+      \field{number}{5}
+      \field{title}{Home range, habitat use, and activity patterns of free-roaming domestic cats}
+      \field{volume}{75}
+      \field{year}{2011}
+      \field{pages}{1177\bibrangedash 1185}
+      \range{pages}{9}
+      \verb{urlraw}
+      \verb https://wildlife.onlinelibrary.wiley.com/doi/abs/10.1002/jwmg.145
+      \endverb
+      \verb{url}
+      \verb https://wildlife.onlinelibrary.wiley.com/doi/abs/10.1002/jwmg.145
+      \endverb
+      \keyw{activity patterns,Felis catus,feral cats,free-roaming cats,habitat use,home range,radio-telemetry,survival}
+    \endentry
+    \entry{molsher2005home}{article}{}
+      \name{author}{4}{}{%
+        {{hash=681c022ec86b945a0c82f2313067ed45}{%
+           family={Molsher},
+           familyi={M\bibinitperiod},
+           given={Robyn},
+           giveni={R\bibinitperiod}}}%
+        {{hash=3e2ec4e0f5b2acd7a6c9f10312b19a31}{%
+           family={Dickman},
+           familyi={D\bibinitperiod},
+           given={Chris},
+           giveni={C\bibinitperiod}}}%
+        {{hash=b49634e9202e3b80c8b6920ae6d49adf}{%
+           family={Newsome},
+           familyi={N\bibinitperiod},
+           given={Alan},
+           giveni={A\bibinitperiod}}}%
+        {{hash=048bf1730c6fcf8641656b4f70ab30b6}{%
+           family={Müller},
+           familyi={M\bibinitperiod},
+           given={Warren},
+           giveni={W\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {CSIRO Publishing}%
+      }
+      \strng{namehash}{b0a7d4386937758c084daa54a082646b}
+      \strng{fullhash}{aa8cfed24cc0e3b6f5a6dc29ed295017}
+      \strng{bibnamehash}{b0a7d4386937758c084daa54a082646b}
+      \strng{authorbibnamehash}{b0a7d4386937758c084daa54a082646b}
+      \strng{authornamehash}{b0a7d4386937758c084daa54a082646b}
+      \strng{authorfullhash}{aa8cfed24cc0e3b6f5a6dc29ed295017}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Wildlife Research}
+      \field{number}{7}
+      \field{title}{Home ranges of feral cats (Felis catus) in central-western New South Wales, Australia}
+      \field{volume}{32}
+      \field{year}{2005}
+      \field{pages}{587\bibrangedash 595}
+      \range{pages}{9}
+    \endentry
+    \entry{clancy2003}{article}{}
+      \name{author}{3}{}{%
+        {{hash=52d42e8da2d9e99c2e73dadcbbb325c7}{%
+           family={Clancy},
+           familyi={C\bibinitperiod},
+           given={Elizabeth\bibnamedelima A.},
+           giveni={E\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=1118852b1879bc7239d94c3f57a99bc1}{%
+           family={Moore},
+           familyi={M\bibinitperiod},
+           given={Antony\bibnamedelima S.},
+           giveni={A\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=c2c0174f0a808bab7d58197517a54d50}{%
+           family={Bertone},
+           familyi={B\bibinitperiod},
+           given={Elizabeth\bibnamedelima R.},
+           giveni={E\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Schaumburg, IL, USA}%
+      }
+      \list{publisher}{1}{%
+        {American Veterinary Medical Association}%
+      }
+      \strng{namehash}{3ff0ff48350e83756493745280245a31}
+      \strng{fullhash}{2eabc1a63811aa4c2c6e4f18f621c4b0}
+      \strng{bibnamehash}{3ff0ff48350e83756493745280245a31}
+      \strng{authorbibnamehash}{3ff0ff48350e83756493745280245a31}
+      \strng{authornamehash}{3ff0ff48350e83756493745280245a31}
+      \strng{authorfullhash}{2eabc1a63811aa4c2c6e4f18f621c4b0}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of the American Veterinary Medical Association}
+      \field{number}{11}
+      \field{title}{Evaluation of cat and owner characteristics and their relationships to outdoor access of owned cats}
+      \field{volume}{222}
+      \field{year}{2003}
+      \field{pages}{1541\bibrangedash 1545}
+      \range{pages}{5}
+      \verb{urlraw}
+      \verb https://avmajournals.avma.org/view/journals/javma/222/11/javma.2003.222.1541.xml
+      \endverb
+      \verb{url}
+      \verb https://avmajournals.avma.org/view/journals/javma/222/11/javma.2003.222.1541.xml
+      \endverb
+    \endentry
+    \entry{zhang2022}{article}{}
+      \name{author}{8}{}{%
+        {{hash=34a6d8f84fc44dbdff97c3936eedd7fc}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Zhenwei},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=ed50d85545760b989c9cfa4caf58a9c9}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Yuhang},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=bb3b232d6b14b1c81f5dd13ff0442319}{%
+           family={Ullah},
+           familyi={U\bibinitperiod},
+           given={Sana},
+           giveni={S\bibinitperiod}}}%
+        {{hash=64032391ce4a57238d2712e98ec08f2c}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Lixin},
+           giveni={L\bibinitperiod}}}%
+        {{hash=662e535d6ac5b310508befe7e2b8d1d1}{%
+           family={Ning},
+           familyi={N\bibinitperiod},
+           given={Sihan},
+           giveni={S\bibinitperiod}}}%
+        {{hash=41fba89390a766a48059cb8ec117a3d4}{%
+           family={Lu},
+           familyi={L\bibinitperiod},
+           given={Liangyu},
+           giveni={L\bibinitperiod}}}%
+        {{hash=d24432d9bfb651a66196ebf6f631ce6e}{%
+           family={Lin},
+           familyi={L\bibinitperiod},
+           given={Weiming},
+           giveni={W\bibinitperiod}}}%
+        {{hash=767f9e40c6811e0748d7eb776812b378}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Zhongqiu},
+           giveni={Z\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {MDPI AG}%
+      }
+      \strng{namehash}{c7cc4f000a82199d8c3de46eff38143b}
+      \strng{fullhash}{9595a3a3812544e1ac9a9cbc17f891c1}
+      \strng{bibnamehash}{c7cc4f000a82199d8c3de46eff38143b}
+      \strng{authorbibnamehash}{c7cc4f000a82199d8c3de46eff38143b}
+      \strng{authornamehash}{c7cc4f000a82199d8c3de46eff38143b}
+      \strng{authorfullhash}{9595a3a3812544e1ac9a9cbc17f891c1}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Animals}
+      \field{month}{4}
+      \field{number}{9}
+      \field{title}{Home Range and Activity Patterns of Free-Ranging Cats: A Case Study from a Chinese University Campus}
+      \field{volume}{12}
+      \field{year}{2022}
+      \field{pages}{1141}
+      \range{pages}{1}
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.3390/ani12091141
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.3390/ani12091141
+      \endverb
+    \endentry
+    \entry{finka2019}{article}{}
+      \name{author}{4}{}{%
+        {{hash=f0133dc655de0659c291a8a0f9e6a99b}{%
+           family={Finka},
+           familyi={F\bibinitperiod},
+           given={Lauren\bibnamedelima R.},
+           giveni={L\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=af14defc5c12216e1b77ed1c30f05642}{%
+           family={Ward},
+           familyi={W\bibinitperiod},
+           given={Joanna},
+           giveni={J\bibinitperiod}}}%
+        {{hash=1fb5b6dce88c37def4d457e3ca81f32f}{%
+           family={Farnworth},
+           familyi={F\bibinitperiod},
+           given={Mark\bibnamedelima J.},
+           giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=21df67afa26bd614349699f5f0ddedb3}{%
+           family={Mills},
+           familyi={M\bibinitperiod},
+           given={Daniel\bibnamedelima S.},
+           giveni={D\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=cd0ac9e78750623ef9f9488c11ce336e}{%
+           family={Olsson},
+           familyi={O\bibinitperiod},
+           given={I.\bibnamedelimi Anna\bibnamedelima S.},
+           giveni={I\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \list{publisher}{1}{%
+        {Public Library of Science (PLoS)}%
+      }
+      \strng{namehash}{6128f4b8c970f78ccfd23f86b38618c9}
+      \strng{fullhash}{74c3c3a5c397a5e3106c77bb88237c16}
+      \strng{bibnamehash}{6128f4b8c970f78ccfd23f86b38618c9}
+      \strng{authorbibnamehash}{6128f4b8c970f78ccfd23f86b38618c9}
+      \strng{authornamehash}{6128f4b8c970f78ccfd23f86b38618c9}
+      \strng{authorfullhash}{74c3c3a5c397a5e3106c77bb88237c16}
+      \strng{editorbibnamehash}{cd0ac9e78750623ef9f9488c11ce336e}
+      \strng{editornamehash}{cd0ac9e78750623ef9f9488c11ce336e}
+      \strng{editorfullhash}{cd0ac9e78750623ef9f9488c11ce336e}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{PLOS ONE}
+      \field{month}{2}
+      \field{number}{2}
+      \field{title}{Owner personality and the wellbeing of their cats share parallels with the parent-child relationship}
+      \field{volume}{14}
+      \field{year}{2019}
+      \field{pages}{e0211862}
+      \range{pages}{-1}
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1371/journal.pone.0211862
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1371/journal.pone.0211862
+      \endverb
+    \endentry
+    \entry{Loukatos2022}{inbook}{}
+      \name{author}{3}{}{%
+        {{hash=5164246f88decfdb8f52e29c1bc42325}{%
+           family={Loukatos},
+           familyi={L\bibinitperiod},
+           given={Dimitrios},
+           giveni={D\bibinitperiod}}}%
+        {{hash=94d532c59b293a6d33f4d815e45c0599}{%
+           family={Fragkos},
+           familyi={F\bibinitperiod},
+           given={Athanasios},
+           giveni={A\bibinitperiod}}}%
+        {{hash=a5bffc0830087eb3c62f23f03d443b9f}{%
+           family={Arvanitis},
+           familyi={A\bibinitperiod},
+           given={Konstantinos\bibnamedelima G.},
+           giveni={K\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+      }
+      \name{editor}{5}{}{%
+        {{hash=78830673008f6332763698120d063774}{%
+           family={Bochtis},
+           familyi={B\bibinitperiod},
+           given={Dionysis\bibnamedelima D.},
+           giveni={D\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=7ba3365c25bf2bca3eafefacfcc2ceb4}{%
+           family={Lampridi},
+           familyi={L\bibinitperiod},
+           given={Maria},
+           giveni={M\bibinitperiod}}}%
+        {{hash=ad2946599f1aff6ee84616497065e7ff}{%
+           family={Petropoulos},
+           familyi={P\bibinitperiod},
+           given={George\bibnamedelima P.},
+           giveni={G\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=a1890e982e8d06e13332cb2d40f9c02b}{%
+           family={Ampatzidis},
+           familyi={A\bibinitperiod},
+           given={Yiannis},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=cab91523867ad5738a09c1c059125a6c}{%
+           family={Pardalos},
+           familyi={P\bibinitperiod},
+           given={Panos},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Cham}%
+      }
+      \list{publisher}{1}{%
+        {Springer International Publishing}%
+      }
+      \strng{namehash}{5b9ea516e3a1dacc420108e3f0d92d68}
+      \strng{fullhash}{266d4154241fc222492b708da18abedc}
+      \strng{bibnamehash}{5b9ea516e3a1dacc420108e3f0d92d68}
+      \strng{authorbibnamehash}{5b9ea516e3a1dacc420108e3f0d92d68}
+      \strng{authornamehash}{5b9ea516e3a1dacc420108e3f0d92d68}
+      \strng{authorfullhash}{266d4154241fc222492b708da18abedc}
+      \strng{editorbibnamehash}{1aa04da9653dd37729b6280ce92f6f1e}
+      \strng{editornamehash}{1aa04da9653dd37729b6280ce92f6f1e}
+      \strng{editorfullhash}{4c6ca8689b0e8680ef520e018e5b7635}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{In pace with the fast evolving conditions in the agricultural area, this research work presents a set of easily-applicable, experimental techniques forming lightweight tools for modifying and evaluating the performance of radio modules that are based on the promising LoRa protocol, mainly in terms of radio coverage, energy consumption and packet losses. The proposed approach is exploiting the modern, low-cost, innovative card-sized computer systems. These systems, if combined with simple electronic components and conventional smart phone devices, can form an effective, flexible and portable measurement testbed, able to deliver results of satisfactory accuracy. In terms of software, this testbed is using wide-spread programming environments, both textual and visual, to form simple commands for controlling and monitoring the behavior of the radio interfaces of interest. The whole arrangement is ideal for educational purposes or for usage by not very experienced personnel, in the open field (e.g., orchards), the greenhouses or the livestock farming environment. This chapter, apart from highlighting the software and hardware details of the proposed measuring system and from presenting characteristic performance results, also reports on the feasibility of the LoRa radio modules to carry out the information needed to accomplish simple agricultural tasks (both sensing and acting ones), through designing and implementing typical examples.}
+      \field{booktitle}{Information and Communication Technologies for Agriculture---Theme I: Sensors}
+      \field{title}{Experimental Performance Evaluation Techniques of LoRa Radio Modules and Exploitation for Agricultural Use}
+      \field{year}{2022}
+      \field{pages}{101\bibrangedash 120}
+      \range{pages}{20}
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/978-3-030-84144-7_4
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/978-3-030-84144-7_4
+      \endverb
+    \endentry
+    \entry{liando2019}{article}{}
+      \name{author}{4}{}{%
+        {{hash=833676a9a3c1ab6b7ef0bc83b7a936c5}{%
+           family={Liando},
+           familyi={L\bibinitperiod},
+           given={Jansen\bibnamedelima C.},
+           giveni={J\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=707a001c021d8643cdc730c242c77e85}{%
+           family={Gamage},
+           familyi={G\bibinitperiod},
+           given={Amalinda},
+           giveni={A\bibinitperiod}}}%
+        {{hash=9d6aa5b93c723225015727a3864de5d7}{%
+           family={Tengourtius},
+           familyi={T\bibinitperiod},
+           given={Agustinus\bibnamedelima W.},
+           giveni={A\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=ded0e24163c5484850d9fee2f8d8ffd9}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Mo},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {New York, NY, USA}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computing Machinery}%
+      }
+      \strng{namehash}{e29204c0c0e6d61f0f6d349d01e250ef}
+      \strng{fullhash}{a2f117e66cfbee63800ef7b364460699}
+      \strng{bibnamehash}{e29204c0c0e6d61f0f6d349d01e250ef}
+      \strng{authorbibnamehash}{e29204c0c0e6d61f0f6d349d01e250ef}
+      \strng{authornamehash}{e29204c0c0e6d61f0f6d349d01e250ef}
+      \strng{authorfullhash}{a2f117e66cfbee63800ef7b364460699}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{ACM Trans. Sen. Netw.}
+      \field{month}{2}
+      \field{number}{2}
+      \field{title}{Known and Unknown Facts of LoRa: Experiences from a Large-Scale Measurement Study}
+      \field{volume}{15}
+      \field{year}{2019}
+      \verb{urlraw}
+      \verb https://0-doi-org.pugwash.lib.warwick.ac.uk/10.1145/3293534
+      \endverb
+      \verb{url}
+      \verb https://0-doi-org.pugwash.lib.warwick.ac.uk/10.1145/3293534
+      \endverb
+      \keyw{internet of things,network performance analysis,low-power wide-area network,Network measurement,LoRa,wide-area networks,sensor networks}
+    \endentry
+    \entry{augustin:lora}{article}{}
+      \name{author}{4}{}{%
+        {{hash=bb6e618d754ca207f314d3103831d810}{%
+           family={Augustin},
+           familyi={A\bibinitperiod},
+           given={Aloÿs},
+           giveni={A\bibinitperiod}}}%
+        {{hash=ce3553ab4f44cd826cec060ff0780554}{%
+           family={Yi},
+           familyi={Y\bibinitperiod},
+           given={Jiazi},
+           giveni={J\bibinitperiod}}}%
+        {{hash=3ac9db09cc099f7f9a29a56fd0fd7002}{%
+           family={Clausen},
+           familyi={C\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod}}}%
+        {{hash=3f4c46d77166d495e6941e1b3ab3d1e3}{%
+           family={Townsley},
+           familyi={T\bibinitperiod},
+           given={William\bibnamedelima Mark},
+           giveni={W\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \strng{namehash}{296b6fa274b13067466490f96b260612}
+      \strng{fullhash}{a822a93f74660aaf3df5545b63bd7fe6}
+      \strng{bibnamehash}{296b6fa274b13067466490f96b260612}
+      \strng{authorbibnamehash}{296b6fa274b13067466490f96b260612}
+      \strng{authornamehash}{296b6fa274b13067466490f96b260612}
+      \strng{authorfullhash}{a822a93f74660aaf3df5545b63bd7fe6}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{LoRa is a long-range, low-power, low-bitrate, wireless telecommunications system, promoted as an infrastructure solution for the Internet of Things: end-devices use LoRa across a single wireless hop to communicate to gateway(s), connected to the Internet and which act as transparent bridges and relay messages between these end-devices and a central network server. This paper provides an overview of LoRa and an in-depth analysis of its functional components. The physical and data link layer performance is evaluated by field tests and simulations. Based on the analysis and evaluations, some possible solutions for performance enhancements are proposed.}
+      \field{journaltitle}{Sensors}
+      \field{number}{9}
+      \field{title}{A Study of LoRa: Long Range \&; Low Power Networks for the Internet of Things}
+      \field{volume}{16}
+      \field{year}{2016}
+      \verb{urlraw}
+      \verb https://www.mdpi.com/1424-8220/16/9/1466
+      \endverb
+      \verb{url}
+      \verb https://www.mdpi.com/1424-8220/16/9/1466
+      \endverb
+    \endentry
+    \entry{vangelista2017}{article}{}
+      \name{author}{1}{}{%
+        {{hash=dce2699b2792a299aef1517f27d9897b}{%
+           family={Vangelista},
+           familyi={V\bibinitperiod},
+           given={Lorenzo},
+           giveni={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{dce2699b2792a299aef1517f27d9897b}
+      \strng{fullhash}{dce2699b2792a299aef1517f27d9897b}
+      \strng{bibnamehash}{dce2699b2792a299aef1517f27d9897b}
+      \strng{authorbibnamehash}{dce2699b2792a299aef1517f27d9897b}
+      \strng{authornamehash}{dce2699b2792a299aef1517f27d9897b}
+      \strng{authorfullhash}{dce2699b2792a299aef1517f27d9897b}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Signal Processing Letters}
+      \field{number}{12}
+      \field{title}{Frequency Shift Chirp Modulation: The LoRa Modulation}
+      \field{volume}{24}
+      \field{year}{2017}
+      \field{pages}{1818\bibrangedash 1821}
+      \range{pages}{4}
+    \endentry
+    \entry{patent:lora}{patent}{}
+      \name{author}{1}{}{%
+        {{hash=05373c4d4836b4925f88969c3d21f3c9}{%
+           family={Seller},
+           familyi={S\bibinitperiod},
+           given={Olivier\bibnamedelimb Bernard\bibnamedelima André},
+           giveni={O\bibinitperiod\bibinitdelim B\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \name{holder}{1}{}{%
+        {{hash=653aec59865845f3a6427f2041996a3e}{%
+           family={Semtech},
+           familyi={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{05373c4d4836b4925f88969c3d21f3c9}
+      \strng{fullhash}{05373c4d4836b4925f88969c3d21f3c9}
+      \strng{bibnamehash}{05373c4d4836b4925f88969c3d21f3c9}
+      \strng{authorbibnamehash}{05373c4d4836b4925f88969c3d21f3c9}
+      \strng{authornamehash}{05373c4d4836b4925f88969c3d21f3c9}
+      \strng{authorfullhash}{05373c4d4836b4925f88969c3d21f3c9}
+      \strng{holderbibnamehash}{653aec59865845f3a6427f2041996a3e}
+      \strng{holdernamehash}{653aec59865845f3a6427f2041996a3e}
+      \strng{holderfullhash}{653aec59865845f3a6427f2041996a3e}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{number}{US9647718B2}
+      \field{title}{Wireless communication method}
+      \field{year}{2015-09-09}
+    \endentry
+    \entry{eu:directive}{article}{}
+      \name{author}{1}{}{%
+        {{hash=f2e6e3b9bff59f293f0e9019a1ecabc5}{%
+           family={{EU}},
+           familyi={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{f2e6e3b9bff59f293f0e9019a1ecabc5}
+      \strng{fullhash}{f2e6e3b9bff59f293f0e9019a1ecabc5}
+      \strng{bibnamehash}{f2e6e3b9bff59f293f0e9019a1ecabc5}
+      \strng{authorbibnamehash}{f2e6e3b9bff59f293f0e9019a1ecabc5}
+      \strng{authornamehash}{f2e6e3b9bff59f293f0e9019a1ecabc5}
+      \strng{authorfullhash}{f2e6e3b9bff59f293f0e9019a1ecabc5}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{8}
+      \field{month}{12}
+      \field{subtitle}{Commission Implementing Decision of 8 December 2011 amending Decision 2006/771/EC on harmonisation of the radio spectrum for use by short-range devices (notified under document C(2011) 9030) Text with EEA relevance}
+      \field{title}{2011/829/EU}
+      \field{year}{2011}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://eur-lex.europa.eu/eli/dec_impl/2011/829/oj
+      \endverb
+      \verb{url}
+      \verb https://eur-lex.europa.eu/eli/dec_impl/2011/829/oj
+      \endverb
+    \endentry
+    \entry{ofcom:licenceexempt}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=f4ac6c71617233031e82dfdd4638d71c}{%
+           family={{Ofcom}},
+           familyi={O\bibinitperiod}}}%
+      }
+      \strng{namehash}{f4ac6c71617233031e82dfdd4638d71c}
+      \strng{fullhash}{f4ac6c71617233031e82dfdd4638d71c}
+      \strng{bibnamehash}{f4ac6c71617233031e82dfdd4638d71c}
+      \strng{authorbibnamehash}{f4ac6c71617233031e82dfdd4638d71c}
+      \strng{authornamehash}{f4ac6c71617233031e82dfdd4638d71c}
+      \strng{authorfullhash}{f4ac6c71617233031e82dfdd4638d71c}
+      \field{extraname}{1}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{4}
+      \field{subtitle}{Licence Exempt Short Range Devices}
+      \field{title}{IR 2030 - UK Interface Requirements}
+      \field{year}{2021}
+      \verb{urlraw}
+      \verb https://www.ofcom.org.uk/__data/assets/pdf_file/0028/84970/ir-2030.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.ofcom.org.uk/__data/assets/pdf_file/0028/84970/ir-2030.pdf
+      \endverb
+    \endentry
+    \entry{patent:chinatracker}{patent}{}
+      \name{author}{1}{}{%
+        {{hash=68575067579df62e52f05d33edfdc546}{%
+           family={Pengtao},
+           familyi={P\bibinitperiod},
+           given={Jiang},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{68575067579df62e52f05d33edfdc546}
+      \strng{fullhash}{68575067579df62e52f05d33edfdc546}
+      \strng{bibnamehash}{68575067579df62e52f05d33edfdc546}
+      \strng{authorbibnamehash}{68575067579df62e52f05d33edfdc546}
+      \strng{authornamehash}{68575067579df62e52f05d33edfdc546}
+      \strng{authorfullhash}{68575067579df62e52f05d33edfdc546}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{13}
+      \field{month}{6}
+      \field{number}{CN210090660}
+      \field{title}{Positioning tracker based on LORA wireless communication technology}
+      \field{year}{2019}
+      \field{dateera}{ce}
+    \endentry
+    \entry{patent:bletracker}{patent}{}
+      \name{author}{1}{}{%
+        {{hash=56140e4627e1eea98c880cbc19fea709}{%
+           family={Xifa},
+           familyi={X\bibinitperiod},
+           given={Chen},
+           giveni={C\bibinitperiod}}}%
+      }
+      \name{holder}{1}{}{%
+        {{hash=53158721054ebf6b63a2c0d544d00b0a}{%
+           family={Shenzhen\bibnamedelimb Gatintelligent\bibnamedelimb Technology\bibnamedelima Co.},
+           familyi={S\bibinitperiod\bibinitdelim G\bibinitperiod\bibinitdelim T\bibinitperiod\bibinitdelim C\bibinitperiod},
+           given={Ltd.},
+           giveni={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{56140e4627e1eea98c880cbc19fea709}
+      \strng{fullhash}{56140e4627e1eea98c880cbc19fea709}
+      \strng{bibnamehash}{56140e4627e1eea98c880cbc19fea709}
+      \strng{authorbibnamehash}{56140e4627e1eea98c880cbc19fea709}
+      \strng{authornamehash}{56140e4627e1eea98c880cbc19fea709}
+      \strng{authorfullhash}{56140e4627e1eea98c880cbc19fea709}
+      \strng{holderbibnamehash}{53158721054ebf6b63a2c0d544d00b0a}
+      \strng{holdernamehash}{53158721054ebf6b63a2c0d544d00b0a}
+      \strng{holderfullhash}{53158721054ebf6b63a2c0d544d00b0a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{29}
+      \field{month}{3}
+      \field{number}{CN209911563}
+      \field{title}{BLE LoRa positioning tracker shell}
+      \field{year}{2019}
+      \field{dateera}{ce}
+    \endentry
+    \entry{davcev:lorawan}{inproceedings}{}
+      \name{author}{5}{}{%
+        {{hash=0fbae8fa2cbba0081750c97a8c797df1}{%
+           family={Davcev},
+           familyi={D\bibinitperiod},
+           given={Danco},
+           giveni={D\bibinitperiod}}}%
+        {{hash=61f5b392a69b16400fdd82841807a9cc}{%
+           family={Mitreski},
+           familyi={M\bibinitperiod},
+           given={Kosta},
+           giveni={K\bibinitperiod}}}%
+        {{hash=9ca11767ae3fcea11a6d807d818b8833}{%
+           family={Trajkovic},
+           familyi={T\bibinitperiod},
+           given={Stefan},
+           giveni={S\bibinitperiod}}}%
+        {{hash=d712e3baa6158134a7536d6c1826b734}{%
+           family={Nikolovski},
+           familyi={N\bibinitperiod},
+           given={Viktor},
+           giveni={V\bibinitperiod}}}%
+        {{hash=71fd312655c2ed59ad12cc1693bb60d5}{%
+           family={Koteli},
+           familyi={K\bibinitperiod},
+           given={Nikola},
+           giveni={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{21158872b6f9c4c514e6fb994ff84362}
+      \strng{fullhash}{0b39418ec027bcd0dd2bef1cc26c6f04}
+      \strng{bibnamehash}{21158872b6f9c4c514e6fb994ff84362}
+      \strng{authorbibnamehash}{21158872b6f9c4c514e6fb994ff84362}
+      \strng{authornamehash}{21158872b6f9c4c514e6fb994ff84362}
+      \strng{authorfullhash}{0b39418ec027bcd0dd2bef1cc26c6f04}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2018 14th IEEE International Workshop on Factory Communication Systems (WFCS)}
+      \field{title}{IoT agriculture system based on LoRaWAN}
+      \field{year}{2018}
+      \field{pages}{1\bibrangedash 4}
+      \range{pages}{4}
+    \endentry
+    \entry{sivarman:tracker}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=62300752713dc44433058905d09464fd}{%
+           family={Sivaraman},
+           familyi={S\bibinitperiod},
+           given={Sivaranjini},
+           giveni={S\bibinitperiod}}}%
+        {{hash=19afa3fef1168210042c2d213affd8de}{%
+           family={Zainuddin},
+           familyi={Z\bibinitperiod},
+           given={Ahmad\bibnamedelima Anwar},
+           giveni={A\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=74cb9da1a9e08d9b082daf392462f1d8}{%
+           family={Subramaniam},
+           familyi={S\bibinitperiod},
+           given={Krishnan},
+           giveni={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{7cc475ef1e89743d018e1952b699fb03}
+      \strng{fullhash}{65caefafc5a5a2ab3b92a552035f1799}
+      \strng{bibnamehash}{7cc475ef1e89743d018e1952b699fb03}
+      \strng{authorbibnamehash}{7cc475ef1e89743d018e1952b699fb03}
+      \strng{authornamehash}{7cc475ef1e89743d018e1952b699fb03}
+      \strng{authorfullhash}{65caefafc5a5a2ab3b92a552035f1799}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2021 International Conference on Green Energy, Computing and Sustainable Technology (GECOST)}
+      \field{title}{Advances in Technology for Pet Tracker Sensing Systems}
+      \field{year}{2021}
+      \field{pages}{1\bibrangedash 4}
+      \range{pages}{4}
+    \endentry
+    \entry{tractive:price}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=224f28c723c4454a3e3aa9842f84610a}{%
+           family={{Tractive}},
+           familyi={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{224f28c723c4454a3e3aa9842f84610a}
+      \strng{fullhash}{224f28c723c4454a3e3aa9842f84610a}
+      \strng{bibnamehash}{224f28c723c4454a3e3aa9842f84610a}
+      \strng{authorbibnamehash}{224f28c723c4454a3e3aa9842f84610a}
+      \strng{authornamehash}{224f28c723c4454a3e3aa9842f84610a}
+      \strng{authorfullhash}{224f28c723c4454a3e3aa9842f84610a}
+      \field{extraname}{1}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Online; accessed 20 October 2022}
+      \field{title}{Pick your Tractive plan}
+      \verb{urlraw}
+      \verb https://tractive.com/en/c/plans
+      \endverb
+      \verb{url}
+      \verb https://tractive.com/en/c/plans
+      \endverb
+    \endentry
+    \entry{tractive:cat}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=224f28c723c4454a3e3aa9842f84610a}{%
+           family={{Tractive}},
+           familyi={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{224f28c723c4454a3e3aa9842f84610a}
+      \strng{fullhash}{224f28c723c4454a3e3aa9842f84610a}
+      \strng{bibnamehash}{224f28c723c4454a3e3aa9842f84610a}
+      \strng{authorbibnamehash}{224f28c723c4454a3e3aa9842f84610a}
+      \strng{authornamehash}{224f28c723c4454a3e3aa9842f84610a}
+      \strng{authorfullhash}{224f28c723c4454a3e3aa9842f84610a}
+      \field{extraname}{2}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Online; accessed 20 October 2022}
+      \field{title}{GPS Tracker for Cats}
+      \verb{urlraw}
+      \verb https://tractive.com/en/pd/gps-tracker-cat
+      \endverb
+      \verb{url}
+      \verb https://tractive.com/en/pd/gps-tracker-cat
+      \endverb
+    \endentry
+    \entry{tractive:privacy}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=224f28c723c4454a3e3aa9842f84610a}{%
+           family={{Tractive}},
+           familyi={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{224f28c723c4454a3e3aa9842f84610a}
+      \strng{fullhash}{224f28c723c4454a3e3aa9842f84610a}
+      \strng{bibnamehash}{224f28c723c4454a3e3aa9842f84610a}
+      \strng{authorbibnamehash}{224f28c723c4454a3e3aa9842f84610a}
+      \strng{authornamehash}{224f28c723c4454a3e3aa9842f84610a}
+      \strng{authorfullhash}{224f28c723c4454a3e3aa9842f84610a}
+      \field{extraname}{3}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Online; accessed 20 October 2022}
+      \field{title}{Privacy Policy of Tractive GMBH}
+      \verb{urlraw}
+      \verb https://assets.tractive.com/static/legal/en/privacy-policy.html
+      \endverb
+      \verb{url}
+      \verb https://assets.tractive.com/static/legal/en/privacy-policy.html
+      \endverb
+    \endentry
+    \entry{tabcat:tracker}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=6ed9e40985e098695b98a417af647acb}{%
+           family={{Tabcat}},
+           familyi={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{6ed9e40985e098695b98a417af647acb}
+      \strng{fullhash}{6ed9e40985e098695b98a417af647acb}
+      \strng{bibnamehash}{6ed9e40985e098695b98a417af647acb}
+      \strng{authorbibnamehash}{6ed9e40985e098695b98a417af647acb}
+      \strng{authornamehash}{6ed9e40985e098695b98a417af647acb}
+      \strng{authorfullhash}{6ed9e40985e098695b98a417af647acb}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Online; accessed 7 October 2022}
+      \field{title}{Tabcat Cat tracker device}
+      \verb{urlraw}
+      \verb https://tabcat.com/shop/tabcat-v2/?sscid=a1k6_6pjj5
+      \endverb
+      \verb{url}
+      \verb https://tabcat.com/shop/tabcat-v2/?sscid=a1k6_6pjj5
+      \endverb
+    \endentry
+    \entry{tile}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=1e4fe7858a14a2f594b2fbc7a003fd15}{%
+           family={{Tile Inc.}},
+           familyi={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{1e4fe7858a14a2f594b2fbc7a003fd15}
+      \strng{fullhash}{1e4fe7858a14a2f594b2fbc7a003fd15}
+      \strng{bibnamehash}{1e4fe7858a14a2f594b2fbc7a003fd15}
+      \strng{authorbibnamehash}{1e4fe7858a14a2f594b2fbc7a003fd15}
+      \strng{authornamehash}{1e4fe7858a14a2f594b2fbc7a003fd15}
+      \strng{authorfullhash}{1e4fe7858a14a2f594b2fbc7a003fd15}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Online; accessed 02 March 2023}
+      \field{title}{How It Works}
+      \verb{urlraw}
+      \verb https://uk.tile.com/how-it-works
+      \endverb
+      \verb{url}
+      \verb https://uk.tile.com/how-it-works
+      \endverb
+    \endentry
+    \entry{haskell2021}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=bd4a399c9cad5afc8969c36411e80891}{%
+           family={Haskell-Dowland},
+           familyi={H\bibinithyphendelim D\bibinitperiod},
+           given={Paul},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{bd4a399c9cad5afc8969c36411e80891}
+      \strng{fullhash}{bd4a399c9cad5afc8969c36411e80891}
+      \strng{bibnamehash}{bd4a399c9cad5afc8969c36411e80891}
+      \strng{authorbibnamehash}{bd4a399c9cad5afc8969c36411e80891}
+      \strng{authornamehash}{bd4a399c9cad5afc8969c36411e80891}
+      \strng{authorfullhash}{bd4a399c9cad5afc8969c36411e80891}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{16}
+      \field{month}{5}
+      \field{note}{Online; accessed 02 March 2023}
+      \field{title}{Remember, Apple AirTags and `Find My' app only work because of a vast, largely covert tracking network}
+      \field{year}{2021}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://theconversation.com/remember-apple-airtags-and-find-my-app-only-work-because-of-a-vast-largely-covert-tracking-network-160781
+      \endverb
+      \verb{url}
+      \verb https://theconversation.com/remember-apple-airtags-and-find-my-app-only-work-because-of-a-vast-largely-covert-tracking-network-160781
+      \endverb
+    \endentry
+    \entry{lovejoy2021}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=1454812fd7df9b1fbe7842b0f12cf5f0}{%
+           family={Lovejoy},
+           familyi={L\bibinitperiod},
+           given={Ben},
+           giveni={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{1454812fd7df9b1fbe7842b0f12cf5f0}
+      \strng{fullhash}{1454812fd7df9b1fbe7842b0f12cf5f0}
+      \strng{bibnamehash}{1454812fd7df9b1fbe7842b0f12cf5f0}
+      \strng{authorbibnamehash}{1454812fd7df9b1fbe7842b0f12cf5f0}
+      \strng{authornamehash}{1454812fd7df9b1fbe7842b0f12cf5f0}
+      \strng{authorfullhash}{1454812fd7df9b1fbe7842b0f12cf5f0}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{6}
+      \field{month}{5}
+      \field{note}{Online; accessed 02 March 2023}
+      \field{title}{AirTag stalking `frighteningly easy'; multiple problems identified}
+      \field{year}{2021}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://9to5mac.com/2021/05/06/airtag-stalking/
+      \endverb
+      \verb{url}
+      \verb https://9to5mac.com/2021/05/06/airtag-stalking/
+      \endverb
+    \endentry
+    \entry{kienzle:pilot}{article}{}
+      \name{author}{2}{}{%
+        {{hash=c07e60f68fba72d433561cefa27c0b32}{%
+           family={Kienzle},
+           familyi={K\bibinitperiod},
+           given={Ellen},
+           giveni={E\bibinitperiod}}}%
+        {{hash=bb3bcb853ac54b091dd2199b8bb657a2}{%
+           family={Moik},
+           familyi={M\bibinitperiod},
+           given={Katja},
+           giveni={K\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{70807de9e46a8abc9127807711af0ce1}
+      \strng{fullhash}{70807de9e46a8abc9127807711af0ce1}
+      \strng{bibnamehash}{70807de9e46a8abc9127807711af0ce1}
+      \strng{authorbibnamehash}{70807de9e46a8abc9127807711af0ce1}
+      \strng{authornamehash}{70807de9e46a8abc9127807711af0ce1}
+      \strng{authorfullhash}{70807de9e46a8abc9127807711af0ce1}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{British Journal of Nutrition}
+      \field{number}{S1}
+      \field{title}{A pilot study of the body weight of pure-bred client-owned adult cats}
+      \field{volume}{106}
+      \field{year}{2011}
+      \field{pages}{S113\bibrangedash S115}
+      \range{pages}{-1}
+    \endentry
+    \entry{blomgren:lithium}{article}{}
+      \name{author}{1}{}{%
+        {{hash=c55ed6d911f8f552c7d7ab4d1b0a74fb}{%
+           family={Blomgren},
+           familyi={B\bibinitperiod},
+           given={George\bibnamedelima E.},
+           giveni={G\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {The Electrochemical Society}%
+      }
+      \strng{namehash}{c55ed6d911f8f552c7d7ab4d1b0a74fb}
+      \strng{fullhash}{c55ed6d911f8f552c7d7ab4d1b0a74fb}
+      \strng{bibnamehash}{c55ed6d911f8f552c7d7ab4d1b0a74fb}
+      \strng{authorbibnamehash}{c55ed6d911f8f552c7d7ab4d1b0a74fb}
+      \strng{authornamehash}{c55ed6d911f8f552c7d7ab4d1b0a74fb}
+      \strng{authorfullhash}{c55ed6d911f8f552c7d7ab4d1b0a74fb}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This year, the battery industry celebrates the 25th anniversary of the introduction of the lithium ion rechargeable battery by Sony Corporation. The discovery of the system dates back to earlier work by Asahi Kasei in Japan, which used a combination of lower temperature carbons for the negative electrode to prevent solvent degradation and lithium cobalt dioxide modified somewhat from Goodenough's earlier work. The development by Sony was carried out within a few years by bringing together technology in film coating from their magnetic tape division and electrochemical technology from their battery division. The past 25 years has shown rapid growth in the sales and in the benefits of lithium ion in comparison to all the earlier rechargeable battery systems. Recent work on new materials shows that there is a good likelihood that the lithium ion battery will continue to improve in cost, energy, safety and power capability and will be a formidable competitor for some years to come.}
+      \field{journaltitle}{Journal of The Electrochemical Society}
+      \field{month}{12}
+      \field{number}{1}
+      \field{title}{The Development and Future of Lithium Ion Batteries}
+      \field{volume}{164}
+      \field{year}{2016}
+      \field{pages}{A5019}
+      \range{pages}{-1}
+      \verb{urlraw}
+      \verb https://dx.doi.org/10.1149/2.0251701jes
+      \endverb
+      \verb{url}
+      \verb https://dx.doi.org/10.1149/2.0251701jes
+      \endverb
+    \endentry
+    \entry{chen:flammable}{article}{}
+      \name{author}{11}{}{%
+        {{hash=5dc64a76483519608f2f03ee0a4ca28e}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Yuqing},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=cf4563c3600d78d798f91b03a3e33214}{%
+           family={Kang},
+           familyi={K\bibinitperiod},
+           given={Yuqiong},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=dd151adb3c48be4898120a9350584206}{%
+           family={Zhao},
+           familyi={Z\bibinitperiod},
+           given={Yun},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=944d21a090d2fc32d2cdd40c7a346126}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Li},
+           giveni={L\bibinitperiod}}}%
+        {{hash=989c9587dcf9c69a7474f6eedb507e0b}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Jilei},
+           giveni={J\bibinitperiod}}}%
+        {{hash=59d3473e9c04650ae0d33dbbcb76570a}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Yanxi},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=305283989dae0c128d9f7d926c8f7e73}{%
+           family={Liang},
+           familyi={L\bibinitperiod},
+           given={Zheng},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=903d0c0d032139e9be4c733ad063ac9c}{%
+           family={He},
+           familyi={H\bibinitperiod},
+           given={Xiangming},
+           giveni={X\bibinitperiod}}}%
+        {{hash=49db19ed12dc7d3bc8a430e0a731c7aa}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Xing},
+           giveni={X\bibinitperiod}}}%
+        {{hash=b7e941a866f3eb1ecbaea15aefca8c3a}{%
+           family={Tavajohi},
+           familyi={T\bibinitperiod},
+           given={Naser},
+           giveni={N\bibinitperiod}}}%
+        {{hash=b43f4ccbb6ba2f3deb0e2f93b3b66ba7}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Baohua},
+           giveni={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{a1ec961f23ebcc1ccd360bae0e01466d}
+      \strng{fullhash}{0fceb2fa7eaa18d3d383564d7dbf5d9f}
+      \strng{bibnamehash}{a1ec961f23ebcc1ccd360bae0e01466d}
+      \strng{authorbibnamehash}{a1ec961f23ebcc1ccd360bae0e01466d}
+      \strng{authornamehash}{a1ec961f23ebcc1ccd360bae0e01466d}
+      \strng{authorfullhash}{0fceb2fa7eaa18d3d383564d7dbf5d9f}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Efficient and reliable energy storage systems are crucial for our modern society. Lithium-ion batteries (LIBs) with excellent performance are widely used in portable electronics and electric vehicles (EVs), but frequent fires and explosions limit their further and more widespread applications. This review summarizes aspects of LIB safety and discusses the related issues, strategies, and testing standards. Specifically, it begins with a brief introduction to LIB working principles and cell structures, and then provides an overview of the notorious thermal runaway, with an emphasis on the effects of mechanical, electrical, and thermal abuse. The following sections examine strategies for improving cell safety, including approaches through cell chemistry, cooling, and balancing, afterwards describing current safety standards and corresponding tests. The review concludes with insights into potential future developments and the prospects for safer LIBs.}
+      \field{journaltitle}{Journal of Energy Chemistry}
+      \field{title}{A review of lithium-ion battery safety concerns: The issues, strategies, and testing standards}
+      \field{volume}{59}
+      \field{year}{2021}
+      \field{pages}{83\bibrangedash 99}
+      \range{pages}{17}
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S2095495620307075
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S2095495620307075
+      \endverb
+      \keyw{Lithium-ion batteries,Standards,Safety,Thermal abuse,Mechanical abuse,Electrical abuse}
+    \endentry
+    \entry{Bischof2022}{article}{}
+      \name{author}{6}{}{%
+        {{hash=4193cb8d3ffc017dd9bbb7751667fa76}{%
+           family={Bischof},
+           familyi={B\bibinitperiod},
+           given={Richard},
+           giveni={R\bibinitperiod}}}%
+        {{hash=b0e3a3314e6b5edf9c197d77ec0c2192}{%
+           family={Hansen},
+           familyi={H\bibinitperiod},
+           given={Nina\bibnamedelima Rosita},
+           giveni={N\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=44bcece13228918a0a5ccb2807a53493}{%
+           family={Nyheim},
+           familyi={N\bibinitperiod},
+           given={Øyvind\bibnamedelima Skarsgard},
+           giveni={Ø\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=57121cd6361149798b561e945ff542e7}{%
+           family={Kisen},
+           familyi={K\bibinitperiod},
+           given={Astrid},
+           giveni={A\bibinitperiod}}}%
+        {{hash=f5a6aa66bf5cf6c8dda230b7e53e31c8}{%
+           family={Prestmoen},
+           familyi={P\bibinitperiod},
+           given={Lillian},
+           giveni={L\bibinitperiod}}}%
+        {{hash=929a15d8bd757ac56623025ca55a111f}{%
+           family={Haugaasen},
+           familyi={H\bibinitperiod},
+           given={Torbjørn},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{90af4ca7fe98d75c116bedb9bc8ad3d4}
+      \strng{fullhash}{6b9712734ae068448addafd1900c729b}
+      \strng{bibnamehash}{90af4ca7fe98d75c116bedb9bc8ad3d4}
+      \strng{authorbibnamehash}{90af4ca7fe98d75c116bedb9bc8ad3d4}
+      \strng{authornamehash}{90af4ca7fe98d75c116bedb9bc8ad3d4}
+      \strng{authorfullhash}{6b9712734ae068448addafd1900c729b}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{25}
+      \field{journaltitle}{Scientific Reports}
+      \field{month}{3}
+      \field{number}{1}
+      \field{title}{Mapping the ``catscape'' formed by a population of pet cats with outdoor access}
+      \field{volume}{12}
+      \field{year}{2022}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://doi.org/10.1038/s41598-022-09694-9
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1038/s41598-022-09694-9
+      \endverb
+    \endentry
+    \entry{hoperf:rfm95w}{manual}{}
+      \name{author}{1}{}{%
+        {{hash=d39d28216bdb9a3264dff67cf6639243}{%
+           family={{HOPERF}},
+           familyi={H\bibinitperiod}}}%
+      }
+      \list{location}{2}{%
+        {2/F, Building 3, Pingshan Private Enterprise Science}%
+        {Technology Park, Lishan Road, XiLi Town, Nanshan District, Shenzhen, Guangdong, China}%
+      }
+      \list{organization}{1}{%
+        {HOPE MICROELECTRONICS CO.,LTD}%
+      }
+      \strng{namehash}{d39d28216bdb9a3264dff67cf6639243}
+      \strng{fullhash}{d39d28216bdb9a3264dff67cf6639243}
+      \strng{bibnamehash}{d39d28216bdb9a3264dff67cf6639243}
+      \strng{authorbibnamehash}{d39d28216bdb9a3264dff67cf6639243}
+      \strng{authornamehash}{d39d28216bdb9a3264dff67cf6639243}
+      \strng{authorfullhash}{d39d28216bdb9a3264dff67cf6639243}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{RFM95/96/97/98(W) - Low Power Long Range Transceiver Module V1.0}
+      \field{year}{2006}
+      \field{dateera}{ce}
+    \endentry
+    \entry{arduino:blink}{misc}{}
+      \name{author}{3}{}{%
+        {{hash=1f3030e56ea69cde32aa4e64d3b6efba}{%
+           family={Fitzgerald},
+           familyi={F\bibinitperiod},
+           given={Scott},
+           giveni={S\bibinitperiod}}}%
+        {{hash=1d91809847cead5ed03bf585d7e0108b}{%
+           family={Guadalupi},
+           familyi={G\bibinitperiod},
+           given={Arturo},
+           giveni={A\bibinitperiod}}}%
+        {{hash=534520bcef656144f4b1400ba00d44df}{%
+           family={Newman},
+           familyi={N\bibinitperiod},
+           given={Colby},
+           giveni={C\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {GitHub}%
+      }
+      \strng{namehash}{fd1b791418ce37117c8780e937a117a5}
+      \strng{fullhash}{85eaf035da7844cf5af8e26fdb02d912}
+      \strng{bibnamehash}{fd1b791418ce37117c8780e937a117a5}
+      \strng{authorbibnamehash}{fd1b791418ce37117c8780e937a117a5}
+      \strng{authornamehash}{fd1b791418ce37117c8780e937a117a5}
+      \strng{authorfullhash}{85eaf035da7844cf5af8e26fdb02d912}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{3}
+      \field{journaltitle}{GitHub repository}
+      \field{month}{10}
+      \field{note}{\\Commit: 4bbbf5c13a3c40e4435c9e659247e5fcbad2c3e6}
+      \field{title}{Blink.ino}
+      \field{year}{2022}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://github.com/arduino/arduino-examples/blob/main/examples/01.Basics/Blink/Blink.ino
+      \endverb
+      \verb{url}
+      \verb https://github.com/arduino/arduino-examples/blob/main/examples/01.Basics/Blink/Blink.ino
+      \endverb
+    \endentry
+    \entry{adafruit:gps}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=661f25aceeddc173ab8825d5d20d5b26}{%
+           family={Fried},
+           familyi={F\bibinitperiod},
+           given={Limor},
+           giveni={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{661f25aceeddc173ab8825d5d20d5b26}
+      \strng{fullhash}{661f25aceeddc173ab8825d5d20d5b26}
+      \strng{bibnamehash}{661f25aceeddc173ab8825d5d20d5b26}
+      \strng{authorbibnamehash}{661f25aceeddc173ab8825d5d20d5b26}
+      \strng{authornamehash}{661f25aceeddc173ab8825d5d20d5b26}
+      \strng{authorfullhash}{661f25aceeddc173ab8825d5d20d5b26}
+      \field{extraname}{1}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Online; accessed 24 October 2022}
+      \field{title}{Adafruit Ultimate GPS featherwing}
+      \verb{urlraw}
+      \verb https://learn.adafruit.com/adafruit-ultimate-gps-featherwing?view=all
+      \endverb
+      \verb{url}
+      \verb https://learn.adafruit.com/adafruit-ultimate-gps-featherwing?view=all
+      \endverb
+    \endentry
+    \entry{adafruit:gpshardwareserial}{misc}{}
+      \name{author}{2}{}{%
+        {{hash=8d99072da2e08254794928f4e524973b}{%
+           family={G},
+           familyi={G\bibinitperiod},
+           given={Matt},
+           giveni={M\bibinitperiod}}}%
+        {{hash=661f25aceeddc173ab8825d5d20d5b26}{%
+           family={Fried},
+           familyi={F\bibinitperiod},
+           given={Limor},
+           giveni={L\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {GitHub}%
+      }
+      \strng{namehash}{c40c511ce27d0910453eed3b3cb39514}
+      \strng{fullhash}{c40c511ce27d0910453eed3b3cb39514}
+      \strng{bibnamehash}{c40c511ce27d0910453eed3b3cb39514}
+      \strng{authorbibnamehash}{c40c511ce27d0910453eed3b3cb39514}
+      \strng{authornamehash}{c40c511ce27d0910453eed3b3cb39514}
+      \strng{authorfullhash}{c40c511ce27d0910453eed3b3cb39514}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{8}
+      \field{journaltitle}{GitHub repository}
+      \field{month}{7}
+      \field{note}{\\Commit: 22c229d7bf5eac49bb4d6b296cf451b72f33e8df}
+      \field{title}{GPS\_HardwareSerial\_EchoTest.ino}
+      \field{year}{2022}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://github.com/adafruit/Adafruit_GPS/blob/master/examples/GPS_HardwareSerial_EchoTest/GPS_HardwareSerial_EchoTest.ino
+      \endverb
+      \verb{url}
+      \verb https://github.com/adafruit/Adafruit_GPS/blob/master/examples/GPS_HardwareSerial_EchoTest/GPS_HardwareSerial_EchoTest.ino
+      \endverb
+    \endentry
+    \entry{baddeley:nmea}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=bb1cd5a2c46a0aeb24797a4f354299a0}{%
+           family={Baddeley},
+           familyi={B\bibinitperiod},
+           given={Glenn},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{bb1cd5a2c46a0aeb24797a4f354299a0}
+      \strng{fullhash}{bb1cd5a2c46a0aeb24797a4f354299a0}
+      \strng{bibnamehash}{bb1cd5a2c46a0aeb24797a4f354299a0}
+      \strng{authorbibnamehash}{bb1cd5a2c46a0aeb24797a4f354299a0}
+      \strng{authornamehash}{bb1cd5a2c46a0aeb24797a4f354299a0}
+      \strng{authorfullhash}{bb1cd5a2c46a0aeb24797a4f354299a0}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{20}
+      \field{month}{8}
+      \field{note}{Online; accessed 2023-02-24}
+      \field{title}{GPS - NMEA sentence information}
+      \field{year}{2001}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb http://aprs.gids.nl/nmea/
+      \endverb
+      \verb{url}
+      \verb http://aprs.gids.nl/nmea/
+      \endverb
+    \endentry
+    \entry{novatel:gprmc}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=3ea7e430eeeee35d7001093aaceb259f}{%
+           family={{NovAtel}},
+           familyi={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{3ea7e430eeeee35d7001093aaceb259f}
+      \strng{fullhash}{3ea7e430eeeee35d7001093aaceb259f}
+      \strng{bibnamehash}{3ea7e430eeeee35d7001093aaceb259f}
+      \strng{authorbibnamehash}{3ea7e430eeeee35d7001093aaceb259f}
+      \strng{authornamehash}{3ea7e430eeeee35d7001093aaceb259f}
+      \strng{authorfullhash}{3ea7e430eeeee35d7001093aaceb259f}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{12}
+      \field{note}{Online; accessed 26 February 2023}
+      \field{subtitle}{GPS specific information}
+      \field{title}{GPS}
+      \field{year}{2022}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://docs.novatel.com/OEM7/Content/Logs/GPRMC.htm#NMEAPositioningSystemModeIndicator
+      \endverb
+      \verb{url}
+      \verb https://docs.novatel.com/OEM7/Content/Logs/GPRMC.htm#NMEAPositioningSystemModeIndicator
+      \endverb
+    \endentry
+    \entry{gtop:pa6h}{manual}{}
+      \name{author}{1}{}{%
+        {{hash=48b862e90b11ebcf0c44748fc5ab8998}{%
+           family={{G.top}},
+           familyi={G\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {No.16 Nan-ke 9th Rd, Science-Based Industrial Park, Tainan, 741, Taiwan, R.O.C.}%
+      }
+      \list{organization}{1}{%
+        {GlobalTop Technology Inc.}%
+      }
+      \strng{namehash}{48b862e90b11ebcf0c44748fc5ab8998}
+      \strng{fullhash}{48b862e90b11ebcf0c44748fc5ab8998}
+      \strng{bibnamehash}{48b862e90b11ebcf0c44748fc5ab8998}
+      \strng{authorbibnamehash}{48b862e90b11ebcf0c44748fc5ab8998}
+      \strng{authornamehash}{48b862e90b11ebcf0c44748fc5ab8998}
+      \strng{authorfullhash}{48b862e90b11ebcf0c44748fc5ab8998}
+      \field{extraname}{1}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Online; accessed 23 October 2022}
+      \field{title}{FGPMMOPA6H GPS Standalone Module Data Sheet}
+      \field{year}{2011}
+      \verb{urlraw}
+      \verb https://cdn-shop.adafruit.com/datasheets/GlobalTop-FGPMMOPA6H-Datasheet-V0A.pdf
+      \endverb
+      \verb{url}
+      \verb https://cdn-shop.adafruit.com/datasheets/GlobalTop-FGPMMOPA6H-Datasheet-V0A.pdf
+      \endverb
+    \endentry
+    \entry{gtop:pmtk}{manual}{}
+      \name{author}{1}{}{%
+        {{hash=48b862e90b11ebcf0c44748fc5ab8998}{%
+           family={{G.top}},
+           familyi={G\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {No.16 Nan-ke 9th Rd, Science-Based Industrial Park, Tainan, 741, Taiwan, R.O.C.}%
+      }
+      \list{organization}{1}{%
+        {GlobalTop Technology Inc.}%
+      }
+      \strng{namehash}{48b862e90b11ebcf0c44748fc5ab8998}
+      \strng{fullhash}{48b862e90b11ebcf0c44748fc5ab8998}
+      \strng{bibnamehash}{48b862e90b11ebcf0c44748fc5ab8998}
+      \strng{authorbibnamehash}{48b862e90b11ebcf0c44748fc5ab8998}
+      \strng{authornamehash}{48b862e90b11ebcf0c44748fc5ab8998}
+      \strng{authorfullhash}{48b862e90b11ebcf0c44748fc5ab8998}
+      \field{extraname}{2}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{24}
+      \field{month}{9}
+      \field{note}{Online; accessed 26 October 2022}
+      \field{title}{PMTK command packet}
+      \field{year}{2012}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://cdn-shop.adafruit.com/datasheets/PMTK_A11.pdf
+      \endverb
+      \verb{url}
+      \verb https://cdn-shop.adafruit.com/datasheets/PMTK_A11.pdf
+      \endverb
+    \endentry
+    \entry{adafruit:gpslibrary}{misc}{}
+      \name{author}{7}{}{%
+        {{hash=6b21875146308e9515f3ae03b6af195f}{%
+           family={Sellens},
+           familyi={S\bibinitperiod},
+           given={Rick},
+           giveni={R\bibinitperiod}}}%
+        {{hash=661f25aceeddc173ab8825d5d20d5b26}{%
+           family={Fried},
+           familyi={F\bibinitperiod},
+           given={Limor},
+           giveni={L\bibinitperiod}}}%
+        {{hash=54d647e1a9865ef10cf215c29167ae23}{%
+           family={DiCola},
+           familyi={D\bibinitperiod},
+           given={Tony},
+           giveni={T\bibinitperiod}}}%
+        {{hash=f3f9243fb025491c97d7869e7b5f678b}{%
+           family={Herrada},
+           familyi={H\bibinitperiod},
+           given={Eva},
+           giveni={E\bibinitperiod}}}%
+        {{hash=8d99072da2e08254794928f4e524973b}{%
+           family={G},
+           familyi={G\bibinitperiod},
+           given={Matt},
+           giveni={M\bibinitperiod}}}%
+        {{hash=c35f48ba88a01174469e7289934cb350}{%
+           family={Wijnants},
+           familyi={W\bibinitperiod},
+           given={Bert},
+           giveni={B\bibinitperiod}}}%
+        {{hash=438e6f348507a4194c29b73b90e58c0e}{%
+           family={Nelson},
+           familyi={N\bibinitperiod},
+           given={Carter},
+           giveni={C\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {GitHub}%
+      }
+      \strng{namehash}{2c6c3c5cdb618fb2b06aeec76341d77c}
+      \strng{fullhash}{130adda854084f2c77ed6b84a77c8c4f}
+      \strng{bibnamehash}{2c6c3c5cdb618fb2b06aeec76341d77c}
+      \strng{authorbibnamehash}{2c6c3c5cdb618fb2b06aeec76341d77c}
+      \strng{authornamehash}{2c6c3c5cdb618fb2b06aeec76341d77c}
+      \strng{authorfullhash}{130adda854084f2c77ed6b84a77c8c4f}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{GitHub repository}
+      \field{note}{Online; accessed 26 February 2023}
+      \field{title}{Adafruit\_GPS}
+      \field{year}{2022}
+      \verb{urlraw}
+      \verb https://github.com/adafruit/Adafruit_GPS
+      \endverb
+      \verb{url}
+      \verb https://github.com/adafruit/Adafruit_GPS
+      \endverb
+    \endentry
+    \entry{adafruit:gpspmtk}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=6b21875146308e9515f3ae03b6af195f}{%
+           family={Sellens},
+           familyi={S\bibinitperiod},
+           given={Rick},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {GitHub}%
+      }
+      \strng{namehash}{6b21875146308e9515f3ae03b6af195f}
+      \strng{fullhash}{6b21875146308e9515f3ae03b6af195f}
+      \strng{bibnamehash}{6b21875146308e9515f3ae03b6af195f}
+      \strng{authorbibnamehash}{6b21875146308e9515f3ae03b6af195f}
+      \strng{authornamehash}{6b21875146308e9515f3ae03b6af195f}
+      \strng{authorfullhash}{6b21875146308e9515f3ae03b6af195f}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{19}
+      \field{journaltitle}{GitHub repository}
+      \field{month}{1}
+      \field{note}{\\Commit: 4bfbd03b90b1d019f8a371e0093a46239265691f}
+      \field{title}{Adafruit\_PMTK.h}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://github.com/adafruit/Adafruit_GPS/blob/master/src/Adafruit_PMTK.h
+      \endverb
+      \verb{url}
+      \verb https://github.com/adafruit/Adafruit_GPS/blob/master/src/Adafruit_PMTK.h
+      \endverb
+    \endentry
+    \entry{adafruit:circuitpython}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=c0562cb3cccb0870e4d15cd465677b59}{%
+           family={LeBlanc-Williams},
+           familyi={L\bibinithyphendelim W\bibinitperiod},
+           given={Melissa},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{c0562cb3cccb0870e4d15cd465677b59}
+      \strng{fullhash}{c0562cb3cccb0870e4d15cd465677b59}
+      \strng{bibnamehash}{c0562cb3cccb0870e4d15cd465677b59}
+      \strng{authorbibnamehash}{c0562cb3cccb0870e4d15cd465677b59}
+      \strng{authornamehash}{c0562cb3cccb0870e4d15cd465677b59}
+      \strng{authorfullhash}{c0562cb3cccb0870e4d15cd465677b59}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Online; accessed 27 October 2022}
+      \field{title}{CircuitPython on Linux and Raspberry Pi}
+      \verb{urlraw}
+      \verb https://learn.adafruit.com/circuitpython-on-raspberrypi-linux/installing-circuitpython-on-raspberry-pi
+      \endverb
+      \verb{url}
+      \verb https://learn.adafruit.com/circuitpython-on-raspberrypi-linux/installing-circuitpython-on-raspberry-pi
+      \endverb
+    \endentry
+    \entry{adafruit:lorabonnet}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=84daeb1b0f8185c7c3925da60f69c3c1}{%
+           family={Rembor},
+           familyi={R\bibinitperiod},
+           given={Kattni},
+           giveni={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{84daeb1b0f8185c7c3925da60f69c3c1}
+      \strng{fullhash}{84daeb1b0f8185c7c3925da60f69c3c1}
+      \strng{bibnamehash}{84daeb1b0f8185c7c3925da60f69c3c1}
+      \strng{authorbibnamehash}{84daeb1b0f8185c7c3925da60f69c3c1}
+      \strng{authornamehash}{84daeb1b0f8185c7c3925da60f69c3c1}
+      \strng{authorfullhash}{84daeb1b0f8185c7c3925da60f69c3c1}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Online; accessed 24 October 2022}
+      \field{title}{Adafruit Radio Bonnets with OLED Display - RFM69 or RFM9X}
+      \verb{urlraw}
+      \verb https://learn.adafruit.com/adafruit-radio-bonnets?view=all
+      \endverb
+      \verb{url}
+      \verb https://learn.adafruit.com/adafruit-radio-bonnets?view=all
+      \endverb
+    \endentry
+    \entry{adafruit:rfm95check}{misc}{}
+      \name{author}{2}{}{%
+        {{hash=4c3677ef8729eb1b3956fb3a34680d0c}{%
+           family={Rubell},
+           familyi={R\bibinitperiod},
+           given={Brent},
+           giveni={B\bibinitperiod}}}%
+        {{hash=f3f9243fb025491c97d7869e7b5f678b}{%
+           family={Herrada},
+           familyi={H\bibinitperiod},
+           given={Eva},
+           giveni={E\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {GitHub}%
+      }
+      \strng{namehash}{ce71f25ecd7bb3455a4dbf33bd5fd263}
+      \strng{fullhash}{ce71f25ecd7bb3455a4dbf33bd5fd263}
+      \strng{bibnamehash}{ce71f25ecd7bb3455a4dbf33bd5fd263}
+      \strng{authorbibnamehash}{ce71f25ecd7bb3455a4dbf33bd5fd263}
+      \strng{authornamehash}{ce71f25ecd7bb3455a4dbf33bd5fd263}
+      \strng{authorfullhash}{ce71f25ecd7bb3455a4dbf33bd5fd263}
+      \field{extraname}{1}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{30}
+      \field{journaltitle}{GitHub repository}
+      \field{month}{9}
+      \field{note}{Online; accessed 27 February 2023}
+      \field{title}{rfm9x\_check.py}
+      \field{year}{2021}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://github.com/adafruit/Adafruit_Learning_System_Guides/commits/main/pi_radio/rfm9x_check.py
+      \endverb
+      \verb{url}
+      \verb https://github.com/adafruit/Adafruit_Learning_System_Guides/commits/main/pi_radio/rfm9x_check.py
+      \endverb
+    \endentry
+    \entry{adafruit:radiopy}{misc}{}
+      \name{author}{2}{}{%
+        {{hash=4c3677ef8729eb1b3956fb3a34680d0c}{%
+           family={Rubell},
+           familyi={R\bibinitperiod},
+           given={Brent},
+           giveni={B\bibinitperiod}}}%
+        {{hash=f3f9243fb025491c97d7869e7b5f678b}{%
+           family={Herrada},
+           familyi={H\bibinitperiod},
+           given={Eva},
+           giveni={E\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {GitHub}%
+      }
+      \strng{namehash}{ce71f25ecd7bb3455a4dbf33bd5fd263}
+      \strng{fullhash}{ce71f25ecd7bb3455a4dbf33bd5fd263}
+      \strng{bibnamehash}{ce71f25ecd7bb3455a4dbf33bd5fd263}
+      \strng{authorbibnamehash}{ce71f25ecd7bb3455a4dbf33bd5fd263}
+      \strng{authornamehash}{ce71f25ecd7bb3455a4dbf33bd5fd263}
+      \strng{authorfullhash}{ce71f25ecd7bb3455a4dbf33bd5fd263}
+      \field{extraname}{2}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{30}
+      \field{journaltitle}{GitHub repository}
+      \field{month}{9}
+      \field{note}{Online; accessed 27 February 2023}
+      \field{title}{radio\_rfm9x.py}
+      \field{year}{2021}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://github.com/adafruit/Adafruit_Learning_System_Guides/blob/main/pi_radio/radio_rfm9x.py
+      \endverb
+      \verb{url}
+      \verb https://github.com/adafruit/Adafruit_Learning_System_Guides/blob/main/pi_radio/radio_rfm9x.py
+      \endverb
+    \endentry
+    \entry{airspayce:main}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=de2779378e8f1ec7d67ad69da12a487a}{%
+           family={McCauley},
+           familyi={M\bibinitperiod},
+           given={Mike},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{de2779378e8f1ec7d67ad69da12a487a}
+      \strng{fullhash}{de2779378e8f1ec7d67ad69da12a487a}
+      \strng{bibnamehash}{de2779378e8f1ec7d67ad69da12a487a}
+      \strng{authorbibnamehash}{de2779378e8f1ec7d67ad69da12a487a}
+      \strng{authornamehash}{de2779378e8f1ec7d67ad69da12a487a}
+      \strng{authorfullhash}{de2779378e8f1ec7d67ad69da12a487a}
+      \field{extraname}{1}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Online; accessed 28 October 2022}
+      \field{title}{RadioHead Packet Radio library for embedded microprocessors}
+      \verb{urlraw}
+      \verb https://www.airspayce.com/mikem/arduino/RadioHead/
+      \endverb
+      \verb{url}
+      \verb https://www.airspayce.com/mikem/arduino/RadioHead/
+      \endverb
+    \endentry
+    \entry{adafruit:loram0}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=661f25aceeddc173ab8825d5d20d5b26}{%
+           family={Fried},
+           familyi={F\bibinitperiod},
+           given={Limor},
+           giveni={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{661f25aceeddc173ab8825d5d20d5b26}
+      \strng{fullhash}{661f25aceeddc173ab8825d5d20d5b26}
+      \strng{bibnamehash}{661f25aceeddc173ab8825d5d20d5b26}
+      \strng{authorbibnamehash}{661f25aceeddc173ab8825d5d20d5b26}
+      \strng{authornamehash}{661f25aceeddc173ab8825d5d20d5b26}
+      \strng{authorfullhash}{661f25aceeddc173ab8825d5d20d5b26}
+      \field{extraname}{2}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Online; accessed 20 October 2022}
+      \field{title}{Adafruit Feather M0 Radio with LoRa Radio Module}
+      \verb{urlraw}
+      \verb https://learn.adafruit.com/adafruit-feather-m0-radio-with-lora-radio-module?view=all
+      \endverb
+      \verb{url}
+      \verb https://learn.adafruit.com/adafruit-feather-m0-radio-with-lora-radio-module?view=all
+      \endverb
+    \endentry
+    \entry{adafruit:feathertx}{misc}{}
+      \name{author}{3}{}{%
+        {{hash=661f25aceeddc173ab8825d5d20d5b26}{%
+           family={Fried},
+           familyi={F\bibinitperiod},
+           given={Limor},
+           giveni={L\bibinitperiod}}}%
+        {{hash=8d6ecf2ae5088f790208efd9d4f31868}{%
+           family={Barnes},
+           familyi={B\bibinitperiod},
+           given={Scott},
+           giveni={S\bibinitperiod}}}%
+        {{hash=eb9f5703c8bbde1d4e2f67d4b7080ebe}{%
+           family={Thach},
+           familyi={T\bibinitperiod},
+           given={Ha},
+           giveni={H\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {GitHub}%
+      }
+      \strng{namehash}{00422cf52fef4546af9a2c742ff2f554}
+      \strng{fullhash}{981e2f9de95193740ac56eb1e88d9614}
+      \strng{bibnamehash}{00422cf52fef4546af9a2c742ff2f554}
+      \strng{authorbibnamehash}{00422cf52fef4546af9a2c742ff2f554}
+      \strng{authornamehash}{00422cf52fef4546af9a2c742ff2f554}
+      \strng{authorfullhash}{981e2f9de95193740ac56eb1e88d9614}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{8}
+      \field{journaltitle}{GitHub repository}
+      \field{month}{3}
+      \field{note}{Online; accessed 27 February 2023}
+      \field{title}{Feather9x\_TX.ino}
+      \field{year}{2022}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://github.com/adafruit/RadioHead/blob/master/examples/feather/Feather9x_TX/Feather9x_TX.ino
+      \endverb
+      \verb{url}
+      \verb https://github.com/adafruit/RadioHead/blob/master/examples/feather/Feather9x_TX/Feather9x_TX.ino
+      \endverb
+    \endentry
+    \entry{airspayce:docs}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=de2779378e8f1ec7d67ad69da12a487a}{%
+           family={McCauley},
+           familyi={M\bibinitperiod},
+           given={Mike},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{de2779378e8f1ec7d67ad69da12a487a}
+      \strng{fullhash}{de2779378e8f1ec7d67ad69da12a487a}
+      \strng{bibnamehash}{de2779378e8f1ec7d67ad69da12a487a}
+      \strng{authorbibnamehash}{de2779378e8f1ec7d67ad69da12a487a}
+      \strng{authornamehash}{de2779378e8f1ec7d67ad69da12a487a}
+      \strng{authorfullhash}{de2779378e8f1ec7d67ad69da12a487a}
+      \field{extraname}{2}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Online; accessed 28 October 2022}
+      \field{title}{RH\_RF95 Class Reference}
+      \verb{urlraw}
+      \verb https://www.airspayce.com/mikem/arduino/RadioHead/classRH__RF95.html
+      \endverb
+      \verb{url}
+      \verb https://www.airspayce.com/mikem/arduino/RadioHead/classRH__RF95.html
+      \endverb
+    \endentry
+    \entry{arduino:introduction}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=ee5bced252ab77ec8d633c1afda7c5da}{%
+           family={{Arduino}},
+           familyi={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{ee5bced252ab77ec8d633c1afda7c5da}
+      \strng{fullhash}{ee5bced252ab77ec8d633c1afda7c5da}
+      \strng{bibnamehash}{ee5bced252ab77ec8d633c1afda7c5da}
+      \strng{authorbibnamehash}{ee5bced252ab77ec8d633c1afda7c5da}
+      \strng{authornamehash}{ee5bced252ab77ec8d633c1afda7c5da}
+      \strng{authorfullhash}{ee5bced252ab77ec8d633c1afda7c5da}
+      \field{extraname}{1}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Online; accessed 27 February 2023}
+      \field{title}{What is Arduino?}
+      \verb{urlraw}
+      \verb https://www.arduino.cc/en/Guide/Introduction
+      \endverb
+      \verb{url}
+      \verb https://www.arduino.cc/en/Guide/Introduction
+      \endverb
+    \endentry
+    \entry{arduino:reference}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=ee5bced252ab77ec8d633c1afda7c5da}{%
+           family={{Arduino}},
+           familyi={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{ee5bced252ab77ec8d633c1afda7c5da}
+      \strng{fullhash}{ee5bced252ab77ec8d633c1afda7c5da}
+      \strng{bibnamehash}{ee5bced252ab77ec8d633c1afda7c5da}
+      \strng{authorbibnamehash}{ee5bced252ab77ec8d633c1afda7c5da}
+      \strng{authornamehash}{ee5bced252ab77ec8d633c1afda7c5da}
+      \strng{authorfullhash}{ee5bced252ab77ec8d633c1afda7c5da}
+      \field{extraname}{2}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Online; accessed 27 February 2023}
+      \field{title}{Language Reference}
+      \verb{urlraw}
+      \verb https://www.arduino.cc/reference/en/
+      \endverb
+      \verb{url}
+      \verb https://www.arduino.cc/reference/en/
+      \endverb
+    \endentry
+    \entry{kcx}{manual}{}
+      \name{author}{1}{}{%
+        {{hash=ead51ec08435f2c859a143c9803ac479}{%
+           family={{KCX}},
+           familyi={K\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {KCX}%
+      }
+      \strng{namehash}{ead51ec08435f2c859a143c9803ac479}
+      \strng{fullhash}{ead51ec08435f2c859a143c9803ac479}
+      \strng{bibnamehash}{ead51ec08435f2c859a143c9803ac479}
+      \strng{authorbibnamehash}{ead51ec08435f2c859a143c9803ac479}
+      \strng{authornamehash}{ead51ec08435f2c859a143c9803ac479}
+      \strng{authorfullhash}{ead51ec08435f2c859a143c9803ac479}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Online; accessed 20 January 2023}
+      \field{title}{Power Bank capacity tester User Manual}
+      \verb{urlraw}
+      \verb https://www.solarbotics.com/wp-content/uploads/kcx-017-power-bank-testing.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.solarbotics.com/wp-content/uploads/kcx-017-power-bank-testing.pdf
+      \endverb
+    \endentry
+    \entry{adafruit:jst}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=15a4fbe287b7987574ac59b2f938ddeb}{%
+           family={{Adafruit}},
+           familyi={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{15a4fbe287b7987574ac59b2f938ddeb}
+      \strng{fullhash}{15a4fbe287b7987574ac59b2f938ddeb}
+      \strng{bibnamehash}{15a4fbe287b7987574ac59b2f938ddeb}
+      \strng{authorbibnamehash}{15a4fbe287b7987574ac59b2f938ddeb}
+      \strng{authornamehash}{15a4fbe287b7987574ac59b2f938ddeb}
+      \strng{authorfullhash}{15a4fbe287b7987574ac59b2f938ddeb}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Online; accessed 30 January 2023}
+      \field{title}{JST PH 2-Pin Cable - Female Connector 100mm}
+      \verb{urlraw}
+      \verb https://www.adafruit.com/product/261
+      \endverb
+      \verb{url}
+      \verb https://www.adafruit.com/product/261
+      \endverb
+    \endentry
+    \entry{arcgis:gpsfix}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=9ad3632306ed97a9facacb9d9320a8a9}{%
+           family={{ArcGIS}},
+           familyi={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{9ad3632306ed97a9facacb9d9320a8a9}
+      \strng{fullhash}{9ad3632306ed97a9facacb9d9320a8a9}
+      \strng{bibnamehash}{9ad3632306ed97a9facacb9d9320a8a9}
+      \strng{authorbibnamehash}{9ad3632306ed97a9facacb9d9320a8a9}
+      \strng{authornamehash}{9ad3632306ed97a9facacb9d9320a8a9}
+      \strng{authorfullhash}{9ad3632306ed97a9facacb9d9320a8a9}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Online; accessed 03 March 2023}
+      \field{title}{GpsFixStatus Enumeration}
+      \field{year}{2011}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://help.arcgis.com/en/arcgismobile/10.0/apis/arcgismobile/api/ESRI.ArcGIS.Mobile~ESRI.ArcGIS.Mobile.Gps.GpsFixStatus.html#:~:text=The%20fix%20status%20indicates%20the,of%20the%20location%20being%20reported.
+      \endverb
+      \verb{url}
+      \verb https://help.arcgis.com/en/arcgismobile/10.0/apis/arcgismobile/api/ESRI.ArcGIS.Mobile~ESRI.ArcGIS.Mobile.Gps.GpsFixStatus.html#:~:text=The%20fix%20status%20indicates%20the,of%20the%20location%20being%20reported.
+      \endverb
+    \endentry
+    \entry{axelson:usb}{book}{}
+      \name{author}{1}{}{%
+        {{hash=787be06f3e90735607694b35a2233fbc}{%
+           family={Axelson},
+           familyi={A\bibinitperiod},
+           given={Jan},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Lakeview Research LLC}%
+      }
+      \strng{namehash}{787be06f3e90735607694b35a2233fbc}
+      \strng{fullhash}{787be06f3e90735607694b35a2233fbc}
+      \strng{bibnamehash}{787be06f3e90735607694b35a2233fbc}
+      \strng{authorbibnamehash}{787be06f3e90735607694b35a2233fbc}
+      \strng{authornamehash}{787be06f3e90735607694b35a2233fbc}
+      \strng{authorfullhash}{787be06f3e90735607694b35a2233fbc}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{series}{Complete Guides Series}
+      \field{title}{USB Complete: The Developer's Guide, Fifth Edition}
+      \field{year}{2015}
+    \endentry
+    \entry{ftdi:usb}{manual}{}
+      \name{author}{1}{}{%
+        {{hash=9a342381cd5923d1a59fdc8c22e286b7}{%
+           family={{FTDI}},
+           familyi={F\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {Future Technology Devices International Ltd.}%
+      }
+      \strng{namehash}{9a342381cd5923d1a59fdc8c22e286b7}
+      \strng{fullhash}{9a342381cd5923d1a59fdc8c22e286b7}
+      \strng{bibnamehash}{9a342381cd5923d1a59fdc8c22e286b7}
+      \strng{authorbibnamehash}{9a342381cd5923d1a59fdc8c22e286b7}
+      \strng{authornamehash}{9a342381cd5923d1a59fdc8c22e286b7}
+      \strng{authorfullhash}{9a342381cd5923d1a59fdc8c22e286b7}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{28}
+      \field{month}{10}
+      \field{note}{Online; accessed 03 March 2023}
+      \field{title}{Simplified Description of USB Device Enumeration}
+      \field{year}{2009}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://www.ftdichip.com/Support/Documents/TechnicalNotes/TN_113_Simplified%20Description%20of%20USB%20Device%20Enumeration.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.ftdichip.com/Support/Documents/TechnicalNotes/TN_113_Simplified%20Description%20of%20USB%20Device%20Enumeration.pdf
+      \endverb
+    \endentry
+    \entry{machado2021}{article}{}
+      \name{author}{5}{}{%
+        {{hash=a01a111cbe7bdde9b1ca906cd471b166}{%
+           family={Machado},
+           familyi={M\bibinitperiod},
+           given={DS},
+           giveni={D\bibinitperiod}}}%
+        {{hash=bf16bb0a2595ba87c005121604816043}{%
+           family={Bragança},
+           familyi={B\bibinitperiod},
+           given={AFF},
+           giveni={A\bibinitperiod}}}%
+        {{hash=e7d11946dabfcda8f63e2bf4cf30d0ce}{%
+           family={Travnik},
+           familyi={T\bibinitperiod},
+           given={IC},
+           giveni={I\bibinitperiod}}}%
+        {{hash=f7ec76d9beba3dfbc79071a2e09edc95}{%
+           family={Rossi},
+           familyi={R\bibinitperiod},
+           given={AP},
+           giveni={A\bibinitperiod}}}%
+        {{hash=4e84e8b6d590723706b0479ba9e1a66a}{%
+           family={Sant'Anna},
+           familyi={S\bibinitperiod},
+           given={AC},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{469e927c125830aa12b35032dfd54d0e}
+      \strng{fullhash}{e35dc687b063fce42365c531009ed317}
+      \strng{bibnamehash}{469e927c125830aa12b35032dfd54d0e}
+      \strng{authorbibnamehash}{469e927c125830aa12b35032dfd54d0e}
+      \strng{authornamehash}{469e927c125830aa12b35032dfd54d0e}
+      \strng{authorfullhash}{e35dc687b063fce42365c531009ed317}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Animal Welfare}
+      \field{number}{3}
+      \field{title}{Should cats be allowed outdoors? A research survey on animal welfare risks for free-ranging cats in Brazil}
+      \field{volume}{30}
+      \field{year}{2021}
+      \true{nocite}
+      \field{pages}{331\bibrangedash 339}
+      \range{pages}{9}
+    \endentry
+    \entry{foreman2021}{article}{}
+      \name{author}{4}{}{%
+        {{hash=fc378d8dd5d9a013bb3eb5dde94eefdb}{%
+           family={Foreman-Worsley},
+           familyi={F\bibinithyphendelim W\bibinitperiod},
+           given={Rachel},
+           giveni={R\bibinitperiod}}}%
+        {{hash=f0133dc655de0659c291a8a0f9e6a99b}{%
+           family={Finka},
+           familyi={F\bibinitperiod},
+           given={Lauren\bibnamedelima R.},
+           giveni={L\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=284867e66023724a150c05564034a887}{%
+           family={Ward},
+           familyi={W\bibinitperiod},
+           given={Samantha\bibnamedelima J.},
+           giveni={S\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=1fb5b6dce88c37def4d457e3ca81f32f}{%
+           family={Farnworth},
+           familyi={F\bibinitperiod},
+           given={Mark\bibnamedelima J.},
+           giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {MDPI AG}%
+      }
+      \strng{namehash}{19550c656b38d93981db2f85a1d383a6}
+      \strng{fullhash}{8b3db773b836e0aa5ab12750be96145b}
+      \strng{bibnamehash}{19550c656b38d93981db2f85a1d383a6}
+      \strng{authorbibnamehash}{19550c656b38d93981db2f85a1d383a6}
+      \strng{authornamehash}{19550c656b38d93981db2f85a1d383a6}
+      \strng{authorfullhash}{8b3db773b836e0aa5ab12750be96145b}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Animals}
+      \field{month}{1}
+      \field{number}{2}
+      \field{title}{Indoors or Outdoors? An International Exploration of Owner Demographics and Decision Making Associated with Lifestyle of Pet Cats}
+      \field{volume}{11}
+      \field{year}{2021}
+      \true{nocite}
+      \field{pages}{253}
+      \range{pages}{1}
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.3390/ani11020253
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.3390/ani11020253
+      \endverb
+    \endentry
+    \entry{mcgregor2015}{article}{}
+      \name{author}{5}{}{%
+        {{hash=9d97ed32bbfaa90fae38f837f146ab49}{%
+           family={McGregor},
+           familyi={M\bibinitperiod},
+           given={Hugh\bibnamedelima W.},
+           giveni={H\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=3f6324b02df2afa15f3efc247d5956a8}{%
+           family={Legge},
+           familyi={L\bibinitperiod},
+           given={Sarah},
+           giveni={S\bibinitperiod}}}%
+        {{hash=c06eb65cd10dd84ee8db6af89334cdc0}{%
+           family={Potts},
+           familyi={P\bibinitperiod},
+           given={Joanne},
+           giveni={J\bibinitperiod}}}%
+        {{hash=594aecb9e8e5226c8ad5bf244440c692}{%
+           family={Jones},
+           familyi={J\bibinitperiod},
+           given={Menna\bibnamedelima E.},
+           giveni={M\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=96ac76342a8d890dc60a0876b1afcf31}{%
+           family={Johnson},
+           familyi={J\bibinitperiod},
+           given={Christopher\bibnamedelima N.},
+           giveni={C\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+      }
+      \strng{namehash}{06c1339cad156aa2153f6d610477b03b}
+      \strng{fullhash}{55bb60fd7f5a4b37ce8c3b8a3a35b73d}
+      \strng{bibnamehash}{06c1339cad156aa2153f6d610477b03b}
+      \strng{authorbibnamehash}{06c1339cad156aa2153f6d610477b03b}
+      \strng{authornamehash}{06c1339cad156aa2153f6d610477b03b}
+      \strng{authorfullhash}{55bb60fd7f5a4b37ce8c3b8a3a35b73d}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issue}{3}
+      \field{journaltitle}{Wildlife Research}
+      \field{title}{Density and home range of feral cats in north-western Australia}
+      \field{volume}{42}
+      \field{year}{2015}
+      \true{nocite}
+      \field{pages}{223\bibrangedash 231}
+      \range{pages}{9}
+    \endentry
+    \entry{bengsen:applying}{article}{}
+      \name{author}{3}{}{%
+        {{hash=91cc2dd5ff6fd80407cb020c35a609fc}{%
+           family={Bengsen},
+           familyi={B\bibinitperiod},
+           given={Andrew\bibnamedelima J.},
+           giveni={A\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=7ab204dc0d0ff736e7b722a46dc1260e}{%
+           family={Butler},
+           familyi={B\bibinitperiod},
+           given={John\bibnamedelima A.},
+           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=387f0b2d636694b11c629ad2519d8441}{%
+           family={Masters},
+           familyi={M\bibinitperiod},
+           given={Pip},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{99264b4410a1098491538412b2a9daf0}
+      \strng{fullhash}{508ed66ce39526f47f7aaccb75607d96}
+      \strng{bibnamehash}{99264b4410a1098491538412b2a9daf0}
+      \strng{authorbibnamehash}{99264b4410a1098491538412b2a9daf0}
+      \strng{authornamehash}{99264b4410a1098491538412b2a9daf0}
+      \strng{authorfullhash}{508ed66ce39526f47f7aaccb75607d96}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issue}{3}
+      \field{journaltitle}{Wildlife Research}
+      \field{title}{Applying home-range and landscape-use data to design effective feral-cat control programs}
+      \field{volume}{39}
+      \field{year}{2012}
+      \true{nocite}
+      \field{pages}{258\bibrangedash 265}
+      \range{pages}{8}
+    \endentry
+    \entry{horowitz:behavioral}{article}{}
+      \name{author}{2}{}{%
+        {{hash=424cfa82bfd640615f455c4b368efdfa}{%
+           family={Horwitz},
+           familyi={H\bibinitperiod},
+           given={Debra\bibnamedelima F.},
+           giveni={D\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+        {{hash=db4fd645509bf3102376cba07179a19b}{%
+           family={Rodan},
+           familyi={R\bibinitperiod},
+           given={Ilona},
+           giveni={I\bibinitperiod}}}%
+      }
+      \strng{namehash}{5602f43e031ae0391f179b53f1191fc6}
+      \strng{fullhash}{5602f43e031ae0391f179b53f1191fc6}
+      \strng{bibnamehash}{5602f43e031ae0391f179b53f1191fc6}
+      \strng{authorbibnamehash}{5602f43e031ae0391f179b53f1191fc6}
+      \strng{authornamehash}{5602f43e031ae0391f179b53f1191fc6}
+      \strng{authorfullhash}{5602f43e031ae0391f179b53f1191fc6}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Practical relevance:Awareness of the strong connection between observed behavior and physical and emotional health is essential for patient welfare. It is often a change in the individual’s normal behavior that informs owners and veterinarians of the possibility of illness, pain and stress/distress. There is ample evidence in the feline literature that medical and behavioral health go hand in hand. In most feline cases, medical and behavioral conditions contribute concurrently to clinical signs.Clinical challenges:Our domestic cats do not express change in physiological and emotional states in a way that is easily recognized. Therefore, it can be difficult to diagnose medical and behavioral illnesses and ascertain contributions from each one to the final diagnosis. When various levels of stress are present, especially distress, this compromises behavioral and physical health, and influences treatment outcomes.Aims:This review is intended to help veterinarians recognize physical and behavioral changes associated with acute stress through to chronic distress, including stress-associated diseases. An emphasis on thorough history-taking will allow the clinician to ascertain which signs are behavioral and which are medical, with the understanding that they are not mutually exclusive. Equally important is the contribution of pain, chronic disease and poor environmental situations to behavioral changes and the expression of medical disorders.Evidence base:There is an increasing amount of evidence that stress and distress have profound effects on feline health, behavior and welfare. The authors have drawn on a substantial body of published veterinary research in producing this review.}
+      \field{journaltitle}{Journal of Feline Medicine and Surgery}
+      \field{note}{PMID: 29706091}
+      \field{number}{5}
+      \field{title}{Behavioral awareness in the feline consultation: Understanding physical and emotional health}
+      \field{volume}{20}
+      \field{year}{2018}
+      \true{nocite}
+      \field{pages}{423\bibrangedash 436}
+      \range{pages}{14}
+      \verb{urlraw}
+      \verb https://doi.org/10.1177/1098612X18771204
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1177/1098612X18771204
+      \endverb
+    \endentry
+    \entry{catsprotection:essentialguide}{article}{}
+      \name{author}{1}{}{%
+        {{hash=6b7dadd3e1cd28c1514c7cbebde5d42d}{%
+           family={{Cats Protection}},
+           familyi={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{6b7dadd3e1cd28c1514c7cbebde5d42d}
+      \strng{fullhash}{6b7dadd3e1cd28c1514c7cbebde5d42d}
+      \strng{bibnamehash}{6b7dadd3e1cd28c1514c7cbebde5d42d}
+      \strng{authorbibnamehash}{6b7dadd3e1cd28c1514c7cbebde5d42d}
+      \strng{authornamehash}{6b7dadd3e1cd28c1514c7cbebde5d42d}
+      \strng{authorfullhash}{6b7dadd3e1cd28c1514c7cbebde5d42d}
+      \field{extraname}{2}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Online; accessed 20 October 2022}
+      \field{subtitle}{Indoor and outdoor cats}
+      \field{title}{Cats Protection Essential Guide 12}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://www.cats.org.uk/media/1023/eg12_indoor_and_outdoor_cats.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.cats.org.uk/media/1023/eg12_indoor_and_outdoor_cats.pdf
+      \endverb
+    \endentry
+    \entry{ofcom:consultation}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=f4ac6c71617233031e82dfdd4638d71c}{%
+           family={{Ofcom}},
+           familyi={O\bibinitperiod}}}%
+      }
+      \strng{namehash}{f4ac6c71617233031e82dfdd4638d71c}
+      \strng{fullhash}{f4ac6c71617233031e82dfdd4638d71c}
+      \strng{bibnamehash}{f4ac6c71617233031e82dfdd4638d71c}
+      \strng{authorbibnamehash}{f4ac6c71617233031e82dfdd4638d71c}
+      \strng{authornamehash}{f4ac6c71617233031e82dfdd4638d71c}
+      \strng{authorfullhash}{f4ac6c71617233031e82dfdd4638d71c}
+      \field{extraname}{2}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{subtitle}{Notice of Ofcom's proposals for changes to the licence exemption for Wireless Telegraphy Devices}
+      \field{title}{Consultation response form}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://www.ofcom.org.uk/__data/assets/pdf_file/0021/196131/lora-alliance.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.ofcom.org.uk/__data/assets/pdf_file/0021/196131/lora-alliance.pdf
+      \endverb
+    \endentry
+    \entry{arduino:ide}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=ee5bced252ab77ec8d633c1afda7c5da}{%
+           family={{Arduino}},
+           familyi={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{ee5bced252ab77ec8d633c1afda7c5da}
+      \strng{fullhash}{ee5bced252ab77ec8d633c1afda7c5da}
+      \strng{bibnamehash}{ee5bced252ab77ec8d633c1afda7c5da}
+      \strng{authorbibnamehash}{ee5bced252ab77ec8d633c1afda7c5da}
+      \strng{authornamehash}{ee5bced252ab77ec8d633c1afda7c5da}
+      \strng{authorfullhash}{ee5bced252ab77ec8d633c1afda7c5da}
+      \field{extraname}{3}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Online; accessed 20 October 2022}
+      \field{title}{Arduino Pro IDE (alpha preview) with advanced features}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://blog.arduino.cc/2019/10/18/arduino-pro-ide-alpha-preview-with-advanced-features/
+      \endverb
+      \verb{url}
+      \verb https://blog.arduino.cc/2019/10/18/arduino-pro-ide-alpha-preview-with-advanced-features/
+      \endverb
+    \endentry
+    \entry{img:m0}{misc}{}
+      \name{author}{3}{}{%
+        {{hash=f3f9243fb025491c97d7869e7b5f678b}{%
+           family={Herrada},
+           familyi={H\bibinitperiod},
+           given={Eva},
+           giveni={E\bibinitperiod}}}%
+        {{hash=661f25aceeddc173ab8825d5d20d5b26}{%
+           family={Fried},
+           familyi={F\bibinitperiod},
+           given={Limor},
+           giveni={L\bibinitperiod}}}%
+        {{hash=41540fab0555abed6a587f230f9bf877}{%
+           family={Barela},
+           familyi={B\bibinitperiod},
+           given={Anne},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{d586e8e79ea5682796ba1c43eb338af3}
+      \strng{fullhash}{b60ef0a4ac555a8a13f9a11a816f19a2}
+      \strng{bibnamehash}{d586e8e79ea5682796ba1c43eb338af3}
+      \strng{authorbibnamehash}{d586e8e79ea5682796ba1c43eb338af3}
+      \strng{authornamehash}{d586e8e79ea5682796ba1c43eb338af3}
+      \strng{authorfullhash}{b60ef0a4ac555a8a13f9a11a816f19a2}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{19}
+      \field{month}{4}
+      \field{note}{[Online; accessed 11 March 2023]}
+      \field{title}{Adafruit Feather M0 RFM9x Pinout.pdf}
+      \field{year}{2022}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://github.com/adafruit/Adafruit-Feather-M0-RFM-LoRa-PCB/blob/master/Adafruit%20Feather%20M0%20RFM9x%20Pinout.pdf
+      \endverb
+      \verb{url}
+      \verb https://github.com/adafruit/Adafruit-Feather-M0-RFM-LoRa-PCB/blob/master/Adafruit%20Feather%20M0%20RFM9x%20Pinout.pdf
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

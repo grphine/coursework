@@ -1,0 +1,122 @@
+
+
+\section{Introduction}
+
+This thesis records the research, analysis, and development of a \gls{lora} radio based 
+cat tracker. \gls{lora} is a radio modulation technique that allows for great transmission 
+distances and high resistance to noise and interference.
+The purpose of such a tracker is to allow pet owners, particularly cat owners,
+to allow their pet to roam freely outdoors, while still providing location reporting. 
+This may be particularly useful for owners of adventurous pets who live on high floors in 
+apartments or otherwise restrictive dwelling. As such, there will be a greater level of emphasis 
+placed on suitability in the average home of a dense, urban environment.  
+
+\subsection{Justification}
+Many pet owners allow their pets to roam outdoors. None are perhaps as notable as 
+the feline for their free-roaming prowess and sense of independence. 
+26\% of UK households own a total of eleven million cats, 
+of which 63\% spend time outdoors \cite{catsprotection:catsreport}.
+
+Some of these pets may go missing for long periods of time - in some cases, even years
+before returning \cite{bbc:missingcat} - that is, if they return at all. 
+The anxious pet owner is catered to by the \$2 billion global pet 
+wearables market \cite{researchandmarkets:wearablemarket}, providing them many 
+options to alleviate their worries. 
+
+Pet wearables that concern tracking location fall into two broad categories
+in how they communicate location data back to the owner: 
+network based, and radio frequency based. 
+\begin{itemize}
+    \item Network - leveraging the availability of an existing network, these solutions can have 
+            high fidelity, with quick and accurate updates covering a large area. 
+            They suffer where a network connection cannot be made.
+    \item \acrshort{rf} - usually forming a point-to-point connection between the user and 
+            the wearable. The range is usually limited, however no reliance on a pre-existing 
+            network is required, reducing operational costs. 
+\end{itemize}
+
+\gls{lora} radio is a novel technology for radio communications
+that is beginning to find its niche. Most attention is focused on \gls{lorawan},
+a network layer built upon the physical layer provided by \gls{lora}.
+
+\gls{lorawan} and \acrshortpl{lpwan} in general are beginning to proliferate and find common 
+use, particularly with the Internet of Things \cite{bardyn2016}. 
+However, such networks are still not widely available for easy use, and may 
+suffer security issues at their current stage of development \cite{eldefrawy2019}. Furthermore, 
+while the radio and network definitions have specifications from the LoRa Alliance,
+there is as yet no formal infrastructure that can be relied upon. 
+
+However, \gls{lora} radio by itself as an \acrshort{rf} communication method 
+is perfectly capable as a transmission medium 
+without the network overlay to rely on. As such, it will 
+be the focus technology in the development of a new solution
+to the problem of pet tracking. 
+
+\subsection{Aim}
+\label{sec:aim}
+The ultimate goal is a portable \acrshort{gps} tracker that makes use of \gls{lora} to update location
+ information on a periodic basis.
+The solution will need to monitor the current location of a moving target for a 
+significant portion of the day 
+and work within a certain radius of a stationary base. 
+
+The focus is on cats in particular, so care may need to be taken to 
+ensure the tracker is ergonomically suited and safe for outdoor use.
+Due to the wider possible uses of the tracker, portability may also need to be considered. 
+
+As a product designed for use by the average pet owner, the setup must be suitable for use in a home
+and be relatively easy to set up. A solution that works 
+`out of the box' is better suited. Location reporting needs to be simple to view so that 
+it can be done quickly and easily.  
+
+\begin{itemize}
+    \item Fundamentals - minimum requirements to demonstrate the viability 
+            of the product.
+        \begin{enumerate}
+            \item Obtain \acrshort{gps} location.
+            \item Transmit location to a receiver via \gls{lora}.
+            \item Continue transmission remotely for a significant period of time.
+            \item Transmit at a regular interval.
+        \end{enumerate}
+    \item Improvements - upgrades to the product to improve the user's 
+            quality of life when using the product.
+        \begin{enumerate}
+            \item Ergonomics for owner and pet (fitting and wearing). 
+            \item Stability of the system (high uptime).
+            \item Installable by an average person.
+            \item Location information easily viewable. 
+        \end{enumerate}
+    \item Production - requirements to ensure the product is suitable 
+            for manufacture.
+        \begin{enumerate}
+            \item General safety and suitability to be worn.
+            \item Resistance to damage and weather.
+            \item Certification requirements and law compliance.
+            \item Scale considerations, especially manufacturing.
+        \end{enumerate}
+\end{itemize}
+
+\subsection{Objectives}
+\label{sec:objectives}
+The following objectives list will provide guidance for how development 
+will progress, and provide a clear set of criteria against which the success of the 
+project can be examined. 
+
+This project will follow the numbered steps, and 
+aim to meet each objective specified within. 
+
+\begin{enumerate}
+    \item Research cat characteristics, like roaming distances and time spent outdoors.
+    \item Research \gls{lora} radio requirements for use, and competitive products.
+    \item Design the system on a macroscopic level to inform hardware and software requirements. 
+            This may include defining a specification of requirements the tracker must achieve. 
+    \item Develop the tracker such that it meets the outlined aims. 
+    \item Perform tests to verify the efficacy of the tracker\footnote{
+        Live testing using animals will require ethical approval to be obtained in advance.
+    }.
+    \item Develop a \acrshort{pcb} for the tracker to minimise form-factor, and produce 
+            adequate casing for it to be fitted to a pet collar or harness. This includes 
+            verifying basic functions again, in addition to suitability for intended use on an animal.
+    \item Gain required certifications for the product to be moved to manufacture, and design 
+            a manufacturing plan.             
+\end{enumerate}

@@ -1,0 +1,329 @@
+\documentclass[11pt, oneside]{book} 
+\usepackage[table]{xcolor}  % load xcolor before anything else
+\usepackage[most]{tcolorbox}
+\usepackage{setspace}  %line spacing
+\usepackage{titling}
+\usepackage{graphicx}
+\usepackage{parskip}    %spaced paragraphs
+\usepackage{csquotes}   %babel wanted it
+\usepackage{emptypage} % prevent page numbers and headings on empty pages
+\usepackage{float}
+\usepackage{censor}
+\usepackage{amsmath}
+\usepackage{fontawesome}
+\usepackage{pdfpages} % insert pdf 
+\usepackage[titletoc]{appendix}
+
+\usepackage{wrapfig}
+\setlength\intextsep{5pt plus 5pt minus 5pt} % figure text spacing
+
+\usepackage[hang,flushmargin]{footmisc}     % footnote editing
+
+\usepackage[font=small,labelfont=bf]{caption} % caption size 
+\usepackage{subcaption}
+\setlength{\belowcaptionskip}{-5pt}
+
+\usepackage[
+    separate-uncertainty=true,
+    multi-part-units=single
+    ]{siunitx}
+\sisetup{
+    detect-all,
+    per-mode=symbol-or-fraction,
+    tight-spacing,
+    quantity-product =
+    % number-unit-product=\,
+    % space-before-unit=false
+}
+\DeclareSIUnit{\mAh}{mAh}
+
+\definecolor{titlepagecolour}{HTML}{003D99}
+\definecolor{tableh1}{HTML}{dae3eb} %table grey
+\definecolor{tableh2}{HTML}{b3ccf5} %table bluegrey
+\definecolor{titleblue}{HTML}{1b1787} % blue
+
+\definecolor{tableg}{HTML}{309c3d} % green
+\definecolor{tablea}{HTML}{ed901f} % amber
+\definecolor{tabler}{HTML}{f2422e} % red
+% \definecolor{tableg}{HTML}{5df06f} %pale green
+% \definecolor{tablea}{HTML}{f0ae5d} %pale amber
+% \definecolor{tabler}{HTML}{f05d5d} %pale red
+
+\usepackage{listings}   % code
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegrey}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+\lstdefinestyle{codestyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegrey},
+    keywordstyle=\color{blue},
+    numberstyle=\tiny\color{codegrey},
+    stringstyle=\color{codegreen},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=t,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2,
+    framextopmargin=50pt,
+    frame=bottomline,
+    belowcaptionskip=0.5pt,
+    belowskip=-11pt
+}
+\lstset{style=codestyle}
+
+\usepackage[acronym]{glossaries}
+\makenoidxglossaries 
+\usepackage{../extras/glossary}
+
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric, arrows}
+\tikzstyle{startstop} = [rectangle, rounded corners, minimum width=3cm, minimum height=1cm,text centered, draw=black, fill=red!30]
+\tikzstyle{io} = [trapezium, trapezium left angle=70, trapezium right angle=110, minimum width=3cm, minimum height=1cm, text centered, draw=black, fill=blue!30]
+\tikzstyle{process} = [rectangle, minimum width=3cm, minimum height=1cm, text centered, draw=black, fill=orange!30]
+\tikzstyle{decision} = [diamond, aspect=2,minimum width=3cm, minimum height=1cm, text centered, draw=black, fill=green!30]
+\tikzstyle{arrow} = [thick,->,>=stealth]
+\tikzset{trapezium stretches=true}
+
+\tikzstyle{rec} = [rectangle, minimum width=2cm, minimum height=1cm, text centered, draw=black, fill=white, align=center]
+\tikzstyle{bar} = [ultra thick,-,>=stealth]
+
+\usepackage[hidelinks]{hyperref}  %have a review of this
+\hypersetup{%
+%   citecolor=black,
+  colorlinks=false,
+%   linkcolor=black,
+%   urlcolor=black
+}
+\usepackage[nameinlink]{cleveref}
+
+\usepackage{geometry}   %set margins
+\geometry{a4paper, margin=2.5cm}
+
+\usepackage{fancyhdr}   %footer
+\fancypagestyle{myheadings}{%
+    \fancyhf{}
+    \renewcommand{\headrulewidth}{0.5pt}
+    \renewcommand{\footrulewidth}{0pt}
+    \addtolength{\headheight}{2pt}
+    \fancyhead[L]{\leftmark}
+    \fancyhead[R]{1922268}
+    \cfoot{\thepage}
+}
+
+% \fancypagestyle{headii}{%
+%     \fancyhf{}
+%     \renewcommand{\headrulewidth}{0.5pt}
+%     \renewcommand{\footrulewidth}{0pt}
+%     \addtolength{\headheight}{2pt}
+%     \fancyhead[L]{\leftmark}
+%     \fancyhead[R]{1922268}
+%     \cfoot{\thepage}
+%     \renewcommand\headrule{%
+%         \nointerlineskip
+%         \hbox to \headwidth{\hss\rule{\headwidth}{\headrulewidth}\hss}%
+%         \vspace{-\headrulewidth}
+%     }
+% }
+
+\pagestyle{myheadings}
+
+\usepackage{pgfgantt}
+\setganttlinklabel{s-s}{}
+\setganttlinklabel{f-s}{}
+\setganttlinklabel{f-f}{}
+
+% \usepackage{tabularx}
+\usepackage{booktabs}
+% \usepackage{ltablex}
+\usepackage{xltabular}
+\newcolumntype{Y}{>{\centering\arraybackslash}X}
+\newcolumntype{Z}{>{\raggedright\arraybackslash}X}
+\captionsetup{justification=centering}
+
+% \usepackage{rotating} 
+\usepackage{multirow}
+\usepackage{pdflscape}  %pdf support for landscape
+% \usepackage{adjustbox}  %table sizing
+% \usepackage{lscape}
+%  \newcolumntype{b}{>{\hsize=5\hsize}X}
+% \newcolumntype{s}{>{\hsize=1.45\hsize}X}
+% \newcolumntype{m}{>{\hsize=2.9\hsize}X}
+\newenvironment{conditions}[1][where:]
+  {#1 \begin{tabular}[t]{>{$}l<{$} @{} >{${}}c<{{}$} @{} l}}
+  {\end{tabular}\\[\belowdisplayskip]}
+
+\usepackage[british]{babel} 
+% \renewcommand\britishhyphenmins{60} %reduce hyphenation
+
+\usepackage{fontspec}
+\setmainfont[ 
+    Mapping=tex-text,
+    BoldFont={HelveticaNowText-Regular},
+    ItalicFont={HelveticaNowText-LightItalic},
+    BoldItalicFont={HelveticaNowText-RegIta}
+]{[HelveticaNowText-Light]}
+% \usepackage{unicode-math}
+% \setmathfont{Arev Sans}
+\usepackage{sansmath}
+\sansmath
+
+\usepackage[
+    backend=biber,
+    % style=numeric-comp,
+    % style = vancouver,
+    style = science,
+    % style=draft,
+    % style = authoryear-icomp,
+    maxnames=2, minnames=2,
+    % doi=false,
+    sorting=none
+]{biblatex}   %bibliography
+\usepackage{xurl} % break urls. load after biblatex
+\DeclareBibliographyCategory{cited}
+\AtEveryCitekey{\addtocategory{cited}{\thefield{entrykey}}}
+\DeclareSourcemap{
+  \maps{
+    \map{
+      \step[fieldset=doi, null]
+  %   \step[fieldset=url, null]
+      \step[fieldset=eprint, null]
+      \step[fieldset=eprinttype, null]
+      \step[fieldset=arxivId, null]
+      \step[fieldset=archivePrefix, null]
+      \step[fieldset=issn, null]
+      \step[fieldset=isbn, null]
+    }
+  }
+}
+\addbibresource{../extras/refs.bib}
+% \AtEveryBibitem{\clearfield{title}}
+
+\usepackage{enumitem}   %reduce list spacing
+\setlist{nosep}  
+
+\setcounter{secnumdepth}{3} % number sections up to subsubsection
+
+\usepackage{titlesec}   %reduce heading spacing
+% \titleformat{\chapter}[display]   
+% {\normalfont\huge\bfseries}{\chaptertitlename\ \thechapter}{10pt}{\Huge}   
+% \titlespacing*{\chapter}{0pt}{-50pt}{10pt}
+
+\titlespacing\section{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+\titlespacing\subsection{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+\titlespacing\subsubsection{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+\titlespacing\paragraph{0pt}{10pt plus 4pt minus 2pt}{10pt plus 2pt minus 2pt}
+
+\hfuzz=1pt % reduces hbox errors
+
+% \titleformat{\chapter}[display]
+% {\normalfont\bfseries}{}{0pt}{\Huge}
+% \titlespacing*{\chapter}{0pt}{-100pt}{0pt}
+
+% \titlespacing\section{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+% \titlespacing\subsection{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+% \titlespacing\subsubsection{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+
+% \setlength{\droptitle}{-4em}     % Eliminate the default vertical space
+% \addtolength{\droptitle}{-4em}   % Only a guess. Use this for adjustment
+
+% \title{\huge Main Report\\\Large Portable LoRa Radio Tracker\vspace{0.4em}\\\large 1922268\vspace{-2em}}
+% % \title{\huge Project Feasibility Study\\\Large Portable LoRa Radio Tracker\\\large}
+
+% \preauthor{}
+% \postauthor{}
+% \author{}
+% \predate{}
+% \date{}
+% \postdate{}
+
+
+
+\begin{document}
+\onehalfspacing
+\frontmatter
+% report pre pages
+
+\input{../extras/titlepage.tex}
+
+% \chapter*{Abstract}
+
+
+\tableofcontents
+
+% \input{../extras/figurelist.tex}
+% \addcontentsline{toc}{chapter}{List of Figures}
+\listoffigures
+% \addcontentsline{toc}{chapter}{List of Tables}
+\listoftables
+
+% \input{../extras/glossary.tex}
+% \addcontentsline{toc}{chapter}{Glossary}
+% \addcontentsline{toc}{chapter}{Acronyms}
+\printnoidxglossaries
+
+% main report section - 40 page limit
+
+\mainmatter
+
+\titleformat{\chapter}[display]
+{\normalfont\bfseries}{}{0pt}{\Huge}
+\titlespacing*{\chapter}{0pt}{-100pt}{0pt}
+
+\chapter{Definition}
+\input{../sections/abstract.tex}
+
+\input{../sections/introduction.tex}    % 2p
+
+\input{../sections/literaturereview.tex} % 2p
+
+\chapter{Development}
+
+\input{../sections/design.tex} % 7 pages
+
+\input{../sections/development.tex}   % 23 pages
+
+
+\chapter{Conclusions}
+
+\input{../sections/assessment.tex}
+
+\input{../sections/conclusions.tex}
+
+\cleardoublepage
+\newgeometry{right=2cm, left=2cm, top=2.5cm, bottom=2.5cm}
+\fancyfootoffset{0pt}
+% \pagestyle{headii}
+\chapter{References}
+
+\nocite{*}
+
+% \printbibliography[heading=none]
+
+\renewcommand*{\bibfont}{\footnotesize}
+
+\begin{singlespace}
+    
+    
+    \printbibliography[heading=none,category=cited]% default title for `article` class: "References"
+    % \restoregeometry
+
+% \printbibliography[title={Further Reading},notcategory=cited]
+
+    \input{../extras/appendixpage.tex}
+
+    \input{../extras/appendix.tex}
+
+    \restoregeometry
+\end{singlespace}
+
+\end{document}
+
+
+

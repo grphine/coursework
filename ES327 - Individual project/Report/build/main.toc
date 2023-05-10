@@ -1,0 +1,123 @@
+\babel@toc {british}{}\relax 
+\contentsline {chapter}{\numberline {1}Definition}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Abstract}{1}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Introduction}{1}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Justification}{1}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}Aim}{2}{subsection.1.2.2}%
+\contentsline {subsection}{\numberline {1.2.3}Objectives}{3}{subsection.1.2.3}%
+\contentsline {section}{\numberline {1.3}Literature Review}{3}{section.1.3}%
+\contentsline {subsection}{\numberline {1.3.1}Cat behaviour}{3}{subsection.1.3.1}%
+\contentsline {subsubsection}{\numberline {1.3.1.1}Roaming distance}{3}{subsubsection.1.3.1.1}%
+\contentsline {subsubsection}{\numberline {1.3.1.2}Time spent outdoors}{4}{subsubsection.1.3.1.2}%
+\contentsline {subsection}{\numberline {1.3.2}LoRa}{4}{subsection.1.3.2}%
+\contentsline {subsection}{\numberline {1.3.3}Alternative products}{4}{subsection.1.3.3}%
+\contentsline {subsubsection}{\numberline {1.3.3.1}Patents}{4}{subsubsection.1.3.3.1}%
+\contentsline {subsubsection}{\numberline {1.3.3.2}Similar products}{5}{subsubsection.1.3.3.2}%
+\contentsline {chapter}{\numberline {2}Development}{6}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Design}{6}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Specification}{6}{subsection.2.1.1}%
+\contentsline {subsubsection}{\numberline {2.1.1.1}Reporting}{6}{subsubsection.2.1.1.1}%
+\contentsline {paragraph}{Timing}{6}{subsubsection.2.1.1.1}%
+\contentsline {paragraph}{Distance}{6}{subsubsection.2.1.1.1}%
+\contentsline {subsubsection}{\numberline {2.1.1.2}Portability}{6}{subsubsection.2.1.1.2}%
+\contentsline {paragraph}{Small form-factor}{6}{Item.23}%
+\contentsline {paragraph}{Lightweight}{6}{Item.23}%
+\contentsline {paragraph}{Battery powered}{7}{Item.23}%
+\contentsline {paragraph}{Attachable}{7}{Item.23}%
+\contentsline {subsubsection}{\numberline {2.1.1.3}Suitability}{7}{subsubsection.2.1.1.3}%
+\contentsline {paragraph}{Installable}{7}{subsubsection.2.1.1.3}%
+\contentsline {paragraph}{Compliance}{7}{subsubsection.2.1.1.3}%
+\contentsline {subsubsection}{\numberline {2.1.1.4}Reliability}{7}{subsubsection.2.1.1.4}%
+\contentsline {paragraph}{Stable}{8}{subsubsection.2.1.1.4}%
+\contentsline {paragraph}{Fault resistant}{8}{subsubsection.2.1.1.4}%
+\contentsline {paragraph}{Repairable}{8}{subsubsection.2.1.1.4}%
+\contentsline {paragraph}{Safety}{8}{subsubsection.2.1.1.4}%
+\contentsline {paragraph}{Deduplication}{8}{subsubsection.2.1.1.4}%
+\contentsline {subsection}{\numberline {2.1.2}System overview}{8}{subsection.2.1.2}%
+\contentsline {subsection}{\numberline {2.1.3}Hardware}{9}{subsection.2.1.3}%
+\contentsline {subsubsection}{\numberline {2.1.3.1}SBC choices}{10}{subsubsection.2.1.3.1}%
+\contentsline {subsubsection}{\numberline {2.1.3.2}Microcontroller choices}{10}{subsubsection.2.1.3.2}%
+\contentsline {subsection}{\numberline {2.1.4}Purchasing}{12}{subsection.2.1.4}%
+\contentsline {paragraph}{Order review}{12}{subsection.2.1.4}%
+\contentsline {section}{\numberline {2.2}Development}{12}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Initial function}{12}{subsection.2.2.1}%
+\contentsline {subsubsection}{\numberline {2.2.1.1}Hardware}{12}{subsubsection.2.2.1.1}%
+\contentsline {subsubsection}{\numberline {2.2.1.2}\acrshort {gps}}{13}{subsubsection.2.2.1.2}%
+\contentsline {subsubsection}{\numberline {2.2.1.3}Pi \gls {lora}}{14}{subsubsection.2.2.1.3}%
+\contentsline {subsubsection}{\numberline {2.2.1.4}Feather \gls {lora}}{15}{subsubsection.2.2.1.4}%
+\contentsline {subsubsection}{\numberline {2.2.1.5}\gls {lora} with \acrshort {gps}}{15}{subsubsection.2.2.1.5}%
+\contentsline {subsection}{\numberline {2.2.2}Power tester}{16}{subsection.2.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.2.1}Test specification}{16}{subsubsection.2.2.2.1}%
+\contentsline {paragraph}{Risks}{17}{Item.25}%
+\contentsline {subsubsection}{\numberline {2.2.2.2}Results}{17}{subsubsection.2.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}Intermediate steps}{18}{subsection.2.2.3}%
+\contentsline {subsubsection}{\numberline {2.2.3.1}Code issues}{18}{subsubsection.2.2.3.1}%
+\contentsline {subsubsection}{\numberline {2.2.3.2}Antenna}{18}{subsubsection.2.2.3.2}%
+\contentsline {subsection}{\numberline {2.2.4}Battery test}{19}{subsection.2.2.4}%
+\contentsline {subsubsection}{\numberline {2.2.4.1}Test parameters}{20}{subsubsection.2.2.4.1}%
+\contentsline {paragraph}{Risks}{20}{Item.27}%
+\contentsline {subsubsection}{\numberline {2.2.4.2}Issues}{20}{subsubsection.2.2.4.2}%
+\contentsline {subsubsection}{\numberline {2.2.4.3}Results}{21}{subsubsection.2.2.4.3}%
+\contentsline {paragraph}{Discharge}{22}{figure.caption.14}%
+\contentsline {paragraph}{Charge}{22}{figure.caption.14}%
+\contentsline {paragraph}{Remarks}{23}{figure.caption.14}%
+\contentsline {subsection}{\numberline {2.2.5}Error investigation}{23}{subsection.2.2.5}%
+\contentsline {paragraph}{Solution}{23}{subsection.2.2.5}%
+\contentsline {subsection}{\numberline {2.2.6}Case design}{24}{subsection.2.2.6}%
+\contentsline {subsubsection}{\numberline {2.2.6.1}First case}{24}{subsubsection.2.2.6.1}%
+\contentsline {paragraph}{Design}{24}{subsubsection.2.2.6.1}%
+\contentsline {paragraph}{Manufacture}{25}{subsubsection.2.2.6.1}%
+\contentsline {paragraph}{Result}{25}{subsubsection.2.2.6.1}%
+\contentsline {paragraph}{Review}{25}{figure.caption.16}%
+\contentsline {subsubsection}{\numberline {2.2.6.2}Second case}{25}{subsubsection.2.2.6.2}%
+\contentsline {paragraph}{Design}{25}{subsubsection.2.2.6.2}%
+\contentsline {paragraph}{Manufacture}{26}{subsubsection.2.2.6.2}%
+\contentsline {paragraph}{Result}{26}{subsubsection.2.2.6.2}%
+\contentsline {paragraph}{Review}{26}{subsubsection.2.2.6.2}%
+\contentsline {subsection}{\numberline {2.2.7}Distance test}{27}{subsection.2.2.7}%
+\contentsline {subsubsection}{\numberline {2.2.7.1}Preparation}{27}{subsubsection.2.2.7.1}%
+\contentsline {paragraph}{Location}{27}{subsubsection.2.2.7.1}%
+\contentsline {paragraph}{Work flow}{27}{subsubsection.2.2.7.1}%
+\contentsline {paragraph}{Container}{27}{figure.caption.17}%
+\contentsline {paragraph}{Data}{28}{figure.caption.18}%
+\contentsline {paragraph}{Plotting}{29}{table.2.5}%
+\contentsline {subsubsection}{\numberline {2.2.7.2}Test specification}{30}{subsubsection.2.2.7.2}%
+\contentsline {paragraph}{Risks}{30}{subsubsection.2.2.7.2}%
+\contentsline {subsubsection}{\numberline {2.2.7.3}Test one}{30}{subsubsection.2.2.7.3}%
+\contentsline {paragraph}{Results}{30}{subsubsection.2.2.7.3}%
+\contentsline {subsubsection}{\numberline {2.2.7.4}Test two}{30}{subsubsection.2.2.7.4}%
+\contentsline {paragraph}{Results}{31}{subsubsection.2.2.7.4}%
+\contentsline {subsubsection}{\numberline {2.2.7.5}Comments}{32}{subsubsection.2.2.7.5}%
+\contentsline {chapter}{\numberline {3}Conclusions}{34}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Assessment}{34}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Assessment of objectives}{34}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Assessment of aims and specification}{34}{subsection.3.1.2}%
+\contentsline {subsubsection}{\numberline {3.1.2.1}Assessment of specification}{35}{subsubsection.3.1.2.1}%
+\contentsline {section}{\numberline {3.2}Improvements}{36}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Issue resolvers}{36}{subsection.3.2.1}%
+\contentsline {paragraph}{Battery connection}{36}{subsection.3.2.1}%
+\contentsline {paragraph}{Transmission errors}{36}{subsection.3.2.1}%
+\contentsline {paragraph}{Charging time}{36}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Quality improvements}{37}{subsection.3.2.2}%
+\contentsline {paragraph}{Display}{37}{subsection.3.2.2}%
+\contentsline {paragraph}{Advanced power management}{37}{subsection.3.2.2}%
+\contentsline {section}{\numberline {3.3}Additional remarks}{37}{section.3.3}%
+\contentsline {paragraph}{Environmental impact}{37}{section.3.3}%
+\contentsline {paragraph}{Cost}{37}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Evaluation}{37}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Difficulties}{38}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}Admittances}{38}{subsection.3.4.2}%
+\contentsline {chapter}{\numberline {4}References}{39}{chapter.4}%
+\contentsline {chapter}{Appendix \numberline {A}Further Reading}{I}{appendix.a.A}%
+\contentsline {chapter}{Appendix \numberline {B}Pinout Diagrams}{II}{appendix.a.B}%
+\contentsline {chapter}{Appendix \numberline {C}Case design}{III}{appendix.a.C}%
+\contentsline {chapter}{Appendix \numberline {D}Purchasing lists}{VII}{appendix.a.D}%
+\contentsline {chapter}{Appendix \numberline {E}Data}{X}{appendix.a.E}%
+\contentsline {section}{\numberline {E.1}Power Consumption}{X}{section.a.E.1}%
+\contentsline {section}{\numberline {E.2}Distance}{XII}{section.a.E.2}%
+\contentsline {chapter}{Appendix \numberline {F}Code}{XIV}{appendix.a.F}%
+\contentsline {section}{\numberline {F.1}Power scripts}{XIV}{section.a.F.1}%
+\contentsline {section}{\numberline {F.2}Distance scripts}{XXI}{section.a.F.2}%
+\contentsline {section}{\numberline {F.3}Microcontroller sketches}{XXII}{section.a.F.3}%
+\contentsline {section}{\numberline {F.4}SBC scripts}{XXIX}{section.a.F.4}%
+\contentsline {chapter}{Appendix \numberline {G}Errors}{XXXVIII}{appendix.a.G}%

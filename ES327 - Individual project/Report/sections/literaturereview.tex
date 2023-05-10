@@ -1,0 +1,121 @@
+\section{Literature Review}
+\label{sec:litrev}
+
+\subsection{Cat behaviour}
+
+Reviewing cat behaviour will allow for a concrete basis upon which to write a specification 
+that the tracker will meet. The foremost questions are how far a tame cat may roam, and for how long.
+
+\subsubsection{Roaming distance}
+\label{sec:roam}
+Hanmer et al. suggests that the maximum distance of \qty{278}{\m}, 
+with a median maximum of \qty{99}{\m} \cite{hanmer:urbanisaton}.
+It furthermore elaborates on how this decreases with the level of urbanisation, with urban 
+areas seeing the smallest home range (\qty{79}{\m}). 
+Barratt and Meek further corroborate the 
+general value, with a mean range of \qty{2.54}{\hectare} (\qty{159}{\m} radius) and \qty{2.9}{\hectare} (\qty{170}{\m})
+respectively \cite{barratt:home, meek:home}. Notably, these both concern felines in a rural area, 
+and therefore the range is expectedly larger. Furthermore, the range can vary greatly on the 
+cat's personality, with `wandering' cats having a roaming range (\qty{5.1}{\hectare}) an order of magnitude greater than `sedentary'
+cats (\qty{0.4}{\hectare}) \cite{meek:home}. 
+
+Notably, feral and unowned cats have a much greater home range (easily \qty{1.5}{\km}) than the 
+average tame cat \cite{bengsen:feral,horn:range,molsher2005home}.
+Accommodating both feral and tame cats would greatly increase the scope of the project,
+especially considering the roaming distance required to be covered increases by a factor 
+of six. Therefore, accommodations for feral cats will not be specifically catered for. 
+While the project focus is on tame cats, it is understood that tracking any animal 
+or moving object may be applied outside this focus. 
+
+\subsubsection{Time spent outdoors}
+As with home ranges, this varies greatly with personality. Interestingly enough, a significant 
+contributing factor to this value was the owner characteristics. Clancy et al. discusses the 
+relationship between owner and cat, amongst which includes time owners allow their cats outdoors.
+\qty{40}{\%} of owned cats had some level of outdoor access, and of this, \qty{88.4}{\%} 
+spent less than eight hours outside. \qty{97.1}{\%} were not permitted outdoors at night \cite{clancy2003}.
+Zhang et al. saw peak activity for cats between 6:00-10:00 and 17:00-21:00 \cite{zhang2022}. 
+
+Altogether, this suggests a required operating capability of eight hours to cover the 90\textsuperscript{th}
+percentile, and that typical outdoor activity likely ranges three to four hours. The latter will be 
+the critical minimum operating capability. 
+
+A marked finding by Finka et al. indicates that owners who score highly in neuroticism 
+on the \gls{bfi} were associated with lower likelihood of permitting ``\textit{ad libitum} 
+access to the outdoors'' to their cat \cite{finka2019}. This suggests that the product may be well suited 
+to cater to owners who would like to permit their cat more time outdoors. 
+
+\subsection{LoRa}
+\gls{lora} radio modulation is a technique derived from \acrshort{css}, 
+a combination of chirp signals and spread-spectrum technology. 
+Spread-spectrum is a method by which a radio signal has a wider bandwidth 
+due to spreading in the frequency domain, which brings with it 
+benefits such as resistance to noise and reduced spectral flux density (making 
+it more power efficient). Chirp signals are a method by which the 
+signal frequency is increased (up-chirp) or decreased (down-chirp) with time \cite{Loukatos2022}. 
+\gls{lora} in particular modulates data with instantaneous changes in the starting
+frequency to indicate symbol borders \cite{liando2019}. 
+Altogether, this gives \gls{lora} modulation the capability of reliable 
+transmission of over \qty{3}{\km} in dense suburban areas \cite{augustin:lora}.
+
+The specifics of how modulation is achieved are not necessarily relevant to this project,
+as the focus is on utility. The theoretical breakdown of frequency shift chirp modulation 
+used by \gls{lora} is provided by Vangelista \cite{vangelista2017}. The patent 
+for the technology is currently held by Semtech \cite{patent:lora}.
+
+\gls{lora} uses license-free radio bands. In the UK, this is covered by 
+Directive 2011/829/EU \cite{eu:directive}, transferred over to 
+Ofcom IR 2030 \cite{ofcom:licenceexempt}. This will be important 
+for when selecting hardware, the radio will need to be able 
+to transmit at \qty{868.0}{\MHz}.
+
+\subsection{Alternative products}
+
+\subsubsection{Patents}
+Investigating existing patents, there appears to be a device 
+that performs a similar function published in China \cite{patent:chinatracker}. However,
+it makes no mention on how the tracker operates besides the use of \gls{lora} 
+and discusses more the construction of the casing. A similar patent can be found 
+\cite{patent:bletracker}, which again primarily discusses the construction of the tracker 
+casing. However, from the title it can be deduced that the tracker is Bluetooth-based. 
+
+\subsubsection{Similar products}
+\label{sec:litsim}
+The problem of pet, or more broadly, animal, tracking is a question that has only gained
+greater focus in our ever more well-connected world. Tracking farm animals, for example, 
+is already an issue being directly tackled \cite{davcev:lorawan}. Crucially, this leverages 
+the \acrshort{lpwan} of \gls{lorawan} specifically, and relies less on \gls{lora} as a 
+point-to-point communication tool. This is a sensible approach due to the large number of 
+incoming connections, which is less applicable here. 
+
+A review of modern pet tracking advances bases itself on existing mobile network 
+infrastructure \cite{sivarman:tracker}.
+However, one of the key drawbacks it mentions is difficulty of implementation, especially 
+amongst agricultural societies. This emphasises the importance of both suitability away 
+from infrastructure,
+and simplicity and ease of setup for the consumer. 
+
+This problem is present with products the tracker of this project may compete with. 
+One of the foremost such, 
+Tractive, requires an ongoing subscription due to the usage of an inbuilt \acrshort{sim} card, 
+costing as much as £12 per month in addition to the upfront cost of £44.99 \cite{tractive:price, tractive:cat}. 
+With reliance on a third party for this service, 
+issues like privacy\footnote{
+    Tractive may collect ``pet related data that allows to draw conclusions about the pet owner'', which may 
+    be of concern for some people \cite{tractive:privacy}.
+} and service availability where the company folds are brought into question. 
+
+The alternative is to forego network reliance, and communicate on a point-to-point basis. This is the 
+approach this project will follow. One product, the Tabcat V2, follows this approach. 
+While the product capabilities vary depending on environmental conditions, the quoted usable range is 
+\qty{152}{\m} in typical conditions \cite{tabcat:tracker}. This does not cover the total possible 
+roaming range as discussed in \cref{sec:roam}. Their approach is also specifically limited to one 
+tracker registered to one tag. This may be an issue in a multi-cat household as \qty{35}{\%} of 
+cat-owning households own multiple 
+cat \cite{catsprotection:catsreport}. 
+
+The final style discussed here is that employed by products like Tile and AirTags. 
+These are Bluetooth devices (i.e. very short 
+range only) and have additional reliance on Tile app and Apple device owners respectively, 
+meaning the network is even more restricted \cite{tile}.
+This also raises additional security concerns, especially regarding 
+unwanted tracking \cite{haskell2021, lovejoy2021}.

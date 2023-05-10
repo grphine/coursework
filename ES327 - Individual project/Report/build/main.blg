@@ -1,0 +1,23 @@
+[0] Config.pm:307> INFO - This is Biber 2.19
+[0] Config.pm:310> INFO - Logfile is 'main.blg'
+[115] biber-MSWIN32:340> INFO - === 
+[158] Biber.pm:419> INFO - Reading 'main.bcf'
+[308] Biber.pm:976> INFO - Using all citekeys in bib section 0
+[325] Biber.pm:4419> INFO - Processing section 0
+[338] Biber.pm:4610> INFO - Looking for bibtex file '../extras/refs.bib' for section 0
+[423] bibtex.pm:1713> INFO - LaTeX decoding ...
+[513] bibtex.pm:1519> INFO - Found BibTeX data source '../extras/refs.bib'
+[891] UCollate.pm:68> INFO - Overriding locale 'en-GB' defaults 'variable = shifted' with 'variable = non-ignorable'
+[891] UCollate.pm:68> INFO - Overriding locale 'en-GB' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[891] Biber.pm:4239> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-GB'
+[891] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-GB'
+[945] bbl.pm:660> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[988] bbl.pm:763> INFO - Output to main.bbl
+[988] Biber.pm:131> WARN - legacy month field 'feb' in entry 'liando2019' is not an integer - this will probably not sort properly.
+[988] Biber.pm:131> WARN - legacy month field 'April' in entry 'ofcom:licenceexempt' is not an integer - this will probably not sort properly.
+[988] Biber.pm:131> WARN - legacy month field 'Jan' in entry 'foreman2021' is not an integer - this will probably not sort properly.
+[988] Biber.pm:131> WARN - legacy month field 'Apr' in entry 'zhang2022' is not an integer - this will probably not sort properly.
+[988] Biber.pm:131> WARN - legacy month field 'dec' in entry 'blomgren:lithium' is not an integer - this will probably not sort properly.
+[988] Biber.pm:131> WARN - legacy year field '2015-09-09' in entry 'patent:lora' is not an integer - this will probably not sort properly.
+[989] Biber.pm:131> WARN - legacy month field 'Feb' in entry 'finka2019' is not an integer - this will probably not sort properly.
+[989] Biber.pm:133> INFO - WARNINGS: 7

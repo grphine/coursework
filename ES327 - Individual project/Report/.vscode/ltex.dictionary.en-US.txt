@@ -1,0 +1,7 @@
+LoRa
+PiHut
+LiPo
+Featherwing
+JST
+Pimoroni
+Farnell

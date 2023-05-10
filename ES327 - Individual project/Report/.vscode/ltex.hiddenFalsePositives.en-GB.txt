@@ -1,0 +1,73 @@
+{"rule":"MORFOLOGIK_RULE_EN_GB","sentence":"^\\QDevelop a pcb for the tracker to minimise form-factor, and produce adequate casing for it to be fitted to a pet collar or harness.\\E$"}
+{"rule":"EN_A_VS_AN","sentence":"^\\QHowever, \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q radio by itself as an rf communication method is perfectly capable as a transmission medium without the network overlay to rely on.\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qrf - usually forming a point-to-point connection between the user and the wearable.\\E$"}
+{"rule":"APARTMENT-FLAT","sentence":"^\\QThis may be particularly useful for owners of adventurous pets who live on high floors in apartments or otherwise restrictive dwelling.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_GB","sentence":"^\\Q\\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q and lpwan in general are beginning to proliferate and find common use, particularly with the Internet of Things \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_GB","sentence":"^\\QHowever, \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q radio by itself as an rf communication method is perfectly capable as a transmission medium without the network overlay to rely on.\\E$"}
+{"rule":"COMMA_PARENTHESIS_WHITESPACE","sentence":"^\\QHanmer et al. suggests that the maximum distance of 278 , with a median maximum of 99 \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q.\\E$"}
+{"rule":"COMMA_PARENTHESIS_WHITESPACE","sentence":"^\\QIt furthermore elaborates on how this decreases with the level of urbanisation, with urban areas seeing the smallest home range (79 ).\\E$"}
+{"rule":"COMMA_PARENTHESIS_WHITESPACE","sentence":"^\\QBarratt and Meek further corroborate the general value, with a mean range of 2.54 (159 radius) and 2.9 (170 ) respectively \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q.\\E$"}
+{"rule":"COMMA_PARENTHESIS_WHITESPACE","sentence":"^\\QFurthermore, the range can vary greatly on the cat's personality, with `wandering' cats having a roaming range (5.1 ) an order of magnitude greater than `sedentary' cats (0.4 ) \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_GB","sentence":"^\\QA marked finding by Finka et al. indicates that owners who score highly in neuroticism on the \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q were associated with lower likelihood of permitting “ad libitum access to the outdoors” to their cat \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q.\\E$"}
+{"rule":"COMMA_PARENTHESIS_WHITESPACE","sentence":"^\\QNotably, feral and unowned cats have a much greater home range (easily 1.5 ) than the average tame cat \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q.\\E$"}
+{"rule":"FILE_EXTENSIONS_CASE","sentence":"^\\Q\\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q radio modulation is a technique derived from css, a combination of chirp signals and spread-spectrum technology.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_GB","sentence":"^\\QThe theoretical breakdown of frequency shift chirp modulation used by \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q is provided by Vangelista \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q.\\E$"}
+{"rule":"COMMA_PARENTHESIS_WHITESPACE","sentence":"^\\QThis will be important for when selecting hardware, the radio will need to be able to transmit at 868.0 .\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_GB","sentence":"^\\QCrucially, this leverages the lpwan of \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q specifically, and relies less on \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q as a point-to-point communication tool.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_GB","sentence":"^\\QOne of the foremost such, Tractive, requires an ongoing subscription due to the usage of an inbuilt sim card, costing as much as £12 per month in addition to the upfront cost of £44.99 \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_GB","sentence":"^\\QOne product, the Tabcat V2, follows this approach.\\E$"}
+{"rule":"COMMA_PARENTHESIS_WHITESPACE","sentence":"^\\QAny gaps in live location should not be any greater than 300 .\\E$"}
+{"rule":"COMMA_PARENTHESIS_WHITESPACE","sentence":"^\\QThe tracker should be suited for, at worst case, a dense urban environment, and sufficiently capable to report information up to at least 300 , given the roaming range of a cat and the quoted values by competitors products.\\E$"}
+{"rule":"COMMA_PARENTHESIS_WHITESPACE","sentence":"^\\QAs reasonable figure to start with would be dimensions of 50 x 70 x 10 .\\E$"}
+{"rule":"COMMA_PARENTHESIS_WHITESPACE","sentence":"^\\QWith that in mind, an aim for half that at, 5% of the minimum likely weight (3 ) is a reasonable value, such that the weight is appropriate for any cat.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_GB","sentence":"^\\QMicrocontroller or sbc for computation.\\E$"}
+{"rule":"EN_A_VS_AN","sentence":"^\\QRegarding the transmitter controller; while this may be as simple as a microcontroller, with extensibility and future-proofing in mind, an sbc will be the product of focus.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_GB","sentence":"^\\QRegarding the transmitter controller; while this may be as simple as a microcontroller, with extensibility and future-proofing in mind, an sbc will be the product of focus.\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qtableh2 Board Description Benefits Drawbacks Raspberry Pi A series of general purpose sbc using Broadcom BCM series soc.\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qtableh2 Board Description Benefits Drawbacks Arduino Uno One of the most popular microcontrollers available, with an ATmega328P at its core.\\E$"}
+{"rule":"ENGLISH_WORD_REPEAT_RULE","sentence":"^\\QIntegrated \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q modem Feather RP2040 RP2040 board produced by Adafruit in the feather form-factor.\\E$"}
+{"rule":"SOME_OF_THE","sentence":"^\\QWith the vendor adjustment made, some of the initial hardware had to be substituted for more expensive alternatives.\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qgps.\\E$"}
+{"rule":"UNIT_SPACE","sentence":"^\\QThe \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q can be broken down as follows \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q: [\\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q] Message ID [223029.00] Time in UTC (22:30:29.00) [A] Validity - Active/Void [5223.00,N] Latitude (5223.00” North) [00133.00,W] Longitude (00133.00” West) [0.91] Speed (knots) [44.23] Tracking angle [140123] Date (14th January 2023) [A] Positioning mode indicator [A] Autonomous [D] Differential [E] Estimated (dead reckoning) [M] Manual input [N] Data not valid [40] Checksum (XOR of all bytes between $ and *)\\E$"}
+{"rule":"COMMA_PARENTHESIS_WHITESPACE","sentence":"^\\QTwo additional benefits are that the length is also easily attainable as the method .length() on the class, and also conversion to an array of type char is supported.\\E$"}
+{"rule":"EN_A_VS_AN","sentence":"^\\QThe tester will be plugged into a usb outlet, and the transmitter will be plugged into the tester.\\E$"}
+{"rule":"SENTENCE_WHITESPACE","sentence":"^\\QSerial) delay(10); as it prevents the code executing until the serial interface is connected so output can be monitored.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_GB","sentence":"^\\QThe public member function send() of the RH_RF95 class \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q takes two arguments, data (uint8_t*) and len (uint8_t).\\E$"}
+{"rule":"SENTENCE_WHITESPACE","sentence":"^\\QSerial) delay(10); as it prevents the code executing until the serial interface is connected, so output can be monitored.\\E$"}
+{"rule":"COMMA_PARENTHESIS_WHITESPACE","sentence":"^\\QIt was left overnight and checked again, at this point registering 8 .\\E$"}
+{"rule":"COMMA_PARENTHESIS_WHITESPACE","sentence":"^\\QThe results suggest that, during normal operation, the transmitter requires around only 0.5 .\\E$"}
+{"rule":"COMMA_PARENTHESIS_WHITESPACE","sentence":"^\\QConsidering the transmitter needs to operate for nine hours, this suggests a battery capacity requirement of 540 .\\E$"}
+{"rule":"CD_NN","sentence":"^\\QThis gives a rough total of 60 typical draw in the average case.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_GB","sentence":"^\\QThe first handles the UnicodeDecodeError directly, while the second handles anything else that may occur, in case there are other issues that have not been uncovered.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_GB","sentence":"^\\QThe strip antenna, on the other hand, use a very delicate cable between the strip itself and the connector, and were therefore easily sheared by one Felis catus who found it unattended during operation.\\E$"}
+{"rule":"COMMA_PARENTHESIS_WHITESPACE","sentence":"^\\QFor the device operating at 868.0 , this appears like the following: \\E(?:Dummy|Ina|Jimmy-)[0-9]+$"}
+{"rule":"COMMA_PARENTHESIS_WHITESPACE","sentence":"^\\QThe antenna whip measures between 21 and 25 , although it is impossible to say exactly how long it is without opening it up.\\E$"}
+{"rule":"COMMA_PARENTHESIS_WHITESPACE","sentence":"^\\QIf this antenna is centred near 868 , it may be a five-eighth whip, given \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q.\\E$"}
+{"rule":"COMMA_PARENTHESIS_WHITESPACE","sentence":"^\\QAt 4.2 , capacity as it maximum, whereas the board will cease function around 3.2 .\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qgps fix takes the following values \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q:\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_GB","sentence":"^\\QThe latter two required \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q data, which can be included with the library command PMTK_SET_NMEA_OUTPUT_RMCGGA.\\E$"}
+{"rule":"COMMA_PARENTHESIS_WHITESPACE","sentence":"^\\QThe battery was charged to maximum capacity (4.2 ), before being allowed to discharge completely.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_GB","sentence":"^\\QThe inbuilt rstrip() method on a string type allows a specific character (in this case, 00) to be removed.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_GB","sentence":"^\\Qtableh1 Date Time Packet Longitude Latitude Voltage 23/01/27 20:27:27 3040 0 0 4.15 23/01/27 20:27:32 3041 0 0 4.15 23/01/27 20:27:35 unicode parse error 23/01/27 20:27:32 3041 0 0 4.15 23/01/27 20:27:37 3042 0 0 4.157 23/01/27 20:27:42 3043 0 0 4.15 Non-standard format example - 230127.csv sample\\E$"}
+{"rule":"COMMA_PARENTHESIS_WHITESPACE","sentence":"^\\QRecording starts with a full battery, indicated by 4.2 .\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qgps was not unavailable for long enough to indicate whether not having a fix has any significant impact on battery consumption.\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qgps location fix did not have a noticeable effect upon charging.\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qtableh1 Date Time Packet Longitude Latitude Voltage 23/01/27 20:27:27 3040 0 0 4.15 23/01/27 20:27:32 3041 0 0 4.15 23/01/27 20:27:35 unicode parse error 23/01/27 20:27:32 3041 0 0 4.15 23/01/27 20:27:37 3042 0 0 4.157 23/01/27 20:27:42 3043 0 0 4.15 Non-standard format example - 230127.csv sample\\E$"}
+{"rule":"COMMA_PARENTHESIS_WHITESPACE","sentence":"^\\QTransmission was set at 5 , which is better than specified in \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q.\\E$"}
+{"rule":"EN_A_VS_AN","sentence":"^\\QIt is further limited by the maximum current a usb 2.0 connector can draw (100 ) \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q.\\E$"}
+{"rule":"COMMA_PARENTHESIS_WHITESPACE","sentence":"^\\QIt is further limited by the maximum current a usb 2.0 connector can draw (100 ) \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_GB","sentence":"^\\QInvalid hexadecimal - This appears due to the way Python bytearray is used.\\E$"}
+{"rule":"SOME_OF_THE","sentence":"^\\QThis leads to non-hexadecimal characters appearing, and likely some of the missing characters also.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_GB","sentence":"^\\QThe RadioHead library supports packet confirmations with the RHReliableDatagram class.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_GB","sentence":"^\\QThis solution alone would require some reverse engineering of the recvfromAck method in order to use it on the receiver end, however can be used to request retransmission (i.e. fail to acknowledge the packet) should it arrive corrupted.\\E$"}
+{"rule":"COMMA_PARENTHESIS_WHITESPACE","sentence":"^\\QAs reporting is set to 5 , up to five packets can fail in a row for the specification of 30 reporting to be met.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_GB","sentence":"^\\QThe manufacturing method of choice was 3D printing using an Ultimaker 3 \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q printer.\\E$"}
+{"rule":"COMMA_PARENTHESIS_WHITESPACE","sentence":"^\\QThe antenna hole diameter was doubled to 5 .\\E$"}
+{"rule":"COMMA_PARENTHESIS_WHITESPACE","sentence":"^\\QThe casing with all components weighs in at 55 .\\E$"}
+{"rule":"POSSESSIVE_APOSTROPHE","sentence":"^\\QThe plotting software of choice was QGIS, a free and open-source gis software package.\\E$"}
+{"rule":"COMMA_PARENTHESIS_WHITESPACE","sentence":"^\\QFocusing on the points recorded on Lord Bhattacharyya Way and Library Rd., assuming these points were sequential (5 ) transmissions, this indicates an approximate travel speed of 40 to 55 .\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_GB","sentence":"^\\QAnalysis of met objectives is available in \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q, where success of a give point is determined by whether the objective was met tableg , unmet tabler , or somewhat met tablea .\\E$"}
+{"rule":"COMMA_PARENTHESIS_WHITESPACE","sentence":"^\\QAnalysis of met objectives is available in \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q, where success of a give point is determined by whether the objective was met tableg , unmet tabler , or somewhat met tablea .\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qtableh2 Objective Met?\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_GB","sentence":"^\\QDevelop pcb, fit to harness, and live-test tabler Certification tabler Objectives evaluation\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_GB","sentence":"^\\QResearch cat characteristics tableg Research \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q radio requirements tableg Design the system and specification tableg Develop the tracker according to specification tableaFurther details can be found in \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q.\\E$"}

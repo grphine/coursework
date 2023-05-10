@@ -1,0 +1,38 @@
+{"rule":"COMMA_PARENTHESIS_WHITESPACE","sentence":"^\\Q[ Mapping=tex-text, BoldFont=HelveticaNowText-Regular, ItalicFont=HelveticaNowText-LightItalic, BoldItalicFont=HelveticaNowText-RegIta ][HelveticaNowText-Light]\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_GB","sentence":"^\\Q[ Mapping=tex-text, BoldFont=HelveticaNowText-Regular, ItalicFont=HelveticaNowText-LightItalic, BoldItalicFont=HelveticaNowText-RegIta ][HelveticaNowText-Light]\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_GB","sentence":"^\\Qmyheadings  [L] [R]1922268\\E$"}
+{"rule":"WHITESPACE_RULE","sentence":"^\\Qmyheadings  [L] [R]1922268\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qtableh2 Aim Met?\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qtableh1 Fundamentals - minimum requirements to demonstrate the viability of the product.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_GB","sentence":"^\\QObtain GPS location tablea Transmit location to a receiver via LoRa tablea Continue transmission remotely for a significant period of time tablea Transmit at a regular interval tablea\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_GB","sentence":"^\\Qtableh1 Improvements - upgrades to the product to improve the user's quality of life when using the product Ergonomics for owner and pet (fitting and wearing) tablea Stability of the system (high uptime) tablea Installable by an average person tablea Location information easily viewable tablea\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_GB","sentence":"^\\Qtableh1 Production - requirements to ensure the product is suitable for manufacture General safety and suitability to be worn tabler Resistance to damage and weather tabler Certification requirements and law compliance tablea Scale considerations, especially manufacturing tablea Specification evaluation\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_GB","sentence":"^\\QtablegThe tracker obtains accurate GPS coordinates, within 5 , and is capable of including information like altitude, speed, and whether the reported location is `current'.\\E$"}
+{"rule":"COMMA_PARENTHESIS_WHITESPACE","sentence":"^\\QtablegThe tracker obtains accurate GPS coordinates, within 5 , and is capable of including information like altitude, speed, and whether the reported location is `current'.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_GB","sentence":"^\\QtablegInformation is successfully transmitted via LoRa, however there is a small issue with occasional corruption of packets.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_GB","sentence":"^\\QtablegBattery life allows transmission of up to 15 hours.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_GB","sentence":"^\\QtablegThe last updated location is transmitted every 5 .\\E$"}
+{"rule":"COMMA_PARENTHESIS_WHITESPACE","sentence":"^\\QtablegThe last updated location is transmitted every 5 .\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qtableh1 Improvements - upgrades to the product to improve the user's quality of life when using the product.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_GB","sentence":"^\\QtablerWhile a case was designed and houses the components quite well, the primary aim was protection of the electronics during testing, as opposed to suitability for this use.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_GB","sentence":"^\\QtableaThe system is capable of running unattended for long periods of time, however only the receiving end has any error handling capabilities.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_GB","sentence":"^\\QtableaSetting up the antenna or other system components is not particularly difficult.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_GB","sentence":"^\\QtableaThe location information is not difficult to see since it is stored plain-text in a file on the receiver.\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qtableh1 Production - requirements to ensure the product is suitable for manufacture.\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qtabler Resistance to damage and weather.\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qtableh2 Aim Remarks\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_GB","sentence":"^\\QtablerThis follows ergonomics, wherein the case is not designed to be worn at the stage that it is at as it cannot be attached in any way.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_GB","sentence":"^\\QtableaIt offers no protection from the environment.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_GB","sentence":"^\\QtablerNot considered.\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qtableg Research LoRa radio requirements for use, and competitive products.\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qtableg Design the system on a macroscopic level to inform hardware and software require- ments.\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qs-s f-s f-f\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_GB","sentence":"^\\QtablegThis was well met, with the level of detail in research appropriate for defining the required specification points for the tracker.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_GB","sentence":"^\\QtablegThe exact details of the workings of LoRa radio were not delved into deeply due to limited relevance, however an overview was provided.\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\QtablegA general overview was provided, including a software flowchart and hardware block diagram, so the tracker can be understood in generality.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_GB","sentence":"^\\QtableaSome of the specification points were met, but not all of them.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_GB","sentence":"^\\QtableaVarious tests were performed to ascertain different characteristics.\\E$"}
+{"rule":"SOME_OF_THE","sentence":"^\\QThe tracker did meet some of the core aims, and with further work, could certainly meet outstanding points.\\E$"}
+{"rule":"COMMA_PARENTHESIS_WHITESPACE","sentence":"^\\QWith confidence, the tracker works in very poor conditions within 175 .\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_GB","sentence":"^\\QtablerAs time ran out for test thoroughness in the previous objective, from hereon no further points were tackled.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_GB","sentence":"^\\QtablerThis objective would have defined the tracker to a point where it was potentially patentable, however was not addressed at all due to where development for the project had to end.\\E$"}
