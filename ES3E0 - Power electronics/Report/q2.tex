@@ -1,0 +1,37 @@
+\section{DC-DC Converter Design and Specifications}
+\label{sec:specification}
+$   % parameters
+    V_{in} = \qty{30}{\volt} \\
+    V_{out} = \qty{48}{\volt} \\
+    P = \qty{100}{\watt} \\
+    \Delta V = \qty{100}{\milli\volt} \\
+    f = \qty{25}{\kilo\hertz} \implies T = \qty{4d-5}{\second}
+$
+
+From the parameters above, the peak current can be found. The inductor needs to operate above this.
+Furthermore, the capacitor needs to operate above $V_{out}$.
+\begin{align*}  % current max
+    I_{max} & = \frac{P}{V_{out}}                                    \\
+            & = \frac{\qty{100}{\watt}}{\qty{48}{\volt}}             \\
+            & = \qty[parse-numbers=false]{2.08\overline{3}}{\ampere}
+\end{align*}
+Using this, the duty cycle can be found.
+\begin{align*}  % duty cycle
+    \rho & = 1 - \frac{V_{out}}{V_{in}}                  \\
+         & = 1 - \frac{\qty{30}{\volt}}{\qty{48}{\volt}} \\
+         & = \frac{3}{8}
+\end{align*}
+Finally, the capacitor and inductor values can be calculated.
+\begin{align*}  % capacitor
+    C_{out} & = \frac{I_{max}\rho}{f \cdot \Delta V}                                                                                                  \\
+            & = \frac{ \qty[parse-numbers=false]{2.08\overline{3}}{\ampere} \cdot \frac{3}{8} }{ \qty{25}{\kilo\hertz} \cdot \qty{100}{\milli\volt} } \\
+            & = \qty{312}{\micro\farad}
+    \\ \\
+    L       & = \frac{V_{in} \rho T}{2 \cdot I_{max}}                                                                                                 \\
+            & = \frac{ \qty{30}{\volt} \cdot \frac{3}{8} \cdot \qty{4d-5}{\second} }{2 \cdot \qty[parse-numbers=false]{2.08\overline{3}}{\ampere} }   \\
+            & = \qty{104}{\micro\henry}
+\end{align*}
+
+The found capacitor and inductor values are the minimum, therefore the next highest value
+of the units available need to be used. The \qty{150}{\micro\henry} (rated \qty{6.5}{\ampere})
+inductor and \qty{330}{\micro\farad} (rated \qty{63}{\volt}) capacitor are chosen.

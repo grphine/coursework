@@ -1,0 +1,21 @@
+2022-2023 ES3C5 Coursework Lab Assignment parameters for student with ID 1922268
+DO NOT USE THESE PARAMETERS IF YOUR STUDENT NUMBER IS NOT 1922268
+
+Question 1:
+For Question 1 part (b), use pass band ripple parameter rp = 0.092 dB, pass band edge frequency fp1 = 3331 Hz, and stop band edge frequency fstop1 = 3798 Hz.
+For Question 1 part (c), use A1 = 0.55 and delay t1 = 0.14 seconds.
+For Question 1 part (d), use noise source vector n1 from your signal file u1922268_lab_signals.mat.
+
+Question 2:
+Use data vector y2 from your signal file u1922268_lab_signals.mat.
+You have data that was sampled at f2s = 1800 Hz. You are expecting a signal at f_satellite = 600 Hz.
+
+Question 3:
+Use output vector y3 from your signal file u1922268_lab_signals.mat.
+Your constant sampling interval is Ts3 = 0.025 seconds.
+Your transient heating profile is of the form y3(t) = A3*(1-exp(-0.11*t)) + B3*exp(-0.46*t)*sin(11.60*t) + C3*sin(25.13*t) + w3(t).
+
+Question 4:
+Use input sequence x4 and output sequence y4 from your signal file u1922268_lab_signals.mat.
+Your wireless propagation difference equation is of the form y4[n] = A4*x[n] + B4*x[n-1] + C4*x[n-6] + D4*x[n-9] + w4[n].
+For Q2(b), the final s4 = 46 samples have a noise variance that is increased by a factor of k4 = 12.0.
