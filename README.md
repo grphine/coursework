@@ -28,7 +28,8 @@ circuit using the testing features of the Verilog HDL and a professional standar
 | Extra features like using other board inputs/outputs (leds, seven segment display, GPIO, accelerometer) | 10     |
 | User of sprites from a memory block                                                                     | 10     |
 | Marks for creative design ideas                                                                         | 5      |
-| 3col span **Report**                                                                                                      |
+|---------------------------------------------------------------------------------------------------------|--------|
+| **Report**                                                                                              |        |
 | Introduction and background discussion on displays/VGA                                                  | 5      |
 | Design description                                                                                      | 25     |
 | Testing description                                                                                     | 5      |
@@ -54,13 +55,11 @@ Result - 74%
 | e              | 12    | 6      |
 |----------------|-------|--------|
 | **Question 2** |       |        |
-|----------------|-------|--------|
 | a              | 8     | 6      |
 | b              | 5     | 4      |
 | c              | 8     | 6      |
 |----------------|-------|--------|
 | **Question 3** |       |        |
-|----------------|-------|--------|
 | a              | 3     | 3      |
 | b              | 2     | 2      |
 | c              | 1     | 1      |
@@ -69,7 +68,6 @@ Result - 74%
 | f              | 8     | 5      |
 |----------------|-------|--------|
 | **Question 4** |       |        |
-|----------------|-------|--------|
 | a              | 4     | 4      |
 | b              | 3     | 3      |
 | c              | 2     | 2      |
