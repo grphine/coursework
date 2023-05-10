@@ -1,0 +1,9 @@
+comparator layout power - 68.1894uW
+not - 3.82803u
+nand2 - 4.5951u
+nadn3 - 4.17301u
+nor2 - 4.3288u
+nor3 - 4.91139u
+
+
+

@@ -1,0 +1,61 @@
+\clearpage
+\section{Evaluation}
+
+\begin{xltabular}{\textwidth}{YYYYYY}
+    \hline
+    Peak power & Area efficiency & Chip area & Transistor count & Delay & Recommended clock \\
+    \hline
+    \qty{68.189}{\uW} & \qty{102.233}{\percent} & \qty{19.365}{\um\squared} & 86 & \qty{400}{\ps} & $\leqslant$\qty{2.5}{\GHz}  \\
+    \hline    
+    \caption{Performance metrics}
+\end{xltabular} 
+
+The comparator as a whole appears to function quite well. 
+It responds appropriately and quickly to the input of two 4-bit numbers, A and B, to set 
+the outputs G (greater), E (equal), or L (lesser). 
+Die area is low and utilisation is high, achieved by overlapping standard cells.
+The design uses a reasonably low number of transistors, at 86, spread across five 
+gate ICs. While designs using fewer transistors are possible, they may introduce 
+complexity when maintaining standardised cells or perform slower. 
+
+\subsection{Standard cells}
+The design leverages the use of standard cells to attain the extremely high area
+efficiency. The cells share a common n-well, implants, and power rails, allowing 
+gates to be overlapped. While each individual gate's area efficiency can be improved, 
+the aim for standardisation allows the top cell to recoup those losses. The large diffusions 
+required may also increase the expense of manufacture. 
+The use of taller cells may allow for this expense to be reduced, however that would 
+have to balanced against the total area used. 
+
+A downside of designing in this manner is that it leads to routing with little to no 
+flexibility to accommodate changes. Using the comparator as a standard cell itself 
+may require adjustment of sizing, which may prove difficult. 
+
+\subsection{Routing}
+The pins and rails for each cell are exposed on metal 3. Routing on the top cell
+then uses metal 4 to move horizontally between cells. As the rails are on 
+the same metal layer as the vertical routing, the maximum number of horizontal lines that 
+can be supported is reduced. The comparator falls within the level of complexity that 
+can be supported, however it is close to the limit of what is possible with a single line
+layout given the maximum number of horizontal tracks (six) is reached. 
+
+Routing can be improved by exposing the rails on a different layer to the internal pins (thereby 
+allowing overlapping), and increasing the standard cell height for more complex designs. For particularly 
+complex designs, routing may not be possible across the cells, in which case pins may need to move 
+to be commonly accessible from a routing channel.
+
+\subsection{Power dissipation}
+Compact routing across the cells additionally lead to a low value of power dissipation during 
+switching. Due to the level of complexity of the design, and thereby the total number of transistors used,
+the static power dissipation is in the region of yW and negligible when analysing the comparator by itself.  
+
+\subsection{Delay}
+The minimum delay required was calculated to be \qty{100}{\ps}, which is 3.5 times smaller 
+than the observed minimum delay, \qty{350}{\ps}. This indicates that there may be areas for 
+improvement in the design to minimise this, although managing this without sacrificing on 
+other aspects like area utilisation may be difficult to balance. 
+One such improvement may be to change the NOR gate across G and E for an XNOR, potentially allowing 
+a quicker response by limiting transient outputs. 
+
+
+

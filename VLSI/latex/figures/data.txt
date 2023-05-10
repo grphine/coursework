@@ -1,0 +1,19 @@
+NOT
+chip area: 0.611
+area utilisation: 57.595
+
+nand2
+chip area: 0.881
+area utilisation: 66.239
+
+nand3
+chip area: 1.151
+area utilisation: 70.727
+
+nor2
+chip area: 0.881
+area utilisation: 64.877
+
+nor3 
+chip area: 1.151
+area utilisation: 68.641

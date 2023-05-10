@@ -1,0 +1,429 @@
+
+
+\section{Introduction}
+
+The logic required for the comparator can be determined using a truth table. There are three expected outputs for 4-bit inputs `A' and `B':
+\begin{itemize}
+    \item A > B (Greater)
+    \item A = B (Equal)
+    \item A < B (Lesser)
+\end{itemize}
+
+\begin{xltabular}{\linewidth}{|YYYY|YYY|}
+    \hline
+    \rowcolor{tableh1}
+    \multicolumn{4}{|c}{Input} & \multicolumn{3}{|c|}{Output} \\
+    \hline
+    \rowcolor{tableh2}
+    A\textsubscript{3}, B\textsubscript{3} & A\textsubscript{2}, B\textsubscript{2} & A\textsubscript{1}, B\textsubscript{1} & A\textsubscript{0}, B\textsubscript{0} & A > B (G) & A = B (E) & A < B (L) \\
+    \hline
+    A\textsubscript{3} > B\textsubscript{3} & X & X & X & 1 & 0 & 0 \\
+    A\textsubscript{3} = B\textsubscript{3} & A\textsubscript{2} > B\textsubscript{2} & X & X & 1 & 0 & 0 \\
+    A\textsubscript{3} = B\textsubscript{3} & A\textsubscript{2} = B\textsubscript{2} & A\textsubscript{1} > B\textsubscript{1} & X & 1 & 0 & 0 \\
+    A\textsubscript{3} = B\textsubscript{3} & A\textsubscript{2} = B\textsubscript{2} & A\textsubscript{1} = B\textsubscript{1} & A\textsubscript{0} > B\textsubscript{0} & 1 & 0 & 0 \\
+    \hline
+    A\textsubscript{3} = B\textsubscript{3} & A\textsubscript{2} = B\textsubscript{2} & A\textsubscript{1} = B\textsubscript{1} & A\textsubscript{0} = B\textsubscript{0} & 0 & 1 & 0 \\
+    \hline
+    A\textsubscript{3} < B\textsubscript{3} & X & X & X & 0 & 0 & 1 \\
+    A\textsubscript{3} = B\textsubscript{3} & A\textsubscript{2} < B\textsubscript{2} & X & X & 0 & 0 & 1 \\
+    A\textsubscript{3} = B\textsubscript{3} & A\textsubscript{2} = B\textsubscript{2} & A\textsubscript{1} < B\textsubscript{1} & X & 0 & 0 & 1 \\
+    A\textsubscript{3} = B\textsubscript{3} & A\textsubscript{2} = B\textsubscript{2} & A\textsubscript{1} = B\textsubscript{1} & A\textsubscript{0} < B\textsubscript{0} & 0 & 0 & 1 \\
+    \hline
+    \caption{Comparator truth table}\label{table:truth}
+\end{xltabular}
+
+To simplify the set of equations, the truth table output can be modified such that only G and E need to be considered. L can then be inferred by whether G and E are both 0.
+This gives the resultant equations:
+\vspace{11pt}
+
+\begin{lstlisting}[label=boolequg, caption={`A > B' equations},captionpos=b]
+G = A3B3' + A3A2B2' + A2B3'B2' + A3A2A1B1' + A2A1B3'B1' + A3A1B2'B1' + A1B3'B2'B1' + A3A2A1A0B0' + A2A1A0B3'B0' + A3A1A0B2'B0' + A1A0B3'B2'B0' + A3A2A0B1'B0' + A2A0B3'B1'B0' + A3A0B2'B1'B0' + A0B3'B2'B1'B0'
+\end{lstlisting}
+
+\begin{lstlisting}[label=booleque, caption={`A = B' equations},captionpos=b]
+E = A3A2A1A0B3B2B1B0 + A3'A2A1A0B3'B2B1B0 + A3A2'A1A0B3B2'B1B0 + A3'A2'A1A0B3'B2'B1B0 + A3A2A1'A0B3B2B1'B0 + A3'A2A1'A0B3'B2B1'B0 + A3A2'A1'A0B3B2'B1'B0 + A3'A2'A1'A0B3'B2'B1'B0 + A3A2A1A0'B3B2B1B0' + A3'A2A1A0'B3'B2B1B0' + A3A2'A1A0'B3B2'B1B0' + A3'A2'A1A0'B3'B2'B1B0' + A3A2A1'A0'B3B2B1'B0' + A3'A2A1'A0'B3'B2B1'B0' + A3A2'A1'A0'B3B2'B1'B0' + A3'A2'A1'A0'B3'B2'B1'B0'
+\end{lstlisting}
+
+
+\begin{wraptable}[5]{R}{0.2\textwidth}
+    \vspace{-33pt}
+    \centering
+    \begin{xltabular}{\linewidth}{YY|Y}
+        \hline
+        \rowcolor{tableh1}
+        G & E & \cellcolor{tableh2}L \\
+        \hline
+        0 & 0 & 1 \\
+        X & 1 & 0 \\
+        1 & X & 0 \\
+        \hline
+        \caption{L truth table}\label{table:truth2}
+    \end{xltabular}
+\end{wraptable}
+A schematic can then be designed. To accommodate L, an additional gate is required to evaluate the output of G and E.
+G and E should not be able to assert at the same time\footnote{
+    It may be important to ensure outputs cannot assert at the same time.
+}, however for the calculation of L it is irrelevant.
+Therefore, either a NOR or an XNOR gate is appropriate. The choice ultimately falls as to which would be most appropriate
+for the given design.
+\begin{wraptable}[9]{L}{0.28\textwidth}
+    \vspace{-5pt}
+    % \centering
+\begin{tabular}{ccc}
+    \hline
+    \rowcolor{tableh1}
+    Gate                & Inputs & Quantity \\
+    \hline
+    NOT                 & 1      & 9        \\
+    \hline
+    \multirow{2}*{NAND} & 2      & 10       \\
+                        & 3      & 3        \\
+    \hline
+    \multirow{2}*{NOR}  & 2      & 1        \\
+                        & 3      & 1        \\
+    \hline
+\end{tabular}
+\caption{Gate usage} \label{table:gates}
+\end{wraptable}
+
+% \begin{itemize}
+%     \item NOT x9
+%     \item 2-input NAND x10
+%     \item 3-input NAND x3
+%     \item 2-input NOR x1
+%     \item 3-input NOR x1
+% \end{itemize}
+
+In total, four gate types are used for the schematic in \cref{fig:schematic}, shown in \cref{table:gates},
+which overall required 86 transistors. However, it 
+is possible to reduce the number of transistors or the number of gate ICs.
+During research and design, the fewest transistor count determined possible
+was 70. As this requires a 5-input NAND gate\footnote{
+    Gates with 4 series transistors begin to suffer delays such that it is better to split the logic across multiple gates.
+}, the next most feasible design uses 80 transistors. Both of these designs are reliant on using a non-standard XOR gate
+in order to determine equality between A and B. While typically an XOR gate requires 8 transistors,
+the fewest possible is 3 \cite{chandra2015}, however the output suffers from signal degradation and requires a
+buffer to clean the output. While this method may reduce the overall die area required,
+it adds a layer of complexity to both the overall design process, and per component simulation.
+
+\begin{figure}[H]
+    
+    \centering
+    \scalebox{0.8}{
+        \begin{tikzpicture}
+            \ctikzset{
+                logic ports=ieee,
+                % logic ports/scale=1,
+                logic ports/fill=lightgray
+            }
+            % gates
+            \node[not port](a31) at (0,0){};
+            \node[nand port](a32) at (3.5,-0.28){};
+            \node[nand port, number inputs=3](a33) at (6.75,0.1){};
+
+            \node[not port](a21) at (0,-1.75){};
+            \node[nand port](a22) at (3.5,-2.03){};
+            \node[nand port](a23) at (6.75,-1.75){};
+            \node[not port](a24) at (9,-1.75){};
+            \node[nand port](a25) at (11.25,-2.03){};
+
+            \node[not port](a11) at (0,-3.5){};
+            \node[nand port](a12) at (3.5,-3.78){};
+            \node[nand port, number inputs=3](a13) at (6.75,-3.41){};
+
+            \node[not port](a01) at (0,-5.25){};
+            \node[nand port](a02) at (3.5,-5.53){};
+            \node[nand port](a03) at (6.75,-5.25){};
+            \node[nor port, number inputs=3](a04) at (16,-5.25){X2};
+
+            \node[not port](b31) at (0,-7){};
+            \node[nand port](b32) at (3.5,-7.28){};
+            \node[nand port, number inputs=3](b33) at (13.75,-6.9){X1};
+            \node[nor port](b34) at (18.5,-6.62){X3};
+
+            \node[not port](b21) at (0,-8.75){};
+
+            \node[not port](b11) at (0,-10.5){};
+            \node[nand port](b12) at (3.5,-10.78){};
+            \node[nand port](b13) at (9,-10.5){};
+
+            \node[not port](b01) at (0,-12.25){};
+
+            % inputs
+            \draw (a31.in) -- ++(-0.5,0)node[left](A3){A\textsubscript{3}};
+            \draw (a21.in) -- ++(-0.5,0)node[left](A2){A\textsubscript{2}};
+            \draw (a11.in) -- ++(-0.5,0)node[left](A1){A\textsubscript{1}};
+            \draw (a01.in) -- ++(-0.5,0)node[left](A0){A\textsubscript{0}};
+            \draw (b31.in) -- ++(-0.5,0)node[left](B3){B\textsubscript{3}};
+            \draw (b21.in) -- ++(-0.5,0)node[left](B2){B\textsubscript{2}};
+            \draw (b11.in) -- ++(-0.5,0)node[left](B1){B\textsubscript{1}};
+            \draw (b01.in) -- ++(-0.5,0)node[left](B0){B\textsubscript{0}};
+
+            %outputs
+            \draw (a04.out) -- ++(2.5,0)node[right](E){E};
+            \draw (b34.out) -- ++(0,0)node[right](L){L};
+            \draw (a04.out) to[short, *-] ++(0,0) |- (b34.in 1);
+            \draw (b33.out) to[short, *-] ++(0,0) -- ++(0,-1) -- ++(4.75,0)node[right](G){G};
+
+            %connections    
+            \draw (a31.in) to[short, *-] ++(0,-0.75) -- ++(2.25,0) |- (b32.in 2);
+            \draw (a31.out) -- (a32.in 1);
+            \draw (a32.out) -- (a33.in 3);
+            \draw (a33.in 3) to[short, *-] ++(0,0) -- (a23.in 1);
+            \draw (a33.out) -- ++(4.75,0) |- (b33.in 1);
+
+            \draw (a21.in) to[short, *-] ++(0,0.75) -- ++(6,0) |- (a33.in 2);
+            \draw (a21.out) -- (a22.in 1);
+            \draw (a22.out) -- (a23.in 2);
+            \draw (a23.out) -- (a24.in);
+            \draw (a23.out) ++(0.25,0) to[short, *-] ++(0,0) |- (a04.in 1);
+            \draw (a24.out) -- (a25.in 1);
+            \draw (a25.out) |- (b33.in 2);
+
+            \draw (a11.in) to[short, *-] ++(0,-0.75) -- ++(2,0) |- (b12.in 2);
+            \draw (a11.out) -- (a12.in 1);
+            \draw (a12.out) -- (a13.in 3);
+            \draw (a13.in 3) to[short, *-] ++(0,0) |- (a03.in 1);
+            \draw (a13.out) |- (b13.in 1);
+
+            \draw (a01.in) to[short, *-] ++(0,0.75) -- ++(6.25,0) |- (a13.in 2);
+            \draw (a01.out) -- (a02.in 1);
+            \draw (a02.out) -- (a03.in 2);
+            \draw (a03.out) -- (a04.in 2);
+
+            \draw (b31.in) to[short, *-] ++(0,1) -- ++(2.5,0) |- (a32.in 2);
+            \draw (b31.out) -- (b32.in 1);
+            \draw (b32.out) -- (b33.in 3);
+            \draw (b33.out) |- (a04.in 3);
+            \draw (b33.out) to[short, *-] ++(0,0) -- (b34.in 2);
+
+            \draw (b21.in) to[short, *-] ++(0,1) -- ++(2.75,0) |- (a22.in 2);
+            \draw (b21.out) -- ++(4,0) |- (a33.in 1);
+
+            \draw (b11.in) to[short, *-] ++(0,1) -- ++(3,0) |- (a12.in 2);
+            \draw (b11.out) -- (b12.in 1);
+            \draw (b12.out) -- (b13.in 2);
+            \draw (b13.out) |- (a25.in 2);
+
+            \draw (b01.in) to[short, *-] ++(0,1) -- ++(3.25,0) |- (a02.in 2);
+            \draw (b01.out) -- ++(4.25,0) |- (a13.in 1);
+        \end{tikzpicture}
+    }
+    \caption{Comparator schematic}\label{fig:schematic}
+\end{figure}
+
+Another notable feature is the use of NOR gates, especially a 3-input NOR. Typically, NOR gates are avoided
+with a preference for NAND gates. The output circuit following gate X1 in \cref{fig:schematic}
+can be redrawn in a number of ways as shown in \cref{fig:circuitredraw}.
+
+\begin{figure}[H]      
+    \vskip1\baselineskip
+    \centering
+    \begin{subfigure}{0.35\textwidth}
+        \centering
+        \scalebox{1.2}{
+            \begin{tikzpicture}
+                \ctikzset{
+                    logic ports=ieee,
+                    logic ports/scale=0.8,
+                    logic ports/fill=lightgray
+                }
+                \draw
+                (0,0) node[nor port, number inputs=3] (n1) {X2}
+                (2,-0.75) node[nor port] (n2) {X3}
+
+                (n1.out) -| node[circ,midway](p1){} (n2.in 1)
+
+                (n1.in 1) -- ++(-0.5,0)node[left]{A}
+                (n1.in 2) -- ++(-0.5,0)node[left]{B}
+
+                (p1) -- ++(1.75,0)node[right]{E}
+                (n2.out) node[right]{L}
+                (-1.3,-1.5) node[left](C){X1} -- (2.9,-1.5) node[right]{G}
+                (1.15,-1.5) node[circ]{} |- (n2.in 2)
+
+                (-1,-1.5) node[circ]{} |- (n1.in 3)
+                ;
+            \end{tikzpicture}
+        }
+        \caption{NOR-3 circuit}\label{fig:nor3}
+    \end{subfigure}
+    \hfill
+    % \hspace{3cm}    
+    \begin{subfigure}{0.6\textwidth}
+        \centering
+        \scalebox{1.2}{
+            \begin{tikzpicture}
+                \ctikzset{
+                    logic ports=ieee,
+                    logic ports/scale=0.8,
+                    logic ports/fill=lightgray
+                } \draw
+                (0,-0.28) node[nor port] (n1) {X2.1}
+                (2,-0.5) node[nor port] (n2) {X2.2}
+                (4,-1.25) node[nor port] (n3) {X3}
+
+                (n1.out) |- (n2.in 1)
+                (n2.out) -| node[circ,midway](p1){} (n3.in 1)
+                (n3.out) node[right]{E}
+                (p1) -- ++(1.75,0)node[right]{L}
+
+                (n1.in 1) -- ++(-0.5,0)node[left]{A}
+                (n1.in 2) -- ++(-0.5,0)node[left]{B}
+
+                (-1.3,-2) node[left]{X1} -- (4.9,-2) node[right]{G}
+                (0.9,-2) node[circ]{} |- (n2.in 2)
+                (3.15,-2) node[circ]{} |- (n3.in 2)
+                ;
+            \end{tikzpicture}
+        }
+        \caption{NOR-2 circuit}\label{fig:nor2}
+    \end{subfigure}    
+    % \vfill
+    \vskip\baselineskip
+    \begin{subfigure}{\textwidth}\centering
+        % \vspace{11pt}
+        \scalebox{1.2}{
+            \begin{tikzpicture}
+                \ctikzset{
+                    logic ports=ieee,
+                    logic ports/scale=0.8,
+                    logic ports/fill=lightgray
+                } \draw
+                (0,-0.2) node[not port] (not1) {}
+                (0,-1.3) node[not port] (not2) {}
+                (2,-0.75) node[nand port] (nand1) {}
+
+                (1,-2.5) node[not port](not3) {}
+
+                (4,-2.5) node[nand port](nand2) {}
+                (6,-0.75) node[nand port](nand3) {}
+                (6,-2.5) node[not port](not4) {}
+                (8,-0.75) node[not port](not5) {}
+
+                (not1.out) |- (nand1.in 1)
+                (not2.out) |- (nand1.in 2)
+                (nand1.out) |- (nand2.in 1)
+                (nand3.out) -- (not5.in)
+                (nand2.out) -- node[circ](p1){} (not4.in)
+                (p1) |- (nand3.in 2)
+                (not3.out) node[circ](p2){} |- (nand2.in 2)
+                (p2) |- ++(3,1) |- (nand3.in 1)
+
+                (not1.in) -- ++(-0.5,0) node[left]{A}
+                (not2.in) -- ++(-0.5,0) node[left]{B}
+                (-1.2,-3.25) node[left]{X1} -- (9,-3.25) node[right]{G}
+                (-0.75,-3.25) node[circ]{} |- (not3.in)
+                (not5.out) -- (9,-0.75)node[right]{E}
+                (not4.out) -- (9,-2.5)node[right]{L}
+                ;
+            \end{tikzpicture}
+        }
+        \caption{NAND circuit}
+        \label{fig:nand}
+    \end{subfigure}
+    \caption{Output circuit possibilities}\label{fig:circuitredraw}
+    \vfill
+\end{figure}
+\clearpage
+\begin{wraptable}[9]{r}{0.3\textwidth}
+    \vspace{-11pt}
+    \centering
+    % \renewcommand{\arraystretch}{1.35}
+    \begin{NiceTabular}{c|cc}[cell-space-limits=3pt]
+                              & \multicolumn{2}{c}{\cellcolor{tableh1}Path effort}                       \\
+        \hline
+        \rowcolor{tableh1}
+        Circuit               & g\textsubscript{E}                                 & g\textsubscript{L}  \\
+        \hline
+        NOR-3, \ref{fig:nor3} & $12 \dfrac{19}{27}$                                & $6 \dfrac{2}{3}$    \\
+        \hline
+        NOR-2, \ref{fig:nor2} & $138 \dfrac{8}{9}$                                 & $18 \dfrac{14}{27}$ \\
+        \hline
+        NAND, \ref{fig:nand}  & $120$                                              & $50 \dfrac{22}{27}$ \\
+        \hline
+    \end{NiceTabular}
+    \caption{Logical effort}\label{table:logicaleffort}
+\end{wraptable}
+A brief study on the logical effort (\cref{table:logicaleffort}) of each circuit indicates how,
+as the number of paths grow in
+the alternative circuits, the effort required escalates rapidly.
+This is due to how path logical effort,\\ $ G = \prod g_i $,
+which quickly grows out of control as branching increases. A NAND-only solution also suffers from a greater number
+of gate ICs required for the same logic.
+
+\subsection{Delay}
+The overall delay of the comparator can be determined by analysing one of the longest paths. 
+
+\begin{figure}[H]
+    % \vspace{11pt}
+    \scalebox{1}{
+        \begin{tikzpicture}
+            \ctikzset{
+                logic ports=ieee,
+                logic ports/scale=0.8,
+                logic ports/fill=lightgray
+            } \draw
+
+            (0,0) node[not port] (not1) {}
+            (0.18,-1.5) node[nand port] (nand0) {}
+            (2,-0.225) node[nand port] (nand1) {}
+            (4,0.07) node[nand port, number inputs=3] (nand2) {}
+            (4,-1.5) node[nand port] (nand3) {}
+            (6,-0.155) node[nand port] (nand4) {}
+            (8,0.07) node[nand port] (nand5) {}
+            (10,-0.155) node[nand port] (nand6) {}
+            (12,-0.45) node[nor port, number inputs=3] (nor1) {}
+            (14,-1.2) node[nor port] (nor2) {}
+
+            (not1.out) -- (nand1.in 1) 
+            (nand1.out) -- (nand2.in 3)
+            (nand2.out) -- (nand4.in 1)
+            (nand4.out) -- (nand5.in 2) 
+            (nand5.out) -- (nand6.in 1)
+            (nand6.out) -- (nor1.in 1)
+            % (nor1.out) -- (nor2.in 1) 
+
+            (not1.in) -- ++(-0.5,0) node[left]{A1}
+            (not1.in) to[short, *-] ++(0,0) |- (nand0.in 1)
+
+            (nand2.in 3) to[short, *-] ++(0,0) -- (nand3.in 1)
+            (nand3.out) -| (nor1.in 3)
+
+            (nor1.out) -| node[circ,midway](p1){} (nor2.in 1)
+            (p1) -- ++(1.7,0)node[right]{E}
+            (nor2.out) node[right]{L}
+            (nor1.in 3)  -- ++(0,-1.5) node[circ, midway](p2){} -- ++(3.8,0) node[right]{G}
+            (nor2.in 2) -- ++(0,-0.82) node[circ]{}
+            ;
+        \end{tikzpicture}
+    }
+    \caption{Longest path}
+    \label{fig:long}
+\end{figure}
+
+The minimum delay, $D$, of the longest path can be calculated by $N(G \cdot B \cdot H)^{\frac{1}{N}} + P$,
+
+\begin{conditions}
+    N & = & Number of gates \\
+    G & = & Path logical effort, $\prod g_i$ \\
+    B & = & Branching effort, $\prod \frac{C_{on-path} + C_{off-path}}{C_{on-path}}$ \\
+    H & = & Electrical effort, $\frac{C_{out}}{C_{in}}$ \\
+    P & = & Parasitic delay, $\sum p_i$ \\
+\end{conditions}
+In this instance,
+\begin{align*}
+    N & = 8 \\
+    G & = 1 \times \left(\frac{4}{3}\right) ^4 \times \left(\frac{5}{3}\right)^2 \times \frac{7}{3} = \frac{44800}{2187}\\
+    B & = \frac{3+4}{3} \times \frac{5+4}{5} \times \frac{7+5}{7} = \frac{98}{15}\\
+    H & = \frac{6}{3} = 2\\
+    P & = 1 + 2 + 3 + 2 + 2 + 2 + 3 + 2 = 17 \\
+    \therefore \\
+    D & = 33.089
+\end{align*}
+
+The absolute delay, $D_{abs} = D\cdot\tau$, where $\tau$ is the process dependent time constant. Assuming 
+$\tau \approxeq \qty{3}{\ps}$, $D_{abs} = \qty{99.27}{\ps}$.
+
+With all things considered, the proposed design in \cref{fig:schematic} offers a good balance between size,
+propagation delay, and overall complexity.

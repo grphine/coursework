@@ -1,0 +1,173 @@
+\documentclass[11pt]{article}
+\usepackage[table]{xcolor}  % load xcolor before anything else
+\usepackage[most]{tcolorbox}
+\usepackage{setspace}  %line spacing
+\usepackage{titling}
+\usepackage{graphicx}
+\usepackage{parskip}    %spaced paragraphs
+\usepackage{csquotes}   %babel wanted it
+% \usepackage{emptypage} % prevent page numbers and headings on empty pages
+\usepackage{float} % for H specification
+% \usepackage{censor}
+\usepackage{amsmath}
+% \usepackage{fontawesome}
+% \usepackage{pdfpages} % insert pdf 
+% \usepackage[titletoc]{appendix}
+\usepackage{pdflscape} % landscape pdf pages
+\usepackage{wrapfig}
+\usepackage{booktabs,nicematrix} % quality tables 
+
+\usepackage{circuitikz}
+\usetikzlibrary{calc}
+
+\usepackage[hang,flushmargin]{footmisc}     % footnote editing
+
+\usepackage[font=small,labelfont=bf,justification=centering]{caption} % caption size 
+\usepackage{subcaption}
+\setlength{\belowcaptionskip}{-5pt}
+
+\usepackage[hidelinks]{hyperref}  %have a review of this
+\hypersetup{%
+%   citecolor=black,
+  colorlinks=false,
+%   linkcolor=black,
+%   urlcolor=black
+}
+\usepackage[nameinlink]{cleveref}
+
+\usepackage{listings}% code
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegrey}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+\lstdefinestyle{codestyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegrey},
+    keywordstyle=\color{blue},
+    numberstyle=\tiny\color{codegrey},
+    stringstyle=\color{codegreen},
+    basicstyle=\ttfamily\lst@ifdisplaystyle\footnotesize\fi,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=t,                    
+    keepspaces=true,                 
+    % numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2,
+    framextopmargin=50pt,
+    frame=bottomline,
+    % belowcaptionskip=0pt,
+    aboveskip=-1pt,
+    belowskip=1pt
+}
+\lstset{style=codestyle}
+
+\usepackage{geometry}
+\geometry{a4paper, margin=1.5cm}
+
+\usepackage{fontspec}
+\setmainfont[ 
+    Mapping=tex-text,
+    BoldFont={HelveticaNowText-Bold},
+    ItalicFont={HelveticaNowText-RegIta},
+    BoldItalicFont={HelveticaNowText-BoldItalic}
+]{[HelveticaNowText-Regular]}
+\usepackage{unicode-math}
+\setmathfont[mathrm=sym]{Fira Math}
+
+\usepackage{fancyhdr}   %footer
+\fancypagestyle{myheadings}{%
+    \fancyhf{}
+    \renewcommand{\headrulewidth}{0.5pt}
+    \renewcommand{\footrulewidth}{0pt}
+    \addtolength{\headheight}{2pt}
+    % \fancyhead[L]{\leftmark}
+    \fancyhead[L]{ES3D8}
+    \fancyhead[R]{1922268}
+    \cfoot{\thepage}
+}
+\pagestyle{myheadings}
+
+\usepackage{enumitem}   %reduce list spacing
+\setlist{nosep} 
+
+\usepackage[
+    backend=biber,
+    % style=numeric-comp,
+    % style = vancouver,
+    % style = science,
+    style = ieee,
+    % style=draft,
+    % style = authoryear-icomp,
+    maxnames=2, minnames=2,
+    % doi=false,
+    sorting=none
+]{biblatex}   %bibliography
+\usepackage{xurl} % break urls. load after biblatex
+\addbibresource{sections/refs.bib}
+
+\usepackage[
+    separate-uncertainty=true,
+    multi-part-units=single
+    ]{siunitx}
+\sisetup{
+    detect-all,
+    per-mode=symbol-or-fraction,
+    % tight-spacing,
+    quantity-product =,
+    number-unit-product=\,,
+    % space-before-unit=false
+}
+\DeclareSIUnit{\mAh}{mAh}
+
+\usepackage{xltabular}
+\usepackage{multirow}
+\newcolumntype{Y}{>{\centering\arraybackslash}X}
+\newcolumntype{Z}{>{\raggedright\arraybackslash}X}
+\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
+
+\newenvironment{conditions}[1][where:]
+  {#1 \begin{tabular}[t]{>{$}l<{$} @{} >{${}}c<{{}$} @{} l}}
+  {\end{tabular}\\[\belowdisplayskip]}
+
+\definecolor{titlepagecolour}{HTML}{003D99}
+\definecolor{tableh1}{HTML}{dae3eb} %table grey
+\definecolor{tableh2}{HTML}{b3ccf5} %table bluegrey
+\definecolor{titleblue}{HTML}{1b1787} % blue
+\definecolor{tableg}{HTML}{309c3d} % green
+\definecolor{tablea}{HTML}{ed901f} % amber
+\definecolor{tabler}{HTML}{f2422e} % red
+
+\usepackage[british]{babel} 
+
+% \usepackage{pgfgantt}
+% \setganttlinklabel{s-s}{}
+% \setganttlinklabel{f-s}{}
+% \setganttlinklabel{f-f}{}
+
+\usepackage{titlesec} 
+\titlespacing\section{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+\titlespacing\subsection{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+\titlespacing\subsubsection{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+\titlespacing\paragraph{0pt}{10pt plus 4pt minus 2pt}{10pt plus 2pt minus 2pt}
+
+\begin{document}
+% \onehalfspacing
+% \setstretch{1.25} % one and quarter spacing
+
+\input{sections/intro.tex}
+
+\input{sections/dev.tex}
+
+\input{sections/comp.tex}
+
+\input{sections/opt.tex} % eval
+
+\nocite{*}
+
+\printbibliography
+
+\end{document}

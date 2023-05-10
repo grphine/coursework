@@ -1,0 +1,100 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global}
+    \entry{chandra2015}{article}{}
+      \name{author}{4}{}{%
+        {{hash=69ba3dd3a0b3bc6271086a618a0f945b}{%
+           family={Chandra},
+           familyi={C\bibinitperiod},
+           given={Krishna},
+           giveni={K\bibinitperiod}}}%
+        {{hash=094377ff6fa43c069ab1633da19263c2}{%
+           family={Kumar},
+           familyi={K\bibinitperiod},
+           given={Rajeev},
+           giveni={R\bibinitperiod}}}%
+        {{hash=6fd5be07c23beac4b5a4cf5d108d9b2e}{%
+           family={Uniyal},
+           familyi={U\bibinitperiod},
+           given={Shashank},
+           giveni={S\bibinitperiod}}}%
+        {{hash=1a1f03210fcbd913c91a1c1fd90202fe}{%
+           family={Ramola},
+           familyi={R\bibinitperiod},
+           given={Vishal},
+           giveni={V\bibinitperiod}}}%
+      }
+      \strng{namehash}{860380e9e2c9d307de0892b689837458}
+      \strng{fullhash}{bdf912ce65c84165a44748c35cfe44e5}
+      \strng{bibnamehash}{860380e9e2c9d307de0892b689837458}
+      \strng{authorbibnamehash}{860380e9e2c9d307de0892b689837458}
+      \strng{authornamehash}{860380e9e2c9d307de0892b689837458}
+      \strng{authorfullhash}{bdf912ce65c84165a44748c35cfe44e5}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IOSR Journal of VLSI and Signal Processing (IOSR-JVSP)}
+      \field{month}{04}
+      \field{title}{A new design 6T Full Adder Circuit using Novel 2T XNOR Gates}
+      \field{volume}{5}
+      \field{year}{2015}
+      \field{pages}{2319\bibrangedash 4197}
+      \range{pages}{1879}
+      \verb{doi}
+      \verb 10.9790/4200-05316368
+      \endverb
+    \endentry
+    \entry{weste2011cmos}{book}{}
+      \name{author}{2}{}{%
+        {{hash=cdc3d3216246acd5c301aea36566a2ff}{%
+           family={Weste},
+           familyi={W\bibinitperiod},
+           given={Neil\bibnamedelima H.E.},
+           giveni={N\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=4a8413316ec7be7d755a4fe10f938783}{%
+           family={Harris},
+           familyi={H\bibinitperiod},
+           given={David\bibnamedelima Money},
+           giveni={D\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Addison Wesley}%
+      }
+      \strng{namehash}{ea5a1df8168d7b79b71e11f51431b366}
+      \strng{fullhash}{ea5a1df8168d7b79b71e11f51431b366}
+      \strng{bibnamehash}{ea5a1df8168d7b79b71e11f51431b366}
+      \strng{authorbibnamehash}{ea5a1df8168d7b79b71e11f51431b366}
+      \strng{authornamehash}{ea5a1df8168d7b79b71e11f51431b366}
+      \strng{authorfullhash}{ea5a1df8168d7b79b71e11f51431b366}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9780321547743}
+      \field{title}{CMOS VLSI Design: A Circuits and Systems Perspective}
+      \field{year}{2011}
+      \true{nocite}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
