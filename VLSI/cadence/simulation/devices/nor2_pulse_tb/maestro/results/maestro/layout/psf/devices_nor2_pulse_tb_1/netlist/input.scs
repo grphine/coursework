@@ -1,0 +1,63 @@
+// Generated for: spectre
+// Generated on: May  3 21:18:36 2023
+// Design library name: devices
+// Design cell name: nor2_pulse_tb
+// Design view name: config
+simulator lang=spectre
+global 0 vdd!
+parameters vSupply=1.1
+include "/eda/designKits/gpdk045_v_6_0/gpdk045/../models/spectre/gpdk045.scs" section=tt
+
+// Library name: devices
+// Cell name: nor2
+// View name: av_extracted
+// Inherited view list: spectre cmos_sch cmos.sch schematic veriloga ahdl
+//pspice dspf layout av_extracted
+subckt nor2 A B out
+    PM3 (net12 A vdd! vdd!) g45p1svt w=(2.4e-07) l=4.5e-08 nf=1 \
+        as=3.36e-14 ad=1.44e-14 ps=7.6e-07 pd=6e-07 nrd=1.16667 \
+        nrs=1.16667 sa=1.4e-07 sb=2.45e-07 sd=160n sca=90.6477 \
+        scb=0.0704545 scc=0.00995413 m=(1)
+    PM4 (out B net12 vdd!) g45p1svt w=(2.4e-07) l=4.5e-08 nf=1 as=1.44e-14 \
+        ad=3.36e-14 ps=6e-07 pd=7.6e-07 nrd=1.16667 nrs=1.16667 \
+        sa=2.45e-07 sb=1.4e-07 sd=160n sca=90.6477 scb=0.0704545 \
+        scc=0.00995413 m=(1)
+    NM1 (out B 0 0) g45n1svt w=(1.2e-07) l=4.5e-08 nf=1 as=1.68e-14 \
+        ad=1.92e-14 ps=5.2e-07 pd=5.6e-07 nrd=1.16667 nrs=1.16667 \
+        sa=1.4e-07 sb=3.45e-07 sd=160n sca=11.4704 scb=0.0113288 \
+        scc=0.000409499 m=(1)
+    NM0 (out A 0 0) g45n1svt w=(1.2e-07) l=4.5e-08 nf=1 as=1.68e-14 \
+        ad=1.92e-14 ps=5.2e-07 pd=5.6e-07 nrd=1.16667 nrs=1.16667 \
+        sa=1.4e-07 sb=3.45e-07 sd=160n sca=11.4704 scb=0.0113288 \
+        scc=0.000409499 m=(1)
+ends nor2
+// End of subcircuit definition.
+
+// Library name: devices
+// Cell name: nor2_pulse_tb
+// View name: schematic
+// Inherited view list: spectre cmos_sch cmos.sch schematic veriloga ahdl
+// pspice dspf layout av_extracted
+C0 (_net0 0) capacitor c=1f
+V0 (vdd! 0) vsource dc=vSupply type=dc
+V4 (inB 0) vsource type=pulse val0=0 val1=vSupply period=200n delay=108n \
+        rise=2n fall=2n width=98n
+V1 (inA 0) vsource type=pulse val0=0 val1=vSupply period=100n delay=48n \
+        rise=2n fall=2n width=48n
+I7 (inA inB _net0) nor2
+simulatorOptions options psfversion="1.1.0" reltol=1e-3 vabstol=1e-6 \
+    iabstol=1e-12 temp=27 tnom=27 scalem=1.0 scale=1.0 gmin=1e-12 rforce=1 \
+    maxnotes=5 maxwarns=5 digits=5 cols=80 pivrel=1e-3 \
+    sensfile="../psf/sens.output" checklimitdest=psf 
+tran tran stop=600n errpreset=conservative write="spectre.ic" \
+    writefinal="spectre.fc" method=gear2only annotate=status save=allpub \
+    maxiters=5 
+finalTimeOP info what=oppoint where=rawfile
+modelParameter info what=models where=rawfile
+element info what=inst where=rawfile
+outputParameter info what=output where=rawfile
+designParamVals info what=parameters where=rawfile
+primitives info what=primitives where=rawfile
+subckts info what=subckts where=rawfile
+save inA inB _net0 
+saveOptions options save=all pwr=all

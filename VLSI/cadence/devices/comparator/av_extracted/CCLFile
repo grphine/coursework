@@ -1,0 +1,35 @@
+#
+# OPTION COMMAND FILE created by Cadence Quantus Extraction Version 19.1.1-s086 from CCL
+#
+distributed_processing \
+	 -multi_cpu 1
+extract \
+	 -type "none"
+input_db -type pvs \
+	 -design_cell_name "comparator layout_inline_ii devices" \
+	 -directory_name "/home/ADS/u1922268/es3d8/assignment/libraries/lvs/svdb" \
+	 -format "DFII" \
+	 -run_name "comparator"
+log_file \
+	 -file_name "/home/ADS/u1922268/es3d8/assignment/libraries/lvs/svdb/qrc.comparator.log"
+output_db -type extracted_view \
+	 -cap_component "pcapacitor" \
+	 -cap_property_name "c" \
+	 -cdl_out_map_directory \
+		"/home/ADS/u1922268/es3d8/assignment/libraries/lvs" \
+	 -enable_cellview_check false \
+	 -include_cap_model "false" \
+	 -include_res_model "false" \
+	 -res_component "presistor" \
+	 -res_property_name "r" \
+	 -view_name "av_extracted"
+output_setup \
+	 -directory_name "/tmp/qrc_52400" \
+	 -temporary_directory_name "comparator"
+process_technology \
+	 -technology_corner \
+		"rcx_typical" \
+	 -technology_library_file "/home/ADS/u1922268/es3d8/assignment/libraries/pvtech.lib" \
+	 -technology_name "gpdk045_pvs"
+
+

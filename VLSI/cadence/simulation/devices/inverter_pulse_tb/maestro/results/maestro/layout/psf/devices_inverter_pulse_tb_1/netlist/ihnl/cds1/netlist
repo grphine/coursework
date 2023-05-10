@@ -1,0 +1,11 @@
+
+// Library name: devices
+// Cell name: inverter_pulse_tb
+// View name: schematic
+// Inherited view list: spectre cmos_sch cmos.sch schematic veriloga ahdl
+// pspice dspf layout av_extracted
+C0 (_net0 0) capacitor c=1f
+I1 (_net1 _net0) inverter
+V0 (vdd! 0) vsource dc=vSupply type=dc
+V1 (_net1 0) vsource type=pulse val0=0 val1=vSupply period=100n delay=48n \
+        rise=2n fall=2n width=48n

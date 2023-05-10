@@ -1,0 +1,20 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "nor2_pulse_tb"
+  repList "spectre cmos_sch cmos.sch schematic veriloga"
+  stopList "spectre"
+  globalList "vdd! gnd!"
+  hierDelim "."
+  netlistDir "/home/ADS/u1922268/es3d8/assignment/libraries/simulation/devices/nor2_pulse_tb/maestro/results/maestro/Interactive.0/1/devices:nor2_pulse_tb:1/netlist"
+ )
+( net
+( "gnd!" "0" )
+ )
+( model
+( "devices/nor2/schematic" "nor2" )
+( "devices/nor2_pulse_tb/schematic" "nor2_pulse_tb" )
+ )
+( "nor2" "ihnl/cds0/map" )
+( "nor2_pulse_tb" "ihnl/cds1/map" )
+ )

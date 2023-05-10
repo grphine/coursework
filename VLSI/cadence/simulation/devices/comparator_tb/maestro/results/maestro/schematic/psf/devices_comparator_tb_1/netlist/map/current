@@ -1,0 +1,30 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "comparator_tb"
+  repList "spectre cmos_sch cmos.sch schematic veriloga"
+  stopList "spectre"
+  globalList "vdd! gnd!"
+  hierDelim "."
+  netlistDir "/home/ADS/u1922268/es3d8/assignment/libraries/simulation/devices/comparator_tb/maestro/results/maestro/Interactive.0/1/devices:comparator_tb:1/netlist"
+ )
+( net
+( "gnd!" "0" )
+ )
+( model
+( "devices/comparator/schematic" "comparator" )
+( "devices/nor2/schematic" "nor2" )
+( "devices/comparator_tb/schematic" "comparator_tb" )
+( "devices/nand3/schematic" "nand3" )
+( "devices/nand2/schematic" "nand2" )
+( "devices/inverter/schematic" "inverter" )
+( "devices/nor3/schematic" "nor3" )
+ )
+( "comparator_tb" "ihnl/cds6/map" )
+( "nor2" "ihnl/cds3/map" )
+( "comparator" "ihnl/cds5/map" )
+( "nand3" "ihnl/cds2/map" )
+( "inverter" "ihnl/cds0/map" )
+( "nor3" "ihnl/cds4/map" )
+( "nand2" "ihnl/cds1/map" )
+ )

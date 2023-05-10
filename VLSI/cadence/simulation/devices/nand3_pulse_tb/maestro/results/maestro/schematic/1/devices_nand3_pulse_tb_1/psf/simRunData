@@ -1,0 +1,10 @@
+HEADER
+"PSFversion" "1.00"
+"design" "(\"devices\" \"nand3_pulse_tb\" \"schematic\" \"\")"
+"simulator" "spectre"
+"temperature" "27"
+"host" ""
+"date" "May  6 14:19:08 2023"
+"title" ""
+"analysisList" "()"
+END

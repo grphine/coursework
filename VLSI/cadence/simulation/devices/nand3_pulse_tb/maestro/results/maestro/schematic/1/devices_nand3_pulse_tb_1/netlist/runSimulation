@@ -1,0 +1,1 @@
+spectre  input.scs  +escchars +log ../psf/spectre.out  -format psfxl -raw ../psf   +lqtimeout 900 -maxw 5 -maxn 5  -ahdllibdir /home/ADS/u1922268/es3d8/assignment/libraries/simulation/devices/nand3_pulse_tb/maestro/results/maestro/Interactive.0/sharedData/CDS/ahdl/input.ahdlSimDB +logstatus  

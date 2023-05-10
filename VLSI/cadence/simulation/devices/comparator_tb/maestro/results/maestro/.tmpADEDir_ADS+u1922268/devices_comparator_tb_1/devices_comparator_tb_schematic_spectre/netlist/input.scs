@@ -1,0 +1,181 @@
+// Generated for: spectre
+// Generated on: May  6 14:17:16 2023
+// Design library name: devices
+// Design cell name: comparator_tb
+// Design view name: schematic
+simulator lang=spectre
+global 0 vdd!
+parameters vSupply=1.1
+include "/eda/designKits/gpdk045_v_6_0/gpdk045/../models/spectre/gpdk045.scs" section=tt
+
+// Library name: devices
+// Cell name: inverter
+// View name: schematic
+subckt inverter in out
+    NM0 (out in 0 0) g45n1svt w=(120n) l=45n nf=1 as=16.8f ad=16.8f \
+        ps=520n pd=520n nrd=1.16667 nrs=1.16667 sa=140n sb=140n sd=160n \
+        sca=226.00151 scb=0.11734 scc=0.02767 m=(1)
+    PM0 (out in vdd! vdd!) g45p1svt w=(240n) l=45n nf=1 as=33.6f ad=33.6f \
+        ps=760n pd=760n nrd=583.333m nrs=583.333m sa=140n sb=140n sd=160n \
+        sca=151.92744 scb=0.10471 scc=0.01874 m=(1)
+ends inverter
+// End of subcircuit definition.
+
+// Library name: devices
+// Cell name: nand2
+// View name: schematic
+subckt nand2 A B out
+    NM1 (net12 B 0 0) g45n1svt w=(120n) l=45n nf=1 as=16.8f ad=16.8f \
+        ps=520n pd=520n nrd=1.16667 nrs=1.16667 sa=140n sb=140n sd=160n \
+        sca=226.00151 scb=0.11734 scc=0.02767 m=(1)
+    NM0 (out A net12 0) g45n1svt w=(120n) l=45n nf=1 as=16.8f ad=16.8f \
+        ps=520n pd=520n nrd=1.16667 nrs=1.16667 sa=140n sb=140n sd=160n \
+        sca=226.00151 scb=0.11734 scc=0.02767 m=(1)
+    PM1 (out B vdd! vdd!) g45p1svt w=(240n) l=45n nf=1 as=33.6f ad=33.6f \
+        ps=760n pd=760n nrd=583.333m nrs=583.333m sa=140n sb=140n sd=160n \
+        sca=151.92744 scb=0.10471 scc=0.01874 m=(1)
+    PM0 (out A vdd! vdd!) g45p1svt w=(240n) l=45n nf=1 as=33.6f ad=33.6f \
+        ps=760n pd=760n nrd=583.333m nrs=583.333m sa=140n sb=140n sd=160n \
+        sca=151.92744 scb=0.10471 scc=0.01874 m=(1)
+ends nand2
+// End of subcircuit definition.
+
+// Library name: devices
+// Cell name: nand3
+// View name: schematic
+subckt nand3 A B C out
+    PM2 (out C vdd! vdd!) g45p1svt w=(240n) l=45n nf=1 as=33.6f ad=33.6f \
+        ps=760n pd=760n nrd=583.333m nrs=583.333m sa=140n sb=140n sd=160n \
+        sca=151.92744 scb=0.10471 scc=0.01874 m=(1)
+    PM1 (out B vdd! vdd!) g45p1svt w=(240n) l=45n nf=1 as=33.6f ad=33.6f \
+        ps=760n pd=760n nrd=583.333m nrs=583.333m sa=140n sb=140n sd=160n \
+        sca=151.92744 scb=0.10471 scc=0.01874 m=(1)
+    PM0 (out A vdd! vdd!) g45p1svt w=(240n) l=45n nf=1 as=33.6f ad=33.6f \
+        ps=760n pd=760n nrd=583.333m nrs=583.333m sa=140n sb=140n sd=160n \
+        sca=151.92744 scb=0.10471 scc=0.01874 m=(1)
+    NM2 (net14 C 0 0) g45n1svt w=(120n) l=45n nf=1 as=16.8f ad=16.8f \
+        ps=520n pd=520n nrd=1.16667 nrs=1.16667 sa=140n sb=140n sd=160n \
+        sca=226.00151 scb=0.11734 scc=0.02767 m=(1)
+    NM1 (net15 B net14 0) g45n1svt w=(120n) l=45n nf=1 as=16.8f ad=16.8f \
+        ps=520n pd=520n nrd=1.16667 nrs=1.16667 sa=140n sb=140n sd=160n \
+        sca=226.00151 scb=0.11734 scc=0.02767 m=(1)
+    NM0 (out A net15 0) g45n1svt w=(120n) l=45n nf=1 as=16.8f ad=16.8f \
+        ps=520n pd=520n nrd=1.16667 nrs=1.16667 sa=140n sb=140n sd=160n \
+        sca=226.00151 scb=0.11734 scc=0.02767 m=(1)
+ends nand3
+// End of subcircuit definition.
+
+// Library name: devices
+// Cell name: nor2
+// View name: schematic
+subckt nor2 A B out
+    PM4 (out B net12 vdd!) g45p1svt w=(240n) l=45n nf=1 as=33.6f ad=33.6f \
+        ps=760n pd=760n nrd=583.333m nrs=583.333m sa=140n sb=140n sd=160n \
+        sca=151.92744 scb=0.10471 scc=0.01874 m=(1)
+    PM3 (net12 A vdd! vdd!) g45p1svt w=(240n) l=45n nf=1 as=33.6f ad=33.6f \
+        ps=760n pd=760n nrd=583.333m nrs=583.333m sa=140n sb=140n sd=160n \
+        sca=151.92744 scb=0.10471 scc=0.01874 m=(1)
+    NM0 (out B 0 0) g45n1svt w=(120n) l=45n nf=1 as=16.8f ad=16.8f ps=520n \
+        pd=520n nrd=1.16667 nrs=1.16667 sa=140n sb=140n sd=160n \
+        sca=226.00151 scb=0.11734 scc=0.02767 m=(1)
+    NM1 (out A 0 0) g45n1svt w=(120n) l=45n nf=1 as=16.8f ad=16.8f ps=520n \
+        pd=520n nrd=1.16667 nrs=1.16667 sa=140n sb=140n sd=160n \
+        sca=226.00151 scb=0.11734 scc=0.02767 m=(1)
+ends nor2
+// End of subcircuit definition.
+
+// Library name: devices
+// Cell name: nor3
+// View name: schematic
+subckt nor3 A B C out
+    PM2 (out C net15 vdd!) g45p1svt w=(240n) l=45n nf=1 as=33.6f ad=33.6f \
+        ps=760n pd=760n nrd=583.333m nrs=583.333m sa=140n sb=140n sd=160n \
+        sca=151.92744 scb=0.10471 scc=0.01874 m=(1)
+    PM1 (net15 B net16 vdd!) g45p1svt w=(240n) l=45n nf=1 as=33.6f \
+        ad=33.6f ps=760n pd=760n nrd=583.333m nrs=583.333m sa=140n sb=140n \
+        sd=160n sca=151.92744 scb=0.10471 scc=0.01874 m=(1)
+    PM0 (net16 A vdd! vdd!) g45p1svt w=(240n) l=45n nf=1 as=33.6f ad=33.6f \
+        ps=760n pd=760n nrd=583.333m nrs=583.333m sa=140n sb=140n sd=160n \
+        sca=151.92744 scb=0.10471 scc=0.01874 m=(1)
+    NM2 (out B 0 0) g45n1svt w=(120n) l=45n nf=1 as=16.8f ad=16.8f ps=520n \
+        pd=520n nrd=1.16667 nrs=1.16667 sa=140n sb=140n sd=160n \
+        sca=226.00151 scb=0.11734 scc=0.02767 m=(1)
+    NM1 (out A 0 0) g45n1svt w=(120n) l=45n nf=1 as=16.8f ad=16.8f ps=520n \
+        pd=520n nrd=1.16667 nrs=1.16667 sa=140n sb=140n sd=160n \
+        sca=226.00151 scb=0.11734 scc=0.02767 m=(1)
+    NM0 (out C 0 0) g45n1svt w=(120n) l=45n nf=1 as=16.8f ad=16.8f ps=520n \
+        pd=520n nrd=1.16667 nrs=1.16667 sa=140n sb=140n sd=160n \
+        sca=226.00151 scb=0.11734 scc=0.02767 m=(1)
+ends nor3
+// End of subcircuit definition.
+
+// Library name: devices
+// Cell name: comparator
+// View name: schematic
+subckt comparator A0 A1 A2 A3 B0 B1 B2 B3 E G L
+    I19 (net65 net1) inverter
+    I8 (B0 net54) inverter
+    I7 (B1 net32) inverter
+    I6 (B2 net7) inverter
+    I5 (B3 net35) inverter
+    I4 (A0 net38) inverter
+    I3 (A1 net13) inverter
+    I2 (A2 net44) inverter
+    I1 (A3 net17) inverter
+    I21 (net53 net31 net19) nand2
+    I20 (net1 net19 net51) nand2
+    I18 (net26 net37 net25) nand2
+    I17 (net29 net43 net65) nand2
+    I14 (net32 A1 net31) nand2
+    I13 (net35 A3 net52) nand2
+    I12 (net38 B0 net37) nand2
+    I11 (net13 B1 net26) nand2
+    I10 (net44 B2 net43) nand2
+    I9 (net17 B3 net29) nand2
+    I22 (net50 net51 net52 G) nand3
+    I16 (net54 A0 net26 net53) nand3
+    I15 (net29 A2 net7 net50) nand3
+    I23 (E G L) nor2
+    I24 (net65 net25 G E) nor3
+ends comparator
+// End of subcircuit definition.
+
+// Library name: devices
+// Cell name: comparator_tb
+// View name: schematic
+C2 (G 0) capacitor c=1f
+C1 (E 0) capacitor c=1f
+C0 (L 0) capacitor c=1f
+V0 (vdd! 0) vsource dc=vSupply type=dc
+V8 (B3 0) vsource type=pulse val0=0 val1=vSupply period=6.4u delay=3.198u \
+        rise=2n fall=2n width=3.198u
+V7 (B2 0) vsource type=pulse val0=0 val1=vSupply period=1.6u delay=798n \
+        rise=2n fall=2n width=798n
+V6 (B1 0) vsource type=pulse val0=0 val1=vSupply period=400n delay=198n \
+        rise=2n fall=2n width=198n
+V5 (B0 0) vsource type=pulse val0=0 val1=vSupply period=100n delay=48n \
+        rise=2n fall=2n width=48n
+V3 (A0 0) vsource type=pulse val0=0 val1=vSupply period=200n delay=98n \
+        rise=2n fall=2n width=98n
+V4 (A2 0) vsource type=pulse val0=0 val1=vSupply period=3.2u delay=1.598u \
+        rise=2n fall=2n width=1.598u
+V1 (A3 0) vsource type=pulse val0=0 val1=vSupply period=12.8u delay=6.398u \
+        rise=2n fall=2n width=6.398u
+V2 (A1 0) vsource type=pulse val0=0 val1=vSupply period=800n delay=398n \
+        rise=2n fall=2n width=398n
+I17 (A0 A1 A2 A3 B0 B1 B2 B3 E G L) comparator
+simulatorOptions options psfversion="1.1.0" reltol=1e-3 vabstol=1e-6 \
+    iabstol=1e-12 temp=27 tnom=27 scalem=1.0 scale=1.0 gmin=1e-12 rforce=1 \
+    maxnotes=5 maxwarns=5 digits=5 cols=80 pivrel=1e-3 \
+    sensfile="../psf/sens.output" checklimitdest=psf 
+tran tran stop=13u errpreset=conservative write="spectre.ic" \
+    writefinal="spectre.fc" annotate=status maxiters=5 
+finalTimeOP info what=oppoint where=rawfile
+modelParameter info what=models where=rawfile
+element info what=inst where=rawfile
+outputParameter info what=output where=rawfile
+designParamVals info what=parameters where=rawfile
+primitives info what=primitives where=rawfile
+subckts info what=subckts where=rawfile
+save A3 A2 A1 A0 B3 B2 B1 B0 G E L 
+saveOptions options save=all pwr=all

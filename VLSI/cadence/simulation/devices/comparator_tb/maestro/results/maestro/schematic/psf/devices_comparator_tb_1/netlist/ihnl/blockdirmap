@@ -1,0 +1,9 @@
+CADENCE IHNL11147
+
+devices inverter schematic cds0
+devices nand2 schematic cds1
+devices nand3 schematic cds2
+devices nor2 schematic cds3
+devices nor3 schematic cds4
+devices comparator schematic cds5
+devices comparator_tb schematic cds6

@@ -1,0 +1,26 @@
+    I19 (net65 net1) inverter
+    I8 (B0 net54) inverter
+    I7 (B1 net32) inverter
+    I6 (B2 net7) inverter
+    I5 (B3 net35) inverter
+    I4 (A0 net38) inverter
+    I3 (A1 net13) inverter
+    I2 (A2 net44) inverter
+    I1 (A3 net17) inverter
+    I21 (net53 net31 net19) nand2
+    I20 (net1 net19 net51) nand2
+    I18 (net26 net37 net25) nand2
+    I17 (net29 net43 net65) nand2
+    I14 (net32 A1 net31) nand2
+    I13 (net35 A3 net52) nand2
+    I12 (net38 B0 net37) nand2
+    I11 (net13 B1 net26) nand2
+    I10 (net44 B2 net43) nand2
+    I9 (net17 B3 net29) nand2
+    I22 (net50 net51 net52 G) nand3
+    I16 (net54 A0 net26 net53) nand3
+    I15 (net29 A2 net7 net50) nand3
+    I23 (E G L) nor2
+    I24 (net65 net25 G E) nor3
+ends comparator
+// End of subcircuit definition.

@@ -1,0 +1,8 @@
+TDMCHECKPOINT="1.0"
+devices/comparator type="cell"
+devices/inverter type="cell"
+devices/nand2 type="cell"
+devices/nand3 type="cell"
+devices/nor2 type="cell"
+devices/nor3 type="cell"
+keepEmptyCategory type="unknown"

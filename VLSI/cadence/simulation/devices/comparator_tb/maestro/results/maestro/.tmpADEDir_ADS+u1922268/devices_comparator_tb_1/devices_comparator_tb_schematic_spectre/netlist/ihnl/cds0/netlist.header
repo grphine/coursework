@@ -1,0 +1,5 @@
+
+// Library name: devices
+// Cell name: inverter
+// View name: schematic
+subckt inverter in out

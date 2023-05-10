@@ -1,0 +1,10 @@
+HEADER
+"PSFversion" "1.00"
+"design" "(\"devices\" \"inverter_pulse_tb\" \"config\" \"\")"
+"simulator" "spectre"
+"temperature" "27"
+"host" ""
+"date" "May  3 21:03:52 2023"
+"title" ""
+"analysisList" "()"
+END

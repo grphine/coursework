@@ -1,0 +1,386 @@
+HEADER
+"PSFversion" "1.00"
+"simulator" "spectre"
+"version" "18.1.0.077"
+"date" "2:17:20 PM, Sat May 6, 2023"
+"design" "// Generated for: spectre"
+"analysis type" "info.subckts"
+"analysis name" "subckts"
+"analysis description" "Circuit Information"
+"xVecSorted" "unknown"
+"tolerance.relative" 0.00100000
+TYPE
+"subckt" STRUCT(
+"subckt_params" STRING *
+"subckt_terminals" STRING *
+"subckt_instances" STRING *
+) PROP(
+"key" "sub"
+)
+VALUE
+"npn_scalable" "subckt" (
+""
+""
+""
+)
+"g45rnws" "subckt" (
+""
+""
+""
+)
+"g45rm10" "subckt" (
+""
+""
+""
+)
+"g45rm7" "subckt" (
+""
+""
+""
+)
+"resm11_m" "subckt" (
+""
+""
+""
+)
+"nand3" "subckt" (
+""
+"A B C out vdd! 0"
+"I17.I22 I17.I16 I17.I15"
+)
+"g45p1svt" "subckt" (
+"geo_fac misa2 sb scc fac1 fac2 lef xw ad misa1 dmcg factor nrs toxmis_p as dwmis_p nf pd sa sca w multi scb ps sd wef dlmis_p l vthmis_p nrd"
+"d g s b"
+"I17.I19.PM0 I17.I8.PM0 I17.I7.PM0 I17.I6.PM0 I17.I5.PM0 I17.I4.PM0 I17.I3.PM0 I17.I2.PM0 I17.I1.PM0 I17.I21.PM1 I17.I21.PM0 I17.I20.PM1 I17.I20.PM0 I17.I18.PM1 I17.I18.PM0 I17.I17.PM1 I17.I17.PM0 I17.I14.PM1 I17.I14.PM0 I17.I13.PM1 I17.I13.PM0 I17.I12.PM1 I17.I12.PM0 I17.I11.PM1 I17.I11.PM0 I17.I10.PM1 I17.I10.PM0 I17.I9.PM1 I17.I9.PM0 I17.I22.PM2 I17.I22.PM1 I17.I22.PM0 I17.I16.PM2 I17.I16.PM1 I17.I16.PM0 I17.I15.PM2 I17.I15.PM1 I17.I15.PM0 I17.I23.PM4 I17.I23.PM3 I17.I24.PM2 I17.I24.PM1 I17.I24.PM0"
+)
+"g45p1svt.ressnpoly_rg" "subckt" (
+""
+""
+""
+)
+"g45p1svt.ressppoly_rg" "subckt" (
+"ptc1 mf ptc2 pvc1 pt tfac rsh ww pvc2 dxw_ressppoly ll dw"
+"n1 n2"
+"I17.I19.PM0.xrg I17.I8.PM0.xrg I17.I7.PM0.xrg I17.I6.PM0.xrg I17.I5.PM0.xrg I17.I4.PM0.xrg I17.I3.PM0.xrg I17.I2.PM0.xrg I17.I1.PM0.xrg I17.I21.PM1.xrg I17.I21.PM0.xrg I17.I20.PM1.xrg I17.I20.PM0.xrg I17.I18.PM1.xrg I17.I18.PM0.xrg I17.I17.PM1.xrg I17.I17.PM0.xrg I17.I14.PM1.xrg I17.I14.PM0.xrg I17.I13.PM1.xrg I17.I13.PM0.xrg I17.I12.PM1.xrg I17.I12.PM0.xrg I17.I11.PM1.xrg I17.I11.PM0.xrg I17.I10.PM1.xrg I17.I10.PM0.xrg I17.I9.PM1.xrg I17.I9.PM0.xrg I17.I22.PM2.xrg I17.I22.PM1.xrg I17.I22.PM0.xrg I17.I16.PM2.xrg I17.I16.PM1.xrg I17.I16.PM0.xrg I17.I15.PM2.xrg I17.I15.PM1.xrg I17.I15.PM0.xrg I17.I23.PM4.xrg I17.I23.PM3.xrg I17.I24.PM2.xrg I17.I24.PM1.xrg I17.I24.PM0.xrg"
+)
+"gpdk045_mosvar2v" "subckt" (
+""
+""
+""
+)
+"g45rm6" "subckt" (
+""
+""
+""
+)
+"resnsnpoly" "subckt" (
+""
+""
+""
+)
+"resnsppoly" "subckt" (
+""
+""
+""
+)
+"resm4_m" "subckt" (
+""
+""
+""
+)
+"g45rnwo" "subckt" (
+""
+""
+""
+)
+"g45n1lvt" "subckt" (
+""
+""
+""
+)
+"g45rsnp" "subckt" (
+""
+""
+""
+)
+"resm3_m" "subckt" (
+""
+""
+""
+)
+"g45rnspd" "subckt" (
+""
+""
+""
+)
+"g45rm8" "subckt" (
+""
+""
+""
+)
+"g45rm3" "subckt" (
+""
+""
+""
+)
+"g45rm5" "subckt" (
+""
+""
+""
+)
+"g45n2svt" "subckt" (
+""
+""
+""
+)
+"resm1_m" "subckt" (
+""
+""
+""
+)
+"gpdk045_mosvar1v" "subckt" (
+""
+""
+""
+)
+"g45rnspp" "subckt" (
+""
+""
+""
+)
+"resm10_m" "subckt" (
+""
+""
+""
+)
+"g45n1hvt" "subckt" (
+""
+""
+""
+)
+"g45inds" "subckt" (
+""
+""
+""
+)
+"g45inda" "subckt" (
+""
+""
+""
+)
+"g45p2svt" "subckt" (
+""
+""
+""
+)
+"g45n2nvt" "subckt" (
+""
+""
+""
+)
+"ressnpoly" "subckt" (
+""
+""
+""
+)
+"g45pcap2" "subckt" (
+""
+""
+""
+)
+"g45rnsnp" "subckt" (
+""
+""
+""
+)
+"resnwsti" "subckt" (
+""
+""
+""
+)
+"resm7_m" "subckt" (
+""
+""
+""
+)
+"g45rspp" "subckt" (
+""
+""
+""
+)
+"resnspdiff" "subckt" (
+""
+""
+""
+)
+"inverter" "subckt" (
+""
+"in out 0 vdd!"
+"I17.I19 I17.I8 I17.I7 I17.I6 I17.I5 I17.I4 I17.I3 I17.I2 I17.I1"
+)
+"g45rm1" "subckt" (
+""
+""
+""
+)
+"g45p1lvt" "subckt" (
+""
+""
+""
+)
+"g45n1nvt" "subckt" (
+""
+""
+""
+)
+"resspdiff" "subckt" (
+""
+""
+""
+)
+"g45ncap1" "subckt" (
+""
+""
+""
+)
+"ressppoly" "subckt" (
+""
+""
+""
+)
+"comparator" "subckt" (
+""
+"A0 A1 A2 A3 B0 B1 B2 B3 E G L 0 vdd!"
+"I17"
+)
+"ressndiff" "subckt" (
+""
+""
+""
+)
+"g45rm11" "subckt" (
+""
+""
+""
+)
+"resm2_m" "subckt" (
+""
+""
+""
+)
+"nor3" "subckt" (
+""
+"A B C out vdd! 0"
+"I17.I24"
+)
+"g45pcap1" "subckt" (
+""
+""
+""
+)
+"g45n1svt" "subckt" (
+"geo_fac misa2 sb scc fac1 fac2 lef toxmis_n xw ad misa1 dmcg factor nrs as nf pd sa sca w dlmis_n multi scb ps sd vthmis_n wef dwmis_n l nrd"
+"d g s b"
+"I17.I19.NM0 I17.I8.NM0 I17.I7.NM0 I17.I6.NM0 I17.I5.NM0 I17.I4.NM0 I17.I3.NM0 I17.I2.NM0 I17.I1.NM0 I17.I21.NM1 I17.I21.NM0 I17.I20.NM1 I17.I20.NM0 I17.I18.NM1 I17.I18.NM0 I17.I17.NM1 I17.I17.NM0 I17.I14.NM1 I17.I14.NM0 I17.I13.NM1 I17.I13.NM0 I17.I12.NM1 I17.I12.NM0 I17.I11.NM1 I17.I11.NM0 I17.I10.NM1 I17.I10.NM0 I17.I9.NM1 I17.I9.NM0 I17.I22.NM2 I17.I22.NM1 I17.I22.NM0 I17.I16.NM2 I17.I16.NM1 I17.I16.NM0 I17.I15.NM2 I17.I15.NM1 I17.I15.NM0 I17.I23.NM0 I17.I23.NM1 I17.I24.NM2 I17.I24.NM1 I17.I24.NM0"
+)
+"g45n1svt.ressnpoly_rg" "subckt" (
+"ptc1 mf ptc2 pvc1 pt tfac rsh ww pvc2 ll dw dxw_ressnpoly"
+"n1 n2"
+"I17.I19.NM0.xrg I17.I8.NM0.xrg I17.I7.NM0.xrg I17.I6.NM0.xrg I17.I5.NM0.xrg I17.I4.NM0.xrg I17.I3.NM0.xrg I17.I2.NM0.xrg I17.I1.NM0.xrg I17.I21.NM1.xrg I17.I21.NM0.xrg I17.I20.NM1.xrg I17.I20.NM0.xrg I17.I18.NM1.xrg I17.I18.NM0.xrg I17.I17.NM1.xrg I17.I17.NM0.xrg I17.I14.NM1.xrg I17.I14.NM0.xrg I17.I13.NM1.xrg I17.I13.NM0.xrg I17.I12.NM1.xrg I17.I12.NM0.xrg I17.I11.NM1.xrg I17.I11.NM0.xrg I17.I10.NM1.xrg I17.I10.NM0.xrg I17.I9.NM1.xrg I17.I9.NM0.xrg I17.I22.NM2.xrg I17.I22.NM1.xrg I17.I22.NM0.xrg I17.I16.NM2.xrg I17.I16.NM1.xrg I17.I16.NM0.xrg I17.I15.NM2.xrg I17.I15.NM1.xrg I17.I15.NM0.xrg I17.I23.NM0.xrg I17.I23.NM1.xrg I17.I24.NM2.xrg I17.I24.NM1.xrg I17.I24.NM0.xrg"
+)
+"g45n1svt.ressppoly_rg" "subckt" (
+""
+""
+""
+)
+"resnwoxide" "subckt" (
+""
+""
+""
+)
+"g45rm9" "subckt" (
+""
+""
+""
+)
+"g45rspd" "subckt" (
+""
+""
+""
+)
+"g45ncap2" "subckt" (
+""
+""
+""
+)
+"g45rm2" "subckt" (
+""
+""
+""
+)
+"nand2" "subckt" (
+""
+"A B out 0 vdd!"
+"I17.I21 I17.I20 I17.I18 I17.I17 I17.I14 I17.I13 I17.I12 I17.I11 I17.I10 I17.I9"
+)
+"g45cmim" "subckt" (
+""
+""
+""
+)
+"g45rnsnd" "subckt" (
+""
+""
+""
+)
+"resm6_m" "subckt" (
+""
+""
+""
+)
+"g45rsnd" "subckt" (
+""
+""
+""
+)
+"resm8_m" "subckt" (
+""
+""
+""
+)
+"g45p1hvt" "subckt" (
+""
+""
+""
+)
+"nor2" "subckt" (
+""
+"A B out vdd! 0"
+"I17.I23"
+)
+"g45rm4" "subckt" (
+""
+""
+""
+)
+"pnp_scalable" "subckt" (
+""
+""
+""
+)
+"resnsndiff" "subckt" (
+""
+""
+""
+)
+"resm5_m" "subckt" (
+""
+""
+""
+)
+"resm9_m" "subckt" (
+""
+""
+""
+)
+END

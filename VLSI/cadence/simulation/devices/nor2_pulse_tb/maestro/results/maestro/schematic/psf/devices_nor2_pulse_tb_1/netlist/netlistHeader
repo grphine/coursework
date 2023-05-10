@@ -1,0 +1,7 @@
+// Generated for: spectre
+// Generated on: May  6 14:19:50 2023
+// Design library name: devices
+// Design cell name: nor2_pulse_tb
+// Design view name: schematic
+simulator lang=spectre
+global 0 vdd!

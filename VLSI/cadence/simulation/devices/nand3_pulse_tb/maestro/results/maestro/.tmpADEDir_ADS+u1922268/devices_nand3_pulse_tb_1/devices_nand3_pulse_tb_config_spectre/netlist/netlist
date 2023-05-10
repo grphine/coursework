@@ -1,0 +1,45 @@
+
+// Library name: devices
+// Cell name: nand3
+// View name: av_extracted
+// Inherited view list: spectre cmos_sch cmos.sch schematic veriloga ahdl
+//pspice dspf layout av_extracted
+subckt nand3 A B C out
+    PM0 (out C vdd! vdd!) g45p1svt w=(2.4e-07) l=4.5e-08 nf=1 as=3.84e-14 \
+        ad=3.36e-14 ps=8e-07 pd=7.6e-07 nrd=1.16667 nrs=1.16667 sa=5.5e-07 \
+        sb=1.4e-07 sd=160n sca=83.7829 scb=0.0591682 scc=0.00947681 m=(1)
+    PM2 (out A vdd! vdd!) g45p1svt w=(2.4e-07) l=4.5e-08 nf=1 as=3.36e-14 \
+        ad=3.84e-14 ps=7.6e-07 pd=8e-07 nrd=1.16667 nrs=1.16667 sa=1.4e-07 \
+        sb=5.5e-07 sd=160n sca=83.7829 scb=0.0591682 scc=0.00947681 m=(1)
+    PM1 (out B vdd! vdd!) g45p1svt w=(2.4e-07) l=4.5e-08 nf=1 as=3.84e-14 \
+        ad=3.84e-14 ps=8e-07 pd=8e-07 nrd=1.16667 nrs=1.16667 sa=3.45e-07 \
+        sb=3.45e-07 sd=160n sca=71.8458 scb=0.045912 scc=0.00699766 m=(1)
+    NM2 (out A net15 0) g45n1svt w=(1.2e-07) l=4.5e-08 nf=1 as=7.2e-15 \
+        ad=1.68e-14 ps=3.6e-07 pd=5.2e-07 nrd=1.16667 nrs=1.16667 \
+        sa=3.5e-07 sb=1.4e-07 sd=160n sca=11.4704 scb=0.0113288 \
+        scc=0.000409499 m=(1)
+    NM0 (net14 C 0 0) g45n1svt w=(1.2e-07) l=4.5e-08 nf=1 as=1.68e-14 \
+        ad=7.2e-15 ps=5.2e-07 pd=3.6e-07 nrd=1.16667 nrs=1.16667 \
+        sa=1.4e-07 sb=3.5e-07 sd=160n sca=11.4704 scb=0.0113288 \
+        scc=0.000409499 m=(1)
+    NM1 (net15 B net14 0) g45n1svt w=(1.2e-07) l=4.5e-08 nf=1 as=7.2e-15 \
+        ad=7.2e-15 ps=3.6e-07 pd=3.6e-07 nrd=1.16667 nrs=1.16667 \
+        sa=2.45e-07 sb=2.45e-07 sd=160n sca=11.4704 scb=0.0113288 \
+        scc=0.000409499 m=(1)
+ends nand3
+// End of subcircuit definition.
+
+// Library name: devices
+// Cell name: nand3_pulse_tb
+// View name: schematic
+// Inherited view list: spectre cmos_sch cmos.sch schematic veriloga ahdl
+// pspice dspf layout av_extracted
+C0 (_net0 0) capacitor c=1f
+V0 (vdd! 0) vsource dc=vSupply type=dc
+V4 (inB 0) vsource type=pulse val0=0 val1=vSupply period=200n delay=108n \
+        rise=2n fall=2n width=98n
+V1 (inA 0) vsource type=pulse val0=0 val1=vSupply period=100n delay=48n \
+        rise=2n fall=2n width=48n
+V2 (inC 0) vsource type=pulse val0=0 val1=vSupply period=400n delay=148n \
+        rise=2n fall=2n width=198n
+I7 (inA inB inC _net0) nand3

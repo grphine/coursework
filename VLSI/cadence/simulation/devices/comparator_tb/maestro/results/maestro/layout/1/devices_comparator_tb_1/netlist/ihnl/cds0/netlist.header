@@ -1,0 +1,7 @@
+
+// Library name: devices
+// Cell name: comparator
+// View name: av_extracted
+// Inherited view list: spectre cmos_sch cmos.sch schematic veriloga ahdl
+//pspice dspf layout_inline av_extracted
+subckt comparator A0 A1 A2 A3 B0 B1 B2 B3 E G L

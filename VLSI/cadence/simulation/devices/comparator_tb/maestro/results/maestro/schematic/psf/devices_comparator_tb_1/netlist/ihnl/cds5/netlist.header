@@ -1,0 +1,5 @@
+
+// Library name: devices
+// Cell name: comparator
+// View name: schematic
+subckt comparator A0 A1 A2 A3 B0 B1 B2 B3 E G L

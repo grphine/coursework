@@ -1,0 +1,7 @@
+// Generated for: spectre
+// Generated on: May  3 21:17:01 2023
+// Design library name: devices
+// Design cell name: nand3_pulse_tb
+// Design view name: config
+simulator lang=spectre
+global 0 vdd!

@@ -1,0 +1,31 @@
+1922268 submission for ES3D8
+
+The project is organised using categories. 
+Hardware contains designed cells, including schematics and layouts.
+TBs contains testbench schematics and maestro simulations.
+These follow the outlined structure:
+
+/devices
+|-- /Hardware
+|    |-- /comparator
+|    |    |-- schematic_inline
+|    |    `-- layout_inline_ii
+|    |-- /inverter
+|    |    |-- layout
+|    |    `-- schematic
+|    |-- /nand2
+|    |-- /nand3
+|    |-- /nor2
+|    `-- /nor3
+`-- /TBs
+     |-- /comparator_tb
+     |    |-- config
+     |    |-- maestro
+     |    `-- schematic
+     |-- /inverter_pulse_tb
+     |-- /nand2_pulse_tb
+     |-- /nand3_pulse_tb
+     |-- /nor2_pulse_tb
+     `-- /nor3_pulse_tb
+
+

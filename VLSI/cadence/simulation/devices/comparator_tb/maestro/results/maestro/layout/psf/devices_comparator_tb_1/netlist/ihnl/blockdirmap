@@ -1,0 +1,4 @@
+CADENCE IHNL11142
+
+devices comparator av_extracted nil spectre_cmos_sch_cmos.sch_schematic_veriloga_ahdl_pspice_dspf_layout_inline_av_extracted devices comparator_tb config 0 cds0
+devices comparator_tb schematic nil spectre_cmos_sch_cmos.sch_schematic_veriloga_ahdl_pspice_dspf_layout_inline_av_extracted devices comparator_tb config 1 cds1

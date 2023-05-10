@@ -1,0 +1,11 @@
+
+// Library name: devices
+// Cell name: nor2_pulse_tb
+// View name: schematic
+C0 (_net0 0) capacitor c=1f
+V0 (vdd! 0) vsource dc=vSupply type=dc
+V4 (inB 0) vsource type=pulse val0=0 val1=vSupply period=200n delay=108n \
+        rise=2n fall=2n width=98n
+V1 (inA 0) vsource type=pulse val0=0 val1=vSupply period=100n delay=48n \
+        rise=2n fall=2n width=48n
+I7 (inA inB _net0) nor2

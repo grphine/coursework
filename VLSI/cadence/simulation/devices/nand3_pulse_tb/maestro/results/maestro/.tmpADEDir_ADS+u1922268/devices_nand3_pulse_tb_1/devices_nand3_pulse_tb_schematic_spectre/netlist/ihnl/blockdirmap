@@ -1,0 +1,4 @@
+CADENCE IHNL11142
+
+devices nand3 schematic cds0
+devices nand3_pulse_tb schematic cds1

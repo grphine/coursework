@@ -1,0 +1,104 @@
+ahdlcmicompile: Compiling ahdlcmi in /home/ADS/u1922268/es3d8/assignment/libraries/simulation/devices/comparator_tb/maestro/results/maestro/Interactive.0/sharedData/CDS/ahdl/input.ahdlSimDB/bsource_2b273e.va.bsource_2b273e.ahdlcmi/Linux-64/ for Linux-64 with optimize using gcc on Wed May  3 21:11:11 BST 2023 [5.0]
+ahdlcmicompile: Generating makefile
+PATH:  /eda/cadence/2018-19/RHELx86/SPECTRE_18.10.077/bin:/eda/cadence/2018-19/RHELx86/SPECTRE_18.10.077/tools.lnx86/bin/64bit:/eda/cadence/2018-19/RHELx86/SPECTRE_18.10.077/tools.lnx86/bin:/eda/cadence/2018-19/RHELx86/IC_6.1.7.722/bin:/eda/cadence/2018-19/RHELx86/IC_6.1.7.722/tools/bin:/eda/cadence/2018-19/RHELx86/IC_6.1.7.722/tools/bin/64bit:/eda/cadence/2018-19/RHELx86/IC_6.1.7.722/share/oa/bin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/eda/ams_hitkit/cds/bin:/eda/cadence/2018-19/RHELx86/ASSURA_04.15.115/tools/bin:/eda/cadence/2018-19/RHELx86/ASSURA_04.15.115/tools/assura/bin:/eda/cadence/2018-19/RHELx86/ASSURA_04.15.115/bin:/eda/cadence/2018-19/RHELx86/EXT_19.11.000/bin:/eda/cadence/2018-19/RHELx86/GENUS_18.10.000/bin:/eda/cadence/2018-19/RHELx86/IC_6.1.7.722/tools/dfII/bin:/eda/cadence/2018-19/RHELx86/INNOVUS_18.10.000/bin:/eda/cadence/2018-19/RHELx86/JLS_18.10.000/bin:/eda/cadence/2018-19/RHELx86/LIBERATE_18.10.293/bin:/eda/cadence/2018-19/RHELx86/PVS_16.12.000/bin:/eda/mentor/2018-19/RHELx86/CALIBRE_2018.4.17/aoi_cal_2018.4_17.10/bin:/eda/synopsys/2018-19/RHELx86/ICWB-EV-PLUS_2018.06-SP2/bin:/eda/synopsys/2018-19/RHELx86/SENTAURUS_2018.06-SP2/bin:/eda/synopsys/2018-19/RHELx86/SENTAURUS-PCM_2018.12//bin:/eda/synopsys/2018-19/RHELx86/TAURUS-MD_2018.06/bin:/eda/synopsys/2018-19/RHELx86/TAURUS-TS4_2018.06/bin:/home/ADS/u1922268/.local/bin:/home/ADS/u1922268/bin
+LD_LIBRARY_PATH:  /eda/cadence/2018-19/RHELx86/SPECTRE_18.10.077/tools.lnx86/giganta/lib/64bit:/eda/cadence/2018-19/RHELx86/SPECTRE_18.10.077/tools.lnx86/mdl/lib/64bit:/eda/cadence/2018-19/RHELx86/SPECTRE_18.10.077/tools.lnx86/mmsim/lib/64bit:/eda/cadence/2018-19/RHELx86/SPECTRE_18.10.077/tools.lnx86/tcltk-8.4.20/lib/64bit:/eda/cadence/2018-19/RHELx86/SPECTRE_18.10.077/tools.lnx86/inca/lib/64bit:/eda/cadence/2018-19/RHELx86/SPECTRE_18.10.077/tools.lnx86/spectre/lib/64bit:/eda/cadence/2018-19/RHELx86/SPECTRE_18.10.077/tools.lnx86/dfII/lib/64bit:/eda/cadence/2018-19/RHELx86/SPECTRE_18.10.077/tools.lnx86/lib/64bit:/eda/cadence/2018-19/RHELx86/SPECTRE_18.10.077/tools.lnx86/lib/64bit:/eda/cadence/2018-19/RHELx86/SPECTRE_18.10.077/tools.lnx86/lib:/eda/cadence/2018-19/RHELx86/IC_6.1.7.722/tools/lib:/eda/cadence/2018-19/RHELx86/IC_6.1.7.722/tools/lib/RHEL/RHEL7:/eda/cadence/2018-19/RHELx86/IC_6.1.7.722/share/oa/lib/linux_rhel50_gcc48x_64/opt:/eda/cadence/2018-19/RHELx86/IC_6.1.7.722/tools/Qt/64bit/lib:/eda/cadence/2018-19/RHELx86/IC_6.1.7.722/tools/dfII/lib/64bit:/eda/cadence/2018-19/RHELx86/IC_6.1.7.722/tools/sev/lib/64bit:/eda/cadence/2018-19/RHELx86/IC_6.1.7.722/tools/lib/64bit:/eda/cadence/2018-19/RHELx86/IC_6.1.7.722/tools/hdf5/lib/64bit:/eda/cadence/2018-19/RHELx86/IC_6.1.7.722/tools/lz4/lib/64bit:/eda/cadence/2018-19/RHELx86/IC_6.1.7.722/tools/inca/lib/64bit:/eda/cadence/2018-19/RHELx86/IC_6.1.7.722/tools/lib/64bit/RHEL/RHEL7
+/eda/cadence/2018-19/RHELx86/SPECTRE_18.10.077/tools.lnx86/spectre/ahdlcmi/bin/gnumake -j72 -f GNUmakefile
+Cleaning ./obj/optimize/5.0
+rm -f -rf ./obj/optimize/5.0
+Compiling C file bsource_2b273e_func.c (optimize)
+/eda/cadence/2018-19/RHELx86/SPECTRE_18.10.077/tools.lnx86/spectre/ahdlcmi/bin/64bit/ahdlcc 0 /eda/cadence/2018-19/RHELx86/SPECTRE_18.10.077/tools.lnx86/cdsgcc/gcc/6.3/bin/gcc  -march=k8 -ffast-math  -fno-unsafe-math-optimizations -O3 -m64 -DSYSV -DSVR4 -D_REENTRANT -fPIC   -DconfigSPECTRE -I. -I/eda/cadence/2018-19/RHELx86/SPECTRE_18.10.077/tools.lnx86/spectre/ahdlcmi/include -c bsource_2b273e_func.c -o obj/optimize/5.0/bsource_2b273e_func.o || rm -f -f obj/optimize/5.0/bsource_2b273e_func.o
+Compiling C file bsource_2b273e_DcFuncDerLoad.c (optimize)
+/eda/cadence/2018-19/RHELx86/SPECTRE_18.10.077/tools.lnx86/spectre/ahdlcmi/bin/64bit/ahdlcc 0 /eda/cadence/2018-19/RHELx86/SPECTRE_18.10.077/tools.lnx86/cdsgcc/gcc/6.3/bin/gcc  -march=k8 -ffast-math  -fno-unsafe-math-optimizations -O3 -m64 -DSYSV -DSVR4 -D_REENTRANT -fPIC   -DconfigSPECTRE -I. -I/eda/cadence/2018-19/RHELx86/SPECTRE_18.10.077/tools.lnx86/spectre/ahdlcmi/include -c bsource_2b273e_DcFuncDerLoad.c -o obj/optimize/5.0/bsource_2b273e_DcFuncDerLoad.o || rm -f -f obj/optimize/5.0/bsource_2b273e_DcFuncDerLoad.o
+Compiling C file bsource_2b273e_DcFuncLoad.c (optimize)
+/eda/cadence/2018-19/RHELx86/SPECTRE_18.10.077/tools.lnx86/spectre/ahdlcmi/bin/64bit/ahdlcc 0 /eda/cadence/2018-19/RHELx86/SPECTRE_18.10.077/tools.lnx86/cdsgcc/gcc/6.3/bin/gcc  -march=k8 -ffast-math  -fno-unsafe-math-optimizations -O3 -m64 -DSYSV -DSVR4 -D_REENTRANT -fPIC   -DconfigSPECTRE -I. -I/eda/cadence/2018-19/RHELx86/SPECTRE_18.10.077/tools.lnx86/spectre/ahdlcmi/include -c bsource_2b273e_DcFuncLoad.c -o obj/optimize/5.0/bsource_2b273e_DcFuncLoad.o || rm -f -f obj/optimize/5.0/bsource_2b273e_DcFuncLoad.o
+Compiling C file bsource_2b273e_TranFuncDerLoad.c (optimize)
+/eda/cadence/2018-19/RHELx86/SPECTRE_18.10.077/tools.lnx86/spectre/ahdlcmi/bin/64bit/ahdlcc 0 /eda/cadence/2018-19/RHELx86/SPECTRE_18.10.077/tools.lnx86/cdsgcc/gcc/6.3/bin/gcc  -march=k8 -ffast-math  -fno-unsafe-math-optimizations -O3 -m64 -DSYSV -DSVR4 -D_REENTRANT -fPIC   -DconfigSPECTRE -I. -I/eda/cadence/2018-19/RHELx86/SPECTRE_18.10.077/tools.lnx86/spectre/ahdlcmi/include -c bsource_2b273e_TranFuncDerLoad.c -o obj/optimize/5.0/bsource_2b273e_TranFuncDerLoad.o || rm -f -f obj/optimize/5.0/bsource_2b273e_TranFuncDerLoad.o
+Compiling C file bsource_2b273e_TranFuncDerSimLoad.c (optimize)
+/eda/cadence/2018-19/RHELx86/SPECTRE_18.10.077/tools.lnx86/spectre/ahdlcmi/bin/64bit/ahdlcc 0 /eda/cadence/2018-19/RHELx86/SPECTRE_18.10.077/tools.lnx86/cdsgcc/gcc/6.3/bin/gcc  -march=k8 -ffast-math  -fno-unsafe-math-optimizations -O3 -m64 -DSYSV -DSVR4 -D_REENTRANT -fPIC   -DconfigSPECTRE -I. -I/eda/cadence/2018-19/RHELx86/SPECTRE_18.10.077/tools.lnx86/spectre/ahdlcmi/include -c bsource_2b273e_TranFuncDerSimLoad.c -o obj/optimize/5.0/bsource_2b273e_TranFuncDerSimLoad.o || rm -f -f obj/optimize/5.0/bsource_2b273e_TranFuncDerSimLoad.o
+Compiling C file bsource_2b273e_TranFuncLoad.c (optimize)
+/eda/cadence/2018-19/RHELx86/SPECTRE_18.10.077/tools.lnx86/spectre/ahdlcmi/bin/64bit/ahdlcc 0 /eda/cadence/2018-19/RHELx86/SPECTRE_18.10.077/tools.lnx86/cdsgcc/gcc/6.3/bin/gcc  -march=k8 -ffast-math  -fno-unsafe-math-optimizations -O3 -m64 -DSYSV -DSVR4 -D_REENTRANT -fPIC   -DconfigSPECTRE -I. -I/eda/cadence/2018-19/RHELx86/SPECTRE_18.10.077/tools.lnx86/spectre/ahdlcmi/include -c bsource_2b273e_TranFuncLoad.c -o obj/optimize/5.0/bsource_2b273e_TranFuncLoad.o || rm -f -f obj/optimize/5.0/bsource_2b273e_TranFuncLoad.o
+Compiling C file bsource_2b273e_TranFuncSimLoad.c (optimize)
+/eda/cadence/2018-19/RHELx86/SPECTRE_18.10.077/tools.lnx86/spectre/ahdlcmi/bin/64bit/ahdlcc 0 /eda/cadence/2018-19/RHELx86/SPECTRE_18.10.077/tools.lnx86/cdsgcc/gcc/6.3/bin/gcc  -march=k8 -ffast-math  -fno-unsafe-math-optimizations -O3 -m64 -DSYSV -DSVR4 -D_REENTRANT -fPIC   -DconfigSPECTRE -I. -I/eda/cadence/2018-19/RHELx86/SPECTRE_18.10.077/tools.lnx86/spectre/ahdlcmi/include -c bsource_2b273e_TranFuncSimLoad.c -o obj/optimize/5.0/bsource_2b273e_TranFuncSimLoad.o || rm -f -f obj/optimize/5.0/bsource_2b273e_TranFuncSimLoad.o
+Compiling C file bsource_2b273e_OpPointCalc.c (optimize)
+/eda/cadence/2018-19/RHELx86/SPECTRE_18.10.077/tools.lnx86/spectre/ahdlcmi/bin/64bit/ahdlcc 0 /eda/cadence/2018-19/RHELx86/SPECTRE_18.10.077/tools.lnx86/cdsgcc/gcc/6.3/bin/gcc  -march=k8 -ffast-math  -fno-unsafe-math-optimizations -O3 -m64 -DSYSV -DSVR4 -D_REENTRANT -fPIC   -DconfigSPECTRE -I. -I/eda/cadence/2018-19/RHELx86/SPECTRE_18.10.077/tools.lnx86/spectre/ahdlcmi/include -c bsource_2b273e_OpPointCalc.c -o obj/optimize/5.0/bsource_2b273e_OpPointCalc.o || rm -f -f obj/optimize/5.0/bsource_2b273e_OpPointCalc.o
+Compiling C file bsource_2b273e_cmi_c.c (optimize)
+/eda/cadence/2018-19/RHELx86/SPECTRE_18.10.077/tools.lnx86/spectre/ahdlcmi/bin/64bit/ahdlcc 0 /eda/cadence/2018-19/RHELx86/SPECTRE_18.10.077/tools.lnx86/cdsgcc/gcc/6.3/bin/gcc  -march=k8 -ffast-math  -fno-unsafe-math-optimizations -O3 -m64 -DSYSV -DSVR4 -D_REENTRANT -fPIC   -DconfigSPECTRE -I. -I/eda/cadence/2018-19/RHELx86/SPECTRE_18.10.077/tools.lnx86/spectre/ahdlcmi/include -I/eda/cadence/2018-19/RHELx86/SPECTRE_18.10.077/tools.lnx86/cmi/include -c bsource_2b273e_cmi_c.c -o obj/optimize/5.0/bsource_2b273e_cmi_c.o || rm -f -f obj/optimize/5.0/bsource_2b273e_cmi_c.o
+<stdin>: In function 'bsource_2b273e_pGetInstanceParams':
+<stdin>:809:1402: warning: implicit declaration of function 'devGetInstKnotStatus' [-Wimplicit-function-declaration]
+<stdin>: In function 'bsource_2b273e_pDC_Load':
+<stdin>:826:3009: warning: passing argument 1 of 'aslDevFillZeorDiagonalElemet' makes pointer from integer without a cast [-Wint-conversion]
+In file included from <stdin>:24:0:
+/eda/cadence/2018-19/RHELx86/SPECTRE_18.10.077/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2709:33: note: expected 'void *' but argument is of type 'long int'
+ ASL_FUNC_DECL_START extern void aslDevFillZeorDiagonalElemet( void *, int, unsigned int, struct ahdlFuncModeParam * );
+                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+<stdin>: In function 'bsource_2b273e_pCompare':
+<stdin>:865:1205: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+<stdin>:865:1285: warning: passing argument 1 of 'memcpy' makes pointer from integer without a cast [-Wint-conversion]
+In file included from /eda/cadence/2018-19/RHELx86/SPECTRE_18.10.077/tools.lnx86/spectre/ahdlcmi/include/ahdlPiCmi.h:5:0,
+                 from /eda/cadence/2018-19/RHELx86/SPECTRE_18.10.077/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:83,
+                 from <stdin>:24:
+/usr/include/string.h:42:14: note: expected 'void * restrict' but argument is of type 'long int'
+ extern void *memcpy (void *__restrict __dest, const void *__restrict __src,
+              ^~~~~~
+<stdin>:865:1320: warning: passing argument 2 of 'memcpy' makes pointer from integer without a cast [-Wint-conversion]
+In file included from /eda/cadence/2018-19/RHELx86/SPECTRE_18.10.077/tools.lnx86/spectre/ahdlcmi/include/ahdlPiCmi.h:5:0,
+                 from /eda/cadence/2018-19/RHELx86/SPECTRE_18.10.077/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:83,
+                 from <stdin>:24:
+/usr/include/string.h:42:14: note: expected 'const void * restrict' but argument is of type 'long int'
+ extern void *memcpy (void *__restrict __dest, const void *__restrict __src,
+              ^~~~~~
+<stdin>:865:1447: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+<stdin>: In function 'bsource_2b273e_pGetMatrixPointers':
+<stdin>:871:3046: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+<stdin>: In function 'bsource_2b273e_pAnalTranLoad':
+<stdin>:903:0: warning: passing argument 1 of 'aslDevFillZeorDiagonalElemet' makes pointer from integer without a cast [-Wint-conversion]
+In file included from <stdin>:24:0:
+/eda/cadence/2018-19/RHELx86/SPECTRE_18.10.077/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2709:33: note: expected 'void *' but argument is of type 'long int'
+ ASL_FUNC_DECL_START extern void aslDevFillZeorDiagonalElemet( void *, int, unsigned int, struct ahdlFuncModeParam * );
+                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+<stdin>: In function 'bsource_2b273e_pNoiseBindSrcs':
+<stdin>:929:1483: warning: passing argument 3 of 'aslDevNoiseBindStartModel' discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+In file included from <stdin>:24:0:
+/eda/cadence/2018-19/RHELx86/SPECTRE_18.10.077/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:1098:33: note: expected 'char *' but argument is of type 'devModelID {aka const char *}'
+ ASL_FUNC_DECL_START extern void aslDevNoiseBindStartModel( struct noiseData *, devInstKnot *, char *, char * );
+                                 ^~~~~~~~~~~~~~~~~~~~~~~~~
+<stdin>: In function 'bsource_2b273e_pNoiseNameSrcs':
+<stdin>:932:1478: warning: passing argument 3 of 'aslDevNoiseNameModel' discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+In file included from <stdin>:24:0:
+/eda/cadence/2018-19/RHELx86/SPECTRE_18.10.077/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:1106:40: note: expected 'char *' but argument is of type 'devModelID {aka const char *}'
+ ASL_FUNC_DECL_START extern msgSeverity aslDevNoiseNameModel( struct noiseData *, devInstKnot *, char *, char * );
+                                        ^~~~~~~~~~~~~~~~~~~~
+<stdin>: In function 'bsource_2b273e_pInitSelect':
+<stdin>:935:2775: warning: implicit declaration of function 'devGetSimOptionInt' [-Wimplicit-function-declaration]
+<stdin>:935:3629: warning: implicit declaration of function 'bsource_2b273e_BsrValCalc' [-Wimplicit-function-declaration]
+<stdin>: In function 'bsource_2b273e_pSaveRestart':
+<stdin>:938:1961: warning: implicit declaration of function 'pklAccessDouble' [-Wimplicit-function-declaration]
+<stdin>:938:2040: warning: passing argument 2 of 'aslDevAvarSR' from incompatible pointer type [-Wincompatible-pointer-types]
+In file included from <stdin>:24:0:
+/eda/cadence/2018-19/RHELx86/SPECTRE_18.10.077/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:1223:39: note: expected 'struct ahdlAnalogVar *' but argument is of type 'char *'
+ ASL_FUNC_DECL_START extern PklError_e aslDevAvarSR( int, struct ahdlAnalogVar *, char *, char *, char *, PklJar_t * );
+                                       ^~~~~~~~~~~~
+<stdin>: In function 'bsource_2b273e_pSaveRestartInst':
+<stdin>:941:1956: warning: passing argument 2 of 'aslDevAvarSR' from incompatible pointer type [-Wincompatible-pointer-types]
+In file included from <stdin>:24:0:
+/eda/cadence/2018-19/RHELx86/SPECTRE_18.10.077/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:1223:39: note: expected 'struct ahdlAnalogVar *' but argument is of type 'char *'
+ ASL_FUNC_DECL_START extern PklError_e aslDevAvarSR( int, struct ahdlAnalogVar *, char *, char *, char *, PklJar_t * );
+                                       ^~~~~~~~~~~~
+<stdin>: In function 'ahdlbsource_2b273eDescInstall':
+<stdin>:983:1995: warning: implicit declaration of function 'descSetSetContrInfoPtr' [-Wimplicit-function-declaration]
+<stdin>:983:2390: warning: implicit declaration of function 'descSetCopySignals' [-Wimplicit-function-declaration]
+<stdin>:983:3344: warning: implicit declaration of function 'descSetPreload' [-Wimplicit-function-declaration]
+<stdin>:983:3723: warning: implicit declaration of function 'descSetNoiseLoadFreqDep' [-Wimplicit-function-declaration]
+<stdin>:983:3857: warning: implicit declaration of function 'descSetNoiseBindSrcs' [-Wimplicit-function-declaration]
+<stdin>:983:3918: warning: implicit declaration of function 'descSetNoiseNameSrcs' [-Wimplicit-function-declaration]
+rm -f -rf bsource_2b273e_TranFuncSimLoad.c
+rm -f -rf bsource_2b273e_DcFuncLoad.c
+rm -f -rf bsource_2b273e_TranFuncLoad.c
+rm -f -rf bsource_2b273e_OpPointCalc.c
+rm -f -rf bsource_2b273e_DcFuncDerLoad.c
+rm -f -rf bsource_2b273e_TranFuncDerSimLoad.c
+rm -f -rf bsource_2b273e_TranFuncDerLoad.c
+rm -f -rf bsource_2b273e_func.c
+rm -f -rf bsource_2b273e_cmi_c.c
+/eda/cadence/2018-19/RHELx86/SPECTRE_18.10.077/tools.lnx86/cdsgcc/gcc/6.3/bin/gcc -shared -O3 -m64 -fPIC -o obj/optimize/5.0/libahdlcmi_bsource_2b273e.so ./obj/optimize/5.0/bsource_2b273e_func.o ./obj/optimize/5.0/bsource_2b273e_DcFuncDerLoad.o ./obj/optimize/5.0/bsource_2b273e_DcFuncLoad.o ./obj/optimize/5.0/bsource_2b273e_TranFuncDerLoad.o ./obj/optimize/5.0/bsource_2b273e_TranFuncDerSimLoad.o ./obj/optimize/5.0/bsource_2b273e_TranFuncLoad.o ./obj/optimize/5.0/bsource_2b273e_TranFuncSimLoad.o ./obj/optimize/5.0/bsource_2b273e_OpPointCalc.o ./obj/optimize/5.0/bsource_2b273e_cmi_c.o  -Wl,-rpath,/usr/lib -Wl,-rpath,/lib -s 
+rm -f -f ./obj/optimize/5.0/bsource_2b273e_func.o ./obj/optimize/5.0/bsource_2b273e_DcFuncDerLoad.o ./obj/optimize/5.0/bsource_2b273e_DcFuncLoad.o ./obj/optimize/5.0/bsource_2b273e_TranFuncDerLoad.o ./obj/optimize/5.0/bsource_2b273e_TranFuncDerSimLoad.o ./obj/optimize/5.0/bsource_2b273e_TranFuncLoad.o ./obj/optimize/5.0/bsource_2b273e_TranFuncSimLoad.o ./obj/optimize/5.0/bsource_2b273e_OpPointCalc.o ./obj/optimize/5.0/bsource_2b273e_cmi_c.o 

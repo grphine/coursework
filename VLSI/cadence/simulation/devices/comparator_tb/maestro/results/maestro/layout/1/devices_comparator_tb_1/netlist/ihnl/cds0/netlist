@@ -1,0 +1,343 @@
+    I24\|PM0 (I24\|net16 net25 vdd! vdd!) g45p1svt w=(2.4e-07) l=4.5e-08 \
+        nf=1 as=3.36e-14 ad=1.44e-14 ps=7.6e-07 pd=6e-07 nrd=1.16667 \
+        nrs=1.16667 sa=1.4e-07 sb=3.5e-07 sd=160n sca=62.7858 \
+        scb=0.0340384 scc=0.00682788 m=(1)
+    I24\|PM1 (I24\|net15 net65 I24\|net16 vdd!) g45p1svt w=(2.4e-07) \
+        l=4.5e-08 nf=1 as=1.44e-14 ad=1.44e-14 ps=6e-07 pd=6e-07 \
+        nrd=1.16667 nrs=1.16667 sa=2.45e-07 sb=2.45e-07 sd=160n \
+        sca=62.7858 scb=0.0340384 scc=0.00682788 m=(1)
+    I24\|PM2 (E G I24\|net15 vdd!) g45p1svt w=(2.4e-07) l=4.5e-08 nf=1 \
+        as=1.44e-14 ad=3.36e-14 ps=6e-07 pd=7.6e-07 nrd=1.16667 \
+        nrs=1.16667 sa=3.5e-07 sb=1.4e-07 sd=160n sca=62.7858 \
+        scb=0.0340384 scc=0.00682788 m=(1)
+    I23\|PM3 (I23\|net12 G vdd! vdd!) g45p1svt w=(2.4e-07) l=4.5e-08 nf=1 \
+        as=3.36e-14 ad=1.44e-14 ps=7.6e-07 pd=6e-07 nrd=1.16667 \
+        nrs=1.16667 sa=1.4e-07 sb=2.45e-07 sd=160n sca=62.7858 \
+        scb=0.0340384 scc=0.00682788 m=(1)
+    I23\|PM4 (L E I23\|net12 vdd!) g45p1svt w=(2.4e-07) l=4.5e-08 nf=1 \
+        as=1.44e-14 ad=3.36e-14 ps=6e-07 pd=7.6e-07 nrd=1.16667 \
+        nrs=1.16667 sa=2.45e-07 sb=1.4e-07 sd=160n sca=62.7858 \
+        scb=0.0340384 scc=0.00682788 m=(1)
+    I16\|PM2 (net53 A0 vdd! vdd!) g45p1svt w=(2.4e-07) l=4.5e-08 nf=1 \
+        as=3.84e-14 ad=3.36e-14 ps=8e-07 pd=7.6e-07 nrd=1.16667 \
+        nrs=1.16667 sa=5.5e-07 sb=1.4e-07 sd=160n sca=62.7858 \
+        scb=0.0340384 scc=0.00682788 m=(1)
+    I16\|PM1 (net53 net26 vdd! vdd!) g45p1svt w=(2.4e-07) l=4.5e-08 nf=1 \
+        as=3.84e-14 ad=3.84e-14 ps=8e-07 pd=8e-07 nrd=1.16667 nrs=1.16667 \
+        sa=3.45e-07 sb=3.45e-07 sd=160n sca=62.7858 scb=0.0340384 \
+        scc=0.00682788 m=(1)
+    I16\|PM0 (net53 net54 vdd! vdd!) g45p1svt w=(2.4e-07) l=4.5e-08 nf=1 \
+        as=3.36e-14 ad=3.84e-14 ps=7.6e-07 pd=8e-07 nrd=1.16667 \
+        nrs=1.16667 sa=5.5e-07 sb=1.4e-07 sd=160n sca=62.7858 \
+        scb=0.0340384 scc=0.00682788 m=(1)
+    I22\|PM2 (G net51 vdd! vdd!) g45p1svt w=(2.4e-07) l=4.5e-08 nf=1 \
+        as=3.84e-14 ad=3.36e-14 ps=8e-07 pd=7.6e-07 nrd=1.16667 \
+        nrs=1.16667 sa=5.5e-07 sb=1.4e-07 sd=160n sca=62.7858 \
+        scb=0.0340384 scc=0.00682788 m=(1)
+    I22\|PM1 (G net52 vdd! vdd!) g45p1svt w=(2.4e-07) l=4.5e-08 nf=1 \
+        as=3.84e-14 ad=3.84e-14 ps=8e-07 pd=8e-07 nrd=1.16667 nrs=1.16667 \
+        sa=3.45e-07 sb=3.45e-07 sd=160n sca=62.7858 scb=0.0340384 \
+        scc=0.00682788 m=(1)
+    I22\|PM0 (G net50 vdd! vdd!) g45p1svt w=(2.4e-07) l=4.5e-08 nf=1 \
+        as=3.36e-14 ad=3.84e-14 ps=7.6e-07 pd=8e-07 nrd=1.16667 \
+        nrs=1.16667 sa=5.5e-07 sb=1.4e-07 sd=160n sca=62.7858 \
+        scb=0.0340384 scc=0.00682788 m=(1)
+    I15\|PM2 (net50 A2 vdd! vdd!) g45p1svt w=(2.4e-07) l=4.5e-08 nf=1 \
+        as=3.84e-14 ad=3.36e-14 ps=8e-07 pd=7.6e-07 nrd=1.16667 \
+        nrs=1.16667 sa=5.5e-07 sb=1.4e-07 sd=160n sca=62.7858 \
+        scb=0.0340384 scc=0.00682788 m=(1)
+    I15\|PM1 (net50 net7 vdd! vdd!) g45p1svt w=(2.4e-07) l=4.5e-08 nf=1 \
+        as=3.84e-14 ad=3.84e-14 ps=8e-07 pd=8e-07 nrd=1.16667 nrs=1.16667 \
+        sa=3.45e-07 sb=3.45e-07 sd=160n sca=62.7858 scb=0.0340384 \
+        scc=0.00682788 m=(1)
+    I15\|PM0 (net50 net29 vdd! vdd!) g45p1svt w=(2.4e-07) l=4.5e-08 nf=1 \
+        as=3.36e-14 ad=3.84e-14 ps=7.6e-07 pd=8e-07 nrd=1.16667 \
+        nrs=1.16667 sa=5.5e-07 sb=1.4e-07 sd=160n sca=62.7858 \
+        scb=0.0340384 scc=0.00682788 m=(1)
+    I1\|PM0 (net17 A3 vdd! vdd!) g45p1svt w=(2.4e-07) l=4.5e-08 nf=1 \
+        as=3.36e-14 ad=3.36e-14 ps=7.6e-07 pd=7.6e-07 nrd=1.16667 \
+        nrs=1.16667 sa=1.4e-07 sb=1.4e-07 sd=160n sca=80.503 scb=0.0567622 \
+        scc=0.00909381 m=(1)
+    I9\|PM1 (net29 net17 vdd! vdd!) g45p1svt w=(2.4e-07) l=4.5e-08 nf=1 \
+        as=3.36e-14 ad=3.84e-14 ps=7.6e-07 pd=8e-07 nrd=1.16667 \
+        nrs=1.16667 sa=1.4e-07 sb=7e-07 sd=160n sca=63.5279 scb=0.0343596 \
+        scc=0.00682805 m=(1)
+    I9\|PM0 (net29 B3 vdd! vdd!) g45p1svt w=(2.4e-07) l=4.5e-08 nf=1 \
+        as=7.44e-14 ad=3.84e-14 ps=1.1e-06 pd=8e-07 nrd=1.16667 \
+        nrs=1.16667 sa=3.45e-07 sb=4.95e-07 sd=160n sca=62.8867 \
+        scb=0.0340596 scc=0.00682788 m=(1)
+    I5\|PM0 (net35 B3 vdd! vdd!) g45p1svt w=(2.4e-07) l=4.5e-08 nf=1 \
+        as=7.44e-14 ad=3.36e-14 ps=1.1e-06 pd=7.6e-07 nrd=1.16667 \
+        nrs=1.16667 sa=7e-07 sb=1.4e-07 sd=160n sca=62.7858 scb=0.0340384 \
+        scc=0.00682788 m=(1)
+    I13\|PM1 (net52 net35 vdd! vdd!) g45p1svt w=(2.4e-07) l=4.5e-08 nf=1 \
+        as=3.36e-14 ad=3.84e-14 ps=7.6e-07 pd=8e-07 nrd=1.16667 \
+        nrs=1.16667 sa=1.4e-07 sb=3.45e-07 sd=160n sca=62.7858 \
+        scb=0.0340384 scc=0.00682788 m=(1)
+    I13\|PM0 (net52 A3 vdd! vdd!) g45p1svt w=(2.4e-07) l=4.5e-08 nf=1 \
+        as=3.36e-14 ad=3.84e-14 ps=7.6e-07 pd=8e-07 nrd=1.16667 \
+        nrs=1.16667 sa=3.45e-07 sb=1.4e-07 sd=160n sca=62.7858 \
+        scb=0.0340384 scc=0.00682788 m=(1)
+    I2\|PM0 (net44 A2 vdd! vdd!) g45p1svt w=(2.4e-07) l=4.5e-08 nf=1 \
+        as=3.36e-14 ad=3.36e-14 ps=7.6e-07 pd=7.6e-07 nrd=1.16667 \
+        nrs=1.16667 sa=1.4e-07 sb=1.4e-07 sd=160n sca=62.7858 \
+        scb=0.0340384 scc=0.00682788 m=(1)
+    I6\|PM0 (net7 B2 vdd! vdd!) g45p1svt w=(2.4e-07) l=4.5e-08 nf=1 \
+        as=3.36e-14 ad=3.36e-14 ps=7.6e-07 pd=7.6e-07 nrd=1.16667 \
+        nrs=1.16667 sa=1.4e-07 sb=1.4e-07 sd=160n sca=62.7858 \
+        scb=0.0340384 scc=0.00682788 m=(1)
+    I10\|PM1 (net43 B2 vdd! vdd!) g45p1svt w=(2.4e-07) l=4.5e-08 nf=1 \
+        as=3.36e-14 ad=3.84e-14 ps=7.6e-07 pd=8e-07 nrd=1.16667 \
+        nrs=1.16667 sa=1.4e-07 sb=3.45e-07 sd=160n sca=62.7858 \
+        scb=0.0340384 scc=0.00682788 m=(1)
+    I10\|PM0 (net43 net44 vdd! vdd!) g45p1svt w=(2.4e-07) l=4.5e-08 nf=1 \
+        as=3.36e-14 ad=3.84e-14 ps=7.6e-07 pd=8e-07 nrd=1.16667 \
+        nrs=1.16667 sa=3.45e-07 sb=1.4e-07 sd=160n sca=62.7858 \
+        scb=0.0340384 scc=0.00682788 m=(1)
+    I17\|PM1 (net65 net43 vdd! vdd!) g45p1svt w=(2.4e-07) l=4.5e-08 nf=1 \
+        as=3.36e-14 ad=3.84e-14 ps=7.6e-07 pd=8e-07 nrd=1.16667 \
+        nrs=1.16667 sa=1.4e-07 sb=3.45e-07 sd=160n sca=62.7858 \
+        scb=0.0340384 scc=0.00682788 m=(1)
+    I17\|PM0 (net65 net29 vdd! vdd!) g45p1svt w=(2.4e-07) l=4.5e-08 nf=1 \
+        as=3.36e-14 ad=3.84e-14 ps=7.6e-07 pd=8e-07 nrd=1.16667 \
+        nrs=1.16667 sa=3.45e-07 sb=1.4e-07 sd=160n sca=62.7858 \
+        scb=0.0340384 scc=0.00682788 m=(1)
+    I19\|PM0 (net1 net65 vdd! vdd!) g45p1svt w=(2.4e-07) l=4.5e-08 nf=1 \
+        as=3.36e-14 ad=3.36e-14 ps=7.6e-07 pd=7.6e-07 nrd=1.16667 \
+        nrs=1.16667 sa=1.4e-07 sb=1.4e-07 sd=160n sca=62.7858 \
+        scb=0.0340384 scc=0.00682788 m=(1)
+    I20\|PM1 (net51 net1 vdd! vdd!) g45p1svt w=(2.4e-07) l=4.5e-08 nf=1 \
+        as=3.36e-14 ad=3.84e-14 ps=7.6e-07 pd=8e-07 nrd=1.16667 \
+        nrs=1.16667 sa=1.4e-07 sb=3.45e-07 sd=160n sca=62.7858 \
+        scb=0.0340384 scc=0.00682788 m=(1)
+    I20\|PM0 (net51 net19 vdd! vdd!) g45p1svt w=(2.4e-07) l=4.5e-08 nf=1 \
+        as=3.36e-14 ad=3.84e-14 ps=7.6e-07 pd=8e-07 nrd=1.16667 \
+        nrs=1.16667 sa=3.45e-07 sb=1.4e-07 sd=160n sca=62.7858 \
+        scb=0.0340384 scc=0.00682788 m=(1)
+    I18\|PM1 (net25 net26 vdd! vdd!) g45p1svt w=(2.4e-07) l=4.5e-08 nf=1 \
+        as=3.36e-14 ad=3.84e-14 ps=7.6e-07 pd=8e-07 nrd=1.16667 \
+        nrs=1.16667 sa=1.4e-07 sb=1.285e-06 sd=160n sca=62.7858 \
+        scb=0.0340384 scc=0.00682788 m=(1)
+    I18\|PM0 (net25 net37 vdd! vdd!) g45p1svt w=(2.4e-07) l=4.5e-08 nf=1 \
+        as=8.04e-14 ad=3.84e-14 ps=1.15e-06 pd=8e-07 nrd=1.16667 \
+        nrs=1.16667 sa=3.45e-07 sb=1.08e-06 sd=160n sca=62.7858 \
+        scb=0.0340384 scc=0.00682788 m=(1)
+    I12\|PM1 (net37 net38 vdd! vdd!) g45p1svt w=(2.4e-07) l=4.5e-08 nf=1 \
+        as=8.04e-14 ad=3.84e-14 ps=1.15e-06 pd=8e-07 nrd=1.16667 \
+        nrs=1.16667 sa=7.25e-07 sb=7e-07 sd=160n sca=62.7858 scb=0.0340384 \
+        scc=0.00682788 m=(1)
+    I12\|PM0 (net37 B0 vdd! vdd!) g45p1svt w=(2.4e-07) l=4.5e-08 nf=1 \
+        as=7.44e-14 ad=3.84e-14 ps=1.1e-06 pd=8e-07 nrd=1.16667 \
+        nrs=1.16667 sa=9.3e-07 sb=4.95e-07 sd=160n sca=62.7858 \
+        scb=0.0340384 scc=0.00682788 m=(1)
+    I8\|PM0 (net54 B0 vdd! vdd!) g45p1svt w=(2.4e-07) l=4.5e-08 nf=1 \
+        as=7.44e-14 ad=3.36e-14 ps=1.1e-06 pd=7.6e-07 nrd=1.16667 \
+        nrs=1.16667 sa=1.285e-06 sb=1.4e-07 sd=160n sca=62.7858 \
+        scb=0.0340384 scc=0.00682788 m=(1)
+    I4\|PM0 (net38 A0 vdd! vdd!) g45p1svt w=(2.4e-07) l=4.5e-08 nf=1 \
+        as=3.36e-14 ad=3.36e-14 ps=7.6e-07 pd=7.6e-07 nrd=1.16667 \
+        nrs=1.16667 sa=1.4e-07 sb=1.4e-07 sd=160n sca=62.7858 \
+        scb=0.0340384 scc=0.00682788 m=(1)
+    I21\|PM1 (net19 net53 vdd! vdd!) g45p1svt w=(2.4e-07) l=4.5e-08 nf=1 \
+        as=3.36e-14 ad=3.84e-14 ps=7.6e-07 pd=8e-07 nrd=1.16667 \
+        nrs=1.16667 sa=1.4e-07 sb=1.285e-06 sd=160n sca=62.7858 \
+        scb=0.0340384 scc=0.00682788 m=(1)
+    I21\|PM0 (net19 net31 vdd! vdd!) g45p1svt w=(2.4e-07) l=4.5e-08 nf=1 \
+        as=8.04e-14 ad=3.84e-14 ps=1.15e-06 pd=8e-07 nrd=1.16667 \
+        nrs=1.16667 sa=3.45e-07 sb=1.08e-06 sd=160n sca=62.7858 \
+        scb=0.0340384 scc=0.00682788 m=(1)
+    I14\|PM1 (net31 net32 vdd! vdd!) g45p1svt w=(2.4e-07) l=4.5e-08 nf=1 \
+        as=8.04e-14 ad=3.84e-14 ps=1.15e-06 pd=8e-07 nrd=1.16667 \
+        nrs=1.16667 sa=7.25e-07 sb=7e-07 sd=160n sca=62.7858 scb=0.0340384 \
+        scc=0.00682788 m=(1)
+    I14\|PM0 (net31 A1 vdd! vdd!) g45p1svt w=(2.4e-07) l=4.5e-08 nf=1 \
+        as=7.44e-14 ad=3.84e-14 ps=1.1e-06 pd=8e-07 nrd=1.16667 \
+        nrs=1.16667 sa=9.3e-07 sb=4.95e-07 sd=160n sca=62.7858 \
+        scb=0.0340384 scc=0.00682788 m=(1)
+    I3\|PM0 (net13 A1 vdd! vdd!) g45p1svt w=(2.4e-07) l=4.5e-08 nf=1 \
+        as=7.44e-14 ad=3.36e-14 ps=1.1e-06 pd=7.6e-07 nrd=1.16667 \
+        nrs=1.16667 sa=1.285e-06 sb=1.4e-07 sd=160n sca=62.7858 \
+        scb=0.0340384 scc=0.00682788 m=(1)
+    I7\|PM0 (net32 B1 vdd! vdd!) g45p1svt w=(2.4e-07) l=4.5e-08 nf=1 \
+        as=7.44e-14 ad=3.36e-14 ps=1.1e-06 pd=7.6e-07 nrd=1.16667 \
+        nrs=1.16667 sa=1.4e-07 sb=7e-07 sd=160n sca=63.4633 scb=0.0343157 \
+        scc=0.006828 m=(1)
+    I11\|PM1 (net26 B1 vdd! vdd!) g45p1svt w=(2.4e-07) l=4.5e-08 nf=1 \
+        as=7.44e-14 ad=3.84e-14 ps=1.1e-06 pd=8e-07 nrd=1.16667 \
+        nrs=1.16667 sa=4.95e-07 sb=3.45e-07 sd=160n sca=67.3158 \
+        scb=0.0399752 scc=0.00691277 m=(1)
+    I11\|PM0 (net26 net13 vdd! vdd!) g45p1svt w=(2.4e-07) l=4.5e-08 nf=1 \
+        as=3.36e-14 ad=3.84e-14 ps=7.6e-07 pd=8e-07 nrd=1.16667 \
+        nrs=1.16667 sa=7e-07 sb=1.4e-07 sd=160n sca=82.237 scb=0.0580662 \
+        scc=0.00947473 m=(1)
+    I24\|NM0 (E G 0 0) g45n1svt w=(1.2e-07) l=4.5e-08 nf=1 as=1.92e-14 \
+        ad=1.68e-14 ps=5.6e-07 pd=5.2e-07 nrd=1.16667 nrs=1.16667 \
+        sa=5.5e-07 sb=1.4e-07 sd=160n sca=11.4704 scb=0.0113288 \
+        scc=0.000409499 m=(1)
+    I24\|NM1 (E net65 0 0) g45n1svt w=(1.2e-07) l=4.5e-08 nf=1 as=1.92e-14 \
+        ad=1.92e-14 ps=5.6e-07 pd=5.6e-07 nrd=1.16667 nrs=1.16667 \
+        sa=3.45e-07 sb=3.45e-07 sd=160n sca=11.4704 scb=0.0113288 \
+        scc=0.000409499 m=(1)
+    I24\|NM2 (E net25 0 0) g45n1svt w=(1.2e-07) l=4.5e-08 nf=1 as=1.68e-14 \
+        ad=1.92e-14 ps=5.2e-07 pd=5.6e-07 nrd=1.16667 nrs=1.16667 \
+        sa=1.4e-07 sb=5.5e-07 sd=160n sca=11.4704 scb=0.0113288 \
+        scc=0.000409499 m=(1)
+    I23\|NM1 (L G 0 0) g45n1svt w=(1.2e-07) l=4.5e-08 nf=1 as=1.68e-14 \
+        ad=1.92e-14 ps=5.2e-07 pd=5.6e-07 nrd=1.16667 nrs=1.16667 \
+        sa=1.4e-07 sb=3.45e-07 sd=160n sca=11.4704 scb=0.0113288 \
+        scc=0.000409499 m=(1)
+    I23\|NM0 (L E 0 0) g45n1svt w=(1.2e-07) l=4.5e-08 nf=1 as=1.68e-14 \
+        ad=1.92e-14 ps=5.2e-07 pd=5.6e-07 nrd=1.16667 nrs=1.16667 \
+        sa=3.45e-07 sb=1.4e-07 sd=160n sca=11.4704 scb=0.0113288 \
+        scc=0.000409499 m=(1)
+    I16\|NM2 (I16\|net14 A0 0 0) g45n1svt w=(1.2e-07) l=4.5e-08 nf=1 \
+        as=1.68e-14 ad=7.2e-15 ps=5.2e-07 pd=3.6e-07 nrd=1.16667 \
+        nrs=1.16667 sa=1.4e-07 sb=3.5e-07 sd=160n sca=11.4704 \
+        scb=0.0113288 scc=0.000409499 m=(1)
+    I16\|NM1 (I16\|net15 net26 I16\|net14 0) g45n1svt w=(1.2e-07) \
+        l=4.5e-08 nf=1 as=7.2e-15 ad=7.2e-15 ps=3.6e-07 pd=3.6e-07 \
+        nrd=1.16667 nrs=1.16667 sa=2.45e-07 sb=2.45e-07 sd=160n \
+        sca=11.4704 scb=0.0113288 scc=0.000409499 m=(1)
+    I16\|NM0 (net53 net54 I16\|net15 0) g45n1svt w=(1.2e-07) l=4.5e-08 \
+        nf=1 as=7.2e-15 ad=1.68e-14 ps=3.6e-07 pd=5.2e-07 nrd=1.16667 \
+        nrs=1.16667 sa=3.5e-07 sb=1.4e-07 sd=160n sca=11.4704 \
+        scb=0.0113288 scc=0.000409499 m=(1)
+    I22\|NM2 (I22\|net14 net51 0 0) g45n1svt w=(1.2e-07) l=4.5e-08 nf=1 \
+        as=1.68e-14 ad=7.2e-15 ps=5.2e-07 pd=3.6e-07 nrd=1.16667 \
+        nrs=1.16667 sa=1.4e-07 sb=3.5e-07 sd=160n sca=11.4704 \
+        scb=0.0113288 scc=0.000409499 m=(1)
+    I22\|NM1 (I22\|net15 net52 I22\|net14 0) g45n1svt w=(1.2e-07) \
+        l=4.5e-08 nf=1 as=7.2e-15 ad=7.2e-15 ps=3.6e-07 pd=3.6e-07 \
+        nrd=1.16667 nrs=1.16667 sa=2.45e-07 sb=2.45e-07 sd=160n \
+        sca=11.4704 scb=0.0113288 scc=0.000409499 m=(1)
+    I22\|NM0 (G net50 I22\|net15 0) g45n1svt w=(1.2e-07) l=4.5e-08 nf=1 \
+        as=7.2e-15 ad=1.68e-14 ps=3.6e-07 pd=5.2e-07 nrd=1.16667 \
+        nrs=1.16667 sa=3.5e-07 sb=1.4e-07 sd=160n sca=11.4704 \
+        scb=0.0113288 scc=0.000409499 m=(1)
+    I15\|NM2 (I15\|net14 A2 0 0) g45n1svt w=(1.2e-07) l=4.5e-08 nf=1 \
+        as=1.68e-14 ad=7.2e-15 ps=5.2e-07 pd=3.6e-07 nrd=1.16667 \
+        nrs=1.16667 sa=1.4e-07 sb=3.5e-07 sd=160n sca=11.4704 \
+        scb=0.0113288 scc=0.000409499 m=(1)
+    I15\|NM1 (I15\|net15 net7 I15\|net14 0) g45n1svt w=(1.2e-07) l=4.5e-08 \
+        nf=1 as=7.2e-15 ad=7.2e-15 ps=3.6e-07 pd=3.6e-07 nrd=1.16667 \
+        nrs=1.16667 sa=2.45e-07 sb=2.45e-07 sd=160n sca=11.4704 \
+        scb=0.0113288 scc=0.000409499 m=(1)
+    I15\|NM0 (net50 net29 I15\|net15 0) g45n1svt w=(1.2e-07) l=4.5e-08 \
+        nf=1 as=7.2e-15 ad=1.68e-14 ps=3.6e-07 pd=5.2e-07 nrd=1.16667 \
+        nrs=1.16667 sa=3.5e-07 sb=1.4e-07 sd=160n sca=11.4704 \
+        scb=0.0113288 scc=0.000409499 m=(1)
+    I1\|NM0 (net17 A3 0 0) g45n1svt w=(1.2e-07) l=4.5e-08 nf=1 as=1.68e-14 \
+        ad=1.68e-14 ps=5.2e-07 pd=5.2e-07 nrd=1.16667 nrs=1.16667 \
+        sa=1.4e-07 sb=1.4e-07 sd=160n sca=11.4704 scb=0.0113288 \
+        scc=0.000409499 m=(1)
+    I9\|NM0 (net29 net17 I9\|net12 0) g45n1svt w=(1.2e-07) l=4.5e-08 nf=1 \
+        as=7.2e-15 ad=1.68e-14 ps=3.6e-07 pd=5.2e-07 nrd=1.16667 \
+        nrs=1.16667 sa=1.4e-07 sb=6e-07 sd=160n sca=11.4704 scb=0.0113288 \
+        scc=0.000409499 m=(1)
+    I9\|NM1 (I9\|net12 B3 0 0) g45n1svt w=(1.2e-07) l=4.5e-08 nf=1 \
+        as=3.72e-14 ad=7.2e-15 ps=8.6e-07 pd=3.6e-07 nrd=1.16667 \
+        nrs=1.16667 sa=2.45e-07 sb=4.95e-07 sd=160n sca=11.4704 \
+        scb=0.0113288 scc=0.000409499 m=(1)
+    I5\|NM0 (net35 B3 0 0) g45n1svt w=(1.2e-07) l=4.5e-08 nf=1 as=3.72e-14 \
+        ad=1.68e-14 ps=8.6e-07 pd=5.2e-07 nrd=1.16667 nrs=1.16667 sa=6e-07 \
+        sb=1.4e-07 sd=160n sca=11.4704 scb=0.0113288 scc=0.000409499 m=(1)
+    I13\|NM1 (I13\|net12 net35 0 0) g45n1svt w=(1.2e-07) l=4.5e-08 nf=1 \
+        as=1.68e-14 ad=7.2e-15 ps=5.2e-07 pd=3.6e-07 nrd=1.16667 \
+        nrs=1.16667 sa=1.4e-07 sb=2.45e-07 sd=160n sca=11.4704 \
+        scb=0.0113288 scc=0.000409499 m=(1)
+    I13\|NM0 (net52 A3 I13\|net12 0) g45n1svt w=(1.2e-07) l=4.5e-08 nf=1 \
+        as=7.2e-15 ad=1.68e-14 ps=3.6e-07 pd=5.2e-07 nrd=1.16667 \
+        nrs=1.16667 sa=2.45e-07 sb=1.4e-07 sd=160n sca=11.4704 \
+        scb=0.0113288 scc=0.000409499 m=(1)
+    I2\|NM0 (net44 A2 0 0) g45n1svt w=(1.2e-07) l=4.5e-08 nf=1 as=1.68e-14 \
+        ad=1.68e-14 ps=5.2e-07 pd=5.2e-07 nrd=1.16667 nrs=1.16667 \
+        sa=1.4e-07 sb=1.4e-07 sd=160n sca=11.4704 scb=0.0113288 \
+        scc=0.000409499 m=(1)
+    I6\|NM0 (net7 B2 0 0) g45n1svt w=(1.2e-07) l=4.5e-08 nf=1 as=1.68e-14 \
+        ad=1.68e-14 ps=5.2e-07 pd=5.2e-07 nrd=1.16667 nrs=1.16667 \
+        sa=1.4e-07 sb=1.4e-07 sd=160n sca=11.4704 scb=0.0113288 \
+        scc=0.000409499 m=(1)
+    I10\|NM1 (I10\|net12 B2 0 0) g45n1svt w=(1.2e-07) l=4.5e-08 nf=1 \
+        as=1.68e-14 ad=7.2e-15 ps=5.2e-07 pd=3.6e-07 nrd=1.16667 \
+        nrs=1.16667 sa=1.4e-07 sb=2.45e-07 sd=160n sca=11.4704 \
+        scb=0.0113288 scc=0.000409499 m=(1)
+    I10\|NM0 (net43 net44 I10\|net12 0) g45n1svt w=(1.2e-07) l=4.5e-08 \
+        nf=1 as=7.2e-15 ad=1.68e-14 ps=3.6e-07 pd=5.2e-07 nrd=1.16667 \
+        nrs=1.16667 sa=2.45e-07 sb=1.4e-07 sd=160n sca=11.4704 \
+        scb=0.0113288 scc=0.000409499 m=(1)
+    I17\|NM1 (I17\|net12 net43 0 0) g45n1svt w=(1.2e-07) l=4.5e-08 nf=1 \
+        as=1.68e-14 ad=7.2e-15 ps=5.2e-07 pd=3.6e-07 nrd=1.16667 \
+        nrs=1.16667 sa=1.4e-07 sb=2.45e-07 sd=160n sca=11.4704 \
+        scb=0.0113288 scc=0.000409499 m=(1)
+    I17\|NM0 (net65 net29 I17\|net12 0) g45n1svt w=(1.2e-07) l=4.5e-08 \
+        nf=1 as=7.2e-15 ad=1.68e-14 ps=3.6e-07 pd=5.2e-07 nrd=1.16667 \
+        nrs=1.16667 sa=2.45e-07 sb=1.4e-07 sd=160n sca=11.4704 \
+        scb=0.0113288 scc=0.000409499 m=(1)
+    I19\|NM0 (net1 net65 0 0) g45n1svt w=(1.2e-07) l=4.5e-08 nf=1 \
+        as=1.68e-14 ad=1.68e-14 ps=5.2e-07 pd=5.2e-07 nrd=1.16667 \
+        nrs=1.16667 sa=1.4e-07 sb=1.4e-07 sd=160n sca=11.4704 \
+        scb=0.0113288 scc=0.000409499 m=(1)
+    I20\|NM1 (I20\|net12 net1 0 0) g45n1svt w=(1.2e-07) l=4.5e-08 nf=1 \
+        as=1.68e-14 ad=7.2e-15 ps=5.2e-07 pd=3.6e-07 nrd=1.16667 \
+        nrs=1.16667 sa=1.4e-07 sb=2.45e-07 sd=160n sca=11.4704 \
+        scb=0.0113288 scc=0.000409499 m=(1)
+    I20\|NM0 (net51 net19 I20\|net12 0) g45n1svt w=(1.2e-07) l=4.5e-08 \
+        nf=1 as=7.2e-15 ad=1.68e-14 ps=3.6e-07 pd=5.2e-07 nrd=1.16667 \
+        nrs=1.16667 sa=2.45e-07 sb=1.4e-07 sd=160n sca=11.4704 \
+        scb=0.0113288 scc=0.000409499 m=(1)
+    I18\|NM0 (net25 net26 I18\|net12 0) g45n1svt w=(1.2e-07) l=4.5e-08 \
+        nf=1 as=7.2e-15 ad=1.68e-14 ps=3.6e-07 pd=5.2e-07 nrd=1.16667 \
+        nrs=1.16667 sa=1.4e-07 sb=2.45e-07 sd=160n sca=11.4704 \
+        scb=0.0113288 scc=0.000409499 m=(1)
+    I18\|NM1 (I18\|net12 net37 0 0) g45n1svt w=(1.2e-07) l=4.5e-08 nf=1 \
+        as=1.68e-14 ad=7.2e-15 ps=5.2e-07 pd=3.6e-07 nrd=1.16667 \
+        nrs=1.16667 sa=2.45e-07 sb=1.4e-07 sd=160n sca=11.4704 \
+        scb=0.0113288 scc=0.000409499 m=(1)
+    I12\|NM0 (net37 net38 I12\|net12 0) g45n1svt w=(1.2e-07) l=4.5e-08 \
+        nf=1 as=7.2e-15 ad=1.68e-14 ps=3.6e-07 pd=5.2e-07 nrd=1.16667 \
+        nrs=1.16667 sa=1.4e-07 sb=6e-07 sd=160n sca=11.4704 scb=0.0113288 \
+        scc=0.000409499 m=(1)
+    I12\|NM1 (I12\|net12 B0 0 0) g45n1svt w=(1.2e-07) l=4.5e-08 nf=1 \
+        as=3.72e-14 ad=7.2e-15 ps=8.6e-07 pd=3.6e-07 nrd=1.16667 \
+        nrs=1.16667 sa=2.45e-07 sb=4.95e-07 sd=160n sca=11.4704 \
+        scb=0.0113288 scc=0.000409499 m=(1)
+    I8\|NM0 (net54 B0 0 0) g45n1svt w=(1.2e-07) l=4.5e-08 nf=1 as=3.72e-14 \
+        ad=1.68e-14 ps=8.6e-07 pd=5.2e-07 nrd=1.16667 nrs=1.16667 sa=6e-07 \
+        sb=1.4e-07 sd=160n sca=11.4704 scb=0.0113288 scc=0.000409499 m=(1)
+    I4\|NM0 (net38 A0 0 0) g45n1svt w=(1.2e-07) l=4.5e-08 nf=1 as=1.68e-14 \
+        ad=1.68e-14 ps=5.2e-07 pd=5.2e-07 nrd=1.16667 nrs=1.16667 \
+        sa=1.4e-07 sb=1.4e-07 sd=160n sca=11.4704 scb=0.0113288 \
+        scc=0.000409499 m=(1)
+    I21\|NM0 (net19 net53 I21\|net12 0) g45n1svt w=(1.2e-07) l=4.5e-08 \
+        nf=1 as=7.2e-15 ad=1.68e-14 ps=3.6e-07 pd=5.2e-07 nrd=1.16667 \
+        nrs=1.16667 sa=1.4e-07 sb=2.45e-07 sd=160n sca=11.4704 \
+        scb=0.0113288 scc=0.000409499 m=(1)
+    I21\|NM1 (I21\|net12 net31 0 0) g45n1svt w=(1.2e-07) l=4.5e-08 nf=1 \
+        as=1.68e-14 ad=7.2e-15 ps=5.2e-07 pd=3.6e-07 nrd=1.16667 \
+        nrs=1.16667 sa=2.45e-07 sb=1.4e-07 sd=160n sca=11.4704 \
+        scb=0.0113288 scc=0.000409499 m=(1)
+    I14\|NM0 (net31 net32 I14\|net12 0) g45n1svt w=(1.2e-07) l=4.5e-08 \
+        nf=1 as=7.2e-15 ad=1.68e-14 ps=3.6e-07 pd=5.2e-07 nrd=1.16667 \
+        nrs=1.16667 sa=1.4e-07 sb=6e-07 sd=160n sca=11.4704 scb=0.0113288 \
+        scc=0.000409499 m=(1)
+    I14\|NM1 (I14\|net12 A1 0 0) g45n1svt w=(1.2e-07) l=4.5e-08 nf=1 \
+        as=3.72e-14 ad=7.2e-15 ps=8.6e-07 pd=3.6e-07 nrd=1.16667 \
+        nrs=1.16667 sa=2.45e-07 sb=4.95e-07 sd=160n sca=11.4704 \
+        scb=0.0113288 scc=0.000409499 m=(1)
+    I3\|NM0 (net13 A1 0 0) g45n1svt w=(1.2e-07) l=4.5e-08 nf=1 as=3.72e-14 \
+        ad=1.68e-14 ps=8.6e-07 pd=5.2e-07 nrd=1.16667 nrs=1.16667 sa=6e-07 \
+        sb=1.4e-07 sd=160n sca=11.4704 scb=0.0113288 scc=0.000409499 m=(1)
+    I7\|NM0 (net32 B1 0 0) g45n1svt w=(1.2e-07) l=4.5e-08 nf=1 as=3.72e-14 \
+        ad=1.68e-14 ps=8.6e-07 pd=5.2e-07 nrd=1.16667 nrs=1.16667 \
+        sa=1.4e-07 sb=6e-07 sd=160n sca=11.4704 scb=0.0113288 \
+        scc=0.000409499 m=(1)
+    I11\|NM1 (I11\|net12 B1 0 0) g45n1svt w=(1.2e-07) l=4.5e-08 nf=1 \
+        as=3.72e-14 ad=7.2e-15 ps=8.6e-07 pd=3.6e-07 nrd=1.16667 \
+        nrs=1.16667 sa=4.95e-07 sb=2.45e-07 sd=160n sca=11.4704 \
+        scb=0.0113288 scc=0.000409499 m=(1)
+    I11\|NM0 (net26 net13 I11\|net12 0) g45n1svt w=(1.2e-07) l=4.5e-08 \
+        nf=1 as=7.2e-15 ad=1.68e-14 ps=3.6e-07 pd=5.2e-07 nrd=1.16667 \
+        nrs=1.16667 sa=6e-07 sb=1.4e-07 sd=160n sca=11.4704 scb=0.0113288 \
+        scc=0.000409499 m=(1)
+ends comparator
+// End of subcircuit definition.

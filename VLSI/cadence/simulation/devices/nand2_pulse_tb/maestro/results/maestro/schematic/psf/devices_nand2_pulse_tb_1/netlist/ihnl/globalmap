@@ -1,0 +1,12 @@
+CADENCE IHNL11140
+$model
+devices/nand2/schematic nand2
+devices/nand2_pulse_tb/schematic nand2_pulse_tb
+$endmodel
+$net
+gnd! 0
+vdd! vdd!
+$endnet
+$param
+vSupply vSupply
+$endparam

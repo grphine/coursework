@@ -1,0 +1,20 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "inverter_pulse_tb"
+  repList "spectre cmos_sch cmos.sch schematic veriloga ahdl pspice dspf layout av_extracted"
+  stopList "spectre"
+  globalList "vdd! gnd!"
+  hierDelim "."
+  netlistDir "/home/ADS/u1922268/es3d8/assignment/libraries/simulation/devices/inverter_pulse_tb/maestro/results/maestro/Interactive.0/1/devices:inverter_pulse_tb:1/netlist"
+ )
+( net
+( "gnd!" "0" )
+ )
+( model
+( "devices/inverter/av_extracted" "inverter" )
+( "devices/inverter_pulse_tb/schematic" "inverter_pulse_tb" )
+ )
+( "inverter" "ihnl/cds0/map" )
+( "inverter_pulse_tb" "ihnl/cds1/map" )
+ )

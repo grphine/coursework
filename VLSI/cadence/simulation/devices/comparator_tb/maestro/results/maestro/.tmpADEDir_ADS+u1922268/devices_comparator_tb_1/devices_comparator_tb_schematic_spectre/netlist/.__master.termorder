@@ -1,0 +1,6 @@
+"devices.inverter.schematic.termorder" (("in" "out") ("in" "out"))
+"devices.nand2.schematic.termorder" (("A" "B" "out") ("A" "B" "out"))
+"devices.nor2.schematic.termorder" (("A" "B" "out") ("A" "B" "out"))
+"devices.comparator.schematic.termorder" (("A0" "A1" "A2" "A3" "B0" "B1" "B2" "B3" "E" "G" "L") ("A0" "A1" "A2" "A3" "B0" "B1" "B2" "B3" "E" "G" "L"))
+"devices.nand3.schematic.termorder" (("A" "B" "C" "out") ("A" "B" "C" "out"))
+"devices.nor3.schematic.termorder" (("A" "B" "C" "out") ("A" "B" "C" "out"))

@@ -1,0 +1,23 @@
+//Revision 5
+//NOTE
+//Notice: This config modified by VPAD for Schematic Estimates (Parasitics) Parasitics.
+//****************************************************************
+// 
+// Default template for spectre
+// Note:
+//      Please remember to replace Top Cell Library, Cell, and View
+//      fields with the actual names used by your design.
+//END_NOTE
+
+config nand2_pulse_tb;
+design devices.nand2_pulse_tb:estimated;
+liblist myLib, devices;
+
+viewlist spectre, cmos_sch, \cmos.sch , schematic, veriloga, ahdl, pspice, dspf, layout, av_extracted;
+stoplist spectre;
+
+
+cell devices.nand2 binding :av_extracted;
+
+
+endconfig

@@ -1,0 +1,40 @@
+HEADER
+"PSFversion" "1.00"
+"Run Generator" "drlRun rev. 1.0"
+"Run Time Stamp" "May  3 21:15:28 2023"
+"date" "May  3 21:15:28 2023"
+"simulator" "spectre"
+"netlistDir" "../netlist"
+"axlParamFlag" "true"
+"#maeHistoryName" "Interactive.0"
+"#maeTestName" "devices:nand2_pulse_tb:1"
+ "externalSweepVariableCount" 1
+TYPE
+"runObject" STRUCT(
+"logName" ARRAY( * ) STRING *
+"parent" STRING *
+"sweepVariable" ARRAY( * ) STRING *
+) PROP( "key" "runObject" )
+VALUE
+"Root" "runObject" (
+("")
+""
+("Design_Point")
+)
+"Design_Point=1.0" "runObject" (
+(
+"../../../1/devices:nand2_pulse_tb:1/psf/logFile"
+"../../../1/devices:nand2_pulse_tb:1/psf/artistLogFile"
+"../../../1/devices:nand2_pulse_tb:1/psf/matlabLogFile"
+)
+"Root"
+()
+) PROP(
+ "#maeDesignPoint" 1
+"#maeCorner" "nom"
+"netlistDir" "../../../1/devices:nand2_pulse_tb:1/netlist"
+"dataDir" "../../../1/devices:nand2_pulse_tb:1"
+ "Design_Point" 1.000000e+00
+)
+
+END

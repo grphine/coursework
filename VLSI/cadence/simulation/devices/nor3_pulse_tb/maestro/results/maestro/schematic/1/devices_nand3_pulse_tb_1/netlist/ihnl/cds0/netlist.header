@@ -1,0 +1,5 @@
+
+// Library name: devices
+// Cell name: nor3
+// View name: schematic
+subckt nor3 A B C out

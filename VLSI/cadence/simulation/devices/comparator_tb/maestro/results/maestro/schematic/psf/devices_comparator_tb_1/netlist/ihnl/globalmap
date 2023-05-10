@@ -1,0 +1,17 @@
+CADENCE IHNL11140
+$model
+devices/nand2/schematic nand2
+devices/nor2/schematic nor2
+devices/comparator/schematic comparator
+devices/nor3/schematic nor3
+devices/comparator_tb/schematic comparator_tb
+devices/nand3/schematic nand3
+devices/inverter/schematic inverter
+$endmodel
+$net
+gnd! 0
+vdd! vdd!
+$endnet
+$param
+vSupply vSupply
+$endparam

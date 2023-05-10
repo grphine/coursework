@@ -1,0 +1,4 @@
+CADENCE IHNL11142
+
+devices nor3 av_extracted nil spectre_cmos_sch_cmos.sch_schematic_veriloga_ahdl_pspice_dspf_layout_av_extracted devices nor3_pulse_tb config 0 cds0
+devices nor3_pulse_tb schematic nil spectre_cmos_sch_cmos.sch_schematic_veriloga_ahdl_pspice_dspf_layout_av_extracted devices nor3_pulse_tb config 1 cds1

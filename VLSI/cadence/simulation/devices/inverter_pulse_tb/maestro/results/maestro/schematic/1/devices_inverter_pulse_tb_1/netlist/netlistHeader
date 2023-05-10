@@ -1,0 +1,7 @@
+// Generated for: spectre
+// Generated on: May  3 21:03:51 2023
+// Design library name: devices
+// Design cell name: inverter_pulse_tb
+// Design view name: config
+simulator lang=spectre
+global 0 vdd!

@@ -1,0 +1,25 @@
+    PM0 (net16 A vdd! vdd!) g45p1svt w=(2.4e-07) l=4.5e-08 nf=1 \
+        as=3.36e-14 ad=1.44e-14 ps=7.6e-07 pd=6e-07 nrd=1.16667 \
+        nrs=1.16667 sa=1.4e-07 sb=3.5e-07 sd=160n sca=86.6405 \
+        scb=0.0637783 scc=0.00955245 m=(1)
+    PM2 (out C net15 vdd!) g45p1svt w=(2.4e-07) l=4.5e-08 nf=1 as=1.44e-14 \
+        ad=3.36e-14 ps=6e-07 pd=7.6e-07 nrd=1.16667 nrs=1.16667 sa=3.5e-07 \
+        sb=1.4e-07 sd=160n sca=86.6405 scb=0.0637783 scc=0.00955245 m=(1)
+    PM1 (net15 B net16 vdd!) g45p1svt w=(2.4e-07) l=4.5e-08 nf=1 \
+        as=1.44e-14 ad=1.44e-14 ps=6e-07 pd=6e-07 nrd=1.16667 nrs=1.16667 \
+        sa=2.45e-07 sb=2.45e-07 sd=160n sca=79.6072 scb=0.058815 \
+        scc=0.00778669 m=(1)
+    NM0 (out C 0 0) g45n1svt w=(1.2e-07) l=4.5e-08 nf=1 as=1.92e-14 \
+        ad=1.68e-14 ps=5.6e-07 pd=5.2e-07 nrd=1.16667 nrs=1.16667 \
+        sa=5.5e-07 sb=1.4e-07 sd=160n sca=11.4704 scb=0.0113288 \
+        scc=0.000409499 m=(1)
+    NM1 (out B 0 0) g45n1svt w=(1.2e-07) l=4.5e-08 nf=1 as=1.92e-14 \
+        ad=1.92e-14 ps=5.6e-07 pd=5.6e-07 nrd=1.16667 nrs=1.16667 \
+        sa=3.45e-07 sb=3.45e-07 sd=160n sca=11.4704 scb=0.0113288 \
+        scc=0.000409499 m=(1)
+    NM2 (out A 0 0) g45n1svt w=(1.2e-07) l=4.5e-08 nf=1 as=1.68e-14 \
+        ad=1.92e-14 ps=5.2e-07 pd=5.6e-07 nrd=1.16667 nrs=1.16667 \
+        sa=1.4e-07 sb=5.5e-07 sd=160n sca=11.4704 scb=0.0113288 \
+        scc=0.000409499 m=(1)
+ends nor3
+// End of subcircuit definition.

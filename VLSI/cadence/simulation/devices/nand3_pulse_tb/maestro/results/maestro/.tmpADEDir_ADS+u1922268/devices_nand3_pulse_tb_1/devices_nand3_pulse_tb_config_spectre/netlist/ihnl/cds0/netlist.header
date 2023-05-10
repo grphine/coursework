@@ -1,0 +1,7 @@
+
+// Library name: devices
+// Cell name: nand3
+// View name: av_extracted
+// Inherited view list: spectre cmos_sch cmos.sch schematic veriloga ahdl
+//pspice dspf layout av_extracted
+subckt nand3 A B C out

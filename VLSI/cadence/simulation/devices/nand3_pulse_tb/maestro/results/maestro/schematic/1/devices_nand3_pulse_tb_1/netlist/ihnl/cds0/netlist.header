@@ -1,0 +1,5 @@
+
+// Library name: devices
+// Cell name: nand3
+// View name: schematic
+subckt nand3 A B C out

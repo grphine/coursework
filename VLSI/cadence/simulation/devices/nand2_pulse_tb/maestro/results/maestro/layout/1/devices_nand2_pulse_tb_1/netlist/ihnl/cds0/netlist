@@ -1,0 +1,16 @@
+    PM0 (out B vdd! vdd!) g45p1svt w=(2.4e-07) l=4.5e-08 nf=1 as=3.36e-14 \
+        ad=3.84e-14 ps=7.6e-07 pd=8e-07 nrd=1.16667 nrs=1.16667 sa=1.4e-07 \
+        sb=3.45e-07 sd=160n sca=86.767 scb=0.064003 scc=0.00955962 m=(1)
+    PM1 (out A vdd! vdd!) g45p1svt w=(2.4e-07) l=4.5e-08 nf=1 as=3.36e-14 \
+        ad=3.84e-14 ps=7.6e-07 pd=8e-07 nrd=1.16667 nrs=1.16667 sa=1.4e-07 \
+        sb=3.45e-07 sd=160n sca=86.767 scb=0.064003 scc=0.00955962 m=(1)
+    NM1 (net12 A out 0) g45n1svt w=(2.4e-07) l=4.5e-08 nf=1 as=3.36e-14 \
+        ad=1.44e-14 ps=7.6e-07 pd=6e-07 nrd=1.16667 nrs=1.16667 \
+        sa=2.45e-07 sb=1.4e-07 sd=160n sca=9.05646 scb=0.00745111 \
+        scc=0.000194153 m=(1)
+    NM0 (0 B net12 0) g45n1svt w=(2.4e-07) l=4.5e-08 nf=1 as=1.44e-14 \
+        ad=3.36e-14 ps=6e-07 pd=7.6e-07 nrd=1.16667 nrs=1.16667 sa=1.4e-07 \
+        sb=2.45e-07 sd=160n sca=9.05646 scb=0.00745111 scc=0.000194153 \
+        m=(1)
+ends nand2
+// End of subcircuit definition.

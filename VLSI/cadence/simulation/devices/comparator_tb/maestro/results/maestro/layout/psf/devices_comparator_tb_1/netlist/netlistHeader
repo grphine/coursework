@@ -1,0 +1,7 @@
+// Generated for: spectre
+// Generated on: May  3 21:11:07 2023
+// Design library name: devices
+// Design cell name: comparator_tb
+// Design view name: config
+simulator lang=spectre
+global 0 vdd!

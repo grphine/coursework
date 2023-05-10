@@ -1,0 +1,25 @@
+
+// Library name: devices
+// Cell name: comparator_tb
+// View name: schematic
+C2 (G 0) capacitor c=1f
+C1 (E 0) capacitor c=1f
+C0 (L 0) capacitor c=1f
+V0 (vdd! 0) vsource dc=vSupply type=dc
+V8 (B3 0) vsource type=pulse val0=0 val1=vSupply period=6.4u delay=3.198u \
+        rise=2n fall=2n width=3.198u
+V7 (B2 0) vsource type=pulse val0=0 val1=vSupply period=1.6u delay=798n \
+        rise=2n fall=2n width=798n
+V6 (B1 0) vsource type=pulse val0=0 val1=vSupply period=400n delay=198n \
+        rise=2n fall=2n width=198n
+V5 (B0 0) vsource type=pulse val0=0 val1=vSupply period=100n delay=48n \
+        rise=2n fall=2n width=48n
+V3 (A0 0) vsource type=pulse val0=0 val1=vSupply period=200n delay=98n \
+        rise=2n fall=2n width=98n
+V4 (A2 0) vsource type=pulse val0=0 val1=vSupply period=3.2u delay=1.598u \
+        rise=2n fall=2n width=1.598u
+V1 (A3 0) vsource type=pulse val0=0 val1=vSupply period=12.8u delay=6.398u \
+        rise=2n fall=2n width=6.398u
+V2 (A1 0) vsource type=pulse val0=0 val1=vSupply period=800n delay=398n \
+        rise=2n fall=2n width=398n
+I17 (A0 A1 A2 A3 B0 B1 B2 B3 E G L) comparator
