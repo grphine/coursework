@@ -1,0 +1,58 @@
+\section{Conclusion}
+
+\subsection{Evaluation}
+The designed game will be evaluated against the criteria. 
+\paragraph{User control}
+The user takes control of a reticle to select a colour, which is controllable
+by tilting the board in the desired movement direction. The sprite is 
+bounded within the selection area. 
+\paragraph{Object interactions} 
+The game progresses by clearing the screen by progressively selecting colours. 
+The grid items need to effectively interact with each other in order to determine 
+adjacency and when a grid has been matched to the selected colour. However, 
+some visual artefacts may occur. 
+The player sprite also interacts with the selection grid underneath to select a 
+colour and assumes the characteristics of transparency. 
+\paragraph{Info bar}
+An info bar is drawn from the graphics controller as a banner at the topmost
+hierarchical layer, and includes sprites for the game title and IDs. 
+\paragraph{Extra hardware}
+The game makes use of the in-built accelerometer, available on the SPI interface,
+in order to control player movement. It also displays the game title on the 7-segment display. 
+\paragraph{Sprites}
+The game makes use of 3 sprites, one for the player, title, and IDs. 
+There are some issues with the player sprite appearance, where the sprite is shifted somewhat. 
+However, these have been mitigated by adjusting the sprite ROM to negate this effect.
+
+\subsection{Reflection} 
+
+\paragraph{Colour blindness support}
+The game in its current form is not supportive of most forms of colour vision deficiency, with the likely exception of 
+tritanopia and tritanomoly. Support can be increased by adjusting the colour space used, i.e. using a 
+Cividis or Viridis colour space \cite{Nunez2018}, or allowing different colour selections by the player.
+
+Support for achromatopsia may prove difficult while retaining game flow and simplicity. One possible solution is 
+to use symbolic elements on cells, and improve the animation between cells to indicate matching. This would, however, 
+require a significant redesign of the game logic. 
+
+\subsubsection{Player comments}
+During player testing, a notable complaint that cropped up was the difficulty of matching a colour,
+with the controls feeling `slippery' and `imprecise'. 
+This issue can be broken down into two parts - difficulty in identifying the colour to match, and moving to that colour. 
+\paragraph{Identification} With the 64 colour selection, differentiating tones in the same quadrant 
+can prove difficult. Colour definition can be improved with a greater display resolution, perhaps by moving 
+to a more up-to-date display standard, although this would require the requisite adapter to be available on the board. 
+\paragraph{Movement} Movement is altogether both too responsive and not responsive enough. This makes fine adjustments
+difficult and overshoots frequent. Overshoots can be improved with the current accelerometer implementation 
+by compressing the responsive range to cover half the rotation it does currently. In other words, rather than a complete 
+half turn returning 16 (the greatest value), only a quarter turn is needed, with every second value skipped. The 
+downside is that fine adjustments will be made more difficult. A complete reimplementation of the accelerometer 
+will be needed to return data in finer intervals to combat this. 
+
+\subsubsection{General comments}
+The development process for the game was not smooth. Debugging, especially for graphical glitches or 
+player interactions, proved particularly difficult to manage. 
+This is due to how they cannot be observed easily within test benches. Some issues also 
+do not appear to be problematic in test benches, whereas fail to render in actual implementation. 
+The final implementation also suffers some logical glitches, where a cell remains unmatched. Overall,
+the game functions fairly well otherwise. 

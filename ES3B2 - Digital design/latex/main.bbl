@@ -1,0 +1,152 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global}
+    \entry{adxl362}{manual}{}
+      \name{author}{1}{}{%
+        {{hash=a12ff886a2379a9ee6efaa9acfb54df4}{%
+           family={{Analog Devices}},
+           familyi={A\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {One Technology Way, P.O. Box 9106, Norwood, MA 02062-9106, U.S.A.}%
+      }
+      \strng{namehash}{a12ff886a2379a9ee6efaa9acfb54df4}
+      \strng{fullhash}{a12ff886a2379a9ee6efaa9acfb54df4}
+      \strng{bibnamehash}{a12ff886a2379a9ee6efaa9acfb54df4}
+      \strng{authorbibnamehash}{a12ff886a2379a9ee6efaa9acfb54df4}
+      \strng{authornamehash}{a12ff886a2379a9ee6efaa9acfb54df4}
+      \strng{authorfullhash}{a12ff886a2379a9ee6efaa9acfb54df4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{subtitle}{ADXL362}
+      \field{title}{Micropower, 3-Axis, ±2 g/±4 g/±8 g Digital Output MEMS Accelerometer}
+      \field{year}{2019}
+      \verb{urlraw}
+      \verb https://www.analog.com/media/en/technical-documentation/data-sheets/ADXL362.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.analog.com/media/en/technical-documentation/data-sheets/ADXL362.pdf
+      \endverb
+    \endentry
+    \entry{fpgadudeacl}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=09a6496959792f62d218f6d59e63cbc5}{%
+           family={Marion},
+           familyi={M\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{09a6496959792f62d218f6d59e63cbc5}
+      \strng{fullhash}{09a6496959792f62d218f6d59e63cbc5}
+      \strng{bibnamehash}{09a6496959792f62d218f6d59e63cbc5}
+      \strng{authorbibnamehash}{09a6496959792f62d218f6d59e63cbc5}
+      \strng{authornamehash}{09a6496959792f62d218f6d59e63cbc5}
+      \strng{authorfullhash}{09a6496959792f62d218f6d59e63cbc5}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{23}
+      \field{month}{7}
+      \field{note}{\\Commit: 79cf099bee21f10e80c8b62b6bbacb0392313f0d}
+      \field{title}{Digital-Design/FPGA Projects/Nexys A7 3-Axis Accelerometer SPI/spi\_master.v}
+      \field{year}{2022}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://github.com/FPGADude/Digital-Design/blob/main/FPGA%20Projects/Nexys%20A7%203-Axis%20Accelerometer%20SPI/spi_master.v
+      \endverb
+      \verb{url}
+      \verb https://github.com/FPGADude/Digital-Design/blob/main/FPGA%20Projects/Nexys%20A7%203-Axis%20Accelerometer%20SPI/spi_master.v
+      \endverb
+    \endentry
+    \entry{Nunez2018}{article}{}
+      \name{author}{3}{}{%
+        {{hash=6d4bf7546bace9dbcda9406666c1a046}{%
+           family={Nuñez},
+           familyi={N\bibinitperiod},
+           given={Jamie\bibnamedelima R},
+           giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=60ba9bcb8af14b7dcc7f5dab27f38c32}{%
+           family={Anderton},
+           familyi={A\bibinitperiod},
+           given={Christopher\bibnamedelima R},
+           giveni={C\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=b19b0b7eabb9de9e13a116f769a7333a}{%
+           family={Renslow},
+           familyi={R\bibinitperiod},
+           given={Ryan\bibnamedelima S},
+           giveni={R\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{557acfe1748e2bbf2c2f98a353442835}
+      \strng{fullhash}{557acfe1748e2bbf2c2f98a353442835}
+      \strng{bibnamehash}{557acfe1748e2bbf2c2f98a353442835}
+      \strng{authorbibnamehash}{557acfe1748e2bbf2c2f98a353442835}
+      \strng{authornamehash}{557acfe1748e2bbf2c2f98a353442835}
+      \strng{authorfullhash}{557acfe1748e2bbf2c2f98a353442835}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Color vision deficiency (CVD) affects more than 4\% of the population and leads to a different visual perception of colors. Though this has been known for decades, colormaps with many colors across the visual spectra are often used to represent data, leading to the potential for misinterpretation or difficulty with interpretation by someone with this deficiency. Until the creation of the module presented here, there were no colormaps mathematically optimized for CVD using modern color appearance models. While there have been some attempts to make aesthetically pleasing or subjectively tolerable colormaps for those with CVD, our goal was to make optimized colormaps for the most accurate perception of scientific data by as many viewers as possible. We developed a Python module, cmaputil, to create CVD-optimized colormaps, which imports colormaps and modifies them to be perceptually uniform in CVD-safe colorspace while linearizing and maximizing the brightness range. The module is made available to the science community to enable others to easily create their own CVD-optimized colormaps. Here, we present an example CVD-optimized colormap created with this module that is optimized for viewing by those without a CVD as well as those with red-green colorblindness. This colormap, cividis, enables nearly-identical visual-data interpretation to both groups, is perceptually uniform in hue and brightness, and increases in brightness linearly.}
+      \field{journaltitle}{PLoS One}
+      \field{month}{8}
+      \field{number}{7}
+      \field{title}{Optimizing colormaps with consideration for color vision deficiency to enable accurate interpretation of scientific data}
+      \field{volume}{13}
+      \field{year}{2018}
+      \field{pages}{e0199239}
+      \range{pages}{-1}
+    \endentry
+    \entry{digilentmanual}{manual}{}
+      \name{author}{1}{}{%
+        {{hash=596776bb9036c1ca4a85db2836bfa2de}{%
+           family={{Digilent}},
+           familyi={D\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {1300 Henley Court, Pullman, WA99163}%
+      }
+      \strng{namehash}{596776bb9036c1ca4a85db2836bfa2de}
+      \strng{fullhash}{596776bb9036c1ca4a85db2836bfa2de}
+      \strng{bibnamehash}{596776bb9036c1ca4a85db2836bfa2de}
+      \strng{authorbibnamehash}{596776bb9036c1ca4a85db2836bfa2de}
+      \strng{authornamehash}{596776bb9036c1ca4a85db2836bfa2de}
+      \strng{authorfullhash}{596776bb9036c1ca4a85db2836bfa2de}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{10}
+      \field{month}{7}
+      \field{title}{Nexys A7™ FPGA Board Reference Manual}
+      \field{year}{2019}
+      \field{dateera}{ce}
+      \true{nocite}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

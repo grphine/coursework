@@ -1,0 +1,186 @@
+\documentclass[10pt]{article}
+\usepackage[table]{xcolor}  % load xcolor before anything else
+\usepackage[most]{tcolorbox}
+\usepackage{setspace}  %line spacing
+\usepackage{titling}
+\usepackage{graphicx}
+\usepackage{parskip}    %spaced paragraphs
+\usepackage{csquotes}   %babel wanted it
+% \usepackage{emptypage} % prevent page numbers and headings on empty pages
+\usepackage{float} % for H specification
+% \usepackage{censor}
+\usepackage{amsmath}
+\usepackage{fontawesome}    % fancy font special characters
+% \usepackage{pdfpages} % insert pdf 
+\usepackage[titletoc]{appendix}
+\usepackage{pdflscape} % landscape pdf pages
+\usepackage{wrapfig}
+\usepackage{booktabs,nicematrix} % quality tables 
+
+% \usepackage{tikz}
+% \usepackage{circuitikz}
+% \usetikzlibrary{calc}
+% \usetikzlibrary{arrows,positioning}
+% \usetikzlibrary{graphs, graphs.standard}
+
+\usepackage[hang,flushmargin]{footmisc}     % footnote editing
+
+\usepackage[font=small,labelfont=bf,justification=centering]{caption} % caption size 
+\usepackage{subcaption}
+\setlength{\belowcaptionskip}{-5pt}
+
+\usepackage[hidelinks]{hyperref}  %have a review of this
+\hypersetup{%
+%   citecolor=black,
+  colorlinks=false,
+%   linkcolor=black,
+%   urlcolor=black
+}
+\usepackage[nameinlink]{cleveref}
+
+\usepackage{listings}% code
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegrey}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+\lstdefinestyle{codestyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegrey},
+    keywordstyle=\color{blue},
+    numberstyle=\tiny\color{codegrey},  % line numbers
+    stringstyle=\color{codegreen},
+    basicstyle=\ttfamily\lst@ifdisplaystyle\footnotesize\fi,
+    breakatwhitespace=false,         % sets if automatic breaks should only happen at whitespace
+    breaklines=true,                 % sets automatic line breaking
+    captionpos=t,                    
+    keepspaces=true,                 % keeps spaces in text, useful for keeping indentation of code (possibly needs columns=flexible)
+    numbers=left,
+    stepnumber=1,                    % the step between two line-numbers. If it's 1, each line will be numbered                    
+    numbersep=5pt,                   % how far the line-numbers are from the code
+    showspaces=false,                % show spaces everywhere adding particular underscores; it overrides 'showstringspaces'
+    showstringspaces=false,          % underline spaces within strings only
+    showtabs=false,                  % show tabs within strings adding particular underscores
+    % tabsize=2,                       % sets default tabsize to 2 spaces
+    framextopmargin=50pt,
+    % title=\lstname,                  % show the filename of files included with \lstinputlisting; also try caption instead of title
+    columns=fixed,                   % Using fixed column width (for e.g. nice alignment)
+    frame=bottomline,
+    % frame=tb,
+    % belowcaptionskip=0pt,
+    aboveskip=3pt,
+    belowskip=3pt,
+    % texcl=true,
+}
+\lstset{style=codestyle}
+
+\usepackage{geometry}
+\geometry{a4paper, margin=1.5cm}
+
+\usepackage{fontspec}
+\setmainfont[ 
+    Mapping=tex-text,
+    BoldFont={HelveticaNowText-Bold},
+    ItalicFont={HelveticaNowText-RegIta},
+    BoldItalicFont={HelveticaNowText-BoldItalic}
+]{[HelveticaNowText-Regular]}
+\usepackage{sansmath}
+\sansmath
+
+\usepackage{fancyhdr}   %footer
+\fancypagestyle{myheadings}{%
+    \fancyhf{}
+    \renewcommand{\headrulewidth}{0.5pt}
+    \renewcommand{\footrulewidth}{0pt}
+    \addtolength{\headheight}{2pt}
+    % \fancyhead[L]{\leftmark}
+    \fancyhead[L]{ES3B2: Digital Systems Design}
+    \fancyhead[R]{1922268}
+    \cfoot{\thepage}
+}
+\pagestyle{myheadings}
+
+\usepackage{enumitem}   %reduce list spacing
+\setlist{nosep} 
+
+\usepackage[
+    backend=biber,
+    style=numeric-comp,
+    % style = vancouver,
+    % style = science,
+    % style=draft,
+    % style = ieee,
+    % maxnames=2, minnames=2,
+    % doi=false,
+    sorting=none
+]{biblatex}   %bibliography
+\usepackage{xurl} % break urls. load after biblatex
+\addbibresource{sections/refs.bib}
+
+\usepackage[
+    separate-uncertainty=true,
+    multi-part-units=single
+    ]{siunitx}
+\sisetup{
+    detect-all,
+    per-mode=symbol-or-fraction,
+    tight-spacing,
+    % quantity-product =,
+    number-unit-product=\,,
+    % space-before-unit=true
+}
+\DeclareSIUnit{\mAh}{mAh}
+
+\usepackage{xltabular}
+\usepackage{multirow}
+\newcolumntype{Y}{>{\centering\arraybackslash}X}
+\newcolumntype{Z}{>{\raggedright\arraybackslash}X}
+\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
+
+\newenvironment{conditions}[1][where:]
+  {#1 \begin{tabular}[t]{>{$}l<{$} @{} >{${}}c<{{}$} @{} l}}
+  {\end{tabular}\\[\belowdisplayskip]}
+
+\definecolor{titlepagecolour}{HTML}{003D99}
+\definecolor{titleblue}{HTML}{1b1787} % blue
+\definecolor{tableh1}{HTML}{dae3eb} %table grey
+\definecolor{tableh2}{HTML}{b3ccf5} %table bluegrey
+\definecolor{tableg}{HTML}{309c3d} % green
+\definecolor{tablea}{HTML}{ed901f} % amber
+\definecolor{tabler}{HTML}{f2422e} % red
+
+\definecolor{hCyan}{HTML}{00FFFF}
+\definecolor{hMagenta}{HTML}{FF00FF}
+\definecolor{hBlue}{HTML}{0000FF}
+
+\usepackage[british]{babel} 
+
+% \usepackage{pgfgantt}
+% \setganttlinklabel{s-s}{}
+% \setganttlinklabel{f-s}{}
+% \setganttlinklabel{f-f}{}
+
+% \usepackage{titlesec} 
+% \titlespacing\section{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+% \titlespacing\subsection{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+% \titlespacing\subsubsection{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+% \titlespacing\paragraph{0pt}{10pt plus 4pt minus 2pt}{10pt plus 2pt minus 2pt}
+
+\begin{document}
+% \onehalfspacing
+% \setstretch{1.25} % one and quarter spacing
+
+\input{sections/intro.tex}
+
+\input{sections/design.tex}
+
+\input{sections/test.tex}
+
+\input{sections/conclusion.tex}
+
+\nocite{digilentmanual}
+
+\printbibliography
+
+\input{sections/appendix.tex}
+
+\end{document}

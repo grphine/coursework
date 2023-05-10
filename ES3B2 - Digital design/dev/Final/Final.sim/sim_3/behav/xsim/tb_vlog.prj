@@ -1,0 +1,24 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../grid_match.srcs/sources_1/ip/clk_wiz_0" \
+"../../../../grid_match.srcs/sources_1/ip/blk_mem_gen_3/sim/blk_mem_gen_3.v" \
+"../../../../grid_match.srcs/sources_1/ip/blk_mem_gen_2/sim/blk_mem_gen_2.v" \
+"../../../../grid_match.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v" \
+"../../../../grid_match.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v" \
+"../../../../grid_match.srcs/sources_1/new/clock_gen.v" \
+"../../../../grid_match.srcs/sources_1/new/colour_picker.v" \
+"../../../../grid_match.srcs/sources_1/new/drawcon.v" \
+"../../../../grid_match.srcs/sources_1/new/game_top.v" \
+"../../../../grid_match.srcs/sources_1/new/spi_master.v" \
+"../../../../grid_match.srcs/sources_1/new/vga_out.v" \
+
+sv xil_defaultlib  --include "../../../../grid_match.srcs/sources_1/ip/clk_wiz_0" \
+"../../../../grid_match.srcs/sources_1/new/colour_grid_i.sv" \
+
+verilog xil_defaultlib  --include "../../../../grid_match.srcs/sources_1/ip/clk_wiz_0" \
+"../../../../grid_match.srcs/sim_3/new/testbench.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

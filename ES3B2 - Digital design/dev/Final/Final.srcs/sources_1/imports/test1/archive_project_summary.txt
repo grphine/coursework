@@ -1,0 +1,234 @@
+***************************************************************************************
+*                      PROJECT ARCHIVE SUMMARY REPORT
+*
+*                      (archive_project_summary.txt)
+*
+*  PLEASE READ THIS REPORT TO GET THE DETAILED INFORMATION ABOUT THE PROJECT DATA THAT
+*  WAS ARCHIVED FOR THE CURRENT PROJECT
+*
+* The report is divided into following five sections:-
+*
+* Section (1) - PROJECT INFORMATION
+*  This section provides the details of the current project that was archived
+*
+* Section (2) - INCLUDED/EXCLUDED RUNS
+*  This section summarizes the list of design runs for which the results were included
+*  or excluded from the archive
+*
+* Section (3) - ARCHIVED SOURCES
+*  This section summarizes the list of files that were added to the archive
+*
+* Section (3.1) - INCLUDE FILES
+*  This section summarizes the list of 'include' files that were added to the archive
+*
+* Section (3.1.1) - INCLUDE_DIRS SETTINGS
+*  This section summarizes the 'verilog include directory' path settings, if any
+*
+* Section (3.2) - REMOTE SOURCES
+*  This section summarizes the list of referenced 'remote' files that were 'imported'
+*  into the archived project
+*
+* Section (3.3) - SOURCES SUMMARY
+*  This section summarizes the list of all the files present in the archive
+*
+* Section (3.4) - REMOTE IP DEFINITIONS
+*  This section summarizes the list of all the remote IP's present in the archive
+*
+* Section (4) - JOURNAL/LOG FILES
+*  This section summarizes the list of journal/log files that were added to the archive
+*
+***************************************************************************************
+
+Section (1) - PROJECT INFORMATION
+---------------------------------
+Name      = grid_match
+Directory = C:/Users/u1922268/OneDrive - University of Warwick/Assignments/ES3B2/Experimental/grid_match_copy_zip
+
+WARNING: Please verify the compiled library directory path for the following property in the
+         current project. The path may point to an invalid location after opening this project.
+         This could happen if the project was unarchived in a location where this path is not
+         accessible. To resolve this issue, please set this property with the desired path
+         before launching simulation:-
+
+Property = compxlib.xsim_compiled_library_dir
+Path     = 
+
+Section (2) - INCLUDED RUNS
+---------------------------
+The run results were included for the following runs in the archived project:-
+
+<synth_1>
+<blk_mem_gen_0_synth_1>
+<clk_wiz_0_synth_1>
+<blk_mem_gen_1_synth_1>
+<blk_mem_gen_2_synth_1>
+<impl_1>
+
+Section (3) - ARCHIVED SOURCES
+------------------------------
+The following sub-sections describes the list of sources that were archived for the current project:-
+
+Section (3.1) - INCLUDE FILES
+-----------------------------
+List of referenced 'RTL Include' files that were 'imported' into the archived project:-
+
+None
+
+Section (3.1.1) - INCLUDE_DIRS SETTINGS
+---------------------------------------
+List of the "INCLUDE_DIRS" fileset property settings that may or may not be applicable in the archived
+project, since most the 'RTL Include' files referenced in the original project were 'imported' into the
+archived project.
+
+<sources_1> fileset RTL include directory paths (INCLUDE_DIRS):-
+None
+
+<sim_1> fileset RTL include directory paths (INCLUDE_DIRS):-
+None
+
+<sim_3> fileset RTL include directory paths (INCLUDE_DIRS):-
+None
+
+Section (3.2) - REMOTE SOURCES
+------------------------------
+List of referenced 'remote' design files that were 'imported' into the archived project:-
+
+<blk_mem_gen_0>
+None
+
+<blk_mem_gen_1>
+None
+
+<blk_mem_gen_2>
+c:/Users/u1922268/OneDrive - University of Warwick/Assignments/ES3B2/Experimental/grid_match_copy_zip/.Xil/Vivado-3436-F211-08/PrjAr/_X_/grid_match.srcs/sources_1/imports/ES3B2/python scripts/files/reticle_4.coe
+
+<clk_wiz_0>
+None
+
+<constrs_1>
+None
+
+<sim_1>
+None
+
+<sim_3>
+None
+
+<sources_1>
+C:/Users/u1922268/OneDrive - University of Warwick/Assignments/ES3B2/Experimental/grid_match_copy_zip/archive_project_summary.txt
+
+<utils_1>
+None
+
+Section (3.3) - SOURCES SUMMARY
+-------------------------------
+List of all the source files present in the archived project:-
+
+<sources_1>
+./grid_match.srcs/sources_1/new/clock_gen.v
+./grid_match.srcs/sources_1/new/colour_picker.v
+./grid_match.srcs/sources_1/new/drawcon.v
+./grid_match.srcs/sources_1/new/spi_master.v
+./grid_match.srcs/sources_1/new/vga_out.v
+./grid_match.srcs/sources_1/new/colour_grid_i.sv
+./grid_match.srcs/sources_1/new/game_top.v
+./grid_match.srcs/sources_1/imports/ES3B2/Labs/lab_6 - Copy/my_mem.coe
+./grid_match.srcs/sources_1/imports/ES3B2/python scripts/gradient.coe
+./grid_match.srcs/sources_1/imports/ES3B2/python scripts/files/reticle.coe
+./grid_match.srcs/sources_1/imports/ES3B2/python scripts/files/reticle_2.coe
+./grid_match.srcs/sources_1/imports/ES3B2/python scripts/files/reticle_3.coe
+./grid_match.srcs/sources_1/imports/ES3B2/python scripts/files/reticle_4.coe
+./grid_match.srcs/sources_1/imports/grid_match_copy_zip/archive_project_summary.txt
+
+<constrs_1>
+./grid_match.srcs/constrs_1/imports/Downloads/lab2.xdc
+
+<sim_1>
+None
+
+<utils_1>
+None
+
+<sim_3>
+./grid_match.srcs/sim_3/new/testbench.v
+
+<blk_mem_gen_0>
+None
+
+<clk_wiz_0>
+./grid_match.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci
+./grid_match.srcs/sources_1/ip/clk_wiz_0/doc/clk_wiz_v6_0_changelog.txt
+./grid_match.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc
+./grid_match.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.veo
+./grid_match.srcs/sources_1/ip/clk_wiz_0/mmcm_pll_drp_func_7s_mmcm.vh
+./grid_match.srcs/sources_1/ip/clk_wiz_0/mmcm_pll_drp_func_7s_pll.vh
+./grid_match.srcs/sources_1/ip/clk_wiz_0/mmcm_pll_drp_func_us_mmcm.vh
+./grid_match.srcs/sources_1/ip/clk_wiz_0/mmcm_pll_drp_func_us_pll.vh
+./grid_match.srcs/sources_1/ip/clk_wiz_0/mmcm_pll_drp_func_us_plus_pll.vh
+./grid_match.srcs/sources_1/ip/clk_wiz_0/mmcm_pll_drp_func_us_plus_mmcm.vh
+./grid_match.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v
+./grid_match.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v
+./grid_match.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.dcp
+./grid_match.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_stub.v
+./grid_match.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_stub.vhdl
+./grid_match.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_sim_netlist.v
+./grid_match.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_sim_netlist.vhdl
+./grid_match.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc
+./grid_match.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_ooc.xdc
+./grid_match.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xml
+
+<blk_mem_gen_1>
+None
+
+<blk_mem_gen_2>
+./grid_match.srcs/sources_1/ip/blk_mem_gen_2/blk_mem_gen_2.xci
+./grid_match.srcs/sources_1/ip/blk_mem_gen_2/doc/blk_mem_gen_v8_4_changelog.txt
+./grid_match.srcs/sources_1/ip/blk_mem_gen_2/blk_mem_gen_2.vho
+./grid_match.srcs/sources_1/ip/blk_mem_gen_2/blk_mem_gen_2.veo
+./grid_match.srcs/sources_1/ip/blk_mem_gen_2/summary.log
+./grid_match.srcs/sources_1/ip/blk_mem_gen_2/misc/blk_mem_gen_v8_4.vhd
+./grid_match.srcs/sources_1/ip/blk_mem_gen_2/blk_mem_gen_2.mif
+./grid_match.srcs/sources_1/ip/blk_mem_gen_2/simulation/blk_mem_gen_v8_4.v
+./grid_match.srcs/sources_1/ip/blk_mem_gen_2/sim/blk_mem_gen_2.v
+./grid_match.srcs/sources_1/ip/blk_mem_gen_2/blk_mem_gen_2.dcp
+./grid_match.srcs/sources_1/ip/blk_mem_gen_2/blk_mem_gen_2_stub.v
+./grid_match.srcs/sources_1/ip/blk_mem_gen_2/blk_mem_gen_2_stub.vhdl
+./grid_match.srcs/sources_1/ip/blk_mem_gen_2/blk_mem_gen_2_sim_netlist.v
+./grid_match.srcs/sources_1/ip/blk_mem_gen_2/blk_mem_gen_2_sim_netlist.vhdl
+./grid_match.srcs/sources_1/ip/blk_mem_gen_2/blk_mem_gen_2_ooc.xdc
+./grid_match.srcs/sources_1/ip/blk_mem_gen_2/hdl/blk_mem_gen_v8_4_vhsyn_rfs.vhd
+./grid_match.srcs/sources_1/ip/blk_mem_gen_2/synth/blk_mem_gen_2.vhd
+./grid_match.srcs/sources_1/ip/blk_mem_gen_2/blk_mem_gen_2.xml
+./grid_match.srcs/sources_1/imports/ES3B2/python scripts/files/reticle_4.coe
+
+Section (3.4) - REMOTE IP DEFINITIONS
+-------------------------------------
+List of all the remote IP's present in the archived project:-
+
+<sources_1>
+None
+
+<blk_mem_gen_0>
+None
+
+<clk_wiz_0>
+None
+
+<blk_mem_gen_1>
+None
+
+<blk_mem_gen_2>
+None
+
+None
+
+Section (4) - JOURNAL/LOG FILES
+-------------------------------
+List of Journal/Log files that were added to the archived project:-
+
+Source File = C:/Users/u1922268/OneDrive - University of Warwick/Assignments/ES3B2/Experimental/grid_match_copy_zip/vivado.jou
+Archived Location = ./grid_match/vivado.jou
+
+Source File = C:/Users/u1922268/OneDrive - University of Warwick/Assignments/ES3B2/Experimental/grid_match_copy_zip/vivado.log
+Archived Location = ./grid_match/vivado.log
+

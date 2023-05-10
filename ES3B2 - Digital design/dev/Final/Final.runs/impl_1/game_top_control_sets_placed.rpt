@@ -1,0 +1,364 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Tue May  9 19:02:18 2023
+| Host         : Stativus running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file game_top_control_sets_placed.rpt
+| Design       : game_top
+| Device       : xc7a100t
+-------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |   286 |
+|    Minimum number of control sets                        |   286 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   631 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |   286 |
+| >= 0 to < 4        |     6 |
+| >= 4 to < 6        |     2 |
+| >= 6 to < 8        |   260 |
+| >= 8 to < 10       |     2 |
+| >= 10 to < 12      |     5 |
+| >= 12 to < 14      |     2 |
+| >= 14 to < 16      |     3 |
+| >= 16              |     6 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             604 |          184 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              99 |           31 |
+| Yes          | No                    | No                     |            1611 |          619 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              55 |           18 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-----------------------------------------------+----------------------------------------------------------------+-------------------------------------------------+------------------+----------------+
+|                  Clock Signal                 |                          Enable Signal                         |                 Set/Reset Signal                | Slice Load Count | Bel Load Count |
++-----------------------------------------------+----------------------------------------------------------------+-------------------------------------------------+------------------+----------------+
+|  spi_clock_BUFG                               | master/cs_i_1_n_0                                              |                                                 |                1 |              1 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_60  |                                                                |                                                 |                1 |              1 |
+|  spi_clock_BUFG                               | master/mosi_i_1_n_0                                            |                                                 |                1 |              1 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_8   |                                                                |                                                 |                1 |              2 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | vga_inst/id_addr                                               |                                                 |                1 |              2 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | vga_inst/reticle_addr                                          |                                                 |                2 |              3 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/xcount_reg[4]                    | drawcon_inst/colour_grid_inst/ycount_reg__0[4]  |                2 |              5 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | vga_inst/reticle_addr                                          | vga_inst/SR[0]                                  |                1 |              5 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[0][0][5]_i_1_n_0   |                                                 |                2 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[0][10][5]_i_1_n_0  |                                                 |                2 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[0][12][5]_i_1_n_0  |                                                 |                2 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[0][11][5]_i_1_n_0  |                                                 |                2 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[0][13][5]_i_1_n_0  |                                                 |                2 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[0][2][5]_i_1_n_0   |                                                 |                3 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[0][3][5]_i_1_n_0   |                                                 |                2 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[0][8][5]_i_1_n_0   |                                                 |                2 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[0][5][5]_i_1_n_0   |                                                 |                1 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[0][15][5]_i_1_n_0  |                                                 |                2 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[0][14][5]_i_1_n_0  |                                                 |                2 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[0][1][5]_i_1_n_0   |                                                 |                2 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[0][4][5]_i_1_n_0   |                                                 |                1 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[0][6][5]_i_1_n_0   |                                                 |                2 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[0][7][5]_i_1_n_0   |                                                 |                2 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[10][0][5]_i_1_n_0  |                                                 |                2 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[11][1][5]_i_1_n_0  |                                                 |                4 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[11][3][5]_i_1_n_0  |                                                 |                2 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[11][5][5]_i_1_n_0  |                                                 |                3 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[11][7][5]_i_1_n_0  |                                                 |                2 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[11][6][5]_i_1_n_0  |                                                 |                2 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[10][10][5]_i_1_n_0 |                                                 |                2 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[10][14][5]_i_1_n_0 |                                                 |                2 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[10][2][5]_i_1_n_0  |                                                 |                3 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[11][8][5]_i_1_n_0  |                                                 |                3 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[10][11][5]_i_1_n_0 |                                                 |                1 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[11][11][5]_i_1_n_0 |                                                 |                2 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[11][14][5]_i_1_n_0 |                                                 |                2 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[13][1][5]_i_1_n_0  |                                                 |                3 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[10][4][5]_i_1_n_0  |                                                 |                2 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[11][13][5]_i_1_n_0 |                                                 |                2 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[11][12][5]_i_1_n_0 |                                                 |                2 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[10][12][5]_i_1_n_0 |                                                 |                3 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[10][5][5]_i_1_n_0  |                                                 |                1 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[10][7][5]_i_1_n_0  |                                                 |                3 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[11][15][5]_i_1_n_0 |                                                 |                2 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[11][4][5]_i_1_n_0  |                                                 |                2 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[10][9][5]_i_1_n_0  |                                                 |                2 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[10][8][5]_i_1_n_0  |                                                 |                2 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[0][9][5]_i_1_n_0   |                                                 |                3 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[10][3][5]_i_1_n_0  |                                                 |                3 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[10][13][5]_i_1_n_0 |                                                 |                2 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[10][15][5]_i_1_n_0 |                                                 |                2 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[11][0][5]_i_1_n_0  |                                                 |                2 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[10][6][5]_i_1_n_0  |                                                 |                2 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[11][10][5]_i_1_n_0 |                                                 |                2 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[11][2][5]_i_1_n_0  |                                                 |                2 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[12][1][5]_i_1_n_0  |                                                 |                2 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[12][14][5]_i_1_n_0 |                                                 |                2 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[12][15][5]_i_1_n_0 |                                                 |                1 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[12][3][5]_i_1_n_0  |                                                 |                2 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[12][4][5]_i_1_n_0  |                                                 |                1 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[12][5][5]_i_1_n_0  |                                                 |                3 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[12][9][5]_i_1_n_0  |                                                 |                2 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[13][10][5]_i_1_n_0 |                                                 |                3 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[13][12][5]_i_1_n_0 |                                                 |                2 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[13][0][5]_i_1_n_0  |                                                 |                1 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[13][2][5]_i_1_n_0  |                                                 |                3 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[13][14][5]_i_1_n_0 |                                                 |                2 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[12][2][5]_i_1_n_0  |                                                 |                5 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[13][4][5]_i_1_n_0  |                                                 |                3 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[13][11][5]_i_1_n_0 |                                                 |                2 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[13][15][5]_i_1_n_0 |                                                 |                3 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[12][7][5]_i_1_n_0  |                                                 |                2 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[12][13][5]_i_1_n_0 |                                                 |                2 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[13][5][5]_i_1_n_0  |                                                 |                1 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[13][6][5]_i_1_n_0  |                                                 |                2 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[12][11][5]_i_1_n_0 |                                                 |                2 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[13][8][5]_i_1_n_0  |                                                 |                2 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[12][8][5]_i_1_n_0  |                                                 |                2 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[12][0][5]_i_1_n_0  |                                                 |                2 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[13][3][5]_i_1_n_0  |                                                 |                2 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[11][9][5]_i_1_n_0  |                                                 |                2 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[13][7][5]_i_1_n_0  |                                                 |                2 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[12][6][5]_i_1_n_0  |                                                 |                3 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[13][13][5]_i_1_n_0 |                                                 |                2 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[12][12][5]_i_1_n_0 |                                                 |                2 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[12][10][5]_i_1_n_0 |                                                 |                2 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[14][15][5]_i_1_n_0 |                                                 |                3 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[15][1][5]_i_1_n_0  |                                                 |                2 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[15][3][5]_i_1_n_0  |                                                 |                1 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[15][4][5]_i_1_n_0  |                                                 |                2 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[15][5][5]_i_1_n_0  |                                                 |                1 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[15][10][5]_i_1_n_0 |                                                 |                2 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[14][1][5]_i_1_n_0  |                                                 |                4 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[14][12][5]_i_1_n_0 |                                                 |                3 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[14][11][5]_i_1_n_0 |                                                 |                3 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[15][2][5]_i_1_n_0  |                                                 |                3 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[14][13][5]_i_1_n_0 |                                                 |                2 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[14][7][5]_i_1_n_0  |                                                 |                1 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[15][12][5]_i_1_n_0 |                                                 |                2 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[15][15][5]_i_1_n_0 |                                                 |                2 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[15][6][5]_i_1_n_0  |                                                 |                1 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[15][7][5]_i_1_n_0  |                                                 |                2 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[14][9][5]_i_1_n_0  |                                                 |                2 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[15][13][5]_i_1_n_0 |                                                 |                2 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[14][0][5]_i_1_n_0  |                                                 |                3 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[14][5][5]_i_1_n_0  |                                                 |                4 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[15][8][5]_i_1_n_0  |                                                 |                3 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[14][10][5]_i_1_n_0 |                                                 |                2 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[13][9][5]_i_1_n_0  |                                                 |                2 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[14][14][5]_i_1_n_0 |                                                 |                3 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[14][2][5]_i_1_n_0  |                                                 |                1 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[15][0][5]_i_1_n_0  |                                                 |                2 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[14][8][5]_i_1_n_0  |                                                 |                2 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[14][3][5]_i_1_n_0  |                                                 |                2 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[14][4][5]_i_1_n_0  |                                                 |                1 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[14][6][5]_i_1_n_0  |                                                 |                2 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[15][11][5]_i_1_n_0 |                                                 |                2 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[15][14][5]_i_1_n_0 |                                                 |                3 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[1][2][5]_i_1_n_0   |                                                 |                3 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[1][1][5]_i_1_n_0   |                                                 |                2 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[1][6][5]_i_1_n_0   |                                                 |                2 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[1][8][5]_i_1_n_0   |                                                 |                2 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[1][9][5]_i_1_n_0   |                                                 |                2 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[2][15][5]_i_1_n_0  |                                                 |                3 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[1][10][5]_i_1_n_0  |                                                 |                1 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[2][0][5]_i_1_n_0   |                                                 |                4 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[2][12][5]_i_1_n_0  |                                                 |                2 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[2][11][5]_i_1_n_0  |                                                 |                2 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[2][1][5]_i_1_n_0   |                                                 |                1 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[2][13][5]_i_1_n_0  |                                                 |                2 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[2][2][5]_i_1_n_0   |                                                 |                1 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[2][3][5]_i_1_n_0   |                                                 |                2 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[1][3][5]_i_1_n_0   |                                                 |                2 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[1][0][5]_i_1_n_0   |                                                 |                1 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[1][5][5]_i_1_n_0   |                                                 |                1 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[2][4][5]_i_1_n_0   |                                                 |                1 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[2][5][5]_i_1_n_0   |                                                 |                2 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[1][7][5]_i_1_n_0   |                                                 |                2 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[2][8][5]_i_1_n_0   |                                                 |                2 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[15][9][5]_i_1_n_0  |                                                 |                3 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[2][10][5]_i_1_n_0  |                                                 |                3 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[1][13][5]_i_1_n_0  |                                                 |                2 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[2][14][5]_i_1_n_0  |                                                 |                3 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[2][6][5]_i_1_n_0   |                                                 |                2 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[2][7][5]_i_1_n_0   |                                                 |                4 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[1][12][5]_i_1_n_0  |                                                 |                2 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[1][14][5]_i_1_n_0  |                                                 |                2 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[1][15][5]_i_1_n_0  |                                                 |                2 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[1][11][5]_i_1_n_0  |                                                 |                2 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[1][4][5]_i_1_n_0   |                                                 |                3 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[4][11][5]_i_1_n_0  |                                                 |                1 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[3][2][5]_i_1_n_0   |                                                 |                2 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[3][0][5]_i_1_n_0   |                                                 |                1 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[4][14][5]_i_1_n_0  |                                                 |                2 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[4][2][5]_i_1_n_0   |                                                 |                2 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[4][5][5]_i_1_n_0   |                                                 |                3 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[4][6][5]_i_1_n_0   |                                                 |                4 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[3][11][5]_i_1_n_0  |                                                 |                2 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[3][1][5]_i_1_n_0   |                                                 |                1 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[3][8][5]_i_1_n_0   |                                                 |                4 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[4][10][5]_i_1_n_0  |                                                 |                3 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[3][15][5]_i_1_n_0  |                                                 |                1 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[3][12][5]_i_1_n_0  |                                                 |                2 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[3][13][5]_i_1_n_0  |                                                 |                2 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[4][3][5]_i_1_n_0   |                                                 |                1 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[4][4][5]_i_1_n_0   |                                                 |                2 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[4][7][5]_i_1_n_0   |                                                 |                2 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[4][8][5]_i_1_n_0   |                                                 |                1 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[2][9][5]_i_1_n_0   |                                                 |                2 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[3][6][5]_i_1_n_0   |                                                 |                3 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[4][12][5]_i_1_n_0  |                                                 |                2 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[4][15][5]_i_1_n_0  |                                                 |                3 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[3][3][5]_i_1_n_0   |                                                 |                2 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[4][13][5]_i_1_n_0  |                                                 |                1 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[4][1][5]_i_1_n_0   |                                                 |                2 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[3][10][5]_i_1_n_0  |                                                 |                2 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[3][9][5]_i_1_n_0   |                                                 |                2 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[3][4][5]_i_1_n_0   |                                                 |                1 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[3][5][5]_i_1_n_0   |                                                 |                4 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[3][7][5]_i_1_n_0   |                                                 |                2 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[3][14][5]_i_1_n_0  |                                                 |                2 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[4][0][5]_i_1_n_0   |                                                 |                3 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[4][9][5]_i_1_n_0   |                                                 |                3 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[5][1][5]_i_1_n_0   |                                                 |                2 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[5][0][5]_i_1_n_0   |                                                 |                1 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[5][7][5]_i_1_n_0   |                                                 |                2 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[5][14][5]_i_1_n_0  |                                                 |                2 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[5][5][5]_i_1_n_0   |                                                 |                2 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[5][13][5]_i_1_n_0  |                                                 |                1 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[6][3][5]_i_1_n_0   |                                                 |                3 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[5][6][5]_i_1_n_0   |                                                 |                3 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[6][14][5]_i_1_n_0  |                                                 |                3 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[5][8][5]_i_1_n_0   |                                                 |                2 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[6][6][5]_i_1_n_0   |                                                 |                2 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[6][7][5]_i_1_n_0   |                                                 |                2 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[6][10][5]_i_1_n_0  |                                                 |                2 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[6][4][5]_i_1_n_0   |                                                 |                1 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[6][8][5]_i_1_n_0   |                                                 |                3 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[5][10][5]_i_1_n_0  |                                                 |                2 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[5][3][5]_i_1_n_0   |                                                 |                2 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[6][15][5]_i_1_n_0  |                                                 |                4 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[5][12][5]_i_1_n_0  |                                                 |                2 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[6][0][5]_i_1_n_0   |                                                 |                2 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[5][11][5]_i_1_n_0  |                                                 |                2 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[5][4][5]_i_1_n_0   |                                                 |                2 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[5][9][5]_i_1_n_0   |                                                 |                3 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[6][11][5]_i_1_n_0  |                                                 |                2 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[6][12][5]_i_1_n_0  |                                                 |                3 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[6][1][5]_i_1_n_0   |                                                 |                2 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[6][2][5]_i_1_n_0   |                                                 |                1 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[5][2][5]_i_1_n_0   |                                                 |                3 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[6][13][5]_i_1_n_0  |                                                 |                3 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[6][5][5]_i_1_n_0   |                                                 |                4 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[5][15][5]_i_1_n_0  |                                                 |                3 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[8][3][5]_i_1_n_0   |                                                 |                4 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[8][4][5]_i_1_n_0   |                                                 |                6 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[7][13][5]_i_1_n_0  |                                                 |                3 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[7][10][5]_i_1_n_0  |                                                 |                3 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[7][4][5]_i_1_n_0   |                                                 |                3 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[8][0][5]_i_1_n_0   |                                                 |                4 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[8][5][5]_i_1_n_0   |                                                 |                5 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[8][6][5]_i_1_n_0   |                                                 |                2 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[7][14][5]_i_1_n_0  |                                                 |                2 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[8][7][5]_i_1_n_0   |                                                 |                3 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[8][8][5]_i_1_n_0   |                                                 |                1 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[6][9][5]_i_1_n_0   |                                                 |                2 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[7][5][5]_i_1_n_0   |                                                 |                3 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[8][10][5]_i_1_n_0  |                                                 |                2 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[7][6][5]_i_1_n_0   |                                                 |                1 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[7][12][5]_i_1_n_0  |                                                 |                2 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[7][11][5]_i_1_n_0  |                                                 |                2 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[8][11][5]_i_1_n_0  |                                                 |                2 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[8][12][5]_i_1_n_0  |                                                 |                2 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[7][2][5]_i_1_n_0   |                                                 |                1 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[7][8][5]_i_1_n_0   |                                                 |                2 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[8][13][5]_i_1_n_0  |                                                 |                1 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[8][14][5]_i_1_n_0  |                                                 |                2 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[7][15][5]_i_1_n_0  |                                                 |                2 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[7][3][5]_i_1_n_0   |                                                 |                2 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[7][9][5]_i_1_n_0   |                                                 |                2 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[7][0][5]_i_1_n_0   |                                                 |                5 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[8][15][5]_i_1_n_0  |                                                 |                2 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[8][1][5]_i_1_n_0   |                                                 |                1 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[7][1][5]_i_1_n_0   |                                                 |                1 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[7][7][5]_i_1_n_0   |                                                 |                2 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[8][2][5]_i_1_n_0   |                                                 |                2 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[9][13][5]_i_1_n_0  |                                                 |                2 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[9][1][5]_i_1_n_0   |                                                 |                2 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[9][2][5]_i_1_n_0   |                                                 |                2 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[9][7][5]_i_1_n_0   |                                                 |                4 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[9][5][5]_i_1_n_0   |                                                 |                4 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[9][10][5]_i_1_n_0  |                                                 |                3 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[9][12][5]_i_1_n_0  |                                                 |                3 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[8][9][5]_i_1_n_0   |                                                 |                2 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[9][0][5]_i_1_n_0   |                                                 |                3 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[9][6][5]_i_1_n_0   |                                                 |                4 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[9][4][5]_i_1_n_0   |                                                 |                4 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[9][14][5]_i_1_n_0  |                                                 |                2 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[9][3][5]_i_1_n_0   |                                                 |                2 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[9][8][5]_i_1_n_0   |                                                 |                4 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[9][11][5]_i_1_n_0  |                                                 |                2 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[9][15][5]_i_1_n_0  |                                                 |                2 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[9][9][5]_i_1_n_0   |                                                 |                3 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | vga_inst/E[0]                                                  |                                                 |                3 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | vga_inst/col_pointer[5]_i_8_0[0]                               |                                                 |                4 |              6 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/colour_grid_inst/pointer_array[10][1][5]_i_1_n_0  |                                                 |                3 |              6 |
+|  spi_clock_BUFG                               | master/FSM_sequential_state_reg[6]_i_1_n_0                     |                                                 |                5 |              7 |
+|  clock_gen_inst/gameclk_reg_0                 |                                                                | player_pos_x[5]_i_1_n_0                         |                3 |              7 |
+|  clock_gen_inst/gameclk_reg_0                 |                                                                |                                                 |                4 |              8 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | vga_inst/id_addr                                               | drawcon_inst/id_addr[10]_i_1_n_0                |                3 |              9 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | vga_inst/h_end                                                 | vga_inst/vcount[9]_i_1_n_0                      |                4 |             10 |
+| ~spi_clock_BUFG                               | master/latch_data                                              |                                                 |                4 |             10 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | vga_inst/h_end                                                 | vga_inst/y_reg[10]_i_1_n_0                      |                4 |             11 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 |                                                                | vga_inst/x_reg[10]_i_1_n_0                      |                5 |             11 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 |                                                                | vga_inst/hcount[10]_i_1_n_0                     |                4 |             11 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | vga_inst/reticle_addr_reg[7][0]                                |                                                 |               11 |             12 |
+|  clock_gen_inst/gameclk_reg_0                 | player_pos_update_x[10]_i_1_n_0                                |                                                 |                2 |             12 |
+|  spi_clock_BUFG                               |                                                                |                                                 |                8 |             14 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | vga_inst/title_addr                                            | vga_inst/y_reg_reg[0]_1                         |                4 |             15 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 | drawcon_inst/col_selected                                      |                                                 |               10 |             15 |
+|  clk_IBUF                                     |                                                                |                                                 |                5 |             17 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 |                                                                | drawcon_inst/colour_grid_inst/xcount[4]_i_1_n_0 |                6 |             19 |
+|  seg_inst/led_clk                             |                                                                |                                                 |                8 |             19 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_60  |                                                                | clock_gen_inst/gclk_div[0]_i_1_n_0              |                5 |             20 |
+|  spi_clock_BUFG                               |                                                                | master/counter[31]_i_1_n_0                      |                8 |             31 |
+|  clock_gen_inst/clk_wiz_instance/inst/clk_106 |                                                                |                                                 |              157 |            543 |
++-----------------------------------------------+----------------------------------------------------------------+-------------------------------------------------+------------------+----------------+
+
+

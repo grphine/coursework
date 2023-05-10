@@ -1,0 +1,7 @@
+Nexys
+FPGAs
+Xilinx
+SystemVerilog
+tritanopia
+tritanomoly
+tritanomaly

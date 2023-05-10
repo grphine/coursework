@@ -1,0 +1,55 @@
+{"rule":"COMMA_PARENTHESIS_WHITESPACE","sentence":"^\\QA refresh rate would be sixty times per second, or 60 , would be typical.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_GB","sentence":"^\\QThe start of a new line is controlled by the horizontal sync (hsync) signal, with a new frame in turn controlled by a vertical sync (vsync) signal.\\E$"}
+{"rule":"COMMA_PARENTHESIS_WHITESPACE","sentence":"^\\QThe results in a required clock frequency of 106.30158 .\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_GB","sentence":"^\\QIn the case of the Nexys A7, the onboard clock is 100 and thus cannot be divided down to a value that is greater.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_GB","sentence":"^\\QHowever, by using the Clocking Wizard IP provided by Xilinx, this can be produced.\\E$"}
+{"rule":"COMMA_PARENTHESIS_WHITESPACE","sentence":"^\\QIn this case, the actual output clock is 106.296 , which is within 0.005 .\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_GB","sentence":"^\\QThe accelerometer controller outputs a single 15-bit string of data, acl_data, encoding five bits of x, y, and z orientation data each.\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qgametop.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_GB","sentence":"^\\QThe relevant data can be accessed with a bit-slice acl_data[9:5] for x and acl_data[14:10] for y.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_GB","sentence":"^\\QRegarding horizontal movement of the player sprite, a value of 0-15 can be added to player_pos_x to update position, producing a translation to the right.\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qdrawcontroller.\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qspimaster.\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qclockgen.\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qclkwiz.\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qvgacontroller.\\E$"}
+{"rule":"ENGLISH_WORD_REPEAT_BEGINNING_RULE","sentence":"^\\QCode available in \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q.\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qspritereticle.\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qcolourpicker.\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qcolourgrid.\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qa player will attempt to beat their best time in clearing the board, with high scores shown in the top right of the screen.\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qdifficulty modes can be selected, which increase the number of cells present on the grid.\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qshow image of game?\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_GB","sentence":"^\\QThey are copied directly, as Verilog does not support globals.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_GB","sentence":"^\\QThe accelerometer controller outputs a single 15-bit string of data, |acl_data|, encoding five bits of x, y, and z orientation data each.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_GB","sentence":"^\\QThe relevant data can be accessed with a bit-slice |acl_data[9:5]| for x and |acl_data[14:10]| for y.\\E$"}
+{"rule":"COMMA_PARENTHESIS_WHITESPACE","sentence":"^\\QThe game clock, for example, runs at 60 .\\E$"}
+{"rule":"CD_NN","sentence":"^\\QPrimary clock 100 Display clock 106.3 Game clock 60 SPI clock 4\\E$"}
+{"rule":"COMMA_PARENTHESIS_WHITESPACE","sentence":"^\\QThe reason for the division is due to the minimum clock producible by the IP is 4.687 .\\E$"}
+{"rule":"COMMA_PARENTHESIS_WHITESPACE","sentence":"^\\QThis IP is provided for Xilinx boards and can be used to produce different clocks between 800.0 and 4.687 .\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_GB","sentence":"^\\QName Requested Actual Discrepancy |clk_106| 106.30158 106.296 0.00525 |clk_60| 60 59.792 0.347 |clk_8| 8 7.972 0.350 Clocking wizard clocks\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_GB","sentence":"^\\QBroadly, the counters |hcount| and |vcount| are used to count the horizontal and vertical lines (and thereby the specific pixel) and set its colour (e.g. |0x00F| for blue) to the input, |draw|, within the |display_region|, or |COL_BLACK| (|0x000|) outside of it.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_GB","sentence":"^\\QBetween |0| and |HSYNC_START|, the |hsync| signal is sent to the VGA port.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_GB","sentence":"^\\QBroadly, the counters |hcount| and |vcount| are used to count the horizontal and vertical lines (and thereby the specific pixel) and set its colour (e.g. |0x00F| for blue) to the input, |draw|, within the |display_region|, or |COL_BLACK| (|0x000|) outside it.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_GB","sentence":"^\\Q(The same follows for |vsync|).\\E$"}
+{"rule":"ENGLISH_WORD_REPEAT_RULE","sentence":"^\\QArray index Hexadecimal value Colour 0 |0xFFF| White white 7 |0xF0F| Magenta hMagenta 56 |0xF0F| Cyan hCyan 63 |0xF0F| Blue hBlue |colourspace| encoding Generation of the colour space occurs in a FOR loop, using the subtraction of |0x020| from |0xFFF|.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_GB","sentence":"^\\QArray index Hexadecimal value Colour 0 |0xFFF| White white 7 |0xF0F| Magenta hMagenta 56 |0xF0F| Cyan hCyan 63 |0xF0F| Blue hBlue |colourspace| encoding Generation of the colour space occurs in a FOR loop, using the subtraction of |0x020| from |0xFFF|.\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qlines 85 to 91 of drawcon.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_GB","sentence":"^\\Qlines 85 to 91 of drawcon.\\E$"}
+{"rule":"ENGLISH_WORD_REPEAT_RULE","sentence":"^\\QBanner Title sprite Screen border Player reticle sprite Gradient colour picker Picker selection area border Picker border Grid background\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_GB","sentence":"^\\QThe sprite was drawn in Microsoft Paint and converted from its base format (.bmp) to space delimited memory encoding (.coe) that can be used by Xilinx's block memory generator IP to write the sprite into ROM.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_GB","sentence":"^\\QThis is fixed by ensuring the first address from ROM is to be written after either the last address has been reached, or the current drawing coordinates (|x_coord| and |y_coord|) coincide with the current position of the sprite (|player_pos_x| and |player_pos_y|, indicating the top left corner).\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_GB","sentence":"^\\QLines 126-128 of drawcon\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_GB","sentence":"^\\QA similar technique is used to provide `transparency' for the white portions of the sprite, simply by overriding the pixel colour with |colourspace[gradient_pointer]|.\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qlines 131 to 138 of drawcon\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_GB","sentence":"^\\Qlines 131 to 138 of drawcon\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qspritetitle.\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qlines 62 to 68\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_GB","sentence":"^\\QThe colour is then selected by a sequential counter pointing to |colourspace|.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_GB","sentence":"^\\QInstead, the assignment of the colour to |colourspace| is made directly through an intermediary variable |tcol|, which is made of the |r|, |g|, and |b| bitshifted to their respective places.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_GB","sentence":"^\\QThis can then be run in a test bench to see the resultant values of |tcol|, |r|, |g|, |b|, and |colourspace| .\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_GB","sentence":"^\\QThis can then be run in a test bench to see the resultant values of |tcol|, |r|, |g|, |b|, and |colourspace|.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_GB","sentence":"^\\QThe test bench shows the value stay the same - the IF statement is not evaluating true since |tcol[7:4]| will move from 1 to F.\\E$"}
+{"rule":"ID_CASING","sentence":"^\\QAn info bar is drawn from the graphics controller as the topmost hierarchical layer, and includes a sprite and timer and student ids.\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qsprites, one for the player, and one for the title.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_GB","sentence":"^\\QSupport can be increased by adjusting the colour space used, i.e. using a Cividis or Viridis colour space \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q, or allowing different colour selections by the player.\\E$"}

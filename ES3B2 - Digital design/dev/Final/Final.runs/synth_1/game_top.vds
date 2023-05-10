@@ -1,0 +1,941 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue May  9 18:58:25 2023
+# Process ID: 3836
+# Current directory: C:/Users/juheb/OneDrive - University of Warwick/Assignments/ES3B2/Final/Final.runs/synth_1
+# Command line: vivado.exe -log game_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source game_top.tcl
+# Log file: C:/Users/juheb/OneDrive - University of Warwick/Assignments/ES3B2/Final/Final.runs/synth_1/game_top.vds
+# Journal file: C:/Users/juheb/OneDrive - University of Warwick/Assignments/ES3B2/Final/Final.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source game_top.tcl -notrace
+Command: synth_design -top game_top -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 15436 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 781.074 ; gain = 178.008
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'game_top' [C:/Users/juheb/OneDrive - University of Warwick/Assignments/ES3B2/Final/Final.srcs/sources_1/new/game_top.v:23]
+	Parameter WIDTH bound to: 11'b10110010010 
+	Parameter HEIGHT bound to: 11'b01110000010 
+	Parameter BORDER bound to: 11'b00000001000 
+	Parameter BANNER_HEIGHT bound to: 11'b00010000010 
+	Parameter CONTROL_X bound to: 11'b01001111001 
+	Parameter CONTROL_Y bound to: 11'b00110110011 
+	Parameter CONTROL_COLOUR_BORDER bound to: 11'b00000001010 
+	Parameter CONTROL_BORDER bound to: 11'b00000000101 
+	Parameter CONTROL_WIDTH bound to: 11'b00010011101 
+	Parameter CONTROL_HEIGHT bound to: 11'b00010011101 
+	Parameter SPRITE_X bound to: 11'b00000010000 
+	Parameter SPRITE_Y bound to: 11'b00000010000 
+	Parameter START_X bound to: 11'b01010111111 
+	Parameter START_Y bound to: 11'b00111111001 
+	Parameter RIGHT_BOUND_X bound to: 11'b01011111000 
+	Parameter LEFT_BOUND_X bound to: 11'b01010001000 
+	Parameter BOTTOM_BOUND_Y bound to: 11'b01000110010 
+	Parameter TOP_BOUND_Y bound to: 11'b00111000010 
+INFO: [Synth 8-6157] synthesizing module 'spi_master' [C:/Users/juheb/OneDrive - University of Warwick/Assignments/ES3B2/Final/Final.srcs/sources_1/new/spi_master.v:43]
+	Parameter POWER_UP bound to: 7'b0000000 
+	Parameter BEGIN_SPIW bound to: 7'b0000001 
+	Parameter SEND_WCMD7 bound to: 7'b0000010 
+	Parameter SEND_WCMD6 bound to: 7'b0000011 
+	Parameter SEND_WCMD5 bound to: 7'b0000100 
+	Parameter SEND_WCMD4 bound to: 7'b0000101 
+	Parameter SEND_WCMD3 bound to: 7'b0000110 
+	Parameter SEND_WCMD2 bound to: 7'b0000111 
+	Parameter SEND_WCMD1 bound to: 7'b0001000 
+	Parameter SEND_WCMD0 bound to: 7'b0001001 
+	Parameter SEND_WADDR7 bound to: 7'b0001010 
+	Parameter SEND_WADDR6 bound to: 7'b0001011 
+	Parameter SEND_WADDR5 bound to: 7'b0001100 
+	Parameter SEND_WADDR4 bound to: 7'b0001101 
+	Parameter SEND_WADDR3 bound to: 7'b0001110 
+	Parameter SEND_WADDR2 bound to: 7'b0001111 
+	Parameter SEND_WADDR1 bound to: 7'b0010000 
+	Parameter SEND_WADDR0 bound to: 7'b0010001 
+	Parameter SEND_BYTE7 bound to: 7'b0010010 
+	Parameter SEND_BYTE6 bound to: 7'b0010011 
+	Parameter SEND_BYTE5 bound to: 7'b0010100 
+	Parameter SEND_BYTE4 bound to: 7'b0010101 
+	Parameter SEND_BYTE3 bound to: 7'b0010110 
+	Parameter SEND_BYTE2 bound to: 7'b0010111 
+	Parameter SEND_BYTE1 bound to: 7'b0011000 
+	Parameter SEND_BYTE0 bound to: 7'b0011001 
+	Parameter WAIT bound to: 7'b0011010 
+	Parameter BEGIN_SPIR bound to: 7'b0011011 
+	Parameter SEND_RCMD7 bound to: 7'b0011100 
+	Parameter SEND_RCMD6 bound to: 7'b0011101 
+	Parameter SEND_RCMD5 bound to: 7'b0011110 
+	Parameter SEND_RCMD4 bound to: 7'b0011111 
+	Parameter SEND_RCMD3 bound to: 7'b0100000 
+	Parameter SEND_RCMD2 bound to: 7'b0100001 
+	Parameter SEND_RCMD1 bound to: 7'b0100010 
+	Parameter SEND_RCMD0 bound to: 7'b0100011 
+	Parameter SEND_RADDR7 bound to: 7'b0100100 
+	Parameter SEND_RADDR6 bound to: 7'b0100101 
+	Parameter SEND_RADDR5 bound to: 7'b0100110 
+	Parameter SEND_RADDR4 bound to: 7'b0100111 
+	Parameter SEND_RADDR3 bound to: 7'b0101000 
+	Parameter SEND_RADDR2 bound to: 7'b0101001 
+	Parameter SEND_RADDR1 bound to: 7'b0101010 
+	Parameter SEND_RADDR0 bound to: 7'b0101011 
+	Parameter REC_XLSB7 bound to: 7'b0101100 
+	Parameter REC_XLSB6 bound to: 7'b0101101 
+	Parameter REC_XLSB5 bound to: 7'b0101110 
+	Parameter REC_XLSB4 bound to: 7'b0101111 
+	Parameter REC_XLSB3 bound to: 7'b0110000 
+	Parameter REC_XLSB2 bound to: 7'b0110001 
+	Parameter REC_XLSB1 bound to: 7'b0110010 
+	Parameter REC_XLSB0 bound to: 7'b0110011 
+	Parameter REC_XMSB7 bound to: 7'b0110100 
+	Parameter REC_XMSB6 bound to: 7'b0110101 
+	Parameter REC_XMSB5 bound to: 7'b0110110 
+	Parameter REC_XMSB4 bound to: 7'b0110111 
+	Parameter REC_XMSB3 bound to: 7'b0111000 
+	Parameter REC_XMSB2 bound to: 7'b0111001 
+	Parameter REC_XMSB1 bound to: 7'b0111010 
+	Parameter REC_XMSB0 bound to: 7'b0111011 
+	Parameter REC_YLSB7 bound to: 7'b0111100 
+	Parameter REC_YLSB6 bound to: 7'b0111101 
+	Parameter REC_YLSB5 bound to: 7'b0111110 
+	Parameter REC_YLSB4 bound to: 7'b0111111 
+	Parameter REC_YLSB3 bound to: 7'b1000000 
+	Parameter REC_YLSB2 bound to: 7'b1000001 
+	Parameter REC_YLSB1 bound to: 7'b1000010 
+	Parameter REC_YLSB0 bound to: 7'b1000011 
+	Parameter REC_YMSB7 bound to: 7'b1000100 
+	Parameter REC_YMSB6 bound to: 7'b1000101 
+	Parameter REC_YMSB5 bound to: 7'b1000110 
+	Parameter REC_YMSB4 bound to: 7'b1000111 
+	Parameter REC_YMSB3 bound to: 7'b1001000 
+	Parameter REC_YMSB2 bound to: 7'b1001001 
+	Parameter REC_YMSB1 bound to: 7'b1001010 
+	Parameter REC_YMSB0 bound to: 7'b1001011 
+	Parameter REC_ZLSB7 bound to: 7'b1001100 
+	Parameter REC_ZLSB6 bound to: 7'b1001101 
+	Parameter REC_ZLSB5 bound to: 7'b1001110 
+	Parameter REC_ZLSB4 bound to: 7'b1001111 
+	Parameter REC_ZLSB3 bound to: 7'b1010000 
+	Parameter REC_ZLSB2 bound to: 7'b1010001 
+	Parameter REC_ZLSB1 bound to: 7'b1010010 
+	Parameter REC_ZLSB0 bound to: 7'b1010011 
+	Parameter REC_ZMSB7 bound to: 7'b1010100 
+	Parameter REC_ZMSB6 bound to: 7'b1010101 
+	Parameter REC_ZMSB5 bound to: 7'b1010110 
+	Parameter REC_ZMSB4 bound to: 7'b1010111 
+	Parameter REC_ZMSB3 bound to: 7'b1011000 
+	Parameter REC_ZMSB2 bound to: 7'b1011001 
+	Parameter REC_ZMSB1 bound to: 7'b1011010 
+	Parameter REC_ZMSB0 bound to: 7'b1011011 
+	Parameter END_SPI bound to: 7'b1011100 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/juheb/OneDrive - University of Warwick/Assignments/ES3B2/Final/Final.srcs/sources_1/new/spi_master.v:196]
+INFO: [Synth 8-6155] done synthesizing module 'spi_master' (1#1) [C:/Users/juheb/OneDrive - University of Warwick/Assignments/ES3B2/Final/Final.srcs/sources_1/new/spi_master.v:43]
+INFO: [Synth 8-6157] synthesizing module 'clock_gen' [C:/Users/juheb/OneDrive - University of Warwick/Assignments/ES3B2/Final/Final.srcs/sources_1/new/clock_gen.v:23]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [C:/Users/juheb/OneDrive - University of Warwick/Assignments/ES3B2/Final/Final.runs/synth_1/.Xil/Vivado-3836-Stativus/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (2#1) [C:/Users/juheb/OneDrive - University of Warwick/Assignments/ES3B2/Final/Final.runs/synth_1/.Xil/Vivado-3836-Stativus/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clock_gen' (3#1) [C:/Users/juheb/OneDrive - University of Warwick/Assignments/ES3B2/Final/Final.srcs/sources_1/new/clock_gen.v:23]
+INFO: [Synth 8-6157] synthesizing module 'draw_controller' [C:/Users/juheb/OneDrive - University of Warwick/Assignments/ES3B2/Final/Final.srcs/sources_1/new/drawcon.v:23]
+	Parameter WIDTH bound to: 11'b10110010010 
+	Parameter HEIGHT bound to: 11'b01110000010 
+	Parameter BORDER bound to: 11'b00000001000 
+	Parameter BANNER_BG_HEIGHT bound to: 11'b00001010001 
+	Parameter BANNER_HEIGHT bound to: 11'b00010000010 
+	Parameter CONTROL_X bound to: 11'b01001111001 
+	Parameter CONTROL_Y bound to: 11'b00110110011 
+	Parameter CONTROL_COLOUR_BORDER bound to: 11'b00000001010 
+	Parameter CONTROL_BORDER bound to: 11'b00000000101 
+	Parameter CONTROL_WIDTH bound to: 11'b00010011101 
+	Parameter CONTROL_HEIGHT bound to: 11'b00010011101 
+	Parameter GRADIENT_START_X bound to: 11'b01010001000 
+	Parameter GRADIENT_START_Y bound to: 11'b00111000010 
+	Parameter GRADIENT_LENGTH bound to: 128 - type: integer 
+	Parameter COL_BG bound to: 12'b000100010001 
+	Parameter COL_BORDER bound to: 12'b001100111010 
+	Parameter COL_BANNER_BG bound to: 12'b101010101111 
+	Parameter COL_BANNER_FLOOR bound to: 12'b001100110110 
+	Parameter COL_BLOCK bound to: 12'b000000000000 
+	Parameter COL_BLOCK_2 bound to: 12'b110111011111 
+	Parameter COL_TEMP bound to: 12'b110110101100 
+	Parameter TITLE_SPRITE_X bound to: 200 - type: integer 
+	Parameter TITLE_SPRITE_Y bound to: 130 - type: integer 
+	Parameter TITLE_POS_X bound to: 720 - type: integer 
+	Parameter RETICLE_SPRITE_LENGTH bound to: 16 - type: integer 
+	Parameter ID_SPRITE_X bound to: 61 - type: integer 
+	Parameter ID_SPRITE_Y bound to: 31 - type: integer 
+	Parameter ID_SPRITE_OFFSET bound to: 5 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_2' [C:/Users/juheb/OneDrive - University of Warwick/Assignments/ES3B2/Final/Final.runs/synth_1/.Xil/Vivado-3836-Stativus/realtime/blk_mem_gen_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_2' (4#1) [C:/Users/juheb/OneDrive - University of Warwick/Assignments/ES3B2/Final/Final.runs/synth_1/.Xil/Vivado-3836-Stativus/realtime/blk_mem_gen_2_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_3' [C:/Users/juheb/OneDrive - University of Warwick/Assignments/ES3B2/Final/Final.runs/synth_1/.Xil/Vivado-3836-Stativus/realtime/blk_mem_gen_3_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_3' (5#1) [C:/Users/juheb/OneDrive - University of Warwick/Assignments/ES3B2/Final/Final.runs/synth_1/.Xil/Vivado-3836-Stativus/realtime/blk_mem_gen_3_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_0' [C:/Users/juheb/OneDrive - University of Warwick/Assignments/ES3B2/Final/Final.runs/synth_1/.Xil/Vivado-3836-Stativus/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_0' (6#1) [C:/Users/juheb/OneDrive - University of Warwick/Assignments/ES3B2/Final/Final.runs/synth_1/.Xil/Vivado-3836-Stativus/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'colour_picker' [C:/Users/juheb/OneDrive - University of Warwick/Assignments/ES3B2/Final/Final.srcs/sources_1/new/colour_picker.v:23]
+	Parameter WIDTH bound to: 1426 - type: integer 
+	Parameter HEIGHT bound to: 898 - type: integer 
+	Parameter BORDER bound to: 8 - type: integer 
+	Parameter BANNER_HEIGHT bound to: 130 - type: integer 
+	Parameter CONTROL_X bound to: 633 - type: integer 
+	Parameter CONTROL_Y bound to: 435 - type: integer 
+	Parameter CONTROL_COLOUR_BORDER bound to: 10 - type: integer 
+	Parameter CONTROL_BORDER bound to: 5 - type: integer 
+	Parameter GRADIENT_START_X bound to: 647 - type: integer 
+	Parameter GRADIENT_START_Y bound to: 450 - type: integer 
+	Parameter GRADIENT_LENGTH bound to: 128 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'colour_picker' (7#1) [C:/Users/juheb/OneDrive - University of Warwick/Assignments/ES3B2/Final/Final.srcs/sources_1/new/colour_picker.v:23]
+INFO: [Synth 8-6157] synthesizing module 'colour_grid' [C:/Users/juheb/OneDrive - University of Warwick/Assignments/ES3B2/Final/Final.srcs/sources_1/new/colour_grid_i.sv:1]
+	Parameter BORDER bound to: 11'b00000001000 
+	Parameter BANNER_HEIGHT bound to: 11'b00010000010 
+	Parameter CELL_WIDTH bound to: 88 - type: integer 
+	Parameter CELL_HEIGHT bound to: 47 - type: integer 
+WARNING: [Synth 8-5856] 3D RAM connected_array_reg  for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-5856] 3D RAM pointer_array_reg  for this pattern/configuration is not supported. This will most likely be implemented in registers
+INFO: [Synth 8-6155] done synthesizing module 'colour_grid' (8#1) [C:/Users/juheb/OneDrive - University of Warwick/Assignments/ES3B2/Final/Final.srcs/sources_1/new/colour_grid_i.sv:1]
+WARNING: [Synth 8-6014] Unused sequential element colourspace_reg[0] was removed.  [C:/Users/juheb/OneDrive - University of Warwick/Assignments/ES3B2/Final/Final.srcs/sources_1/new/drawcon.v:93]
+WARNING: [Synth 8-6014] Unused sequential element colourspace_reg[1] was removed.  [C:/Users/juheb/OneDrive - University of Warwick/Assignments/ES3B2/Final/Final.srcs/sources_1/new/drawcon.v:93]
+WARNING: [Synth 8-6014] Unused sequential element colourspace_reg[2] was removed.  [C:/Users/juheb/OneDrive - University of Warwick/Assignments/ES3B2/Final/Final.srcs/sources_1/new/drawcon.v:93]
+WARNING: [Synth 8-6014] Unused sequential element colourspace_reg[3] was removed.  [C:/Users/juheb/OneDrive - University of Warwick/Assignments/ES3B2/Final/Final.srcs/sources_1/new/drawcon.v:93]
+WARNING: [Synth 8-6014] Unused sequential element colourspace_reg[4] was removed.  [C:/Users/juheb/OneDrive - University of Warwick/Assignments/ES3B2/Final/Final.srcs/sources_1/new/drawcon.v:93]
+WARNING: [Synth 8-6014] Unused sequential element colourspace_reg[5] was removed.  [C:/Users/juheb/OneDrive - University of Warwick/Assignments/ES3B2/Final/Final.srcs/sources_1/new/drawcon.v:93]
+WARNING: [Synth 8-6014] Unused sequential element colourspace_reg[6] was removed.  [C:/Users/juheb/OneDrive - University of Warwick/Assignments/ES3B2/Final/Final.srcs/sources_1/new/drawcon.v:93]
+WARNING: [Synth 8-6014] Unused sequential element colourspace_reg[7] was removed.  [C:/Users/juheb/OneDrive - University of Warwick/Assignments/ES3B2/Final/Final.srcs/sources_1/new/drawcon.v:93]
+WARNING: [Synth 8-6014] Unused sequential element colourspace_reg[8] was removed.  [C:/Users/juheb/OneDrive - University of Warwick/Assignments/ES3B2/Final/Final.srcs/sources_1/new/drawcon.v:93]
+WARNING: [Synth 8-6014] Unused sequential element colourspace_reg[9] was removed.  [C:/Users/juheb/OneDrive - University of Warwick/Assignments/ES3B2/Final/Final.srcs/sources_1/new/drawcon.v:93]
+WARNING: [Synth 8-6014] Unused sequential element colourspace_reg[10] was removed.  [C:/Users/juheb/OneDrive - University of Warwick/Assignments/ES3B2/Final/Final.srcs/sources_1/new/drawcon.v:93]
+WARNING: [Synth 8-6014] Unused sequential element colourspace_reg[11] was removed.  [C:/Users/juheb/OneDrive - University of Warwick/Assignments/ES3B2/Final/Final.srcs/sources_1/new/drawcon.v:93]
+WARNING: [Synth 8-6014] Unused sequential element colourspace_reg[12] was removed.  [C:/Users/juheb/OneDrive - University of Warwick/Assignments/ES3B2/Final/Final.srcs/sources_1/new/drawcon.v:93]
+WARNING: [Synth 8-6014] Unused sequential element colourspace_reg[13] was removed.  [C:/Users/juheb/OneDrive - University of Warwick/Assignments/ES3B2/Final/Final.srcs/sources_1/new/drawcon.v:93]
+WARNING: [Synth 8-6014] Unused sequential element colourspace_reg[14] was removed.  [C:/Users/juheb/OneDrive - University of Warwick/Assignments/ES3B2/Final/Final.srcs/sources_1/new/drawcon.v:93]
+WARNING: [Synth 8-6014] Unused sequential element colourspace_reg[15] was removed.  [C:/Users/juheb/OneDrive - University of Warwick/Assignments/ES3B2/Final/Final.srcs/sources_1/new/drawcon.v:93]
+WARNING: [Synth 8-6014] Unused sequential element colourspace_reg[16] was removed.  [C:/Users/juheb/OneDrive - University of Warwick/Assignments/ES3B2/Final/Final.srcs/sources_1/new/drawcon.v:93]
+WARNING: [Synth 8-6014] Unused sequential element colourspace_reg[17] was removed.  [C:/Users/juheb/OneDrive - University of Warwick/Assignments/ES3B2/Final/Final.srcs/sources_1/new/drawcon.v:93]
+WARNING: [Synth 8-6014] Unused sequential element colourspace_reg[18] was removed.  [C:/Users/juheb/OneDrive - University of Warwick/Assignments/ES3B2/Final/Final.srcs/sources_1/new/drawcon.v:93]
+WARNING: [Synth 8-6014] Unused sequential element colourspace_reg[19] was removed.  [C:/Users/juheb/OneDrive - University of Warwick/Assignments/ES3B2/Final/Final.srcs/sources_1/new/drawcon.v:93]
+WARNING: [Synth 8-6014] Unused sequential element colourspace_reg[20] was removed.  [C:/Users/juheb/OneDrive - University of Warwick/Assignments/ES3B2/Final/Final.srcs/sources_1/new/drawcon.v:93]
+WARNING: [Synth 8-6014] Unused sequential element colourspace_reg[21] was removed.  [C:/Users/juheb/OneDrive - University of Warwick/Assignments/ES3B2/Final/Final.srcs/sources_1/new/drawcon.v:93]
+WARNING: [Synth 8-6014] Unused sequential element colourspace_reg[22] was removed.  [C:/Users/juheb/OneDrive - University of Warwick/Assignments/ES3B2/Final/Final.srcs/sources_1/new/drawcon.v:93]
+WARNING: [Synth 8-6014] Unused sequential element colourspace_reg[23] was removed.  [C:/Users/juheb/OneDrive - University of Warwick/Assignments/ES3B2/Final/Final.srcs/sources_1/new/drawcon.v:93]
+WARNING: [Synth 8-6014] Unused sequential element colourspace_reg[24] was removed.  [C:/Users/juheb/OneDrive - University of Warwick/Assignments/ES3B2/Final/Final.srcs/sources_1/new/drawcon.v:93]
+WARNING: [Synth 8-6014] Unused sequential element colourspace_reg[25] was removed.  [C:/Users/juheb/OneDrive - University of Warwick/Assignments/ES3B2/Final/Final.srcs/sources_1/new/drawcon.v:93]
+WARNING: [Synth 8-6014] Unused sequential element colourspace_reg[26] was removed.  [C:/Users/juheb/OneDrive - University of Warwick/Assignments/ES3B2/Final/Final.srcs/sources_1/new/drawcon.v:93]
+WARNING: [Synth 8-6014] Unused sequential element colourspace_reg[27] was removed.  [C:/Users/juheb/OneDrive - University of Warwick/Assignments/ES3B2/Final/Final.srcs/sources_1/new/drawcon.v:93]
+WARNING: [Synth 8-6014] Unused sequential element colourspace_reg[28] was removed.  [C:/Users/juheb/OneDrive - University of Warwick/Assignments/ES3B2/Final/Final.srcs/sources_1/new/drawcon.v:93]
+WARNING: [Synth 8-6014] Unused sequential element colourspace_reg[29] was removed.  [C:/Users/juheb/OneDrive - University of Warwick/Assignments/ES3B2/Final/Final.srcs/sources_1/new/drawcon.v:93]
+WARNING: [Synth 8-6014] Unused sequential element colourspace_reg[30] was removed.  [C:/Users/juheb/OneDrive - University of Warwick/Assignments/ES3B2/Final/Final.srcs/sources_1/new/drawcon.v:93]
+WARNING: [Synth 8-6014] Unused sequential element colourspace_reg[31] was removed.  [C:/Users/juheb/OneDrive - University of Warwick/Assignments/ES3B2/Final/Final.srcs/sources_1/new/drawcon.v:93]
+WARNING: [Synth 8-6014] Unused sequential element colourspace_reg[32] was removed.  [C:/Users/juheb/OneDrive - University of Warwick/Assignments/ES3B2/Final/Final.srcs/sources_1/new/drawcon.v:93]
+WARNING: [Synth 8-6014] Unused sequential element colourspace_reg[33] was removed.  [C:/Users/juheb/OneDrive - University of Warwick/Assignments/ES3B2/Final/Final.srcs/sources_1/new/drawcon.v:93]
+WARNING: [Synth 8-6014] Unused sequential element colourspace_reg[34] was removed.  [C:/Users/juheb/OneDrive - University of Warwick/Assignments/ES3B2/Final/Final.srcs/sources_1/new/drawcon.v:93]
+WARNING: [Synth 8-6014] Unused sequential element colourspace_reg[35] was removed.  [C:/Users/juheb/OneDrive - University of Warwick/Assignments/ES3B2/Final/Final.srcs/sources_1/new/drawcon.v:93]
+WARNING: [Synth 8-6014] Unused sequential element colourspace_reg[36] was removed.  [C:/Users/juheb/OneDrive - University of Warwick/Assignments/ES3B2/Final/Final.srcs/sources_1/new/drawcon.v:93]
+WARNING: [Synth 8-6014] Unused sequential element colourspace_reg[37] was removed.  [C:/Users/juheb/OneDrive - University of Warwick/Assignments/ES3B2/Final/Final.srcs/sources_1/new/drawcon.v:93]
+WARNING: [Synth 8-6014] Unused sequential element colourspace_reg[38] was removed.  [C:/Users/juheb/OneDrive - University of Warwick/Assignments/ES3B2/Final/Final.srcs/sources_1/new/drawcon.v:93]
+WARNING: [Synth 8-6014] Unused sequential element colourspace_reg[39] was removed.  [C:/Users/juheb/OneDrive - University of Warwick/Assignments/ES3B2/Final/Final.srcs/sources_1/new/drawcon.v:93]
+WARNING: [Synth 8-6014] Unused sequential element colourspace_reg[40] was removed.  [C:/Users/juheb/OneDrive - University of Warwick/Assignments/ES3B2/Final/Final.srcs/sources_1/new/drawcon.v:93]
+WARNING: [Synth 8-6014] Unused sequential element colourspace_reg[41] was removed.  [C:/Users/juheb/OneDrive - University of Warwick/Assignments/ES3B2/Final/Final.srcs/sources_1/new/drawcon.v:93]
+WARNING: [Synth 8-6014] Unused sequential element colourspace_reg[42] was removed.  [C:/Users/juheb/OneDrive - University of Warwick/Assignments/ES3B2/Final/Final.srcs/sources_1/new/drawcon.v:93]
+WARNING: [Synth 8-6014] Unused sequential element colourspace_reg[43] was removed.  [C:/Users/juheb/OneDrive - University of Warwick/Assignments/ES3B2/Final/Final.srcs/sources_1/new/drawcon.v:93]
+WARNING: [Synth 8-6014] Unused sequential element colourspace_reg[44] was removed.  [C:/Users/juheb/OneDrive - University of Warwick/Assignments/ES3B2/Final/Final.srcs/sources_1/new/drawcon.v:93]
+WARNING: [Synth 8-6014] Unused sequential element colourspace_reg[45] was removed.  [C:/Users/juheb/OneDrive - University of Warwick/Assignments/ES3B2/Final/Final.srcs/sources_1/new/drawcon.v:93]
+WARNING: [Synth 8-6014] Unused sequential element colourspace_reg[46] was removed.  [C:/Users/juheb/OneDrive - University of Warwick/Assignments/ES3B2/Final/Final.srcs/sources_1/new/drawcon.v:93]
+WARNING: [Synth 8-6014] Unused sequential element colourspace_reg[47] was removed.  [C:/Users/juheb/OneDrive - University of Warwick/Assignments/ES3B2/Final/Final.srcs/sources_1/new/drawcon.v:93]
+WARNING: [Synth 8-6014] Unused sequential element colourspace_reg[48] was removed.  [C:/Users/juheb/OneDrive - University of Warwick/Assignments/ES3B2/Final/Final.srcs/sources_1/new/drawcon.v:93]
+WARNING: [Synth 8-6014] Unused sequential element colourspace_reg[49] was removed.  [C:/Users/juheb/OneDrive - University of Warwick/Assignments/ES3B2/Final/Final.srcs/sources_1/new/drawcon.v:93]
+WARNING: [Synth 8-6014] Unused sequential element colourspace_reg[50] was removed.  [C:/Users/juheb/OneDrive - University of Warwick/Assignments/ES3B2/Final/Final.srcs/sources_1/new/drawcon.v:93]
+WARNING: [Synth 8-6014] Unused sequential element colourspace_reg[51] was removed.  [C:/Users/juheb/OneDrive - University of Warwick/Assignments/ES3B2/Final/Final.srcs/sources_1/new/drawcon.v:93]
+WARNING: [Synth 8-6014] Unused sequential element colourspace_reg[52] was removed.  [C:/Users/juheb/OneDrive - University of Warwick/Assignments/ES3B2/Final/Final.srcs/sources_1/new/drawcon.v:93]
+WARNING: [Synth 8-6014] Unused sequential element colourspace_reg[53] was removed.  [C:/Users/juheb/OneDrive - University of Warwick/Assignments/ES3B2/Final/Final.srcs/sources_1/new/drawcon.v:93]
+WARNING: [Synth 8-6014] Unused sequential element colourspace_reg[54] was removed.  [C:/Users/juheb/OneDrive - University of Warwick/Assignments/ES3B2/Final/Final.srcs/sources_1/new/drawcon.v:93]
+WARNING: [Synth 8-6014] Unused sequential element colourspace_reg[55] was removed.  [C:/Users/juheb/OneDrive - University of Warwick/Assignments/ES3B2/Final/Final.srcs/sources_1/new/drawcon.v:93]
+WARNING: [Synth 8-6014] Unused sequential element colourspace_reg[56] was removed.  [C:/Users/juheb/OneDrive - University of Warwick/Assignments/ES3B2/Final/Final.srcs/sources_1/new/drawcon.v:93]
+WARNING: [Synth 8-6014] Unused sequential element colourspace_reg[57] was removed.  [C:/Users/juheb/OneDrive - University of Warwick/Assignments/ES3B2/Final/Final.srcs/sources_1/new/drawcon.v:93]
+WARNING: [Synth 8-6014] Unused sequential element colourspace_reg[58] was removed.  [C:/Users/juheb/OneDrive - University of Warwick/Assignments/ES3B2/Final/Final.srcs/sources_1/new/drawcon.v:93]
+WARNING: [Synth 8-6014] Unused sequential element colourspace_reg[59] was removed.  [C:/Users/juheb/OneDrive - University of Warwick/Assignments/ES3B2/Final/Final.srcs/sources_1/new/drawcon.v:93]
+WARNING: [Synth 8-6014] Unused sequential element colourspace_reg[60] was removed.  [C:/Users/juheb/OneDrive - University of Warwick/Assignments/ES3B2/Final/Final.srcs/sources_1/new/drawcon.v:93]
+WARNING: [Synth 8-6014] Unused sequential element colourspace_reg[61] was removed.  [C:/Users/juheb/OneDrive - University of Warwick/Assignments/ES3B2/Final/Final.srcs/sources_1/new/drawcon.v:93]
+WARNING: [Synth 8-6014] Unused sequential element colourspace_reg[62] was removed.  [C:/Users/juheb/OneDrive - University of Warwick/Assignments/ES3B2/Final/Final.srcs/sources_1/new/drawcon.v:93]
+WARNING: [Synth 8-6014] Unused sequential element colourspace_reg[63] was removed.  [C:/Users/juheb/OneDrive - University of Warwick/Assignments/ES3B2/Final/Final.srcs/sources_1/new/drawcon.v:93]
+INFO: [Synth 8-6155] done synthesizing module 'draw_controller' (9#1) [C:/Users/juheb/OneDrive - University of Warwick/Assignments/ES3B2/Final/Final.srcs/sources_1/new/drawcon.v:23]
+INFO: [Synth 8-6157] synthesizing module 'vga_controller' [C:/Users/juheb/OneDrive - University of Warwick/Assignments/ES3B2/Final/Final.srcs/sources_1/new/vga_out.v:23]
+	Parameter DISPLAYH_MAX bound to: 11'b11100100000 
+	Parameter DISPLAYH_MIN bound to: 11'b00110000000 
+	Parameter HSYNC_START bound to: 11'b00010010111 
+	Parameter HCOUNT_MAX bound to: 11'b11101101111 
+	Parameter DISPLAYV_MAX bound to: 10'b1110100011 
+	Parameter DISPLAYV_MIN bound to: 10'b0000011111 
+	Parameter VSYNC_START bound to: 10'b0000000010 
+	Parameter VCOUNT_MAX bound to: 10'b1110100011 
+	Parameter COL_BLACK bound to: 12'b000000000000 
+INFO: [Synth 8-6155] done synthesizing module 'vga_controller' (10#1) [C:/Users/juheb/OneDrive - University of Warwick/Assignments/ES3B2/Final/Final.srcs/sources_1/new/vga_out.v:23]
+INFO: [Synth 8-6157] synthesizing module 'seginterface' [C:/Users/juheb/OneDrive - University of Warwick/Assignments/ES3B2/Final/Final.srcs/sources_1/imports/ES3B2/seginterface.v:1]
+INFO: [Synth 8-6157] synthesizing module 'sevenseg' [C:/Users/juheb/OneDrive - University of Warwick/Assignments/ES3B2/Final/Final.srcs/sources_1/imports/ES3B2/sevenseg.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'sevenseg' (11#1) [C:/Users/juheb/OneDrive - University of Warwick/Assignments/ES3B2/Final/Final.srcs/sources_1/imports/ES3B2/sevenseg.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'seginterface' (12#1) [C:/Users/juheb/OneDrive - University of Warwick/Assignments/ES3B2/Final/Final.srcs/sources_1/imports/ES3B2/seginterface.v:1]
+WARNING: [Synth 8-7023] instance 'seg_inst' of module 'seginterface' has 11 connections declared, but only 10 given [C:/Users/juheb/OneDrive - University of Warwick/Assignments/ES3B2/Final/Final.srcs/sources_1/new/game_top.v:152]
+INFO: [Synth 8-6155] done synthesizing module 'game_top' (13#1) [C:/Users/juheb/OneDrive - University of Warwick/Assignments/ES3B2/Final/Final.srcs/sources_1/new/game_top.v:23]
+WARNING: [Synth 8-3331] design seginterface has unconnected port rst
+WARNING: [Synth 8-3331] design colour_grid has unconnected port rst
+WARNING: [Synth 8-3331] design colour_picker has unconnected port rst
+WARNING: [Synth 8-3331] design draw_controller has unconnected port temp_x[10]
+WARNING: [Synth 8-3331] design draw_controller has unconnected port temp_x[9]
+WARNING: [Synth 8-3331] design draw_controller has unconnected port temp_x[8]
+WARNING: [Synth 8-3331] design draw_controller has unconnected port temp_x[7]
+WARNING: [Synth 8-3331] design draw_controller has unconnected port temp_x[6]
+WARNING: [Synth 8-3331] design draw_controller has unconnected port temp_x[5]
+WARNING: [Synth 8-3331] design draw_controller has unconnected port temp_x[4]
+WARNING: [Synth 8-3331] design draw_controller has unconnected port temp_x[3]
+WARNING: [Synth 8-3331] design draw_controller has unconnected port temp_x[2]
+WARNING: [Synth 8-3331] design draw_controller has unconnected port temp_x[1]
+WARNING: [Synth 8-3331] design draw_controller has unconnected port temp_x[0]
+WARNING: [Synth 8-3331] design game_top has unconnected port btn[2]
+WARNING: [Synth 8-3331] design game_top has unconnected port btn[1]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1001.992 ; gain = 398.926
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1001.992 ; gain = 398.926
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1001.992 ; gain = 398.926
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/juheb/OneDrive - University of Warwick/Assignments/ES3B2/Final/Final.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'clock_gen_inst/clk_wiz_instance'
+Finished Parsing XDC File [c:/Users/juheb/OneDrive - University of Warwick/Assignments/ES3B2/Final/Final.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'clock_gen_inst/clk_wiz_instance'
+Parsing XDC File [c:/Users/juheb/OneDrive - University of Warwick/Assignments/ES3B2/Final/Final.srcs/sources_1/ip/blk_mem_gen_2/blk_mem_gen_2/blk_mem_gen_2_in_context.xdc] for cell 'drawcon_inst/sprite_reticle'
+Finished Parsing XDC File [c:/Users/juheb/OneDrive - University of Warwick/Assignments/ES3B2/Final/Final.srcs/sources_1/ip/blk_mem_gen_2/blk_mem_gen_2/blk_mem_gen_2_in_context.xdc] for cell 'drawcon_inst/sprite_reticle'
+Parsing XDC File [c:/Users/juheb/OneDrive - University of Warwick/Assignments/ES3B2/Final/Final.srcs/sources_1/ip/blk_mem_gen_3/blk_mem_gen_3/blk_mem_gen_3_in_context.xdc] for cell 'drawcon_inst/sprite_title'
+Finished Parsing XDC File [c:/Users/juheb/OneDrive - University of Warwick/Assignments/ES3B2/Final/Final.srcs/sources_1/ip/blk_mem_gen_3/blk_mem_gen_3/blk_mem_gen_3_in_context.xdc] for cell 'drawcon_inst/sprite_title'
+Parsing XDC File [c:/Users/juheb/OneDrive - University of Warwick/Assignments/ES3B2/Final/Final.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'drawcon_inst/sprite_id'
+Finished Parsing XDC File [c:/Users/juheb/OneDrive - University of Warwick/Assignments/ES3B2/Final/Final.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'drawcon_inst/sprite_id'
+Parsing XDC File [C:/Users/juheb/OneDrive - University of Warwick/Assignments/ES3B2/Final/Final.srcs/constrs_1/imports/Downloads/lab2.xdc]
+Finished Parsing XDC File [C:/Users/juheb/OneDrive - University of Warwick/Assignments/ES3B2/Final/Final.srcs/constrs_1/imports/Downloads/lab2.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/juheb/OneDrive - University of Warwick/Assignments/ES3B2/Final/Final.srcs/constrs_1/imports/Downloads/lab2.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/game_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/game_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1117.691 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.057 . Memory (MB): peak = 1117.691 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'drawcon_inst/sprite_id' at clock pin 'clka' is different from the actual clock period '9.408', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'drawcon_inst/sprite_reticle' at clock pin 'clka' is different from the actual clock period '9.408', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'drawcon_inst/sprite_title' at clock pin 'clka' is different from the actual clock period '9.408', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1122.070 ; gain = 519.004
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1122.070 ; gain = 519.004
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for clk. (constraint file  {c:/Users/juheb/OneDrive - University of Warwick/Assignments/ES3B2/Final/Final.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc}, line 5).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk. (constraint file  {c:/Users/juheb/OneDrive - University of Warwick/Assignments/ES3B2/Final/Final.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc}, line 6).
+Applied set_property DONT_TOUCH = true for clock_gen_inst/clk_wiz_instance. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for drawcon_inst/sprite_reticle. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for drawcon_inst/sprite_title. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for drawcon_inst/sprite_id. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1122.070 ; gain = 519.004
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg_reg' in module 'spi_master'
+INFO: [Synth 8-5546] ROM "Z" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Y" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "X" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/juheb/OneDrive - University of Warwick/Assignments/ES3B2/Final/Final.srcs/sources_1/new/game_top.v:79]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                POWER_UP |                          0000000 |                          0000000
+              BEGIN_SPIW |                          0000001 |                          0000001
+              SEND_WCMD7 |                          0000010 |                          0000010
+              SEND_WCMD6 |                          0000011 |                          0000011
+              SEND_WCMD5 |                          0000100 |                          0000100
+              SEND_WCMD4 |                          0000101 |                          0000101
+              SEND_WCMD3 |                          0000110 |                          0000110
+              SEND_WCMD2 |                          0000111 |                          0000111
+              SEND_WCMD1 |                          0001000 |                          0001000
+              SEND_WCMD0 |                          0001001 |                          0001001
+             SEND_WADDR7 |                          0001010 |                          0001010
+             SEND_WADDR6 |                          0001011 |                          0001011
+             SEND_WADDR5 |                          0001100 |                          0001100
+             SEND_WADDR4 |                          0001101 |                          0001101
+             SEND_WADDR3 |                          0001110 |                          0001110
+             SEND_WADDR2 |                          0001111 |                          0001111
+             SEND_WADDR1 |                          0010000 |                          0010000
+             SEND_WADDR0 |                          0010001 |                          0010001
+              SEND_BYTE7 |                          0010010 |                          0010010
+              SEND_BYTE6 |                          0010011 |                          0010011
+              SEND_BYTE5 |                          0010100 |                          0010100
+              SEND_BYTE4 |                          0010101 |                          0010101
+              SEND_BYTE3 |                          0010110 |                          0010110
+              SEND_BYTE2 |                          0010111 |                          0010111
+              SEND_BYTE1 |                          0011000 |                          0011000
+              SEND_BYTE0 |                          0011001 |                          0011001
+                    WAIT |                          0011010 |                          0011010
+              BEGIN_SPIR |                          0011011 |                          0011011
+              SEND_RCMD7 |                          0011100 |                          0011100
+              SEND_RCMD6 |                          0011101 |                          0011101
+              SEND_RCMD5 |                          0011110 |                          0011110
+              SEND_RCMD4 |                          0011111 |                          0011111
+              SEND_RCMD3 |                          0100000 |                          0100000
+              SEND_RCMD2 |                          0100001 |                          0100001
+              SEND_RCMD1 |                          0100010 |                          0100010
+              SEND_RCMD0 |                          0100011 |                          0100011
+             SEND_RADDR7 |                          0100100 |                          0100100
+             SEND_RADDR6 |                          0100101 |                          0100101
+             SEND_RADDR5 |                          0100110 |                          0100110
+             SEND_RADDR4 |                          0100111 |                          0100111
+             SEND_RADDR3 |                          0101000 |                          0101000
+             SEND_RADDR2 |                          0101001 |                          0101001
+             SEND_RADDR1 |                          0101010 |                          0101010
+             SEND_RADDR0 |                          0101011 |                          0101011
+               REC_XLSB7 |                          0101100 |                          0101100
+               REC_XLSB6 |                          0101101 |                          0101101
+               REC_XLSB5 |                          0101110 |                          0101110
+               REC_XLSB4 |                          0101111 |                          0101111
+               REC_XLSB3 |                          0110000 |                          0110000
+               REC_XLSB2 |                          0110001 |                          0110001
+               REC_XLSB1 |                          0110010 |                          0110010
+               REC_XLSB0 |                          0110011 |                          0110011
+               REC_XMSB7 |                          0110100 |                          0110100
+               REC_XMSB6 |                          0110101 |                          0110101
+               REC_XMSB5 |                          0110110 |                          0110110
+               REC_XMSB4 |                          0110111 |                          0110111
+               REC_XMSB3 |                          0111000 |                          0111000
+               REC_XMSB2 |                          0111001 |                          0111001
+               REC_XMSB1 |                          0111010 |                          0111010
+               REC_XMSB0 |                          0111011 |                          0111011
+               REC_YLSB7 |                          0111100 |                          0111100
+               REC_YLSB6 |                          0111101 |                          0111101
+               REC_YLSB5 |                          0111110 |                          0111110
+               REC_YLSB4 |                          0111111 |                          0111111
+               REC_YLSB3 |                          1000000 |                          1000000
+               REC_YLSB2 |                          1000001 |                          1000001
+               REC_YLSB1 |                          1000010 |                          1000010
+               REC_YLSB0 |                          1000011 |                          1000011
+               REC_YMSB7 |                          1000100 |                          1000100
+               REC_YMSB6 |                          1000101 |                          1000101
+               REC_YMSB5 |                          1000110 |                          1000110
+               REC_YMSB4 |                          1000111 |                          1000111
+               REC_YMSB3 |                          1001000 |                          1001000
+               REC_YMSB2 |                          1001001 |                          1001001
+               REC_YMSB1 |                          1001010 |                          1001010
+               REC_YMSB0 |                          1001011 |                          1001011
+               REC_ZLSB7 |                          1001100 |                          1001100
+               REC_ZLSB6 |                          1001101 |                          1001101
+               REC_ZLSB5 |                          1001110 |                          1001110
+               REC_ZLSB4 |                          1001111 |                          1001111
+               REC_ZLSB3 |                          1010000 |                          1010000
+               REC_ZLSB2 |                          1010001 |                          1010001
+               REC_ZLSB1 |                          1010010 |                          1010010
+               REC_ZLSB0 |                          1010011 |                          1010011
+               REC_ZMSB7 |                          1010100 |                          1010100
+               REC_ZMSB6 |                          1010101 |                          1010101
+               REC_ZMSB5 |                          1010110 |                          1010110
+               REC_ZMSB4 |                          1010111 |                          1010111
+               REC_ZMSB3 |                          1011000 |                          1011000
+               REC_ZMSB2 |                          1011001 |                          1011001
+               REC_ZMSB1 |                          1011010 |                          1011010
+               REC_ZMSB0 |                          1011011 |                          1011011
+                 END_SPI |                          1011100 |                          1011100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg_reg' using encoding 'sequential' in module 'spi_master'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 1122.070 ; gain = 519.004
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+--------------+------------+----------+
+|      |RTL Partition |Replication |Instances |
++------+--------------+------------+----------+
+|1     |game_top__GB0 |           1|     38990|
+|2     |game_top__GB1 |           1|     18725|
++------+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   3 Input     13 Bit       Adders := 2     
+	   2 Input     12 Bit       Adders := 128   
+	   2 Input     11 Bit       Adders := 9     
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 64    
+	   2 Input      6 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 1     
+	   2 Input      1 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               16 Bit    Registers := 3     
+	               15 Bit    Registers := 1     
+	               12 Bit    Registers := 3     
+	               11 Bit    Registers := 9     
+	               10 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                7 Bit    Registers := 260   
+	                6 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 256   
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+	  93 Input     32 Bit        Muxes := 1     
+	  93 Input     16 Bit        Muxes := 6     
+	   2 Input     12 Bit        Muxes := 68    
+	   3 Input     12 Bit        Muxes := 2     
+	   2 Input     11 Bit        Muxes := 8     
+	  93 Input      7 Bit        Muxes := 1     
+	   8 Input      4 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 272   
+	  16 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4005  
+	  64 Input      1 Bit        Muxes := 1     
+	 256 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 257   
+	  93 Input      1 Bit        Muxes := 7     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module game_top 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 5     
++---Registers : 
+	               11 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 8     
+	   2 Input      1 Bit        Muxes := 1     
+Module clock_gen 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module colour_picker 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 64    
++---Registers : 
+	                7 Bit    Registers := 2     
++---Muxes : 
+	  64 Input      1 Bit        Muxes := 1     
+Module colour_grid 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 2     
++---Registers : 
+	                7 Bit    Registers := 257   
+	                6 Bit    Registers := 2     
+	                2 Bit    Registers := 256   
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 272   
+	  16 Input      2 Bit        Muxes := 1     
+	 256 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3985  
+	   3 Input      1 Bit        Muxes := 256   
+Module draw_controller 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     13 Bit       Adders := 2     
+	   2 Input     12 Bit       Adders := 128   
+	   2 Input     11 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               12 Bit    Registers := 3     
+	               11 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 67    
+	   3 Input     12 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 4     
+	   3 Input      1 Bit        Muxes := 1     
+Module vga_controller 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 3     
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               11 Bit    Registers := 3     
+	               10 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+Module seginterface 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   8 Input      4 Bit        Muxes := 1     
+Module spi_master 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input      1 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               16 Bit    Registers := 3     
+	               15 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+	  93 Input     32 Bit        Muxes := 1     
+	  93 Input     16 Bit        Muxes := 6     
+	  93 Input      7 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 10    
+	  93 Input      1 Bit        Muxes := 7     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3331] design game_top has unconnected port btn[2]
+WARNING: [Synth 8-3331] design game_top has unconnected port btn[1]
+INFO: [Synth 8-3886] merging instance 'i_0/player_pos_update_x_reg[5]' (FDE) to 'i_0/player_pos_update_x_reg[6]'
+INFO: [Synth 8-3886] merging instance 'i_0/player_pos_update_x_reg[6]' (FDE) to 'i_0/player_pos_update_x_reg[7]'
+INFO: [Synth 8-3886] merging instance 'i_0/player_pos_update_x_reg[7]' (FDE) to 'i_0/player_pos_update_x_reg[8]'
+INFO: [Synth 8-3886] merging instance 'i_0/player_pos_update_x_reg[8]' (FDE) to 'i_0/player_pos_update_x_reg[9]'
+INFO: [Synth 8-3886] merging instance 'i_0/player_pos_update_x_reg[9]' (FDE) to 'i_0/player_pos_update_x_reg[10]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/drawcon_inst/colour_picker_inst/\col_pointer_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/drawcon_inst/\selected_pointer_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/drawcon_inst/colour_grid_inst/\pointer_array_reg[15][15][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/drawcon_inst/colour_grid_inst/\pointer_array_reg[14][15][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/drawcon_inst/colour_grid_inst/\pointer_array_reg[13][15][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/drawcon_inst/colour_grid_inst/\pointer_array_reg[12][15][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/drawcon_inst/colour_grid_inst/\pointer_array_reg[11][15][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/drawcon_inst/colour_grid_inst/\pointer_array_reg[10][15][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/drawcon_inst/colour_grid_inst/\pointer_array_reg[9][15][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/drawcon_inst/colour_grid_inst/\pointer_array_reg[8][15][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/drawcon_inst/colour_grid_inst/\pointer_array_reg[7][15][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/drawcon_inst/colour_grid_inst/\pointer_array_reg[6][15][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/drawcon_inst/colour_grid_inst/\pointer_array_reg[5][15][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/drawcon_inst/colour_grid_inst/\pointer_array_reg[4][15][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/drawcon_inst/colour_grid_inst/\pointer_array_reg[3][15][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/drawcon_inst/colour_grid_inst/\pointer_array_reg[2][15][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/drawcon_inst/colour_grid_inst/\pointer_array_reg[1][15][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/drawcon_inst/colour_grid_inst/\pointer_array_reg[0][15][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/drawcon_inst/colour_grid_inst/\pointer_array_reg[15][14][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/drawcon_inst/colour_grid_inst/\pointer_array_reg[14][14][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/drawcon_inst/colour_grid_inst/\pointer_array_reg[13][14][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/drawcon_inst/colour_grid_inst/\pointer_array_reg[12][14][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/drawcon_inst/colour_grid_inst/\pointer_array_reg[11][14][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/drawcon_inst/colour_grid_inst/\pointer_array_reg[10][14][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/drawcon_inst/colour_grid_inst/\pointer_array_reg[9][14][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/drawcon_inst/colour_grid_inst/\pointer_array_reg[8][14][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/drawcon_inst/colour_grid_inst/\pointer_array_reg[7][14][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/drawcon_inst/colour_grid_inst/\pointer_array_reg[6][14][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/drawcon_inst/colour_grid_inst/\pointer_array_reg[5][14][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/drawcon_inst/colour_grid_inst/\pointer_array_reg[4][14][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/drawcon_inst/colour_grid_inst/\pointer_array_reg[3][14][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/drawcon_inst/colour_grid_inst/\pointer_array_reg[2][14][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/drawcon_inst/colour_grid_inst/\pointer_array_reg[1][14][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/drawcon_inst/colour_grid_inst/\pointer_array_reg[0][14][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/drawcon_inst/colour_grid_inst/\pointer_array_reg[15][13][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/drawcon_inst/colour_grid_inst/\pointer_array_reg[14][13][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/drawcon_inst/colour_grid_inst/\pointer_array_reg[13][13][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/drawcon_inst/colour_grid_inst/\pointer_array_reg[12][13][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/drawcon_inst/colour_grid_inst/\pointer_array_reg[11][13][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/drawcon_inst/colour_grid_inst/\pointer_array_reg[10][13][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/drawcon_inst/colour_grid_inst/\pointer_array_reg[9][13][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/drawcon_inst/colour_grid_inst/\pointer_array_reg[8][13][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/drawcon_inst/colour_grid_inst/\pointer_array_reg[7][13][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/drawcon_inst/colour_grid_inst/\pointer_array_reg[6][13][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/drawcon_inst/colour_grid_inst/\pointer_array_reg[5][13][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/drawcon_inst/colour_grid_inst/\pointer_array_reg[4][13][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/drawcon_inst/colour_grid_inst/\pointer_array_reg[3][13][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/drawcon_inst/colour_grid_inst/\pointer_array_reg[2][13][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/drawcon_inst/colour_grid_inst/\pointer_array_reg[1][13][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/drawcon_inst/colour_grid_inst/\pointer_array_reg[0][13][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/drawcon_inst/colour_grid_inst/\pointer_array_reg[15][12][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/drawcon_inst/colour_grid_inst/\pointer_array_reg[14][12][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/drawcon_inst/colour_grid_inst/\pointer_array_reg[13][12][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/drawcon_inst/colour_grid_inst/\pointer_array_reg[12][12][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/drawcon_inst/colour_grid_inst/\pointer_array_reg[11][12][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/drawcon_inst/colour_grid_inst/\pointer_array_reg[10][12][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/drawcon_inst/colour_grid_inst/\pointer_array_reg[9][12][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/drawcon_inst/colour_grid_inst/\pointer_array_reg[8][12][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/drawcon_inst/colour_grid_inst/\pointer_array_reg[7][12][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/drawcon_inst/colour_grid_inst/\pointer_array_reg[6][12][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/drawcon_inst/colour_grid_inst/\pointer_array_reg[5][12][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/drawcon_inst/colour_grid_inst/\pointer_array_reg[4][12][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/drawcon_inst/colour_grid_inst/\pointer_array_reg[3][12][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/drawcon_inst/colour_grid_inst/\pointer_array_reg[2][12][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/drawcon_inst/colour_grid_inst/\pointer_array_reg[1][12][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/drawcon_inst/colour_grid_inst/\pointer_array_reg[0][12][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/drawcon_inst/colour_grid_inst/\pointer_array_reg[15][11][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/drawcon_inst/colour_grid_inst/\pointer_array_reg[14][11][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/drawcon_inst/colour_grid_inst/\pointer_array_reg[13][11][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/drawcon_inst/colour_grid_inst/\pointer_array_reg[12][11][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/drawcon_inst/colour_grid_inst/\pointer_array_reg[11][11][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/drawcon_inst/colour_grid_inst/\pointer_array_reg[10][11][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/drawcon_inst/colour_grid_inst/\pointer_array_reg[9][11][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/drawcon_inst/colour_grid_inst/\pointer_array_reg[8][11][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/drawcon_inst/colour_grid_inst/\pointer_array_reg[7][11][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/drawcon_inst/colour_grid_inst/\pointer_array_reg[6][11][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/drawcon_inst/colour_grid_inst/\pointer_array_reg[5][11][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/drawcon_inst/colour_grid_inst/\pointer_array_reg[4][11][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/drawcon_inst/colour_grid_inst/\pointer_array_reg[3][11][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/drawcon_inst/colour_grid_inst/\pointer_array_reg[2][11][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/drawcon_inst/colour_grid_inst/\pointer_array_reg[1][11][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/drawcon_inst/colour_grid_inst/\pointer_array_reg[0][11][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/drawcon_inst/colour_grid_inst/\pointer_array_reg[15][10][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/drawcon_inst/colour_grid_inst/\pointer_array_reg[14][10][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/drawcon_inst/colour_grid_inst/\pointer_array_reg[13][10][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/drawcon_inst/colour_grid_inst/\pointer_array_reg[12][10][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/drawcon_inst/colour_grid_inst/\pointer_array_reg[11][10][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/drawcon_inst/colour_grid_inst/\pointer_array_reg[10][10][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/drawcon_inst/colour_grid_inst/\pointer_array_reg[9][10][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/drawcon_inst/colour_grid_inst/\pointer_array_reg[8][10][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/drawcon_inst/colour_grid_inst/\pointer_array_reg[7][10][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/drawcon_inst/colour_grid_inst/\pointer_array_reg[6][10][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/drawcon_inst/colour_grid_inst/\pointer_array_reg[5][10][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/drawcon_inst/colour_grid_inst/\pointer_array_reg[4][10][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/drawcon_inst/colour_grid_inst/\pointer_array_reg[3][10][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/drawcon_inst/colour_grid_inst/\pointer_array_reg[2][10][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/drawcon_inst/colour_grid_inst/\pointer_array_reg[1][10][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/drawcon_inst/colour_grid_inst/\pointer_array_reg[0][10][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/drawcon_inst/colour_grid_inst/\pointer_array_reg[15][9][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/drawcon_inst/colour_grid_inst/\pointer_array_reg[14][9][6] )
+INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3886] merging instance 'i_0/player_pos_update_y_reg[5]' (FDE) to 'i_0/player_pos_update_y_reg[10]'
+INFO: [Synth 8-3886] merging instance 'i_0/player_pos_update_y_reg[6]' (FDE) to 'i_0/player_pos_update_y_reg[10]'
+INFO: [Synth 8-3886] merging instance 'i_0/player_pos_update_y_reg[7]' (FDE) to 'i_0/player_pos_update_y_reg[10]'
+INFO: [Synth 8-3886] merging instance 'i_0/player_pos_update_y_reg[8]' (FDE) to 'i_0/player_pos_update_y_reg[10]'
+INFO: [Synth 8-3886] merging instance 'i_0/player_pos_update_y_reg[9]' (FDE) to 'i_0/player_pos_update_y_reg[10]'
+INFO: [Synth 8-3886] merging instance 'i_0/player_pos_y_reg[7]' (FD) to 'i_0/player_pos_y_reg[6]'
+INFO: [Synth 8-3886] merging instance 'i_0/player_pos_y_reg[6]' (FD) to 'i_0/player_pos_y_reg[8]'
+INFO: [Synth 8-3886] merging instance 'i_0/player_pos_y_reg[10]' (FD) to 'i_0/player_pos_x_reg[8]'
+INFO: [Synth 8-3886] merging instance 'i_0/player_pos_x_reg[7]' (FD) to 'i_0/player_pos_x_reg[9]'
+INFO: [Synth 8-3886] merging instance 'i_0/player_pos_x_reg[8]' (FD) to 'i_0/player_pos_x_reg[10]'
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:07 ; elapsed = 00:01:09 . Memory (MB): peak = 1136.164 ; gain = 533.098
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+--------------+------------+----------+
+|      |RTL Partition |Replication |Instances |
++------+--------------+------------+----------+
+|1     |game_top__GB0 |           1|     19473|
+|2     |game_top__GB1 |           1|       568|
++------+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'clock_gen_inst/clk_wiz_instance/clk_106' to pin 'clock_gen_inst/clk_wiz_instance/bbstub_clk_106/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'clock_gen_inst/clk_wiz_instance/clk_60' to pin 'clock_gen_inst/clk_wiz_instance/bbstub_clk_60/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'clock_gen_inst/clk_wiz_instance/clk_8' to pin 'clock_gen_inst/clk_wiz_instance/bbstub_clk_8/O'
+INFO: [Synth 8-5819] Moved 3 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:14 ; elapsed = 00:01:16 . Memory (MB): peak = 1136.164 ; gain = 533.098
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:56 ; elapsed = 00:01:58 . Memory (MB): peak = 1185.512 ; gain = 582.445
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+--------------+------------+----------+
+|      |RTL Partition |Replication |Instances |
++------+--------------+------------+----------+
+|1     |game_top__GB0 |           1|     19473|
+|2     |game_top__GB1 |           1|       568|
++------+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'drawcon_inst/col_selected_reg[0]' (FDE) to 'drawcon_inst/col_selected_reg[1]'
+INFO: [Synth 8-3886] merging instance 'drawcon_inst/col_selected_reg[1]' (FDE) to 'drawcon_inst/col_selected_reg[2]'
+INFO: [Synth 8-3886] merging instance 'drawcon_inst/col_selected_reg[2]' (FDE) to 'drawcon_inst/col_selected_reg[3]'
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:02:01 ; elapsed = 00:02:03 . Memory (MB): peak = 1283.430 ; gain = 680.363
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:02:03 ; elapsed = 00:02:05 . Memory (MB): peak = 1283.430 ; gain = 680.363
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:03 ; elapsed = 00:02:05 . Memory (MB): peak = 1283.430 ; gain = 680.363
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:04 ; elapsed = 00:02:06 . Memory (MB): peak = 1283.430 ; gain = 680.363
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:04 ; elapsed = 00:02:06 . Memory (MB): peak = 1283.430 ; gain = 680.363
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:04 ; elapsed = 00:02:06 . Memory (MB): peak = 1283.430 ; gain = 680.363
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:04 ; elapsed = 00:02:06 . Memory (MB): peak = 1283.430 ; gain = 680.363
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |clk_wiz_0     |         1|
+|2     |blk_mem_gen_2 |         1|
+|3     |blk_mem_gen_3 |         1|
+|4     |blk_mem_gen_0 |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+--------------+------+
+|      |Cell          |Count |
++------+--------------+------+
+|1     |blk_mem_gen_0 |     1|
+|2     |blk_mem_gen_2 |     1|
+|3     |blk_mem_gen_3 |     1|
+|4     |clk_wiz_0     |     1|
+|5     |BUFG          |     1|
+|6     |CARRY4        |   296|
+|7     |LUT1          |    37|
+|8     |LUT2          |   567|
+|9     |LUT3          |   185|
+|10    |LUT4          |   711|
+|11    |LUT5          |  1837|
+|12    |LUT6          |  3545|
+|13    |MUXF7         |   390|
+|14    |MUXF8         |   149|
+|15    |FDRE          |  2331|
+|16    |FDSE          |     7|
+|17    |IBUF          |     3|
+|18    |OBUF          |    32|
++------+--------------+------+
+
+Report Instance Areas: 
++------+-----------------------+----------------+------+
+|      |Instance               |Module          |Cells |
++------+-----------------------+----------------+------+
+|1     |top                    |                | 10130|
+|2     |  clock_gen_inst       |clock_gen       |    39|
+|3     |  drawcon_inst         |draw_controller |  6736|
+|4     |    colour_grid_inst   |colour_grid     |  5366|
+|5     |    colour_picker_inst |colour_picker   |   235|
+|6     |  master               |spi_master      |   222|
+|7     |  seg_inst             |seginterface    |    42|
+|8     |    M1                 |sevenseg        |     5|
+|9     |  vga_inst             |vga_controller  |  1528|
++------+-----------------------+----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:04 ; elapsed = 00:02:06 . Memory (MB): peak = 1283.430 ; gain = 680.363
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:46 ; elapsed = 00:02:02 . Memory (MB): peak = 1283.430 ; gain = 560.285
+Synthesis Optimization Complete : Time (s): cpu = 00:02:04 ; elapsed = 00:02:06 . Memory (MB): peak = 1283.430 ; gain = 680.363
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 835 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1283.430 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+169 Infos, 88 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:02:11 ; elapsed = 00:02:14 . Memory (MB): peak = 1283.430 ; gain = 938.867
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1283.430 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/juheb/OneDrive - University of Warwick/Assignments/ES3B2/Final/Final.runs/synth_1/game_top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file game_top_utilization_synth.rpt -pb game_top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue May  9 19:00:44 2023...

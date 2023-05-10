@@ -1,0 +1,385 @@
+\section{The game}
+\subsection{Gameplay}
+The player controls a reticle in a bounded box with a colour gradient, which is placed on a grid of colours.
+The player selects a colour within the gradient 
+by tilting the board until the reticle is positioned above the colour to be selected.
+The aim is to select colours in 
+order to clear the grid as quickly as possible. When a cell in the grid is selected (`matched'), it 
+follows the reticle in its colour selection. As more colours are selected, a greater portion of the screen is matched 
+until the background is a solid colour. To begin with, only the cells surrounding the central selector can be matched,
+however colours can then be matched to any successive cells that have also been matched, `flooding' from the central region. 
+\begin{figure}[ht]
+    \centering
+    \begin{subfigure}[t]{0.3\linewidth}
+        \includegraphics[width=\linewidth]{figures/start-1.jpg}
+        \caption{Start}
+    \end{subfigure}
+    \hfill    
+    \begin{subfigure}[t]{0.3\linewidth}
+        \includegraphics[width=\linewidth]{figures/partway-1.jpg}
+        \caption{Partway}
+    \end{subfigure}
+    \hfill    
+    \begin{subfigure}[t]{0.3\linewidth}
+        \includegraphics[width=\linewidth]{figures/complete-1.jpg}
+        \caption{Cleared!}
+    \end{subfigure}
+    \caption{Gameplay states}
+\end{figure}
+\subsection{Module overview}
+The structure of the program follows a hierarchical design, with module \lstinline{game_top} as the 
+parent module. The relationships and data connections between modules is demonstrated in \cref{fig:relationship}. 
+This module specifies many parameters that are carried over to child modules.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth,height=0.5\textheight,keepaspectratio]{./figures/relationship.png}
+    \caption{Relationship diagram}\label{fig:relationship}
+\end{figure}
+The following sections discuss the constituent modules in detail. 
+
+\subsection{game\_top}\label{sec:gametop}
+Code available in \cref{code:gametop}.
+
+This module is the topmost module, and primarily handles connections both to the board's peripherals 
+from modules, and between modules themselves. It additionally controls movement logic for the 
+player sprite\footnote{
+    \Cref{sec:sprite}.
+}.
+
+\begin{wrapfigure}[7]{R}{0.35\textwidth}
+    \vspace{-11pt}
+    \begin{center}
+        \includegraphics[width=0.32\textwidth]{figures/boardtilt.png}
+        \caption{Accelerometer tilt influence}\label{fig:acltilt}
+    \end{center}
+\end{wrapfigure}
+
+The accelerometer controller\footnote{
+    \Cref{sec:spi}.
+} outputs a single 15-bit string of data, \lstinline|acl_data|, encoding five bits of \emph{x}, \emph{y},
+and \emph{z} orientation data each. For the purposes of this project, only the \emph{x} and \emph{y} 
+data are needed, with the tilt directions indicated in \cref{fig:acltilt}. The relevant data can 
+be accessed with a bit-slice \lstinline|acl_data[9:5]| for \emph{x} and \lstinline|acl_data[14:10]|
+for \emph{y}. 
+
+The 5-bits of returned data indicates the level of tilt, with 0 meaning level, 15 meaning a \qty{90}{\degree}
+rotation anticlockwise/left in \emph{x} and clockwise/forward in \emph{y}, and 31 meaning an almost complete rotation.
+In order to adapt this to control movement, these values need to be split and adjusted. 
+Regarding horizontal movement of the player sprite, a value of 0-15 can be added to \lstinline{player_pos_x} 
+to update position, producing a translation to the right. A negative value produces a translation left. 
+Tilting the board left returns 0-15, so this simply needs to be negated from the player position to produce
+the desired translation. Tilting the board right returns 31-16, so first a subtraction from 31 is performed,
+and then the value is added to position\footnote{
+    Lines 55-70.
+}. 
+
+In order to bound the player movement, so it does not move out of the colour selection area, two changes are needed. 
+First, the bounding parameters, i.e. the maximum and minimum coordinates the player can move to, can be specified 
+in parameters. Then, each time the player position is to update, the current position in addition to the updated position 
+is compared to the bounding parameter. If greater, the current position is set to the bounding parameter\footnote{
+    Lines 72-88.
+}.  
+This maintains a smooth collision with the bounding walls. 
+
+
+\subsection{spi\_master}\label{sec:spi}
+This module is used to communicate with the ADXL362 \cite{adxl362} accelerometer, which is exposed on the 
+SPI interface. The code in this module is written by David Marion as part of his 
+experimentation with FPGAs and is available on his GitHub \cite{fpgadudeacl}.
+
+The module collects data from the accelerometer and returns a 15-bit number encoding \emph{x}, \emph{y}, and \emph{z} 
+acceleration data, which has been adapted in \lstinline{game_top}\footnote{
+    \Cref{sec:gametop}.
+} to produce movement of the player sprite. 
+
+\subsection{clock\_gen}
+Code available in \cref{code:clockgen}.
+
+Different parts of the game have different clock requirements. The game clock, for example, runs at \qty{60}{\Hz}. 
+The following clocks are produced by the \lstinline|clock_gen| module:
+
+% \begin{table}[H]
+    \begin{tabular}{l|l}
+        Primary clock & \qty{100}{\MHz} \\
+        Display clock & \qty{106.3}{\MHz} \\
+        Game clock & \qty{60}{\Hz} \\
+        SPI clock & \qty{4}{\MHz} \\ 
+    \end{tabular}
+% \end{table}
+
+% \begin{description}
+%     \item[Primary board clock] - \qty{100}{\MHz}
+%     \item[Display clock] - \qty{106.3}{\MHz}
+%     \item[Game clock] - \qty{60}{\Hz}
+%     \item[SPI clock] - \qty{4}{\MHz},     
+% \end{description}
+
+Many of these clocks are produced by the clocking wizard IP, and then divided down - by 1\,M in the case of Game clock; by 2 
+in the case of SPI clock. The reason for the division is due to the minimum clock producible by the IP is \qty{4.687}{\MHz}.
+The display clock, on the other hand, is passed on directly.
+
+\subsubsection{clk\_wiz}
+This IP is provided for Xilinx boards and can be used to produce different clocks between \qty{800.0}{\MHz} and \qty{4.687}{\MHz}.
+It is used to produce three clocks used in the program, however there is a small amount of discrepancy between what is requested and 
+what can be produced. 
+
+\begin{table}[H]
+    \centering
+\begin{tabular}{r|ccc}   
+    Name & Requested & Actual & Discrepancy \\
+    \hline
+    \lstinline|clk_106| & \qty{106.30158}{\MHz} & \qty{106.296}{\MHz} & \qty{0.00525}{\percent} \\
+    \lstinline|clk_60| & \qty{60}{\Hz} & \qty{59.792}{\MHz} & \qty{0.347}{\percent} \\
+    \lstinline|clk_8| & \qty{8}{\MHz} & \qty{7.972}{\MHz} & \qty{0.350}{\percent} \\ 
+\end{tabular}
+    \caption{Clocking wizard clocks}
+\end{table}
+
+\subsection{vga\_controller}
+Code available in \cref{code:vga}.
+
+This has been explained in some detail in the introductory \cref{sec:intro}, with some explanation 
+of the approach for implementation in \cref{sec:drivingdisplay}. The specifics of the implementation 
+involve using parameterised values to set the bounds for the display and line counters. 
+
+Broadly, the counters \lstinline|hcount| and \lstinline|vcount| are used to count the horizontal 
+and vertical lines (and thereby the specific pixel) and set its colour (e.g. \lstinline|0x00F| for blue)
+ to the input, \lstinline|draw|,
+within the \lstinline|display_region|, or \lstinline|COL_BLACK| (\lstinline|0x000|) outside it. 
+Between \lstinline|0| and \lstinline|HSYNC_START|, the \lstinline|hsync| signal is sent to the VGA port. (The same
+follows for \lstinline|vsync|).
+
+\subsection{seginterface}
+Code available in \cref{code:seginterface}.
+
+Strobes the LED interface and sets the digit to each display. 
+
+\subsubsection{sevenseg}
+Code available in \cref{code:sevenseg}.
+
+Defines the digits displayable on the interface by a binary sequence representing which LED segment is lit. 
+
+\subsection{draw\_controller}\label{sec:drawcon}
+\begin{wrapfigure}[10]{R}{0.25\linewidth}
+    % \vspace{-20pt}
+    \centering
+    \includegraphics[width=0.9\linewidth]{figures/gradient.png}
+    \caption{Gradient model}\label{fig:gradient}
+\end{wrapfigure}
+Code available in \cref{code:drawcon}.
+
+As the most complex module written for this project, this module controls all graphical elements on the screen. 
+It takes as input coordinates for the current drawing pixel and player, and outputs the colour of the pixel 
+to be drawn. 
+
+Subsequent sections (\ref{sec:colourpicker} and \ref{sec:colorgrid}) rely on a specific 
+set of colours defined as a colour space, which is a 64-index array of 12-bit colour values.  
+Following the progression that can be seen in \cref{fig:gradient},
+the top left corner starts with a colour value of \lstinline|0xFFF| (white) and reduces 
+by 2 in green horizontally (to magenta, \lstinline|0xF0F|) 
+and by 2 in red vertically (to cyan, \lstinline|0x0FF|).
+The leaves the bottom right most value as all blue (\lstinline|0x00F|).
+This is encoded sequentially, with a snippet of the corner values of \cref{fig:gradient} 
+shown in \cref{table:colourspace}.
+\begin{table}[H]
+    \centering
+\begin{tabular}{c|ccl}
+    Array index & Hexadecimal value & \multicolumn{2}{c}{Colour} \\
+    \hline
+    0           & \lstinline|0xFFF| & White     & \fcolorbox{black}{white}{\rule{0pt}{4pt}\rule{4pt}{0pt}} \\
+    7           & \lstinline|0xF0F| & Magenta   & \fcolorbox{black}{hMagenta}{\rule{0pt}{4pt}\rule{4pt}{0pt}} \\
+    56          & \lstinline|0xF0F| & Cyan      & \fcolorbox{black}{hCyan}{\rule{0pt}{4pt}\rule{4pt}{0pt}} \\
+    63          & \lstinline|0xF0F| & Blue      & \fcolorbox{black}{hBlue}{\rule{0pt}{4pt}\rule{4pt}{0pt}} \\
+\end{tabular}
+\caption{\lstinline|colourspace| encoding}\label{table:colourspace}
+\end{table}
+Generation of the colour space occurs in a FOR loop, using the subtraction of \lstinline|0x020|
+from \lstinline|0xFFF|\footnote{
+    Lines 66-73 of \lstinline|draw_controller|. Details of implementation can be found in \cref{sec:test}.
+}.
+
+Subsequently, the elements to appear on-screen are drawn in hierarchical order. Order is determined 
+by a conditional tree that evaluates when the coordinates of the pixel to be drawn are within the 
+space defined for the element. The following snippet illustrates this idea, where the banner colour is 
+drawn at the top of the screen, otherwise the background colour is drawn.
+\begin{lstlisting}[language=Verilog]
+    if (y_coord < BANNER_HEIGHT) begin
+        pixel <= COL_BANNER;
+    end else begin
+        pixel <= COL_BACKGROUND;
+    end
+\end{lstlisting}
+
+The following elements are drawn in order of hierarchy:
+\begin{enumerate}
+    \item ID sprite
+    \item Banner
+    \item Title sprite
+    \item Screen border
+    \item Player reticle sprite
+    \item Gradient colour picker
+    \item Picker selection area border
+    \item Picker border
+    \item Grid background
+\end{enumerate}
+
+\subsubsection{sprite\_reticle}\label{sec:sprite}
+\begin{wrapfigure}[11]{R}{0.2\linewidth}    
+    % \vspace{-10pt}
+    \centering
+    \begin{subfigure}[t]{\linewidth}
+        \centering
+        \includegraphics[height=1.5cm,width=\linewidth,keepaspectratio]{figures/reticle_graphical.png}
+        \caption{Intended appearance}\label{fig:spriteorig}
+    \end{subfigure}    
+    \vskip\baselineskip
+    \begin{subfigure}[b]{\linewidth}
+        \centering
+        \includegraphics[height=1.5cm,width=\linewidth,keepaspectratio]{figures/reticle_4.png}
+        \caption{Encoded sprite}\label{fig:spriteencoded}
+    \end{subfigure}
+    \caption{Player sprites}
+\end{wrapfigure}
+The `player' sprite appears as a controllable reticle intended to point at the colour selected. 
+The sprite was drawn in Microsoft Paint and 
+converted from its base format (.bmp) to space delimited memory encoding (.coe) that 
+can be used by Xilinx's block memory generator IP to write the sprite into ROM. 
+
+Due to what is most likely issues with reading the sprite from memory, the image has been 
+adjusted from \cref{fig:spriteorig} to \cref{fig:spriteencoded} to account for `wrapping'
+that appears to occur. 
+
+As a controllable object, additional complications are introduced as the sprite moves or 
+generally interacts with the drawing logic. A pixel to be written from memory is skipped, 
+leading to the appearance of `scrolling'. This is fixed by ensuring the first address 
+from ROM is to be written after either the last address has been reached, or the 
+current drawing coordinates (\lstinline|x_coord| and \lstinline|y_coord|) coincide with 
+the current position of the sprite (\lstinline|player_pos_x| and \lstinline|player_pos_y|,
+indicating the top left corner)\footnote{
+    Lines 110-112 of \lstinline|draw_controller|.
+}.
+
+A final feature of the sprite is the red (\lstinline|0xF00|) pixels in the centre is 
+used to determine the colour `selected'. When drawing the sprite, if the pixel being drawn is 
+a red pixel, the pointer returned by \lstinline|gradient_pointer| from \lstinline|colour_picker|\footnote{
+    \Cref{sec:colourpicker}.
+} 
+is recorded into \lstinline|selected_pointer| and the colour value held in \lstinline|col_selected|
+in order to change the control area border colour. A similar technique is used to provide `transparency'
+for the white portions of the sprite, simply by overriding the pixel colour 
+with \lstinline|colourspace[gradient_pointer]|\footnote{
+    Lines 114-121 of \lstinline|draw_controller|.
+}.
+
+\subsubsection{sprite\_title}
+\begin{wrapfigure}[5]{R}{0.25\linewidth}
+    \vspace{-30pt}
+    \centering
+    \includegraphics[width=\linewidth]{figures/flood.png}
+    \caption{Title sprite}
+\end{wrapfigure}
+A sprite for the title was created in Adobe Photoshop owing to its increased complexity in detail. 
+The background colours were selected to fit seamlessly with the top banner of the game. 
+
+It was rendered into the game from a ROM similar to the player sprite.
+
+\subsubsection{sprite\_title}
+Produces the ID values 2008503 and 1922268 in the top left corner. 
+
+\subsubsection{colour\_picker}\label{sec:colourpicker}
+
+Code available in \cref{code:colourpicker}.
+
+This module creates the central colour selection region for the player, outputting 
+a pointer for current pixel to be drawn.  
+
+The initial idea was to create the selection colour space as a sprite, leading 
+to the creation of \cref{fig:gradient} in Adobe Illustrator to be imported as a ROM. 
+The sprite approach was changed as it consumes a large amount of memory\footnote{
+    The first version with 256 16$\times$16 pixel cells required more memory than was available on the FPGA. 
+}. 
+A programmatic approach, using a FOR loop is used instead\footnote{
+    Lines 35-41.
+}. In this case, the 8$\times$8 grid is generated from a nested FOR loop; the 
+outer loop specifies the height of the grid cells and the inner loop the width 
+of the cell. The colour is then selected by a sequential counter 
+pointing to \lstinline|colourspace|.
+
+\subsubsection{colour\_grid}\label{sec:colorgrid}
+Code available in \cref{code:colourgrid}.
+
+This module works similar to \lstinline|colour_picker| 
+in producing a grid from a nested FOR loop,
+however it has to deal with the extra complexity 
+of dynamically updating the colour of its cells.
+This leads to some artefacts appearing as this logic 
+interacts with the display adapter. The general logic of the game in terms of 
+`flooding' is handled in this module. It receives the current colour pointer 
+as in input and outputs a pointer for the colour of the current background 
+pixel. 
+
+Two 16$\times$16 2D arrays are used in this module\footnote{
+    The file type was changed to SystemVerilog as multidimensional and unpacked arrays are not supported by Verilog. 
+}: 
+\begin{itemize}
+    \item \lstinline|connected_array| -- Holds a value to describe the state of the cell.
+    \begin{description}[align=left, labelwidth=0.5cm,labelindent=0.5cm]
+        \item[2] The cell is `connected' and changes colour with the selection from \lstinline|colour_picker|.
+        \item[1] The cell is adjacent to a `connected' cell, and needs to be checked if it matches the selection.  
+        \item[0] The cell is in its default state. 
+    \end{description}
+    \item \lstinline|pointer_array| -- Holds the pointer to the colour for the cell. Starts `randomised'\footnote{
+        \Cref{sec:randomisation}.
+    }.
+\end{itemize}
+
+Every clock cycle, a single cell is analysed, with the entire grid checked over a million times in a single 
+game frame. The incremental order is horizontally, then vertically. 
+If the cell is adjacent (value \lstinline|1|), the colour is checked. If matched, the colour of the cell is updated 
+to the currently selected colour (via \lstinline|pointer_array|), its \lstinline|connected_array| value updated to \lstinline|2|,
+and each cell adjacent is updated to have a value of \lstinline|1| if currently \lstinline|0|. 
+Otherwise, if the value is \lstinline|2|, the colour is simply updated\footnote{
+    Lines 548-576.
+}. 
+
+\subsection{Unimplemented features}
+\subsubsection{FOR loops}
+In some instances, logic that had been hardcoded 
+was successfully converted into a much easier to read 
+and maintainable FOR loop. However, this is not the case in every instance. While the 
+creation of the colour space in \lstinline|draw_controller|\footnote{
+    \Cref{sec:drawcon}.
+} was successfully converted, the same cannot be said for the value assignments 
+to \lstinline|connected_array| in \lstinline|colour_grid|. The result, in the 
+instances adjacency worked, appeared to match cells somewhat randomly 
+or led to some cells failing to change colour. 
+
+\subsubsection{Difficulty modes}
+Different levels of gameplay difficulty, where the user selects an option 
+that dictates the grid size (i.e. 8\textsuperscript{2} rather 
+than 16\textsuperscript{2} - the current default) would have been implemented 
+leveraging the dynamic nature of the grid generation if handled in a loop. 
+In that case, the loop would be built into a conditional, where the 
+selected grid size would inform the variables used to define each cell's 
+width and height. Even the number of colours could be adjusted similarly
+to lower the difficulty in discerning colours. 
+
+\subsubsection{Randomisation}\label{sec:randomisation}
+The grid was intended to be generated randomly for each game. 
+Generating a string of random numbers is possible with a Linear-Feedback Shift Register (LFSR),
+which produces a deterministic string of random numbers. The sequence is dependent on the initial 
+input (seed), which itself would require true random generation in some manner. 
+A possibility for this is to take a reading from the board temperature sensor. 
+
+\subsubsection{Timer and completion}
+The idea of `filling the grid as quickly as possible' falters at the point 
+where the game lacks a timer for the user to see how quickly they have completed the board. 
+\lstinline|clock_gen| would need to output a clock for seconds, incrementing a counter 
+on every positive edge. Then, the program can
+read from a numeral sprite map to render digits on screen that show the current 
+decimal value of the counter.
+
+Completion can be determined by summing \lstinline|connected_array|. A cell is matched 
+when its value is \lstinline|2|. For a 256 cell array, if the sum equals 512, 
+the game is finished. Extending this idea further allows showing the current 
+percentage of completion. 
