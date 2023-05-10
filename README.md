@@ -21,7 +21,7 @@ combine in the design of digital computing circuits.
 circuit using the testing features of the Verilog HDL and a professional standard simulator. 
 
 | **Design**                                                                                              | %Marks |
-|---------------------------------------------------------------------------------------------------------|--------|
+|:---------------------------------------------------------------------------------------------------------|--------|
 | User control of a moving object on screen with respect for screen boundaries                            | 10     |
 | A map or multiple objects and interactions between them, e.g. collisions                                | 10     |
 | Info bar                                                                                                | 5      |
@@ -46,7 +46,7 @@ Result - 74%
 - Evaluate signals and systems using laboratory test and measurement equipment.
 
 | **Question 1** | Marks | Result |
-|----------------|-------|--------|
+|:----------------|-------|--------|
 | a              | 4     | 4      |
 | b              | 9     | 7      |
 | c              | 8     | 8      |
