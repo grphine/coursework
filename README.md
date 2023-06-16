@@ -11,7 +11,7 @@ A backup repo of coursework assignments
 
 ## ES3B2 - Digital design
 
-Result - pending 
+Result - 72% 
 
 Design assignment - develop an interactive game on a Nexys 4DDR FPGA board. 10 page report, including code appendicies.
 - Through the practical use of the Verilog hardware description language (HDL), consolidate
@@ -77,7 +77,7 @@ Result - 74%
 
 ## ES3D8 - VLSI
 
-Result - pending
+Result - 84%
 
 Design assignment - design of a 4-bit magnitude comparator. 2500 word/12 page written report. 
  - Demonstrate basic knowledge on how different circuit families can be used in IC design for
