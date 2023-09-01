@@ -3,11 +3,13 @@ A backup repo of coursework assignments
 
 ## ES327 - Individual project
 
+Result - 69%
+
 | Coursework | Percentage | Marks |
 |-|-|-|
-| Project feasibility study | 15 | 68% |
-| Technical report + Evaluation | 70 | Pending |
-| Logbook | 15 | Pending |
+| Project feasibility study | 15 | 68 |
+| Technical report + Evaluation | 70 | 68 |
+| Logbook | 15 | 74 |
 
 ## ES3B2 - Digital design
 
